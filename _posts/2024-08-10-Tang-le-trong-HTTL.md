@@ -12,12 +12,9 @@ Danh thơm tiếng tốt gắn liền với ngày chết, vì biết rằng con 
 
 Đến nhà tang chế hơn yến tiệc, vì yến tiệc nhiều luông tuồng, buông thả, vui chơi, khác với những giây phút suy ngẫm trong ngày tang thương. Trong Chúa, ta biết rằng người chết là người yên nghỉ, được hưởng sự sống đời đời. Vậy nên, sự tạm xa không khiến ta bi lụy mặc dù sẽ buồn, sẽ khóc, nhưng sâu thẳm trong cái buồn đó luôn có niềm vui và hy vọng vì biết người ta yêu thương đã đến nơi tốt hơn, nhẹ cái gánh ưu tư, thoát khỏi những cuộc tranh đấu không hồi kết của đời này. Điều đọng lại sau lễ tang là suy niệm riêng tư về cuộc đời của người và của mình.
 
-Còn về sự vui chơi, đùa giỡn? Nhà thơ Nguyễn Bỉnh Khiêm trong bài *Cảnh nhàn* có chép rằng: 
-
-<center>"Ta dại ta tìm nơi vắng vẻ,  
-
-Người khôn người đến chốn lao xao."
-</center>
+Còn về sự vui chơi, đùa giỡn? Nhà thơ Nguyễn Bỉnh Khiêm trong bài *Cảnh nhàn* có chép rằng:
+<center>"Ta dại ta tìm nơi vắng vẻ, </center> 
+<center>Người khôn người đến chốn lao xao." </center>
 
 Quả là một lời thơ đầy tính mỉa mai! Có lẽ con người 500 năm trước hay ngày nay cũng như vậy, vẫn ham thích chốn náo nhiệt và lao xao, vẫn luôn muốn đến nơi nhiều người đến, mua cái nhiều người mua, hưởng thụ cái nhiều người thích? Có chăng những YOLO hay FOMO từ lâu đã hiện hữu mà chưa được chỉ mặt đặt tên? Tôi cũng chẳng biết nữa...
 
