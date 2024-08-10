@@ -1,0 +1,117 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>AN DA POET</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2024-08-10T17:29:27+07:00</updated>
+  <author>
+    <name>Doan Thuan An</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
+  <rights> © 2024 Doan Thuan An </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Sự sống, Cái chết và Khôn ngoan</title>
+    <link href="http://localhost:4000/posts/su-song-cai-chet-va-khon-ngoan/" rel="alternate" type="text/html" title="Sự sống, Cái chết và Khôn ngoan" />
+    <published>2024-08-10T00:00:00+07:00</published>
+  
+    <updated>2024-08-10T00:00:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/su-song-cai-chet-va-khon-ngoan/</id>
+    <content src="http://localhost:4000/posts/su-song-cai-chet-va-khon-ngoan/" />
+    <author>
+      <name>Doan Thuan An</name>
+    </author>
+
+  
+    
+    <category term="christian" />
+    
+    <category term="church" />
+    
+    <category term="evangelism" />
+    
+  
+
+  <summary>“Danh thơm tiếng tốt hơn dầu quí giá, ngày chết hơn ngày sanh. Đến nhà tang chế hơn đến nhà yến tiệc, vì ai rồi cũng phải chết; Vậy người sống hãy để tâm suy ngẫm thân phận mình. Buồn rầu tốt hơn đùa giỡn, vì kinh nghiệm đau buồn mở mang tâm trí. Người khôn ngoan để tâm nghĩ đến sự chết, kẻ ngu dại chỉ nghĩ đến vui chơi. Nghe người khôn ngoan khuyên dạy tốt hơn là nghe tiếng ca hát của kẻ dại k...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Cảm thơ Yêu - Xuân Diệu</title>
+    <link href="http://localhost:4000/posts/cam-tho-yeu-xuan-dieu/" rel="alternate" type="text/html" title="Cảm thơ Yêu - Xuân Diệu" />
+    <published>2024-08-01T00:00:00+07:00</published>
+  
+    <updated>2024-08-10T17:29:05+07:00</updated>
+  
+    <id>http://localhost:4000/posts/cam-tho-yeu-xuan-dieu/</id>
+    <content src="http://localhost:4000/posts/cam-tho-yeu-xuan-dieu/" />
+    <author>
+      <name>Doan Thuan An</name>
+    </author>
+
+  
+    
+    <category term="poem" />
+    
+  
+
+  <summary>Bài thơ “Yêu” của Xuân Diệu thể hiện những cảm xúc sâu sắc và bi kịch về tình yêu, một trong những chủ đề trung tâm trong thi ca của ông. Bài thơ được viết theo thể lục bát, với việc lặp lại câu thơ “Yêu, là chết ở trong lòng một ít” như một điệp khúc, nhấn mạnh nỗi đau khổ và mất mát mà tình yêu mang lại.
+
+
+  Yêu là chết trong lòng một ít,
+Vì mấy khi yêu mà chắc được yêu?
+Cho rất nhiều, song n...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Làm thế nào để làm chủ THÓI QUEN?</title>
+    <link href="http://localhost:4000/posts/lam-the-nao-de-co-mot-thoi-quen-tot/" rel="alternate" type="text/html" title="Làm thế nào để làm chủ THÓI QUEN?" />
+    <published>2024-07-10T00:00:00+07:00</published>
+  
+    <updated>2024-07-15T00:40:21+07:00</updated>
+  
+    <id>http://localhost:4000/posts/lam-the-nao-de-co-mot-thoi-quen-tot/</id>
+    <content src="http://localhost:4000/posts/lam-the-nao-de-co-mot-thoi-quen-tot/" />
+    <author>
+      <name>Doan Thuan An</name>
+    </author>
+
+  
+    
+    <category term="book" />
+    
+    <category term="science" />
+    
+  
+
+  <summary>Bài học rút ra từ sách “Sức mạnh của thói quen” của tác giả Charles Duhigg.
+
+
+
+&amp;quot;Gieo suy nghĩ gặt hành động, gieo hành động gặt thói quen, 
+gieo thói quen gặt tính cách, gieo tính cách gặt số phận.&amp;quot; —  Ngạn ngữ đông phương 
+
+
+
+Lời nói đầu
+
+Từ thời xa xưa, con người ta đã có những quan sát và kết luận đáng chú ý về sự khởi đầu và kết thúc của một số phận con người: bắt nguồn từ những suy nghĩ nh...</summary>
+
+  </entry>
+
+</feed>
+
+
