@@ -1,6 +1,6 @@
 ---
-title: Cảm thơ: Yêu - Xuân Diệu
-date: 2024-08-10
+title: Cảm thơ Yêu - Xuân Diệu
+date: 2024-08-01
 categories: [poem]
 tags: [xuan-dieu]
 ---
