@@ -2,7 +2,7 @@
 title: Tình yêu là gì?
 date: 2024-08-15
 categories: [philosophy]
-tags: [what]
+tags: [what, love]
 ---
 
 Tình yêu, từ ngàn đời nay, đã trở thành nguồn cảm hứng vô tận cho văn chương, nghệ thuật và âm nhạc. Trong tâm hồn con người, tình yêu không chỉ là cảm xúc mà còn là năng lượng, là niềm tin và động lực cho con người trong cuộc sống.
@@ -29,7 +29,7 @@ Dưới góc nhìn của triết học Hy lạp cổ đại, cái nôi của tri
 Cuối cùng là *Agape*, hay được biết đến như *tình yêu mặc dầu*, là loại tình yêu tự phát và không có động lực, không phụ thuộc vào giá trị của vật thể được yêu, trái với *eros* - tình yêu có điều kiện.
 
 ### **Tình yêu Agape trong Kinh Thánh**
-Kinh Thánh, đặc biệt là Kinh Thánh Tân Ước, được Đức Chúa Trời thần cảm cho các tác giả ghi chép chủ yếu bằng tiếng Hy Bá và Hy lạp cổ, vì vậy có sự ảnh hưởng sâu sắc bởi văn hóa và ngôn ngữ Hy lạp cổ đại. Tình yêu Agape trong Kinh Thánh được mô tả vô cùng rõ ràng với hơn 200 lần xuất hiện trong các sách Tân Ước, thường được sử dụng để miêu tả tình yêu của Chúa dành ho con người:
+Kinh Thánh, đặc biệt là Kinh Thánh Tân Ước, được Đức Chúa Trời thần cảm cho các tác giả ghi chép chủ yếu bằng tiếng Hy Bá và Hy lạp cổ, vì vậy cách dùng từ có sự ảnh hưởng sâu sắc bởi văn hóa và ngôn ngữ Hy lạp cổ đại. Tình yêu Agape trong Kinh Thánh được mô tả vô cùng rõ ràng với hơn 200 lần xuất hiện trong các sách Tân Ước, thường được sử dụng để miêu tả tình yêu của Chúa dành ho con người:
 
 >Vì Đức Chúa Trời agapao nhân loại, đến nỗi đã ban Con Một của Ngài, để ai tin nhận Đấng ấy sẽ không bị hư mất nhưng được sự sống vĩnh phúc.'  
 ~ *Giăng 3:16* ~
