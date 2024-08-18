@@ -28,9 +28,8 @@ Dưới góc nhìn của triết học Hy lạp cổ đại, cái nôi của tri
 
 Cuối cùng là *Agape*, hay được biết đến như *tình yêu mặc dầu*, là loại tình yêu tự phát và không có động lực, không phụ thuộc vào giá trị của vật thể được yêu, trái với *eros* - tình yêu có điều kiện.
 
-### **Tình yêu trong Kinh Thánh**
-
-Tình yêu Agape được mô tả vô cùng rõ ràng trong Kinh Thánh của người Cơ-đốc với hơn 200 lần xuất hiện trong các sách Tân Ước, thường được sử dụng để miêu tả tình yêu của Chúa dành ho con người:
+### **Tình yêu Agape trong Kinh Thánh**
+Kinh Thánh, đặc biệt là Kinh Thánh Tân Ước, được Đức Chúa Trời thần cảm cho các tác giả ghi chép chủ yếu bằng tiếng Hy Bá và Hy lạp cổ, vì vậy có sự ảnh hưởng sâu sắc bởi văn hóa và ngôn ngữ Hy lạp cổ đại. Tình yêu Agape trong Kinh Thánh được mô tả vô cùng rõ ràng với hơn 200 lần xuất hiện trong các sách Tân Ước, thường được sử dụng để miêu tả tình yêu của Chúa dành ho con người:
 
 >Vì Đức Chúa Trời agapao nhân loại, đến nỗi đã ban Con Một của Ngài, để ai tin nhận Đấng ấy sẽ không bị hư mất nhưng được sự sống vĩnh phúc.'  
 ~ *Giăng 3:16* ~
@@ -134,3 +133,4 @@ Qua bài viết này, tôi cũng phần nào thỏa mãn được câu hỏi ngu
 ## **Dẫn nguồn**
 1. Alysaa Roat, What is Agape Love? Bible Meaning and Examples, URL = <https://www.christianity.com/wiki/christian-terms/what-does-agape-love-really-mean-in-the-bible.html>
 2. Helm, Bennett, "Love", The Stanford Encyclopedia of Philosophy (Fall 2021 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2021/entries/love/>.
+
