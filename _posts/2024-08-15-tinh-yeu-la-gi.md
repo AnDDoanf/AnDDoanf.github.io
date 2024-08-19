@@ -94,7 +94,7 @@ Rorty cho rằng việc tuyên bố "tình yêu là cảm xúc" là khó khăn v
 - Tình yêu là một loại phản ứng đánh giá kiêm động cơ cụ thể đối với một đối tượng, cho dù phản ứng đó tự xảy ra hay có tính định hướng (cảm xúc thực sự)
 - Tình yêu bao gồm một tập hợp các cảm xúc thực sự có liên quan và kết nối với nhau (phức hợp cảm xúc)
 
-**1.Tình yêu như một cảm xúc thực sự**
+**1. Tình yêu như một cảm xúc thực sự**
  
 Cảm xúc là một phản ứng đánh giá kiêm động cơ. Mục tiêu của cảm xúc là thứ mà cảm xúc hướng đến. Khi tôi sợ bạn, bạn là mục tiêu của cảm xúc của tôi, và tôi đang ngầm đánh giá bạn là nguy hiểm, điều này thúc đẩy hành động của tôi theo cách lý trí (chủ động lánh xa bạn) hoặc phi lý trí (giật mình khi bạn lại gần). Cảm xúc cũng được hiểu tiêu biểu như một sự ham mê: các phản ứng mà chúng ta cảm giác như được đặt vào mình như thể nó đến từ bên ngoài chứ không phải là điều mà chúng ta chủ động làm.
 
