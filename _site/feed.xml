@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>AN DA POET</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-09-27T23:12:32+07:00</updated>
+  <updated>2024-09-28T16:36:51+07:00</updated>
   <author>
     <name>Doan Thuan An</name>
     <uri>http://localhost:4000/</uri>
@@ -20,34 +20,32 @@
 
   
   <entry>
-    <title>Cá nhân Chứng đạo (người theo Chúa Giê-xu chứng đạo)</title>
-    <link href="http://localhost:4000/posts/ca-nhan-chung-dao/" rel="alternate" type="text/html" title="Cá nhân Chứng đạo (người theo Chúa Giê-xu chứng đạo)" />
-    <published>2024-09-27T00:00:00+07:00</published>
+    <title>Trời không tạo ra người đứng trên người</title>
+    <link href="http://localhost:4000/posts/troi-khong-tao-ra-nguoi-dung-tren-nguoi/" rel="alternate" type="text/html" title="Trời không tạo ra người đứng trên người" />
+    <published>2024-09-28T00:00:00+07:00</published>
   
-    <updated>2024-09-27T00:00:00+07:00</updated>
+    <updated>2024-09-28T00:00:00+07:00</updated>
   
-    <id>http://localhost:4000/posts/ca-nhan-chung-dao/</id>
-    <content src="http://localhost:4000/posts/ca-nhan-chung-dao/" />
+    <id>http://localhost:4000/posts/troi-khong-tao-ra-nguoi-dung-tren-nguoi/</id>
+    <content src="http://localhost:4000/posts/troi-khong-tao-ra-nguoi-dung-tren-nguoi/" />
     <author>
       <name>Doan Thuan An</name>
     </author>
 
   
     
-    <category term="christian" />
-    
-    <category term="church" />
-    
-    <category term="evangelism" />
+    <category term="book" />
     
   
 
-  <summary>1. Chứng đạo là gì?
-Khái niệm
-Chứng đạo là rao giảng về đạo của Chúa Giê-xu, hay còn gọi là Tin lành, Phúc Âm.
+  <summary>Phần Một trong chuỗi bài học rút ra từ sách “Khuyến học” của tác giả Fukuzawa Yukichi.
 
-Mục đích
-Chứng đạo nhằm giúp người nghe nhận biết tội lỗi mình với Chúa, ăn năn để được Ngài tha thứ, thoát khỏi hình phạt, được trở lại làm con cái Chúa, hưởng sự sống đời đời. Bên cạnh đó được là thành viên trong gia đình ĐCT, sống đời sống mới theo Lời Chúa với đức tin, hy vọng và ...</summary>
+Mọi người sinh ra đều bình đẳng, nếu có khác biệt là do học vấn
+
+  “Trời không tạo ra người đứng trên người và cũng không tạo ra người đứng dưới người” mà “Trời nhìn vào kết quả hoạt động, lao động của con người để ban thưởng”.
+
+
+Khoảng cách giữa người thông minh và kẻ đần độn; giữa người giàu và người nghèo...</summary>
 
   </entry>
 
