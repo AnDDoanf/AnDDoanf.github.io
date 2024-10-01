@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>AN DA POET</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-09-28T16:36:51+07:00</updated>
+  <updated>2024-10-01T16:52:48+07:00</updated>
   <author>
     <name>Doan Thuan An</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,35 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Người chịu thiệt thòi nhất là những kẻ vô học</title>
+    <link href="http://localhost:4000/posts/nguoi-chiu-thiet-thoi-nhat-la-nhung-ke-vo-hoc/" rel="alternate" type="text/html" title="Người chịu thiệt thòi nhất là những kẻ vô học" />
+    <published>2024-09-30T00:00:00+07:00</published>
+  
+    <updated>2024-09-30T00:00:00+07:00</updated>
+  
+    <id>http://localhost:4000/posts/nguoi-chiu-thiet-thoi-nhat-la-nhung-ke-vo-hoc/</id>
+    <content src="http://localhost:4000/posts/nguoi-chiu-thiet-thoi-nhat-la-nhung-ke-vo-hoc/" />
+    <author>
+      <name>Doan Thuan An</name>
+    </author>
+
+  
+    
+    <category term="book" />
+    
+  
+
+  <summary>Không thể có miếng ăn ngon nếu chỉ là cái “tủ kiến thức”
+
+Học vấn có tính:
+
+  Trừu tượng (vô hình): qua các môn Đạo đức, Thần học, Triết học,…
+  Cụ thể (hữu hình): qua thiên văn học, địa lý học, hóa học,…</summary>
+
+  </entry>
 
   
   <entry>
@@ -125,34 +154,6 @@ Khái niệm “Phước” vượt qua ranh giới văn hóa, mang nhiều ý n
   <summary>Tình yêu, từ ngàn đời nay, đã trở thành nguồn cảm hứng vô tận cho văn chương, nghệ thuật và âm nhạc. Trong tâm hồn con người, tình yêu không chỉ là cảm xúc mà còn là năng lượng, là niềm tin và động lực cho con người trong cuộc sống.
 
 Từ “yêu” luôn bao hàm nhiều ngữ nghĩa. Nó có thể được biểu đạt khi một ai đó rất thích một điều gì đó như đồ vật, hoạt động, một điều mà sự quan tâm của họ không t...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Sự sống, Cái chết và Khôn ngoan</title>
-    <link href="http://localhost:4000/posts/su-song-cai-chet-va-khon-ngoan/" rel="alternate" type="text/html" title="Sự sống, Cái chết và Khôn ngoan" />
-    <published>2024-08-10T00:00:00+07:00</published>
-  
-    <updated>2024-08-18T13:53:39+07:00</updated>
-  
-    <id>http://localhost:4000/posts/su-song-cai-chet-va-khon-ngoan/</id>
-    <content src="http://localhost:4000/posts/su-song-cai-chet-va-khon-ngoan/" />
-    <author>
-      <name>Doan Thuan An</name>
-    </author>
-
-  
-    
-    <category term="christian" />
-    
-    <category term="church" />
-    
-    <category term="evangelism" />
-    
-  
-
-  <summary>“Danh thơm tiếng tốt hơn dầu quí giá, ngày chết hơn ngày sanh. Đến nhà tang chế hơn đến nhà yến tiệc, vì ai rồi cũng phải chết; Vậy người sống hãy để tâm suy ngẫm thân phận mình. Buồn rầu tốt hơn đùa giỡn, vì kinh nghiệm đau buồn mở mang tâm trí. Người khôn ngoan để tâm nghĩ đến sự chết, kẻ ngu dại chỉ nghĩ đến vui chơi. Nghe người khôn ngoan khuyên dạy tốt hơn là nghe tiếng ca hát của kẻ dại k...</summary>
 
   </entry>
 
