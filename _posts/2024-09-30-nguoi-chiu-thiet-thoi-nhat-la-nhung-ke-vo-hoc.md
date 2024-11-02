@@ -1,6 +1,6 @@
 ---
 title: Người chịu thiệt thòi nhất là những kẻ vô học
-date: 2024-09-30
+date: 2080-09-30
 categories: [book]
 tags: [how, skill]
 ---

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>AN DA POET</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-10-01T16:52:48+07:00</updated>
+  <updated>2024-11-02T16:52:51+07:00</updated>
   <author>
     <name>Doan Thuan An</name>
     <uri>http://localhost:4000/</uri>
@@ -20,30 +20,32 @@
 
   
   <entry>
-    <title>Người chịu thiệt thòi nhất là những kẻ vô học</title>
-    <link href="http://localhost:4000/posts/nguoi-chiu-thiet-thoi-nhat-la-nhung-ke-vo-hoc/" rel="alternate" type="text/html" title="Người chịu thiệt thòi nhất là những kẻ vô học" />
-    <published>2024-09-30T00:00:00+07:00</published>
+    <title>KỈ LUẬT THUỘC LINH (phần 1)</title>
+    <link href="http://localhost:4000/posts/ki-luat-thuoc-linh-phan-mot/" rel="alternate" type="text/html" title="KỈ LUẬT THUỘC LINH (phần 1)" />
+    <published>2024-11-02T00:00:00+07:00</published>
   
-    <updated>2024-09-30T00:00:00+07:00</updated>
+    <updated>2024-11-02T00:00:00+07:00</updated>
   
-    <id>http://localhost:4000/posts/nguoi-chiu-thiet-thoi-nhat-la-nhung-ke-vo-hoc/</id>
-    <content src="http://localhost:4000/posts/nguoi-chiu-thiet-thoi-nhat-la-nhung-ke-vo-hoc/" />
+    <id>http://localhost:4000/posts/ki-luat-thuoc-linh-phan-mot/</id>
+    <content src="http://localhost:4000/posts/ki-luat-thuoc-linh-phan-mot/" />
     <author>
       <name>Doan Thuan An</name>
     </author>
 
   
     
-    <category term="book" />
+    <category term="philosophy" />
     
   
 
-  <summary>Không thể có miếng ăn ngon nếu chỉ là cái “tủ kiến thức”
+  <summary>1. Thói quen thánh về Học tập (2 Ti-mô-thê 2:14-16)
 
-Học vấn có tính:
+  “Con hãy chuyên tâm phục vụ cho được đẹp lòng Đức Chúa Trời, như người làm công không có gì phải hổ thẹn, thẳng thắn dạy lời chân lý.”
 
-  Trừu tượng (vô hình): qua các môn Đạo đức, Thần học, Triết học,…
-  Cụ thể (hữu hình): qua thiên văn học, địa lý học, hóa học,…</summary>
+  ~ 2 Ti-mô-thê 2:15 ~
+
+
+Khi nhắc đến từ “học” với một số người, sẽ dễ thấy họ rùng mình khi nhớ lại những ngày tháng buồn tẻ ở trường, học vẹt và nhồi nhét kiến thức cho các kỳ thi. Họ sẽ nói “Không, cảm ơ...</summary>
 
   </entry>
 
