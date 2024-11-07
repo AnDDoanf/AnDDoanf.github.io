@@ -32,3 +32,36 @@ Nếu có thể, một nơi để cầu nguyện tránh xa những điều gây 
 Tôi nhớ đã từng động viên một nhóm người tại một hội thảo cầu nguyện hãy tắt tiếng ồn từ nhà bếp bên cạnh. Nhưng khi mùi thơm của những chiếc bánh nướng xốp mới nướng tràn ngập không gian cầu nguyện của chúng tôi, chúng tôi bắt đầu đầu hàng và vui vẻ cảm ơn người đầu bếp!
 
 Lời cầu nguyện đơn giản như hơi thở (Hơi thở của một tâm linh sống). Cầu nguyện vừa là lời cầu xin vừa là lời ngợi khen, vừa là lời tạ ơn vừa là lời than thở, vừa là lời xưng tội cũng vừa là sự thờ phượng. Cầu nguyện thay đổi mọi thứ, làm biến đổi mọi thứ, và quan trọng hơn cả, cầu nguyện thay đổi người cầu nguyện. 
+
+## 10. Thói quen thánh của sự suy ngẫm (Thi thiên 1)
+
+>"Người ấy sẽ như cây trồng gần dòng nước, Sanh bông-trái theo thì-tiết, Lá nó cũng chẳng tàn-héo; Mọi sự người làm đều sẽ thạnh-vượng."
+>
+>~ Thi thiên 1:3 ~
+
+Cũng giống như chế độ luyện tập giúp vận động viên chuẩn bị cho cuộc đua, kỷ luật trong sự suy ngẫm giúp các tín đồ phát triển cơ bắp thuộc linh. Trong suy ngẫm, chúng ta tìm kiếm sự hiểu biết sâu sắc hơn, rõ ràng hơn, đầy đủ hơn về Chúa, về chính mình và về thế giới xung quanh chúng ta - nói cách khác, là sự khôn ngoan. Nhưng không giống như Sa-lô-môn, người đã cầu xin sự khôn ngoan và nhận được ngay, chúng ta cần dành thời gian, năng lượng và sự ưu tiên để tìm kiếm và tìm thấy ân điển này.
+
+Tác giả Thi thiên đã viết: "Tôi sẽ nhắc lại công-việc của Đức Giê-hô-va, Nhớ đến các phép lạ của Ngài khi xưa; Cũng sẽ ngẫm-nghĩ về mọi công-tác Chúa, Suy-gẫm những việc làm của Ngài" (*Thi thiên 77:11-12*). Hãy lưu ý đến các động từ ở đây, một bản dịch khác liệt kê chúng là "gọi đến tâm trí, ghi nhớ, suy ngẫm và chiêm nghiệm".
+
+Khi chúng ta suy ngẫm về lời Chúa, chúng ta tìm thấy sự nuôi dưỡng. Tất nhiên điều đó sẽ không dễ dàng như bạn nghĩ, chúng ta có thể cần phải chiến đấu với rất nhiều kẻ thù trước khi đến được nơi tĩnh lặng, sau thẳm này. Tiếng ồn, sự vội vã và lịch trình quá tải sẽ không dễ dàng buông tha chúng ta.
+
+Mong muốn bắt đầu là bước đầu tiên. Tiếp theo là quyết định về địa điểm, thời gian và tư thế để suy ngẫm. Sau đó, hãy cầu xin Chúa giúp gặp bạn trong Kinh Thánh. Thông điệp của Kinh Thánh không chỉ là sự giúp đỡ đang đến - mà nó đã đến. Trong con người của Chúa Giê-xu, Vương quốc Thiên đàng đang ở trong tầm tay. Vì vậy, chúng ta có thể tin tưởng vào sự hiện diện của Chúa.
+
+Đọc Lời Chúa với tinh thần ăn năn, trái tim tan vỡ và tâm trí cởi mở. Đắm mình vào một đoạn văn ngắ như một bài thánh ca. Đọc chậm rãi để suy ngẫm, để Chúa nói với bạn. Sau đó, hãy mang theo một suy nghĩ hoặc một câu thơ hoặc thậm chí một từ trong đoạn đó khi bạn bước vào một ngày mới. Hãy để lời này thấm sâu vào tâm hồn bạn, chữa lành, nuôi dưỡng và đổi mới bạn.
+
+Một trong những tu sĩ Cơ đốc ngày xưa đãtự xem mình là một bác sĩ tâm linh cung cấp cho người khác "một loại thuốc đắp là từ các văn bản Kinh Thánh" mà họ có thể áp dụng cho tâm trí của họ thông qua suy ngẫm. Chúa cung cấp cho chúng ta loại thuốc bổ tương tự ngày nay.
+
+# 11. Thói quen thánh trong sự cầu thay (Ma-thi-ơ 7:7-12)
+>"Hãy xin sẽ được, hãy tìm sẽ gặp, hãy gõ cửa thì cửa sẽ mở cho"
+>
+>~ Ma-thi-ơ 7:7 ~
+
+Dietrich Bonhoeffer (một mục sư người Đức) mô tả lời cầu thay là "Bồn thanh tẩy mà mỗi cá nhân phải bước vào mỗi ngày". Kỷ luật cầu thay có tác dụng cho người khác, nhưng trước tiên nó có tác dụng cho người cầu nguyện. Có điều gì đó mở rộng và phát triển bên trong chúng ta khi chúng ta trình bày nhu cầu của người khác cho Chúa.
+
+Cầu thay là một mối quan hệ hợp tác thiêng liêng với sự ôm ấp rộng lớn. "Nó bắt đầu từ trái tim của Chúa, lan tỏa xuống trái tim con người trên đất, do đó giao thoa với guồng quay của đất, đó là chiến trường của lời cầu nguyện, và sau đó nó quay trở lại điểm xuất phát, khi đã hoàn thành mục đích của mình" (S.D.Gordon trong Quiet Talks on Prayer).
+
+"Cầu thay là lời cầu nguyện gặp gỡ, đưa hai hoặc nhiều bên lại với nhau để hòa giải, chữa lành, cùng nhau tận hưởng" (Margaret Magdalen trong Jesus, Man of Prayer). Khi chúng ta cầu nguyện theo cách này, chúng ta hợp tác với Chúa, mang lấy ách được chế tạo đặc biệt, vừa vặn để kết nối chúng ta với Ngài.
+
+Chúa Giê-xu khuyến khích sự kiên trì cầu nguyện. Ngài kể câu chuyện về một góa phụ không có quyền lực nào ngoài khả năng cằn nhằn một thẩm phán bướng bỉnh cho đến khi ông ta cho bà ấy thứ bà muốn. Ngài nói về một người đàn ông đang gặp khó khăn đến gặp hàng xóm của mình vào lúc nửa đêm để xin giúp đỡ. Ngài khuyến khích các tín đồ cầu xin và tiếp tục cầu xin, tìm kiếm và tiếp tục tìm kiếm, gõ cửa và tiếp tục gõ cửa (*Ma-thi-ơ 7:7-8*).
+
+Phao-lô nói với những người bạn của mình tại Phi-líp rằng ông mong mỏi họ ""

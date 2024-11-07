@@ -1,5 +1,5 @@
 ---
-title: KỈ LUẬT THUỘC LINH (phần 1)
+title: Kỷ Luật Thuộc Linh (phần 1)
 date: 2024-11-02
 categories: [philosophy]
 tags: []
@@ -7,7 +7,7 @@ tags: []
 ## 1. Thói quen thánh về Học tập (2 Ti-mô-thê 2:14-16)
 >"Con hãy chuyên tâm phục vụ cho được đẹp lòng Đức Chúa Trời, như người làm công không có gì phải hổ thẹn, thẳng thắn dạy lời chân lý."
 >
-> ~ 2 Ti-mô-thê 2:15 ~
+>~ 2 Ti-mô-thê 2:15 ~
 
 Khi nhắc đến từ "học" với một số người, sẽ dễ thấy họ rùng mình khi nhớ lại những ngày tháng buồn tẻ ở trường, học vẹt và nhồi nhét kiến thức cho các kỳ thi. Họ sẽ nói "Không, cảm ơn!" hay "Tôi mừng vì mấy thứ đấy qua rồi!". Những người như vậy sẽ đồng ý với tác giả của sách Truyền Đạo, là người cho rằng: "học nhiều làm mệt mỏi thân thể" (*12:12*).
 

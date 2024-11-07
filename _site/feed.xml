@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>AN DA POET</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-11-02T16:52:51+07:00</updated>
+  <updated>2024-11-07T22:29:28+07:00</updated>
   <author>
     <name>Doan Thuan An</name>
     <uri>http://localhost:4000/</uri>
@@ -20,8 +20,8 @@
 
   
   <entry>
-    <title>KỈ LUẬT THUỘC LINH (phần 1)</title>
-    <link href="http://localhost:4000/posts/ki-luat-thuoc-linh-phan-mot/" rel="alternate" type="text/html" title="KỈ LUẬT THUỘC LINH (phần 1)" />
+    <title>Kỷ Luật Thuộc Linh (phần 1)</title>
+    <link href="http://localhost:4000/posts/ki-luat-thuoc-linh-phan-mot/" rel="alternate" type="text/html" title="Kỷ Luật Thuộc Linh (phần 1)" />
     <published>2024-11-02T00:00:00+07:00</published>
   
     <updated>2024-11-02T00:00:00+07:00</updated>
