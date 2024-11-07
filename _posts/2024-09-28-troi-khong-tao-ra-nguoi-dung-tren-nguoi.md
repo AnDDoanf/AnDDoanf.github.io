@@ -1,8 +1,8 @@
 ---
 title: Trời không tạo ra người đứng trên người
 date: 2024-09-28
-categories: [book]
-tags: [how, skill]
+categories: [book, philosophy]
+tags: [study]
 ---
 
 Phần Một trong chuỗi bài học rút ra từ sách "Khuyến học" của tác giả Fukuzawa Yukichi.

@@ -1,8 +1,8 @@
 ---
 title: Kỷ Luật Thuộc Linh (phần 1)
 date: 2024-11-02
-categories: [philosophy]
-tags: []
+categories: [christian]
+tags: [habit]
 ---
 ## 1. Thói quen thánh về Học tập (2 Ti-mô-thê 2:14-16)
 >"Con hãy chuyên tâm phục vụ cho được đẹp lòng Đức Chúa Trời, như người làm công không có gì phải hổ thẹn, thẳng thắn dạy lời chân lý."
@@ -50,17 +50,17 @@ Thái độ giản dị đối với của cải sẽ kiềm chế nhu cầu đa
 >
 >~ I-sa 30:15 ~
 
-Nhịp điệu để làm việc và nghỉ ngơi, làm việc và nghỉ ngơi đã được đan xen vào chính cấu trúc của sự sáng tạo. Lời tường thuật trong Sáng thế ký ghi rằng "vào ngày thứ bảy, Ngài nghỉ ngơi khỏi mọi công việc của Ngài" (**2:2**). Chúa có kiệt sức vì tất cả những việc tạo dựng và uốn nắn đó không?
+Nhịp điệu để làm việc và nghỉ ngơi, làm việc và nghỉ ngơi đã được đan xen vào chính cấu trúc của sự sáng tạo. Lời tường thuật trong Sáng thế ký ghi rằng "vào ngày thứ bảy, Ngài nghỉ ngơi khỏi mọi công việc của Ngài" (*2:2*). Chúa có kiệt sức vì tất cả những việc tạo dựng và uốn nắn đó không?
 
-Không! Tiên tri I-sa đã kêu lớn rằng: "Các ngươi không nghe sao? Đấng tạo dựng nên các cùng trái đất... sẽ không mệt mỏi hay kiệt sức" (**40:28**). Chúa đã nghỉ ngơi vào ngày thứ bảy để tận hưởng mọi thứ Ngài đã tạo ra - ngày và đêm, đại dương và bầu trời, cây cối và các loài thực vật.
+Không! Tiên tri I-sa đã kêu lớn rằng: "Các ngươi không nghe sao? Đấng tạo dựng nên các cùng trái đất... sẽ không mệt mỏi hay kiệt sức" (*40:28*). Chúa đã nghỉ ngơi vào ngày thứ bảy để tận hưởng mọi thứ Ngài đã tạo ra - ngày và đêm, đại dương và bầu trời, cây cối và các loài thực vật.
 
 ### Ngày Sa-bát và mạng lệnh "phải nghỉ ngơi"
-Ra khỏi Ai Cập và vào sa mạc, Chúa đã định hình một cộng đồng Giao Ước từ những con người có tư duy nô lệ. Ngài ban cho họ một ngày Sa-bát để nghỉ ngơi như một món quà, và nói rằng ngày đó phải có nhịp độ khác với tất cả những ngày khác trong tuần. Đó là một ngày thánh để nghỉ ngơi, suy ngẫm và tưởng nhớ (**Xuất hành 20:8**).
+Ra khỏi Ai Cập và vào sa mạc, Chúa đã định hình một cộng đồng Giao Ước từ những con người có tư duy nô lệ. Ngài ban cho họ một ngày Sa-bát để nghỉ ngơi như một món quà, và nói rằng ngày đó phải có nhịp độ khác với tất cả những ngày khác trong tuần. Đó là một ngày thánh để nghỉ ngơi, suy ngẫm và tưởng nhớ (*Xuất hành 20:8*).
 
-Mặc dù đã có nhiều thay đổi trong các thế hệ kể từ đó, nhưng nhu cầu giữ ngày Sa-bát, chậm lại, nghỉ ngơi – gọi thế nào cũng được – vẫn không thay đổi. Trong một thế giới đang phải chịu đựng căn bệnh vội vã, chúng ta cần thường xuyên lắng nghe lời mời gọi sâu sắc, ấm áp, chào đón để "hãy yên lặng và biết rằng Ta là Đức Chúa Trời" (**Thi thiên 46:10**), và lời của Chúa Jesus: "Hãy đến cùng Ta, hỡi những kẻ mệt mỏi và nặng gánh ưu tư... Ta sẽ cho các ngươi được yên nghỉ" (**Ma-thi-ơ 11:28**).
+Mặc dù đã có nhiều thay đổi trong các thế hệ kể từ đó, nhưng nhu cầu giữ ngày Sa-bát, chậm lại, nghỉ ngơi – gọi thế nào cũng được – vẫn không thay đổi. Trong một thế giới đang phải chịu đựng căn bệnh vội vã, chúng ta cần thường xuyên lắng nghe lời mời gọi sâu sắc, ấm áp, chào đón để "hãy yên lặng và biết rằng Ta là Đức Chúa Trời" (*Thi thiên 46:10*), và lời của Chúa Jesus: "Hãy đến cùng Ta, hỡi những kẻ mệt mỏi và nặng gánh ưu tư... Ta sẽ cho các ngươi được yên nghỉ" (*Ma-thi-ơ 11:28*).
 
 ### Giá trị của sự nghỉ ngơi
-Chúng ta cần học nhịp điệu dự phần và rút lại mà Chúa Giê-xu đã thực hành (**Lu-ca 5:16**). Giống như chiếc bình đựng nước sông đục sẽ lắng xuống nếu không bị khuấy động, sự hỗn loạn trong cuộc sống của chúng ta cũng sẽ lắng xuống khi chúng ta dừng lại và nghỉ ngơi. Nhà thơ Lawrence Ferlinghetti viết: "Ngay cả trên thiên đàng, họ cũng không hát mọi lúc".
+Chúng ta cần học nhịp điệu dự phần và rút lại mà Chúa Giê-xu đã thực hành (*Lu-ca 5:16*). Giống như chiếc bình đựng nước sông đục sẽ lắng xuống nếu không bị khuấy động, sự hỗn loạn trong cuộc sống của chúng ta cũng sẽ lắng xuống khi chúng ta dừng lại và nghỉ ngơi. Nhà thơ Lawrence Ferlinghetti viết: "Ngay cả trên thiên đàng, họ cũng không hát mọi lúc".
 
 Giữ ngày Sa-bát mang lại những món quà – món quà của sự tự do khỏi sự kiểm soát ("Tôi không phải là giám đốc điều hành của vũ trụ"), món quà của sự khép lại ("Tôi nghỉ ngơi trong khoảng cách giữa một tuần kết thúc và tuần mới bắt đầu") và món quà của sự nhìn nhận, khi, như William Wilberforce đã viết, "những điều trần thế hiện lên với kích thước thật của chúng". Thật vậy, cho đến khi chúng ta nhìn bằng đôi mắt của Đức Chúa Trời, những khó khăn của đời này nó không vĩ đại đến thế.
 

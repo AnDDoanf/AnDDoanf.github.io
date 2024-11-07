@@ -1,7 +1,7 @@
 ---
 title: Nguồn các bài phân tích thơ
 date: 2080-01-01
-categories: [philosophy]
+categories: [poem]
 tags: []
 ---
 

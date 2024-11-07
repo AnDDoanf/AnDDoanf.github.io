@@ -1,8 +1,8 @@
 ---
 title: Cá nhân Chứng đạo (người theo Chúa Giê-xu chứng đạo)
 date: 2080-09-27
-categories: [christian, church, evangelism]
-tags: []
+categories: [christian]
+tags: [evangelism]
 ---
 
 ## 1. Chứng đạo là gì?

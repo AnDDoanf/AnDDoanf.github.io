@@ -1,7 +1,7 @@
 ---
 title: Sự sống, Cái chết và Khôn ngoan
 date: 2024-08-10
-categories: [christian, church, evangelism]
+categories: [christian]
 tags: [ecclesiastes, life, death]
 ---
 

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>AN DA POET</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-11-07T22:29:28+07:00</updated>
+  <updated>2024-11-07T22:43:38+07:00</updated>
   <author>
     <name>Doan Thuan An</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/ki-luat-thuoc-linh-phan-mot/" rel="alternate" type="text/html" title="Kỷ Luật Thuộc Linh (phần 1)" />
     <published>2024-11-02T00:00:00+07:00</published>
   
-    <updated>2024-11-02T00:00:00+07:00</updated>
+    <updated>2024-11-07T22:29:56+07:00</updated>
   
     <id>http://localhost:4000/posts/ki-luat-thuoc-linh-phan-mot/</id>
     <content src="http://localhost:4000/posts/ki-luat-thuoc-linh-phan-mot/" />
@@ -34,7 +34,7 @@
 
   
     
-    <category term="philosophy" />
+    <category term="christian" />
     
   
 
@@ -67,6 +67,8 @@ Khi nhắc đến từ “học” với một số người, sẽ dễ thấy h
     
     <category term="book" />
     
+    <category term="philosophy" />
+    
   
 
   <summary>Phần Một trong chuỗi bài học rút ra từ sách “Khuyến học” của tác giả Fukuzawa Yukichi.
@@ -96,7 +98,7 @@ Khoảng cách giữa người thông minh và kẻ đần độn; giữa ngư�
 
   
     
-    <category term="bible" />
+    <category term="chritian" />
     
   
 
@@ -150,6 +152,8 @@ Khái niệm “Phước” vượt qua ranh giới văn hóa, mang nhiều ý n
   
     
     <category term="philosophy" />
+    
+    <category term="science" />
     
   
 

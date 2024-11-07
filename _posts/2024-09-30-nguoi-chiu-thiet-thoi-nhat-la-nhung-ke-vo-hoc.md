@@ -1,8 +1,8 @@
 ---
 title: Người chịu thiệt thòi nhất là những kẻ vô học
 date: 2080-09-30
-categories: [book]
-tags: [how, skill]
+categories: [book, philosophy]
+tags: [study]
 ---
 ## Không thể có miếng ăn ngon nếu chỉ là cái "tủ kiến thức"
 
