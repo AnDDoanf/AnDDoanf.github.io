@@ -1,6 +1,6 @@
 ---
 title: Kỷ Luật Thuộc Linh (phần 2)
-date: 2080-11-02
+date: 2024-11-07
 categories: [christian]
 tags: [habit]
 ---
