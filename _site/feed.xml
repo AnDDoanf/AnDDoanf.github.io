@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>AN DA POET</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-11-10T20:35:31+07:00</updated>
+  <updated>2024-11-10T20:41:46+07:00</updated>
   <author>
     <name>Doan Thuan An</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>Câu Chuyện Người Cha Và Hai Con Trai</title>
-    <link href="http://localhost:4000/posts/cau-chuyen-nguoi-cha-va-hai-con-trai/" rel="alternate" type="text/html" title="Câu Chuyện Người Cha Và Hai Con Trai" />
+    <title>Câu Chuyện Người Cha Và Hai Con Trai - Người Em</title>
+    <link href="http://localhost:4000/posts/cau-chuyen-nguoi-cha-va-hai-con-trai-nguoi-em/" rel="alternate" type="text/html" title="Câu Chuyện Người Cha Và Hai Con Trai - Người Em" />
     <published>2024-11-10T00:00:00+07:00</published>
   
     <updated>2024-11-10T00:00:00+07:00</updated>
   
-    <id>http://localhost:4000/posts/cau-chuyen-nguoi-cha-va-hai-con-trai/</id>
-    <content src="http://localhost:4000/posts/cau-chuyen-nguoi-cha-va-hai-con-trai/" />
+    <id>http://localhost:4000/posts/cau-chuyen-nguoi-cha-va-hai-con-trai-nguoi-em/</id>
+    <content src="http://localhost:4000/posts/cau-chuyen-nguoi-cha-va-hai-con-trai-nguoi-em/" />
     <author>
       <name>Doan Thuan An</name>
     </author>
