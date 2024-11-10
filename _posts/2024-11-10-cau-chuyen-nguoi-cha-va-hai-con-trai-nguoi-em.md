@@ -1,5 +1,5 @@
 ---
-title: Câu Chuyện Người Cha Và Hai Con Trai
+title: Câu Chuyện Người Cha Và Hai Con Trai - Người Em
 date: 2024-11-10
 categories: [christian]
 tags: [bible]
