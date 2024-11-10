@@ -1,6 +1,6 @@
 ---
 title: Câu Chuyện Người Cha Và Hai Con Trai
-date: 2024-11-08
+date: 2024-11-10
 categories: [christian]
 tags: [bible]
 ---
@@ -27,6 +27,8 @@ Nhưng may cho hắn, tại một nơi phương xa, vẫn có một người mon
 
 <center style="padding-bottom:8px">Cha luôn yêu hắn!</center>
 
+## Câu chuyện của người em cho thấy điều gì?
+
 Là một người con, tôi vô cùng thấm thía về tiến trình bước đi của người em. Tôi cũng đã có một phương xa của riêng mình, nơi mà những hoài bão của tôi hướng đến và cũng là nơi mà danh tôi "chắc" được tự hào. Tôi đã từng lựa chọn bạn bè, sự hào nhoáng hơn là gia đình "cũ kỹ" của mình, tôi đã từng chống lại những văn hóa tốt đẹp mà nghĩ rằng mình là một "nhà cách mạng". Thật nhờ Chúa gìn giữ mà tôi mới toàn vẹn cho đến hôm nay.
 
 Tôi lại thiết nghĩ nếu tại nơi phương xa đó, người em vẫn giữ sự kết nối với cha thì chắc không dẫn đến sự đổ vỡ như vậy, vì dù sao cha anh vẫn đủ khôn ngoan để quản trị cả một gia tài cơ mà, nói chi chỉ là một nửa. Nếu như trong quá trình sống tại phương xa, anh nhìn lại và nhận ra mình đi sai đường sớm hơn thì sao? Hay vì cái tôi của anh cao quá mà đến lúc đối diện cơn đói đến chết mới bị hạ gục?
@@ -34,3 +36,5 @@ Tôi lại thiết nghĩ nếu tại nơi phương xa đó, người em vẫn gi
 Mặt khác, là một con cái Chúa, tôi được nhắc nhở về sự khiêm nhường của mình trước Chúa là Đấng Toàn Năng. Tôi không thể cãi lại ý Trời và ý Trời cho tôi luôn là tốt nhất, điều quan trọng là tôi phải hiểu Trời muốn tôi làm gì? 
 
 Có những điều cơ bản theo quy luật của đất này như "có làm mới có ăn", "ở hiền gặp lành", "gieo hạt nào gặt quả đấy", v.v. nhưng có những điều sâu xa hơn, ví như cưới vợ gả chồng, công ăn việc làm, v.v. nếu tôi lựa theo ý mình giống người em thì chỉ có từ chết tới bị thương, hoặc nếu điều đó tốt thì tôi đã bỏ lỡ sự tốt nhất.
+
+Trong câu chuyện này, người em đã không có sự dẫn dắt của cha mình ở nơi phương xa, nhưng điều vui mừng cho tôi và mọi người tin là chúng tôi có Chúa ở cùng, dẫn dắt, tất cả đều có qua sự cầu nguyện. Vậy tôi cầu xin sự dẫn dắt của Chúa trên tôi và các bạn luôn qua đức tin của Chúa Cứu Thế Giê-xu, Chúa chúng ta.
