@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
-3:"$Sreact.suspense"
-0:{"buildId":"9iun8d0hxuANQs3BZ7Xm7","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"culinary-page","children":[["$","h1",null,{"children":"Culinary Page"}],["$","p",null,{"children":"Welcome to the Culinary section! Explore delicious recipes and cooking tips here."}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
-4:null

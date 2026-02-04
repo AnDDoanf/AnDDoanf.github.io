@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/code/AnDDoanf/anddoanf/components/ui/TypingText.jsx"],"sourcesContent":["\"use client\";\r\n\r\nimport { useLayoutEffect, useState } from \"react\";\r\n\r\nexport default function TypingText({ text, speed = 40 }) {\r\n  const [displayed, setDisplayed] = useState(\"\");\r\n  const [index, setIndex] = useState(0);\r\n\r\n  useLayoutEffect(() => {\r\n    if (index >= text.length) return;\r\n\r\n    const timeout = setTimeout(() => {\r\n      setDisplayed(prev => prev + text.charAt(index));\r\n      setIndex(prev => prev + 1);\r\n    }, speed);\r\n\r\n    return () => clearTimeout(timeout);\r\n  }, [index, text, speed]);\r\n\r\n  return <p className=\"home-description\">{displayed}</p>;\r\n}\r\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAIe,SAAS,WAAW,EAAE,IAAI,EAAE,QAAQ,EAAE,EAAE;IACrD,MAAM,CAAC,WAAW,aAAa,GAAG,IAAA,iNAAQ,EAAC;IAC3C,MAAM,CAAC,OAAO,SAAS,GAAG,IAAA,iNAAQ,EAAC;IAEnC,IAAA,wNAAe,EAAC;QACd,IAAI,SAAS,KAAK,MAAM,EAAE;QAE1B,MAAM,UAAU,WAAW;YACzB,aAAa,CAAA,OAAQ,OAAO,KAAK,MAAM,CAAC;YACxC,SAAS,CAAA,OAAQ,OAAO;QAC1B,GAAG;QAEH,OAAO,IAAM,aAAa;IAC5B,GAAG;QAAC;QAAO;QAAM;KAAM;IAEvB,qBAAO,8OAAC;QAAE,WAAU;kBAAoB;;;;;;AAC1C"}}]
-}

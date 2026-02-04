@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 33, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
-    {"offset": {"line": 37, "column": 0}, "map": {"version":3,"sources":["file:///C:/code/AnDDoanf/anddoanf/app/%28with-nav%29/poetry/page.jsx"],"sourcesContent":["import fs from \"fs\";\r\nimport matter from \"gray-matter\";\r\nimport PoemPager from \"@/components/poem/PoemPager\";\r\n\r\nfunction getPoems() {\r\n  const dir = \"data/poems\";\r\n  return fs.readdirSync(dir)\r\n    .filter(f => f.endsWith(\".md\"))\r\n    .map(filename => {\r\n      const raw = fs.readFileSync(`${dir}/${filename}`, \"utf-8\");\r\n      const { data, content } = matter(raw);\r\n\r\n      return {\r\n        slug: filename.replace(\".md\", \"\"),\r\n        title: data.title,\r\n        content,\r\n      };\r\n    });\r\n}\r\n\r\nexport default function PoemsPage() {\r\n  const poems = getPoems();\r\n\r\n  return <PoemPager poems={poems} />;\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;AACA;AACA;;;;;AAEA,SAAS;IACP,MAAM,MAAM;IACZ,OAAO,wGAAE,CAAC,WAAW,CAAC,KACnB,MAAM,CAAC,CAAA,IAAK,EAAE,QAAQ,CAAC,QACvB,GAAG,CAAC,CAAA;QACH,MAAM,MAAM,wGAAE,CAAC,YAAY,CAAC,GAAG,IAAI,CAAC,EAAE,UAAU,EAAE;QAClD,MAAM,EAAE,IAAI,EAAE,OAAO,EAAE,GAAG,IAAA,kJAAM,EAAC;QAEjC,OAAO;YACL,MAAM,SAAS,OAAO,CAAC,OAAO;YAC9B,OAAO,KAAK,KAAK;YACjB;QACF;IACF;AACJ;AAEe,SAAS;IACtB,MAAM,QAAQ;IAEd,qBAAO,8OAAC,2IAAS;QAAC,OAAO;;;;;;AAC3B"}}]
-}
