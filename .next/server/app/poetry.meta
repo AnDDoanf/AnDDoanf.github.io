@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(with-nav)/layout,_N_T_/(with-nav)/poetry/layout,_N_T_/(with-nav)/poetry/page,_N_T_/poetry"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KHdpdGgtbmF2KQ/poetry/__PAGE__",
+    "/!KHdpdGgtbmF2KQ/poetry",
+    "/!KHdpdGgtbmF2KQ",
+    "/_index",
+    "/_head"
+  ]
+}

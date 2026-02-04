@@ -1,0 +1,3 @@
+:HL["/_next/static/chunks/81f8f8b24ab9ef56.css","style"]
+:HC["/",""]
+0:{"buildId":"9iun8d0hxuANQs3BZ7Xm7","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"(with-nav)","paramType":null,"paramKey":"(with-nav)","hasRuntimePrefetch":false,"slots":{"children":{"name":"blog","paramType":null,"paramKey":"blog","hasRuntimePrefetch":false,"slots":{"children":{"name":"slug","paramType":"d","paramKey":"2024-11-02-ki-luat-thuoc-linh-phan-mot","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

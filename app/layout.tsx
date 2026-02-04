@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import ScrollToTop from "@/components/ui/ScrollToTop";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "@/styles/globals.css";
+import "@/styles/portfolio.css";
+import "@/styles/poetry.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,15 +12,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="container">
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );

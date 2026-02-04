@@ -1,0 +1,16 @@
+{
+  "app": {
+    "[project]/app/(with-nav)/blog/[slug]/page": [],
+    "[project]/app/(with-nav)/blog/page": [],
+    "[project]/app/(with-nav)/culinary/page": [],
+    "[project]/app/(with-nav)/poetry/[slug]/page": [],
+    "[project]/app/(with-nav)/poetry/page": [],
+    "[project]/app/(with-nav)/portfolio/page": [],
+    "[project]/app/(with-nav)/showroom/page": [],
+    "[project]/app/_not-found/page": [],
+    "[project]/app/page": []
+  },
+  "appUsingSizeAdjust": false,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

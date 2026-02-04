@@ -1,65 +1,81 @@
+import ThemeToggle from "@/components/ui/ThemeToggle";
+import Link from "next/link";
+import TypingText from "@/components/ui/TypingText";
+import MyImgSVG from "@/data/assets/an-doan.svg";
 import Image from "next/image";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <section className="home-hero">
+      <div className="home-left ">
+        <div className="signature home-title">
+          <Image src={MyImgSVG} alt="An Doan" width={300} height={150} />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="home-description">
+          <TypingText
+            text="I  am God's workmanship, created in Christ to do good works that He has prepared for me to do (Ephesians 2:10)."
+          />
         </div>
-      </main>
-    </div>
+
+        <div className="home-role">
+          <div className="avatar" />
+          <div>
+            <strong>Full Stack Developer</strong>
+            <p>Doan Thuan An</p>
+          </div>
+          <div className="theme-toggle-homepage">   
+            <ThemeToggle/>
+          </div>
+        </div>
+      </div>
+
+      <div className="home-right">
+        
+        <ul className="home-links">
+          <li>
+            <i className="bi bi-person"/> 
+            <Link href="/portfolio">
+              <div className="home-nav">Learn about me</div>
+            </Link>  
+          </li>
+          <li><i className="bi bi-pencil-square" /> 
+            <Link href="/blog">
+              <div className="home-nav">Read a recent blog</div>
+            </Link>  
+          </li>
+          <li><i className="bi bi-feather" />
+            <Link href="/poetry">
+              <div className="home-nav">Explore my poetry passion</div>
+            </Link> 
+          </li>
+          <li><i className="bi bi-egg-fried" />
+            <Link href="/culinary">
+              <div className="home-nav">Explore my culinary hobby</div>
+            </Link> 
+          </li>
+          <li><i className="bi bi-shop" />
+            <Link href="/showroom">
+              <div className="home-nav">Showroom</div>
+            </Link> 
+          </li>
+          <div className="home-social">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/AnDDoanf" aria-label="GitHub">
+              <i className="bi bi-github"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/thuan-an-doan/" aria-label="LinkedIn">
+              <i className="bi bi-linkedin"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/thuanan.doan/" aria-label="Facebook">
+              <i className="bi bi-facebook"></i>
+            </a>
+            <a href="mailto:anddoanf.work@gmail.com" aria-label="Email" >
+              <i className="bi bi-envelope"></i>
+            </a>
+          </div>
+          
+        </ul>
+      </div>
+    </section>
   );
 }

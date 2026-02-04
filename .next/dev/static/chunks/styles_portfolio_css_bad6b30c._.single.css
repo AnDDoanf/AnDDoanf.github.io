@@ -1,0 +1,189 @@
+/* [project]/styles/portfolio.css [app-client] (css) */
+.portfolio-page {
+  max-width: 900px;
+  color: var(--text);
+  margin: 80px auto;
+  padding: 0 24px;
+  line-height: 1.6;
+}
+
+.portfolio-header h1 {
+  font-size: 2.2rem;
+}
+
+.portfolio-header h2 {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+}
+
+.portfolio-contact p {
+  font-size: .95rem;
+}
+
+.portfolio-section {
+  margin-top: 48px;
+}
+
+.portfolio-section h3 {
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.portfolio-exp {
+  grid-template-columns: 180px 1fr;
+  gap: 40px;
+  margin-bottom: 48px;
+  display: grid;
+}
+
+.portfolio-exp-left {
+  font-size: .9rem;
+}
+
+.portfolio-date {
+  font-style: italic;
+}
+
+.portfolio-exp-right h4 {
+  font-size: 1.2rem;
+}
+
+.portfolio-company {
+  margin-bottom: 12px;
+}
+
+.portfolio-exp-right ul {
+  padding-left: 18px;
+}
+
+.portfolio-exp-right li {
+  margin-bottom: 8px;
+}
+
+.portfolio-skills {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio-skills li {
+  color: var(--text);
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: .95rem;
+  display: flex;
+}
+
+.portfolio-skills i {
+  color: var(--skill-icon);
+  min-width: 18px;
+  font-size: 1.1rem;
+  transition: color .2s, transform .2s;
+}
+
+.portfolio-skills li:hover i {
+  color: var(--skill-icon-hover);
+  transform: translateY(-1px);
+}
+
+.portfolio-section {
+  opacity: 0;
+  animation: .5s forwards sectionEnter;
+  transform: translateY(20px);
+}
+
+.portfolio-section:first-of-type {
+  animation-delay: 80ms;
+}
+
+.portfolio-section:nth-of-type(2) {
+  animation-delay: .16s;
+}
+
+.portfolio-section:nth-of-type(3) {
+  animation-delay: .24s;
+}
+
+.portfolio-section:nth-of-type(4) {
+  animation-delay: .32s;
+}
+
+.portfolio-section:nth-of-type(5) {
+  animation-delay: .4s;
+}
+
+.portfolio-section:nth-of-type(6) {
+  animation-delay: .48s;
+}
+
+.portfolio-section:nth-of-type(7) {
+  animation-delay: .56s;
+}
+
+@keyframes sectionEnter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portfolio-exp {
+  opacity: 0;
+  animation: .45s forwards expEnter;
+  transform: translateX(-16px);
+}
+
+.portfolio-exp:first-of-type {
+  animation-delay: .12s;
+}
+
+.portfolio-exp:nth-of-type(2) {
+  animation-delay: .2s;
+}
+
+.portfolio-exp:nth-of-type(3) {
+  animation-delay: .28s;
+}
+
+@keyframes expEnter {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.portfolio-skills li {
+  transition: transform .25s, color .25s;
+}
+
+.portfolio-skills li:hover {
+  color: var(--link);
+  transform: translateX(6px);
+}
+
+.portfolio-skills i {
+  transition: transform .25s;
+}
+
+.portfolio-skills li:hover i {
+  transform: scale(1.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-page, .portfolio-section, .portfolio-exp {
+    opacity: 1;
+    animation: none;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-exp {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/*# sourceMappingURL=styles_portfolio_css_bad6b30c._.single.css.map*/

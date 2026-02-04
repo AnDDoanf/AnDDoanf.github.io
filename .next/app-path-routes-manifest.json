@@ -1,0 +1,13 @@
+{
+  "/(with-nav)/blog/[slug]/page": "/blog/[slug]",
+  "/(with-nav)/blog/page": "/blog",
+  "/(with-nav)/culinary/page": "/culinary",
+  "/(with-nav)/poetry/[slug]/page": "/poetry/[slug]",
+  "/(with-nav)/poetry/page": "/poetry",
+  "/(with-nav)/portfolio/page": "/portfolio",
+  "/(with-nav)/showroom/page": "/showroom",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/"
+}
