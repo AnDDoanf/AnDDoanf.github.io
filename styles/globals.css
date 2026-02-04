@@ -767,6 +767,10 @@ h2 .nav-title {
     padding-left: .25rem;
   }
 
+  span {
+    font-size: 1.25rem;
+  }
+
   .home-hero {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -873,6 +877,9 @@ h2 .nav-title {
 /* < 480px */
 @media screen and (max-width: 480px) {
 
+  span {
+    font-size: 1rem;
+  }
   /* Typography */
   body {
     font-size: 0.95rem;
