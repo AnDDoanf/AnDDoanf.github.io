@@ -1,0 +1,4 @@
+:HL["/_next/static/chunks/81f8f8b24ab9ef56.css","style"]
+:HC["/",""]
+:HL["https://miro.medium.com/v2/resize:fit:1100/format:webp/0*WOVVKXL3DzwtR7VL.png","image"]
+0:{"buildId":"oh4JRLOrQzMvcFjzhp-kz","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"(with-nav)","paramType":null,"paramKey":"(with-nav)","hasRuntimePrefetch":false,"slots":{"children":{"name":"blog","paramType":null,"paramKey":"blog","hasRuntimePrefetch":false,"slots":{"children":{"name":"slug","paramType":"d","paramKey":"2024-07-10-lam-the-nao-de-lam-chu-thoi-quen","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
