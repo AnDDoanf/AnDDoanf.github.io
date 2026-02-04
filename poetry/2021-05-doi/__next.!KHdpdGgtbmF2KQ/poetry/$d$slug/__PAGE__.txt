@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
 2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 3:"$Sreact.suspense"
-0:{"buildId":"9iun8d0hxuANQs3BZ7Xm7","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"post-content poetry","children":[["$","h1",null,{"children":"Đợi"}],[["$","p","p-0",{"children":["Biết rằng hoa sẽ nở, người sẽ tới,",["$","br","br-0",{}],"\n","Nhưng lòng ta sao chẳng thể buông lơi",["$","br","br-1",{}],"\n","Biết thế nào? Muôn sự bởi ý trời,",["$","br","br-2",{}],"\n","Chẳng bới sức sao hồn cứ chới với."]}]]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"F5CjRA0w7l_EAJMXz8uhK","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"post-content poetry","children":[["$","h1",null,{"children":"Đợi"}],[["$","p","p-0",{"children":["Biết rằng hoa sẽ nở, người sẽ tới,",["$","br","br-0",{}],"\n","Nhưng lòng ta sao chẳng thể buông lơi",["$","br","br-1",{}],"\n","Biết thế nào? Muôn sự bởi ý trời,",["$","br","br-2",{}],"\n","Chẳng bới sức sao hồn cứ chới với."]}]]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
 4:null
