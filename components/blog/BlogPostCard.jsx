@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export default function BlogPostCard({ post }) {
-  console.log(post.exerpt);
   return (
     <Link
       href={`/blog/${post.slug ?? ""}`}
