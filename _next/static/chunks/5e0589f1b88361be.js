@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,25104,o=>{"use strict";var t=o.i(43476);function i({href:o=""}){return(0,t.jsx)("button",{className:"go-back",onClick:()=>{""===o?window.history.back():window.location.href=o},"aria-label":"Go back",type:"button",children:"←"})}o.i(22016),o.s(["default",()=>i])}]);
