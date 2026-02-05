@@ -36,7 +36,7 @@ export default function HomePage() {
           <li>
             <i className="bi bi-person"/> 
             <Link href="/portfolio">
-              <div className="home-nav">Learn about me</div>
+              <div className="home-nav">My Portfolio</div>
             </Link>  
           </li>
           <li><i className="bi bi-pencil-square" /> 
@@ -68,6 +68,9 @@ export default function HomePage() {
             </a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/thuanan.doan/" aria-label="Facebook">
               <i className="bi bi-facebook"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://discord.com/users/416180260686790656" aria-label="Facebook">
+              <i className="bi bi-discord"></i>
             </a>
             <a href="mailto:anddoanf.work@gmail.com" aria-label="Email" >
               <i className="bi bi-envelope"></i>
