@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
+import GoBack from "@/components/ui/GoBack";
 
 export default function PoemPager({ poems }) {
   const [index, setIndex] = useState(0);
@@ -46,6 +47,7 @@ export default function PoemPager({ poems }) {
           ))}
         </ul>
       </aside>
+      <GoBack href="" />
     </div>
   );
 }

@@ -44,14 +44,14 @@ export default function LeftNavbar() {
             </li>
 
             <li>
-                <Link href="/">
+                <Link href="/updating">
                 <i className="bi bi-egg-fried"></i>
                 <span>Culinary</span>
                 </Link>
             </li>
 
             <li>
-                <Link href="/">
+                <Link href="/updating">
                 <i className="bi bi-shop"></i>
                 <span>Showrooms</span>
                 </Link>

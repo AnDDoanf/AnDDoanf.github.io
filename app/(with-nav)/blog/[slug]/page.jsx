@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import getPostMetadata from "@/app/utils/getPostMetadata";
 import ScrollToTop from "@/components/ui/ScrollToTop";
+import GoBack from "@/components/ui/GoBack";
 import { notFound } from "next/navigation";
 
 function extractHeadings(markdown) {
@@ -83,6 +84,7 @@ export default async function BlogPostPage({ params }) {
         </ReactMarkdown>
 
         <ScrollToTop />
+        <GoBack href="" />
       </article>
 
       {/* Sidebar */}
