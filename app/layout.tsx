@@ -4,6 +4,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "@/styles/globals.css";
 import "@/styles/portfolio.css";
 import "@/styles/poetry.css";
+import "@/styles/updating.css";
 // import "@/styles/culinary.css";
 
 export const metadata: Metadata = {

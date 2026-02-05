@@ -50,12 +50,12 @@ export default function HomePage() {
             </Link> 
           </li>
           <li><i className="bi bi-egg-fried" />
-            <Link href="/culinary">
+            <Link href="/updating">
               <div className="home-nav">Explore my culinary hobby</div>
             </Link> 
           </li>
           <li><i className="bi bi-shop" />
-            <Link href="/showroom">
+            <Link href="/updating">
               <div className="home-nav">Showroom</div>
             </Link> 
           </li>
