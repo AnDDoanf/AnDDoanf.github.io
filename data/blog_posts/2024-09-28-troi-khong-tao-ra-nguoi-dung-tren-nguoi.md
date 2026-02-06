@@ -1,20 +1,20 @@
 ---
 title: Trời không tạo ra người đứng trên người
 date: 2024-09-28
-categories: [book, philosophy]
-tags: [study]
+tags: [learning]
 ---
-
 Phần Một trong chuỗi bài học rút ra từ sách "Khuyến học" của tác giả Fukuzawa Yukichi.
 
 ## Mọi người sinh ra đều bình đẳng, nếu có khác biệt là do học vấn
+
 > "Trời không tạo ra người đứng trên người và cũng không tạo ra người đứng dưới người" mà "Trời nhìn vào kết quả hoạt động, lao động của con người để ban thưởng".
 
 Khoảng cách giữa người thông minh và kẻ đần độn; giữa người giàu và người nghèo; giữa tầng lớp quý tộc và tầng lớp hạ đẳng tóm gọn trong câu: "người chịu khó học, hiểu biết nhiều sẽ trở thành người quan trọng, sống sung túc; người vô học sẽ trở thành con người thấp hèn, nghèo khổ."
 
-Người làm việc khó được coi là người quan trọng. Người làm việc dễ thường có địa vị thấp, bị coi thường. Công việc cần sự khổ nhọc về tinh thần được xem là việc khó, còn lao động chân tay là việc dễ. 
+Người làm việc khó được coi là người quan trọng. Người làm việc dễ thường có địa vị thấp, bị coi thường. Công việc cần sự khổ nhọc về tinh thần được xem là việc khó, còn lao động chân tay là việc dễ.
 
 ## Chúng ta cần học những môn thiết thực cho cuộc sống
+
 Học các tác phẩm văn học là để động viên an ủi lòng người, có ích trong cuộc sống, nhưng nó không thực sự rất quan trọng. Những môn học thực tiễn trong cuộc sống là:
 
 - Chữ và cách soạn thảo thư từ, ghi chép kế toán

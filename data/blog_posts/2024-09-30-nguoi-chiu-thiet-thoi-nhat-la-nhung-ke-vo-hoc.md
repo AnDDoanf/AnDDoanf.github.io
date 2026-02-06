@@ -1,14 +1,13 @@
 ---
 title: Người chịu thiệt thòi nhất là những kẻ vô học
 date: 2024-09-30
-categories: [book, philosophy]
-tags: [study]
+tags: [learning]
 ---
 Phần Hai trong chuỗi bài học rút ra từ sách "Khuyến học" của tác giả Fukuzawa Yukichi.
 
 ## Không thể có miếng ăn ngon nếu chỉ là cái "tủ kiến thức"
 
-Học vấn có tính:  
+Học vấn có tính:
 
 - Trừu tượng (vô hình): qua các môn Đạo đức, Thần học, Triết học,...
 - Cụ thể (hữu hình): qua thiên văn học, địa lý học, hóa học,...

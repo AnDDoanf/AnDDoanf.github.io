@@ -1,8 +1,7 @@
 ---
 title: Nhà Là Nơi Con Tim Hướng Về
 date: 2025-08-31
-categories: [movies]
-tags: []
+tags: [life, reflection]
 ---
 > "If home is where the heart is, then as the traveler, my home is nomadic.
 > Diasporic static, shock me with these memories.

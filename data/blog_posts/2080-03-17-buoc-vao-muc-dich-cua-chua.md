@@ -1,7 +1,6 @@
 ---
 title: Bước vào mục đích của Chúa
 date: 2080-03-17
-categories: [christian, bible]
 tags: []
 ---
 Cho bạn, là những người đang tìm kiếm câu trả lời cho câu hỏi "Tôi tồn tại trên đất để làm gì?"

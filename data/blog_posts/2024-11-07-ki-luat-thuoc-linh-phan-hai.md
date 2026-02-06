@@ -1,26 +1,25 @@
 ---
 title: Kỷ Luật Thuộc Linh (phần 2)
 date: 2024-11-07
-categories: [christian]
-tags: [habit]
+tags: [christianity, discipleship]
 ---
-
 ## 9. Thói quen thánh cầu nguyện (Ma-thi-ơ 6:5-15)
->"Song khi ngươi cầu-nguyện, hãy vào phòng riêng, đóng cửa lại, rồi cầu-nguyện Cha ngươi, ở nơi kín-nhiệm đó; và Cha ngươi, là Đấng thấy trong chỗ kín-nhiệm, sẽ thưởng cho ngươi."
+
+> "Song khi ngươi cầu-nguyện, hãy vào phòng riêng, đóng cửa lại, rồi cầu-nguyện Cha ngươi, ở nơi kín-nhiệm đó; và Cha ngươi, là Đấng thấy trong chỗ kín-nhiệm, sẽ thưởng cho ngươi."
 >
->~ Ma-thi-ơ 6:6 ~
+> ~ Ma-thi-ơ 6:6 ~
 
 Như Kinh Thánh cho chúng ta biết, Chúa Giê-xu không tổ chức bất kỳ hội thảo cầu nguyện nào, không lập bất kỳ phòng cầu nguyện nào, không tham dự bất kỳ buổi đại hội cầu nguyện nào. Tuy nhiên, không có chút nghi ngờ nào, rằng Ngài là một người cầu nguyện. Ngài hướng dẫn cách "thực hiện" cầu nguyện đơn giản bằng cách bị bắt gặp trong lúc cầu nguyện. Ngài cầu nguyện trước mặt các môn đồ của mình, khi Ngài đối mặt với đám đông đòi hỏi, hoặc khi một mình vào buổi sáng yên tĩnh.
 
 Ngài cầu nguyện theo cách mà những người khác cũng muốn biết cách thực hiện, muốn có sự thân mật mà Ngài có với Đấng mà Ngài gọi là "Abba", Đức Chúa Cha. Về bản chất, đây chính là lời cầu nguyên - sự thể hiện mối quan hệ giữa Chúa và chính mình.
 
-Giống như cuộc trò chuyện trong bất kỳ mối quan hệ lành mạnh nào cũng có sự trao đổi qua lại, thì lời cầu nguyện cũng có nhịp điệu hai chiều nhẹ nhàng: 
+Giống như cuộc trò chuyện trong bất kỳ mối quan hệ lành mạnh nào cũng có sự trao đổi qua lại, thì lời cầu nguyện cũng có nhịp điệu hai chiều nhẹ nhàng:
 
-- Chúng ta nói - Chúa lắng nghe,  
-- Chúa dừng lại - Chúng ta chờ đợi,  
-- Chúng ta tập trung - Chúa là sáng tỏ,  
-- Chúa tiết lộ - Chúng ta cầu xin,  
-- Chúng ta cảm tạ - Chúa ban phước,  
+- Chúng ta nói - Chúa lắng nghe,
+- Chúa dừng lại - Chúng ta chờ đợi,
+- Chúng ta tập trung - Chúa là sáng tỏ,
+- Chúa tiết lộ - Chúng ta cầu xin,
+- Chúng ta cảm tạ - Chúa ban phước,
 - Chúa dẫn dắt - Chúng ta theo sau...
 
 Trước khi chúng ta biết điều gì, chúng ta cầu nguyện.
@@ -31,13 +30,13 @@ Nếu có thể, một nơi để cầu nguyện tránh xa những điều gây 
 
 Tôi nhớ đã từng động viên một nhóm người tại một hội thảo cầu nguyện hãy tắt tiếng ồn từ nhà bếp bên cạnh. Nhưng khi mùi thơm của những chiếc bánh nướng xốp mới nướng tràn ngập không gian cầu nguyện của chúng tôi, chúng tôi bắt đầu đầu hàng và vui vẻ cảm ơn người đầu bếp!
 
-Lời cầu nguyện đơn giản như hơi thở (Hơi thở của một tâm linh sống). Cầu nguyện vừa là lời cầu xin vừa là lời ngợi khen, vừa là lời tạ ơn vừa là lời than thở, vừa là lời xưng tội cũng vừa là sự thờ phượng. Cầu nguyện thay đổi mọi thứ, làm biến đổi mọi thứ, và quan trọng hơn cả, cầu nguyện thay đổi người cầu nguyện. 
+Lời cầu nguyện đơn giản như hơi thở (Hơi thở của một tâm linh sống). Cầu nguyện vừa là lời cầu xin vừa là lời ngợi khen, vừa là lời tạ ơn vừa là lời than thở, vừa là lời xưng tội cũng vừa là sự thờ phượng. Cầu nguyện thay đổi mọi thứ, làm biến đổi mọi thứ, và quan trọng hơn cả, cầu nguyện thay đổi người cầu nguyện.
 
 ## 10. Thói quen thánh của sự suy ngẫm (Thi thiên 1)
 
->"Người ấy sẽ như cây trồng gần dòng nước, Sanh bông-trái theo thì-tiết, Lá nó cũng chẳng tàn-héo; Mọi sự người làm đều sẽ thạnh-vượng."
+> "Người ấy sẽ như cây trồng gần dòng nước, Sanh bông-trái theo thì-tiết, Lá nó cũng chẳng tàn-héo; Mọi sự người làm đều sẽ thạnh-vượng."
 >
->~ Thi thiên 1:3 ~
+> ~ Thi thiên 1:3 ~
 
 Cũng giống như chế độ luyện tập giúp vận động viên chuẩn bị cho cuộc đua, kỷ luật trong sự suy ngẫm giúp các tín đồ phát triển cơ bắp thuộc linh. Trong suy ngẫm, chúng ta tìm kiếm sự hiểu biết sâu sắc hơn, rõ ràng hơn, đầy đủ hơn về Chúa, về chính mình và về thế giới xung quanh chúng ta - nói cách khác, là sự khôn ngoan. Nhưng không giống như Sa-lô-môn, người đã cầu xin sự khôn ngoan và nhận được ngay, chúng ta cần dành thời gian, năng lượng và sự ưu tiên để tìm kiếm và tìm thấy ân điển này.
 
@@ -52,9 +51,10 @@ Mong muốn bắt đầu là bước đầu tiên. Tiếp theo là quyết đị
 Một trong những tu sĩ Cơ đốc ngày xưa đãtự xem mình là một bác sĩ tâm linh cung cấp cho người khác "một loại thuốc đắp là từ các văn bản Kinh Thánh" mà họ có thể áp dụng cho tâm trí của họ thông qua suy ngẫm. Chúa cung cấp cho chúng ta loại thuốc bổ tương tự ngày nay.
 
 # 11. Thói quen thánh trong sự cầu thay (Ma-thi-ơ 7:7-12)
->"Hãy xin sẽ được, hãy tìm sẽ gặp, hãy gõ cửa thì cửa sẽ mở cho"
+
+> "Hãy xin sẽ được, hãy tìm sẽ gặp, hãy gõ cửa thì cửa sẽ mở cho"
 >
->~ Ma-thi-ơ 7:7 ~
+> ~ Ma-thi-ơ 7:7 ~
 
 Dietrich Bonhoeffer (một mục sư người Đức) mô tả lời cầu thay là "Bồn thanh tẩy mà mỗi cá nhân phải bước vào mỗi ngày". Kỷ luật cầu thay có tác dụng cho người khác, nhưng trước tiên nó có tác dụng cho người cầu nguyện. Có điều gì đó mở rộng và phát triển bên trong chúng ta khi chúng ta trình bày nhu cầu của người khác cho Chúa.
 
@@ -69,4 +69,3 @@ Phao-lô nói với những người bạn của mình tại Phi-líp rằng ôn
 Thật những lời cầu nguyện ngắn gọn "Xin Chúa ban phước cho họ" của tôi thật nhạt nhẽo so với lời cầu nguyện đầy ân sủng của Phao-lô dành cho những người ông yêu thương.
 
 **Hãy suy ngẫm về:** Sự cầu thay là lời cầu nguyện cho một khuôn mặt. Chúa mang khuôn mặt của ai đến trước bạn ngày hôm nay?
-

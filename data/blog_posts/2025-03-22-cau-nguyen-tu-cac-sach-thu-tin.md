@@ -1,8 +1,7 @@
 ---
 title: Cầu nguyện từ các sách thư tín của Phao-lô
 date: 2025-03-22
-categories: [christian, bible]
-tags: []
+tags: [christianity, discipleship]
 ---
 # Rô-ma
 

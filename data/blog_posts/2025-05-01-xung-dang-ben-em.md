@@ -1,8 +1,7 @@
 ---
 title: Xứng đáng bên em
 date: 2025-05-01
-categories: [christian]
-tags: [how, skill]
+tags: [life, reflection]
 ---
 "Nếu số phận đã định tình yêu chúng ta không sẽ có kết quả, vậy tất cả những điều đang làm bây giờ có còn xứng đáng không?" - "Đáng"
 

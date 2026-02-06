@@ -74,7 +74,8 @@
 .poem-toc {
   position: sticky;
   top: 2rem;
-  height: fit-content;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
 }
 
 .poem-toc h3 {

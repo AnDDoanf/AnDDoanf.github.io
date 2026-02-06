@@ -40,7 +40,7 @@ export default function getPostMetadata(basePath) {
             const rawDate = data.date;
             const postDate = rawDate ? new Date(rawDate) : null;
             return {
-                title: data.title,
+                title: data.title || "Untitled Post",
                 date: postDate,
                 categories: data.categories || [],
                 tags: data.tags || [],

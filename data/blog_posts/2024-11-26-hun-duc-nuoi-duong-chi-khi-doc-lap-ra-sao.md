@@ -1,8 +1,7 @@
 ---
 title: Hun đúc, nuôi dưỡng chí khí độc lập ra sao?
 date: 2024-11-26
-categories: [book, philosophy]
-tags: [study]
+tags: [learning]
 ---
 Phần Ba trong chuỗi bài học rút ra từ sách "Khuyến học" của tác giả Fukuzawa Yukichi.
 

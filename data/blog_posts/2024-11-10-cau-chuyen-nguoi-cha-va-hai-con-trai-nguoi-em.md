@@ -1,18 +1,18 @@
 ---
 title: Câu Chuyện Người Cha Và Hai Con Trai - Người Em
 date: 2024-11-10
-categories: [christian]
-tags: [bible]
+tags: [christianity, devotional]
 ---
-
 Bài học rút ra từ dụ ngôn "Đứa con hoang đàng" mà Chúa Giê-xu đã dạy cho các môn đệ, được ghi chép lại trong [*Lu-ca 15:11-32*](https://www.bible.com/bible/449/LUK.15.NVB).
 
 ## Tổng quan về câu chuyện
+
 Câu chuyện nói về một người đàn ông kia có hai người con và một phần tài sản đáng kể. Một hôm người con út đòi một nửa gia tài của mình và đi đến nơi xa. Sau một khoảng thời gian biệt tăm khỏi gia đình, cậu tiêu hết sạch tiền của và lâm vào cảnh túng thiếu, cùng với nạn đói trầm trọng, cậu nhận ra hành động của mình là sai và quay trở lại cầu xin sự tha thứ của cha mình. Cha cậu rất vui khi thấy cậu vẫn còn sống. Về phần người con cả, anh sống cùng cha và chứng kiến toàn bộ sự kiện đó nhưng anh không hề vui vì sự trở lại của người em.
 
 Đây là một câu chuyện được nhắc rất nhiều giữa vòng cộng đồng Cơ Đốc nhân về thực trạng của loài người và tình yêu thương bao la của Đức Chúa Trời dành cho nhân loại. Được cảm động viết bài viết này, tôi mong muốn đi sâu vào góc nhìn của cả ba nhân vật với mong muốn bản thân và các bạn đọc nhận được một bài học nào đó.
 
 ## Sự ra đi của người em
+
 Kinh Thánh mô tả sự ra đi của người em chỉ trong hai câu ngắn ngủi, vì vậy mà hoàn cảnh của chuyến đi này dễ bị bỏ qua. Chúng ta không biết rõ nó đã được thai nghén trong bao lâu, quá trình phân chia gia tài của người cha như thế nào, hay chính những người trong cuộc cảm thấy ra sao, nhưng khi đi sâu vào các chi tiết, chúng ta có thể hiểu phần nào thực tế tình cảnh của gia đình này.
 
 Hắn đã nuôi dưỡng ý tưởng về nơi xa trong một khoảng thời gian dài. Vì đối với văn hóa thời đó, việc chia gia tài chỉ diễn ra khi người sở hữu tài sản mất đi, mà ở đây, hắn đã lựa chọn làm trái với văn hóa, cắt đôi và rời bỏ nhà cha mình. Điều này không thể đến từ một quyết định bồng bột, vì có sự tham gia của cả một gia đình; điều này không chỉ diễn ra ngày một ngày hai, vì "phương xa" đó là một địa điểm rõ ràng, được cụ thể hóa trong tâm trí của hắn qua nhiều ngày.
@@ -33,7 +33,7 @@ Là một người con, tôi vô cùng thấm thía về tiến trình bước �
 
 Tôi lại thiết nghĩ nếu tại nơi phương xa đó, người em vẫn giữ sự kết nối với cha thì chắc không dẫn đến sự đổ vỡ như vậy, vì dù sao cha anh vẫn đủ khôn ngoan để quản trị cả một gia tài cơ mà, nói chi chỉ là một nửa. Nếu như trong quá trình sống tại phương xa, anh nhìn lại và nhận ra mình đi sai đường sớm hơn thì sao? Hay vì cái tôi của anh cao quá mà đến lúc đối diện cơn đói đến chết mới bị hạ gục?
 
-Mặt khác, là một con cái Chúa, tôi được nhắc nhở về sự khiêm nhường của mình trước Chúa là Đấng Toàn Năng. Tôi không thể cãi lại ý Trời và ý Trời cho tôi luôn là tốt nhất, điều quan trọng là tôi phải hiểu Trời muốn tôi làm gì? 
+Mặt khác, là một con cái Chúa, tôi được nhắc nhở về sự khiêm nhường của mình trước Chúa là Đấng Toàn Năng. Tôi không thể cãi lại ý Trời và ý Trời cho tôi luôn là tốt nhất, điều quan trọng là tôi phải hiểu Trời muốn tôi làm gì?
 
 Có những điều cơ bản theo quy luật của đất này như "có làm mới có ăn", "ở hiền gặp lành", "gieo hạt nào gặt quả đấy", v.v. nhưng có những điều sâu xa hơn, ví như cưới vợ gả chồng, công ăn việc làm, v.v. nếu tôi lựa theo ý mình giống người em thì chỉ có từ chết tới bị thương, hoặc nếu điều đó tốt thì tôi đã bỏ lỡ sự tốt nhất.
 
