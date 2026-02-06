@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"buildId":"2cLxbGRaTuD3NjUMNdVa4","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"post-content poetry","children":[["$","h1",null,{"children":"Đáng thương?"}],[["$","p","p-0",{"children":["Đừng nghĩ về mình, đừng đáng thương!",["$","br","br-0",{}],"\n","Hãy nhìn lên Chúa, chắc được thưởng.",["$","br","br-1",{}],"\n","Lẽ thường thì hướng phương vô đạo.",["$","br","br-2",{}],"\n","Nhưng đường Chân Thật đáng dựa nương."]}]]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+4:null
