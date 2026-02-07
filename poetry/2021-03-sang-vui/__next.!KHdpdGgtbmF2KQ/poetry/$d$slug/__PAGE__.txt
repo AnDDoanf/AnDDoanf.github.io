@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
 2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 3:"$Sreact.suspense"
-0:{"buildId":"yJmONuR2QMxa_CWPImUCl","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"post-content poetry","children":[["$","h1",null,{"children":"Sáng vui"}],[["$","p","p-0",{"children":["Rời con mơ với tấm lòng hân hoan",["$","br","br-0",{}],"\n","Hòa vào trong cái nhịp sống tuần hoàn",["$","br","br-1",{}],"\n","Giữa trời Cha tạo từ trước muôn thuở",["$","br","br-2",{}],"\n","Tâm vui chẳng thể nói, chỉ nên thơ."]}]]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"HAtoeTvYUzDPiaV7LXuwi","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"post-content poetry","children":[["$","h1",null,{"children":"Sáng vui"}],[["$","p","p-0",{"children":["Rời con mơ với tấm lòng hân hoan",["$","br","br-0",{}],"\n","Hòa vào trong cái nhịp sống tuần hoàn",["$","br","br-1",{}],"\n","Giữa trời Cha tạo từ trước muôn thuở",["$","br","br-2",{}],"\n","Tâm vui chẳng thể nói, chỉ nên thơ."]}]]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
 4:null

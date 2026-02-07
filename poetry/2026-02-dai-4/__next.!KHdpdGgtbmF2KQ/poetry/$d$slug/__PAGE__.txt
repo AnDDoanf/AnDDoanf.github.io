@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
 2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 3:"$Sreact.suspense"
-0:{"buildId":"yJmONuR2QMxa_CWPImUCl","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"post-content poetry","children":[["$","h1",null,{"children":"Dại#4"}],[["$","p","p-0",{"children":["Anh hay to tiếng giữa hội đường,",["$","br","br-0",{}],"\n","Nhưng tâm trí anh dường im lặng.",["$","br","br-1",{}],"\n","Lòng anh sạn sỏi cùng cáu cặn,",["$","br","br-2",{}],"\n","Miệng lại thích dạy đạo ban hương."]}]]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"HAtoeTvYUzDPiaV7LXuwi","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"post-content poetry","children":[["$","h1",null,{"children":"Dại#4"}],[["$","p","p-0",{"children":["Anh hay to tiếng giữa hội đường,",["$","br","br-0",{}],"\n","Nhưng tâm trí anh dường im lặng.",["$","br","br-1",{}],"\n","Lòng anh sạn sỏi cùng cáu cặn,",["$","br","br-2",{}],"\n","Miệng lại thích dạy đạo ban hương."]}]]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
 4:null
