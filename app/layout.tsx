@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "AnDDoanf",
   description: "A personal website of AnDDoanf",
   icons: {
-    icon: 'app/img.ico',
+    icon: 'app/favicon.ico',
   },
 };
 
