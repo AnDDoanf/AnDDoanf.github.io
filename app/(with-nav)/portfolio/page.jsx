@@ -5,6 +5,8 @@ import SkillsCloud from '@/components/portfolio/SkillCloud'
 import AboutVideo from '@/components/portfolio/AboutVideo'
 import PortfolioTOC from '@/components/portfolio/PortfolioTOC'
 import GoBack from '@/components/ui/GoBack'
+import DownloadCV from "@/components/ui/DownloadCV"
+
 export default function PortfolioPage() {
   return (
     <div className="portfolio-layout">
@@ -17,6 +19,7 @@ export default function PortfolioPage() {
       </main>
       <GoBack href="/" />
       <PortfolioTOC />
+      <DownloadCV />
     </div>
   )
 }

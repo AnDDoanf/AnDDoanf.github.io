@@ -500,6 +500,49 @@ h2 .nav-title {
   color: var(--base3);
 }
 
+.download-cv {
+  opacity: 80%;
+  position: fixed;
+  bottom: 2rem;
+  right: 6rem;
+  padding: 0 1.5rem;
+  width: fit-content;
+  height: 44px;
+  border-radius: 15px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-alt);
+  color: var(--link);
+
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.download-cv.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.download-cv:hover {
+  background-color: var(--cyan);
+  color: var(--base3);
+}
+
+
 .post-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 260px;

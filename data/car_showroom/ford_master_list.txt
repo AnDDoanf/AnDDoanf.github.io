@@ -1,0 +1,153 @@
+
+FORD MASTER CANONICAL MODEL LIST
+
+==============================
+PRODUCTION ROAD CARS
+==============================
+
+PASSENGER CARS (GLOBAL)
+Model A
+Model T
+Model AA
+Model B
+Ford V8 (Model 18)
+Model 48
+Model 68
+Model 78
+Custom
+Customline
+Mainline
+Crestline
+Fairlane
+Fairlane 500
+Galaxie
+Galaxie 500
+LTD
+Crown Victoria
+Five Hundred
+Taurus
+Fusion
+Mondeo
+Focus
+Fiesta
+Escort
+Ka
+Aspire
+Tempo
+Contour
+Probe
+Thunderbird
+Maverick
+Pinto
+Granada
+Torino
+Falcon
+Fairmont
+Cortina
+Anglia
+Zephyr
+Consul
+Capri
+Sierra
+Scorpio
+Taunus
+
+SPORTS / PERFORMANCE
+Mustang
+Mustang Mach-E
+GT40 (Mk I, Mk II, Mk III, Mk IV)
+Ford GT (2005)
+Ford GT (2017)
+Shelby GT350
+Shelby GT500
+Shelby GT500KR
+Shelby Cobra (AC Cobra)
+RS200
+
+SUV / CROSSOVER
+Bronco
+Bronco II
+Bronco Sport
+Explorer
+Edge
+Escape
+Kuga
+EcoSport
+Territory
+Endeavour / Everest
+Flex
+
+PICKUPS / TRUCKS
+F-Series (F-1 to F-150, F-250, F-350, F-450, F-550, F-650, F-750)
+Ranger
+Courier
+Maverick Pickup
+Super Duty
+Transit Pickup (global variants)
+
+VANS / COMMERCIAL
+Transit
+Transit Custom
+Transit Connect
+E-Series (Econoline)
+Tourneo
+Windstar
+Freestar
+Aerostar
+
+==============================
+LIMITED SERIES / LOW-VOLUME HYPERCARS
+==============================
+GT40 Mk I Road Car
+GT40 Mk III Road Car
+Ford GT Heritage Edition (2005, 2017 series)
+
+==============================
+ONE-OFF FACTORY CARS
+==============================
+Mustang Mach 1 Twister Special (factory regional)
+Mustang Bullitt (1968, 2001, 2008, 2019 special factory trims)
+Ford GT Liquid Carbon Series
+
+==============================
+CONCEPT CARS / PROTOTYPES
+==============================
+Mustang I Concept (1962)
+Mustang Mach II (1966)
+Mustang Mach III (1993)
+Mustang Mach-E 4x4 Concept
+Ford Nucleon
+Ford Seattle-ite XXI
+Ford FX Atmos
+Ford Indigo
+Ford 24.7 Concept
+Ford 427 Concept
+Ford Shelby GR-1
+Ford Start Concept
+Ford SYNus
+Ford Verve Concept
+Ford Evos Concept
+Ford Atlas Concept
+Ford Bronco Raptor Concept
+Ford F-150 Lightning Concept (early EV prototypes)
+
+==============================
+RACING CARS
+==============================
+GT40 Mk I Race
+GT40 Mk II Race
+GT40 Mk IV Race
+Ford C100 Group C
+Ford Sierra RS500 Touring Car
+Ford Falcon V8 Supercar (Australia)
+Ford Mustang GT3
+Ford Mustang GT4
+Ford Mustang NASCAR Cup Car
+Ford F-150 Lightning Off-Road Race Truck
+Ford RS200 Group B
+
+==============================
+FUTURE CONFIRMED PRODUCTION
+==============================
+Next-Gen Ford GT (rumored hybrid program)
+Next-Gen Mustang Performance Variants
