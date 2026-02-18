@@ -8,7 +8,7 @@ Dựa theo Goodheart-Willcox Workplace Expectations, các nhà tuyển dụng hi
 
 Vậy, để chuẩn bị cho hành trình nghề nghiệp của bản thân cũng như bày tỏ quan điểm Cơ Đốc về công việc nói chung, dưới đây là phần tìm hiểu của tôi dựa trên sự dạy dỗ của Kinh Thánh về các đức tính một Cơ Đốc nhân cần bày tỏ trong công việc của mình.
 
-## **1) Thái độ thuộc linh & đức tin**
+## 1. Thái độ thuộc linh & đức tin
 
 Đối với mỗi Cơ Đốc nhân, công việc không chỉ là hoạt động kinh tế hay xã hội, mà còn là một hành động thờ phượng và sự đáp ứng đức tin đối với Đức Chúa Trời. Ngay từ ban đầu, Kinh Thánh cho thấy con người được tạo dựng để làm việc (Sáng Thế Ký 1:28; 2:15), và công việc trở thành một đặc ân mà Đức Chúa Trời giao phó.
 
@@ -62,7 +62,7 @@ Vì vậy, Cơ Đốc nhân không nên chỉ làm việc vì lợi ích cá nh�
 >
 > ~ Hê-bơ-rơ 11:1 ~
 
-## **2) Chính trực đạo đức & luân lý**
+## 2. Chính trực đạo đức & luân lý
 
 Nếu thái độ thuộc linh xác định động cơ bên trong của công việc, thì chính trực đạo đức và luân lý thể hiện đức tin đó qua hành vi cụ thể trong đời sống hằng ngày. Kinh Thánh nhấn mạnh rằng đức tin chân thật luôn được bày tỏ bằng việc làm (Gia-cơ 2:17), và công việc là một trong những môi trường quan trọng nhất để đức tin được kiểm chứng.
 
@@ -116,7 +116,7 @@ Cơ Đốc nhân được kêu gọi sống khác với chuẩn mực của th�
 >
 > ~ Châm-ngôn 22:3 ~
 
-## **3) Siêng năng, kỹ năng & sự xuất sắc**
+## 3. Siêng năng, kỹ năng & sự xuất sắc
 
 Bên cạnh các yếu tố giá trị quan và phẩm chất Cơ Đốc, Kinh Thánh cũng nhấn mạnh đến chất lượng và thái độ lao động của một người. Cơ Đốc nhân không chỉ được kêu gọi làm điều đúng, mà còn phải làm điều đó một cách tốt nhất có thể. Công việc siêng năng và xuất sắc phản ánh sự tôn kính đối với Đức Chúa Trời, Đấng đã ban cho con người khả năng sáng tạo, kỹ năng, và trí tuệ.
 
@@ -158,7 +158,7 @@ Theo Kinh Thánh, làm việc siêng năng và khéo léo không chỉ mang lạ
 >
 > ~ Thi-thiên 90:17 ~
 
-## **4) Yêu thương, tử tế & quan hệ xã hội**
+## 4. Yêu thương, tử tế & quan hệ xã hội
 
 Công việc không diễn ra trong sự cô lập, mà luôn gắn liền với mối quan hệ giữa người với người. Trong bối cảnh này, tình yêu thương và lòng nhân từ trở thành những nguyên tắc nền tảng định hình cách Cơ Đốc nhân tương tác với đồng nghiệp, cấp trên, cấp dưới, khách hàng và cộng đồng. Theo lời Chúa Giê-xu, điều răn lớn nhất sau việc yêu kính Đức Chúa Trời là yêu người lân cận như chính mình (Ma-thi-ơ 22:39), và công việc là một trong những môi trường thực tế nhất để điều răn này được thực hành.
 
@@ -230,7 +230,7 @@ Yêu thương trong công việc không chỉ là cảm xúc, mà là hành đ�
 >
 > ~ Rô-ma 8:28 ~
 
-## **5) Khôn ngoan thực tiễn & quản trị**
+## 5. Khôn ngoan thực tiễn & quản trị
 
 Phần cuối cùng nhưng cũng rất quan trọng đối với mỗi Cơ Đốc nhân trong công việc chính là trách nhiệm quản trị khôn ngoan đối với các nguồn lực mà Đức Chúa Trời giao phó. Khái niệm stewardship (quản trị, quản gia) phản ánh niềm tin rằng con người không phải là chủ tuyệt đối của thời gian, tài năng, tài sản hay môi trường, mà chỉ là người được ủy thác quản lý những ân tứ của Đức Chúa Trời.
 
