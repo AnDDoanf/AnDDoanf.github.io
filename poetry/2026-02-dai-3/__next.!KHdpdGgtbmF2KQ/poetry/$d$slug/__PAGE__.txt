@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
 2:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 3:"$Sreact.suspense"
-0:{"buildId":"5j4YjT_-1fiWUydC40ts3","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"post-content poetry","children":[["$","h1",null,{"children":"Dại#3"}],[["$","p","p-0",{"children":["Dễ xin lỗi Chúa, hơn người ta.",["$","br","br-0",{}],"\n","Biết mình có tội, nhưng vẫn sĩ,",["$","br","br-1",{}],"\n","Ngại nhận nên lại tặc lưỡi nghĩ:",["$","br","br-2",{}],"\n","\"Anh em trong Chúa, nhớ đâu mà\""]}]]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"5NxH6qBLNhmhHUxUXSIOg","rsc":["$","$1","c",{"children":[["$","article",null,{"className":"post-content poetry","children":[["$","h1",null,{"children":"Dại#3"}],[["$","p","p-0",{"children":["Dễ xin lỗi Chúa, hơn người ta.",["$","br","br-0",{}],"\n","Biết mình có tội, nhưng vẫn sĩ,",["$","br","br-1",{}],"\n","Ngại nhận nên lại tặc lưỡi nghĩ:",["$","br","br-2",{}],"\n","\"Anh em trong Chúa, nhớ đâu mà\""]}]]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
 4:null
