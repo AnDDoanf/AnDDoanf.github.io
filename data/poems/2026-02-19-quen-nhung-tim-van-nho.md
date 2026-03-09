@@ -16,4 +16,4 @@ Tâm vẫn trong dư chấn niềm đau.
 Thức dậy, ngắm từng trang giấy nhớ  
 Lấy lại kỉ niệm mỗi ngày qua  
 Bước ra chốn thân quen xa lạ  
-Ấp ôm âm hưởng mối tình thơ.  
+Ấp ôm âm hưởng mối tình thơ.
