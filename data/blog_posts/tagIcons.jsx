@@ -19,6 +19,7 @@ export const tagIcons = {
   learning: "bi bi-lightbulb", //New skills, knowledge, personal growth.
   journey: "bi bi-map", //Life path, transitions, milestones.
   growth: "bi bi-graph-up", //Self-improvement, habits, mindset.
+  forfun: "bi bi-emoji-smile-upside-down", //For fun
 
   // Fallback
   default: "bi bi-tag",
