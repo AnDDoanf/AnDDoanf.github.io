@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import ThemeToggle from "@/components/ui/ThemeToggle";
 export default function LeftNavbar() {
   return (
     <aside className="left-nav">
@@ -12,9 +11,6 @@ export default function LeftNavbar() {
         </Link>
         <nav>
             <ul className="nav-list">
-            <li className=""><i><ThemeToggle/></i>
-                <span>  Theme</span>
-            </li>
             <li>
                 <Link href="/">
                 <i className="bi bi-house"></i>

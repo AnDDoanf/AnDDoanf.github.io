@@ -6,8 +6,6 @@ tags: [frontend, system]
 
 > Authorization is one of the most under-designed parts of frontend architecture. Understanding RBAC and ABAC — and when to use each — is the difference between a secure, scalable app and one that leaks permissions under edge cases.
 
----
-
 ## What is Access Control?
 
 Access control answers one question: **can this user do this thing?**

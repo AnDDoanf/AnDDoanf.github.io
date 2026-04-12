@@ -4,8 +4,6 @@ date: 2026-03-23
 tags: [frontend, system]
 ---
 
-# The RADIO Framework: A Structured Approach to Frontend System Design Interviews
-
 > Frontend system design interviews are notoriously open-ended. RADIO is a battle-tested framework that gives you a repeatable structure to tackle any frontend design problem with clarity and confidence.
 
 ---

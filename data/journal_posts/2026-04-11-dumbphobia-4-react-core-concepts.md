@@ -6,8 +6,6 @@ tags: [react, frontend]
 
 > React is full of fancy terms — reconciliation, composition, error boundaries. Here's what they all actually mean, from first principles.
 
----
-
 ## Components
 
 Components are the building blocks of every React app. They represent all visible parts of an application — buttons, inputs, entire pages. Like Lego bricks, you can reuse them as many times as you want.

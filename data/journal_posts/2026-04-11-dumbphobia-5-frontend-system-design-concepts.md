@@ -6,8 +6,6 @@ tags: [frontend, system]
 
 > Whether you're prepping for a system design interview or just want to build faster, more scalable apps — these are the concepts that matter.
 
----
-
 ## 1. Web Rendering Strategies
 
 Before anything else, decide how your application renders content. There are five main strategies:

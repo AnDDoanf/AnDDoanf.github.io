@@ -4,11 +4,7 @@ date: 2026-03-23
 tags: [frontend, system]
 ---
 
-# RBAC and ABAC: Access Control Methods Every Frontend Engineer Should Know
-
 > Authorization is one of the most under-designed parts of frontend architecture. Understanding RBAC and ABAC — and when to use each — is the difference between a secure, scalable app and one that leaks permissions under edge cases.
-
----
 
 ## What is Access Control?
 

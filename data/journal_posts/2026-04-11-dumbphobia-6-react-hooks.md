@@ -6,8 +6,6 @@ tags: [react, frontend]
 
 > A comprehensive reference for every major React hook — from the ones you use every day to the ones that unlock serious performance and architectural power.
 
----
-
 ## Table of Contents
 
 | # | Hook | Category |

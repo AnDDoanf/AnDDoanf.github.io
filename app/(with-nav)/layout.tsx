@@ -1,4 +1,5 @@
 import LeftNavbar from "@/components/ui/LeftNavbar";
+import ThemeToggle from "@/components/ui/ThemeToggle";
 
 export default function WithNavLayout({
   children,
@@ -8,6 +9,9 @@ export default function WithNavLayout({
   return (
     <div className="app-layout">
       <LeftNavbar />
+      <div className="theme-toggle-main">
+        <ThemeToggle />
+      </div>
       <main className="main-content">
         {children}
       </main>
