@@ -37,6 +37,13 @@ export default function LeftNavbar() {
             </li>
 
             <li>
+                <Link href="/journal">
+                <i className="bi bi-journal-text"></i>
+                <span>Journal</span>
+                </Link>
+            </li>
+
+            <li>
                 <Link href="/poetry">
                 <i className="bi bi-feather"></i>
                 <span>Poems</span>

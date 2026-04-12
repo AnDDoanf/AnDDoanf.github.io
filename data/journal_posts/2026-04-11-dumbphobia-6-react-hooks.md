@@ -1,4 +1,8 @@
-# 30 React Hooks: Explanations, Use Cases, Pros & Cons
+---
+title: "30 React Hooks"
+date: 2026-04-11
+tags: [react, frontend]
+---
 
 > A comprehensive reference for every major React hook — from the ones you use every day to the ones that unlock serious performance and architectural power.
 

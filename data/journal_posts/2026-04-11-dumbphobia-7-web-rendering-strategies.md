@@ -1,4 +1,8 @@
-# Web Rendering Strategies: SSG, ISR, SSR, CSR, and PPR Explained
+---
+title: "Web Rendering Strategies"
+date: 2026-04-11
+tags: [frontend, rendering]
+---
 
 > Choosing the wrong rendering strategy is one of the most expensive architectural mistakes you can make — it affects performance, SEO, infrastructure cost, and developer experience. Here's everything you need to know to choose the right one.
 

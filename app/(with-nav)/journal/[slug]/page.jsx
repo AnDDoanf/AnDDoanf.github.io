@@ -25,7 +25,7 @@ function extractHeadings(markdown) {
 
 
 function getPostContent(slug) {
-  const file = `data/blog_posts/${slug}.md`;
+  const file = `data/journal_posts/${slug}.md`;
 
   if (!slug || !fs.existsSync(file)) {
     notFound();
@@ -35,7 +35,7 @@ function getPostContent(slug) {
 }
 
 export async function generateStaticParams() {
-  const posts = getPostMetadata("data/blog_posts");
+  const posts = getPostMetadata("data/journal_posts");
   return posts.map((post) => ({ slug: post.slug }));
 }
 
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function BlogPostPage({ params }) {
+export default async function JournalPostPage({ params }) {
   const { slug } = await params;
   const post = getPostContent(slug);
 

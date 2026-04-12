@@ -1,4 +1,8 @@
-# 15 Mental Models Every Senior Frontend Engineer Has Mastered
+---
+title: "15 Mental Models Every Senior Frontend Engineer Has Mastered"
+date: 2026-04-10
+tags: [frontend, engineering]
+---
 
 > Based on analysis of 300+ senior frontend engineers across different backgrounds and frameworks — one pattern emerged: they've all internalized these 15 core mental models. Most developers can't explain five. That's why they get stuck at mid-level for years.
 

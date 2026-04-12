@@ -1,4 +1,8 @@
-# 14 Essential Frontend System Design Concepts
+---
+title: "14 Essential Frontend System Design Concepts"
+date: 2026-04-11
+tags: [frontend, system]
+---
 
 > Whether you're prepping for a system design interview or just want to build faster, more scalable apps — these are the concepts that matter.
 

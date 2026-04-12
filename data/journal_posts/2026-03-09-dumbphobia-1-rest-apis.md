@@ -1,5 +1,5 @@
 ---
-title: Notes on REST APIs
+title: REST APIs
 date: 2026-03-09
 tags: [programming, fullstack]
 ---
