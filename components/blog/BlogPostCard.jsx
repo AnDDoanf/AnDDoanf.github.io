@@ -1,9 +1,14 @@
 import Link from "next/link";
 import { tagIcons } from "@/data/blog_posts/tagIcons";
 
-export default function BlogPostCard({ post }) {
+export default function BlogPostCard({ post, hrefBase = "/blog" }) {
+  const normalizedBase = hrefBase ? hrefBase.replace(/\/+$/, "") : "";
+  const slug = post.slug ?? "";
+  const fallbackHref = normalizedBase ? `${normalizedBase}/${slug}` : `/${slug}`;
+  const href = post.href ?? fallbackHref;
+
   return (
-    <Link href={`/blog/${post.slug ?? ""}`} className="card">
+    <Link href={href} className="card">
       {/* title + tags row */}
       <div className="card-header">
         <h2 className="card-title">{post.title}</h2>

@@ -1,0 +1,1062 @@
+# 30 React Hooks: Explanations, Use Cases, Pros & Cons
+
+> A comprehensive reference for every major React hook — from the ones you use every day to the ones that unlock serious performance and architectural power.
+
+---
+
+## Table of Contents
+
+| # | Hook | Category |
+|---|---|---|
+| 01 | `useState` | State |
+| 02 | `useReducer` | State |
+| 03 | `useEffect` | Effect |
+| 04 | `useLayoutEffect` | Effect |
+| 05 | `useInsertionEffect` | Effect |
+| 06 | `useRef` | Ref |
+| 07 | `useImperativeHandle` | Ref |
+| 08 | `useContext` | Context |
+| 09 | `useMemo` | Performance |
+| 10 | `useCallback` | Performance |
+| 11 | `useTransition` | Performance |
+| 12 | `useDeferredValue` | Performance |
+| 13 | `useId` | Utility |
+| 14 | `useSyncExternalStore` | Utility |
+| 15 | `useDebugValue` | Utility |
+| 16 | `useFormStatus` | Form |
+| 17 | `useActionState` | Form |
+| 18 | `useOptimistic` | UX |
+| 19 | `useFetcher` (React Router) | Data |
+| 20 | `useNavigate` (React Router) | Routing |
+| 21 | `useParams` (React Router) | Routing |
+| 22 | `useSearchParams` (React Router) | Routing |
+| 23 | `useLocation` (React Router) | Routing |
+| 24 | `useQuery` (React Query) | Data Fetching |
+| 25 | `useMutation` (React Query) | Data Fetching |
+| 26 | `useInfiniteQuery` (React Query) | Data Fetching |
+| 27 | `useForm` (React Hook Form) | Form |
+| 28 | `useFieldArray` (React Hook Form) | Form |
+| 29 | `useStore` (Zustand) | State Management |
+| 30 | `useSelector` (Redux Toolkit) | State Management |
+
+---
+
+## State Hooks
+
+### 1. `useState`
+
+The most fundamental React hook. Adds local state to a functional component.
+
+```jsx
+const [count, setCount] = useState(0);
+
+// Update state
+setCount(count + 1);
+
+// Functional update (safer when new state depends on old state)
+setCount(prev => prev + 1);
+```
+
+**Use cases:**
+- Toggle UI elements (open/closed, show/hide)
+- Track form input values
+- Store simple local component data (counters, selections)
+
+**Pros:**
+- Simple and intuitive API
+- Triggers a re-render automatically on update
+- Supports lazy initialization via a function argument
+
+**Cons:**
+- Not suitable for complex or deeply nested state
+- Each `setState` call causes a full component re-render
+- Multiple related state values can get out of sync
+
+---
+
+### 2. `useReducer`
+
+An alternative to `useState` for managing complex state logic. Works like a Redux-style reducer: a pure function receives the current state and an action, and returns the next state.
+
+```jsx
+const initialState = { count: 0, step: 1 };
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'increment': return { ...state, count: state.count + state.step };
+    case 'decrement': return { ...state, count: state.count - state.step };
+    case 'setStep':   return { ...state, step: action.payload };
+    default:          return state;
+  }
+}
+
+const [state, dispatch] = useReducer(reducer, initialState);
+
+dispatch({ type: 'increment' });
+```
+
+**Use cases:**
+- Complex state with multiple sub-values
+- State transitions that depend on previous state
+- Shared state logic that needs to be testable in isolation
+
+**Pros:**
+- Centralizes state update logic in one pure function
+- Easier to test reducer functions independently
+- Scales well as state complexity grows
+- Mirrors Redux patterns — familiar to larger teams
+
+**Cons:**
+- Overkill for simple state
+- More boilerplate than `useState`
+- Requires understanding of pure functions and immutability
+
+---
+
+## Effect Hooks
+
+### 3. `useEffect`
+
+Runs a side effect after the component renders. Used to connect React to external systems — APIs, browser APIs, subscriptions, timers.
+
+```jsx
+useEffect(() => {
+  const controller = new AbortController();
+
+  fetch('/api/user', { signal: controller.signal })
+    .then(res => res.json())
+    .then(setUser);
+
+  // Cleanup runs before the next effect or on unmount
+  return () => controller.abort();
+}, [userId]); // re-runs when userId changes
+```
+
+**Dependency array behavior:**
+- `[]` — run once on mount
+- `[dep]` — run when `dep` changes
+- omitted — run after every render
+
+**Use cases:**
+- Data fetching on mount
+- Setting up and tearing down event listeners or subscriptions
+- Syncing with browser APIs (localStorage, document title)
+- Starting/stopping timers
+
+**Pros:**
+- Declarative way to handle side effects
+- Cleanup function prevents memory leaks
+- Dependency array gives precise control over when it runs
+
+**Cons:**
+- Easy to create infinite loops with wrong dependencies
+- Runs *after* paint — not suitable for DOM measurements
+- Fetching inside `useEffect` has no built-in caching or deduplication (use React Query instead)
+
+---
+
+### 4. `useLayoutEffect`
+
+Identical API to `useEffect`, but fires **synchronously after DOM mutations and before the browser paints**. Use it when you need to read or modify the DOM before the user sees it.
+
+```jsx
+useLayoutEffect(() => {
+  const { height } = ref.current.getBoundingClientRect();
+  setHeight(height);
+}, []);
+```
+
+**Use cases:**
+- Measuring DOM elements before paint (avoiding layout flicker)
+- Positioning tooltips or popovers
+- Synchronizing animations with DOM state
+
+**Pros:**
+- Prevents visual flicker for DOM-dependent calculations
+- Runs before the user sees anything, so mutations are invisible
+
+**Cons:**
+- Blocks painting — can hurt performance if overused
+- Not available in Server-Side Rendering (use `useEffect` as fallback)
+- Should be a last resort; `useEffect` covers most cases
+
+---
+
+### 5. `useInsertionEffect`
+
+Fires **before any DOM mutations**, specifically designed for CSS-in-JS libraries to inject styles before the browser performs layout. Not intended for general use.
+
+```jsx
+// Typical usage inside a CSS-in-JS library
+useInsertionEffect(() => {
+  const style = document.createElement('style');
+  style.textContent = `.my-class { color: red }`;
+  document.head.appendChild(style);
+}, []);
+```
+
+**Use cases:**
+- Building CSS-in-JS libraries (styled-components, Emotion internals)
+- Injecting dynamic `<style>` tags before layout
+
+**Pros:**
+- Guarantees styles are injected before layout calculations
+- Eliminates flash of unstyled content in CSS-in-JS patterns
+
+**Cons:**
+- Not for application code — library authors only
+- No access to refs inside the callback
+- Extremely niche use case
+
+---
+
+## Ref Hooks
+
+### 6. `useRef`
+
+Returns a mutable ref object whose `.current` property persists across renders without triggering re-renders. Used for two main purposes: referencing DOM elements and storing mutable values that shouldn't cause re-renders.
+
+```jsx
+// 1. DOM reference
+const inputRef = useRef(null);
+<input ref={inputRef} />
+inputRef.current.focus();
+
+// 2. Mutable value that persists across renders
+const renderCount = useRef(0);
+renderCount.current += 1; // does NOT cause re-render
+```
+
+**Use cases:**
+- Focusing inputs programmatically
+- Storing previous state values
+- Holding timer IDs, animation frames, or third-party library instances
+- Measuring DOM element dimensions
+
+**Pros:**
+- Mutations don't trigger re-renders — perfect for non-UI values
+- Survives re-renders (unlike local variables which reset)
+- Direct DOM access when React's declarative model isn't enough
+
+**Cons:**
+- Bypasses React's rendering model — changes aren't tracked
+- Easy to misuse as a way to avoid proper state management
+- Reading `.current` during render is unreliable
+
+---
+
+### 7. `useImperativeHandle`
+
+Customizes what value is exposed when a parent component uses `ref` on a child. Used together with `forwardRef`.
+
+```jsx
+const FancyInput = forwardRef((props, ref) => {
+  const inputRef = useRef();
+
+  useImperativeHandle(ref, () => ({
+    focus: () => inputRef.current.focus(),
+    clear: () => { inputRef.current.value = ''; }
+    // Only expose these two methods — hide everything else
+  }));
+
+  return <input ref={inputRef} />;
+});
+
+// Parent
+const ref = useRef();
+<FancyInput ref={ref} />
+ref.current.focus(); // works
+ref.current.value;   // undefined — intentionally hidden
+```
+
+**Use cases:**
+- Building reusable input or modal components with imperative APIs
+- Exposing a limited, controlled interface from a child component
+- Design system components that need programmatic control
+
+**Pros:**
+- Encapsulates internal DOM details — parent only sees what you expose
+- Enables imperative APIs while keeping component internals private
+
+**Cons:**
+- Breaks React's declarative model — use sparingly
+- Adds complexity; props and callbacks usually suffice
+- Tightly couples parent and child
+
+---
+
+## Context Hook
+
+### 8. `useContext`
+
+Reads the value from a React context, letting any component in the tree access shared data without prop drilling.
+
+```jsx
+const ThemeContext = createContext('light');
+
+// Provider — set the value
+<ThemeContext.Provider value="dark">
+  <App />
+</ThemeContext.Provider>
+
+// Consumer — read the value anywhere in the tree
+function Button() {
+  const theme = useContext(ThemeContext);
+  return <button className={theme}>Click</button>;
+}
+```
+
+**Use cases:**
+- Global UI settings: theme, language, color scheme
+- Authentication — current user available app-wide
+- Feature flags
+- Avoiding prop drilling through deeply nested component trees
+
+**Pros:**
+- Eliminates prop drilling entirely
+- Clean, readable API compared to Consumer render props
+- Works with any data type
+
+**Cons:**
+- Every consumer re-renders when the context value changes — can hurt performance at scale
+- Not a replacement for proper state management in complex apps
+- Overusing context leads to invisible data dependencies
+
+---
+
+## Performance Hooks
+
+### 9. `useMemo`
+
+Caches the result of an expensive calculation between renders. Only recomputes when dependencies change.
+
+```jsx
+const sortedList = useMemo(() => {
+  return items.sort((a, b) => a.price - b.price);
+}, [items]);
+```
+
+**Use cases:**
+- Expensive data transformations (sorting, filtering large arrays)
+- Derived data that depends on multiple state values
+- Preventing child re-renders when passing objects as props
+
+**Pros:**
+- Skips expensive recalculations on unrelated re-renders
+- Referentially stable output — useful for prop equality checks
+
+**Cons:**
+- Has its own cost — don't use for cheap calculations
+- Easy to add unnecessary memoization everywhere
+- Memory overhead from storing cached values
+
+---
+
+### 10. `useCallback`
+
+Caches a function reference between renders. Returns the same function instance unless dependencies change.
+
+```jsx
+const handleSubmit = useCallback((data) => {
+  api.post('/submit', data);
+}, [api]);
+
+// Pass to child without causing unnecessary re-renders
+<Form onSubmit={handleSubmit} />
+```
+
+**Use cases:**
+- Passing callbacks to memoized child components (`React.memo`)
+- Stable function references in `useEffect` dependency arrays
+- Event handlers in performance-sensitive lists
+
+**Pros:**
+- Prevents child re-renders caused by new function references
+- Keeps `useEffect` dependencies stable
+
+**Cons:**
+- Pointless without `React.memo` on the child
+- Adds complexity and indirection
+- Overuse leads to harder-to-read code with little benefit
+
+---
+
+### 11. `useTransition`
+
+Marks a state update as **non-urgent**, allowing React to keep the UI responsive while the update processes in the background.
+
+```jsx
+const [isPending, startTransition] = useTransition();
+
+function handleSearch(query) {
+  startTransition(() => {
+    setFilteredResults(expensiveFilter(allItems, query));
+  });
+}
+
+{isPending && <Spinner />}
+```
+
+**Use cases:**
+- Filtering or searching large datasets while keeping the input responsive
+- Tab switching with heavy content loads
+- Any expensive state update that shouldn't block user input
+
+**Pros:**
+- Keeps UI interactive during heavy updates
+- Built-in `isPending` flag for loading states
+- No external library needed
+
+**Cons:**
+- The update inside `startTransition` must be a state update
+- Not a substitute for actual performance optimization
+- Adds complexity — only use when you've confirmed a performance issue
+
+---
+
+### 12. `useDeferredValue`
+
+Defers updating a value until the browser is idle, similar to `useTransition` but for values rather than state setters.
+
+```jsx
+const deferredQuery = useDeferredValue(searchQuery);
+
+// deferredQuery lags behind searchQuery during fast typing
+const results = useMemo(() => filter(items, deferredQuery), [deferredQuery]);
+```
+
+**Use cases:**
+- Deferring expensive renders driven by fast-changing input
+- Separating "urgent" UI (the input) from "non-urgent" UI (the results list)
+
+**Pros:**
+- Simpler than `useTransition` when you don't control the state setter
+- Works well with external values passed via props
+
+**Cons:**
+- Causes intentional stale rendering — can feel inconsistent
+- Slightly harder to reason about than `useTransition`
+- Not a performance fix on its own — still needs memoization
+
+---
+
+## Utility Hooks
+
+### 13. `useId`
+
+Generates a stable, unique ID that is consistent between server and client renders. Solves the SSR hydration mismatch problem with IDs.
+
+```jsx
+function Field({ label }) {
+  const id = useId();
+  return (
+    <>
+      <label htmlFor={id}>{label}</label>
+      <input id={id} />
+    </>
+  );
+}
+```
+
+**Use cases:**
+- Linking `<label>` and `<input>` with matching `id` / `htmlFor`
+- Accessibility attributes (`aria-describedby`, `aria-labelledby`)
+- Any component that needs a unique DOM ID
+
+**Pros:**
+- SSR-safe — no hydration mismatch
+- No external ID library needed
+- Stable across re-renders
+
+**Cons:**
+- IDs are not human-readable (e.g., `:r1:`)
+- Not suitable as database keys or URL slugs
+
+---
+
+### 14. `useSyncExternalStore`
+
+Subscribes a component to an external data store (non-React state) in a way that is safe for concurrent rendering.
+
+```jsx
+const width = useSyncExternalStore(
+  (callback) => {
+    window.addEventListener('resize', callback);
+    return () => window.removeEventListener('resize', callback);
+  },
+  () => window.innerWidth,       // client snapshot
+  () => 1024                     // server snapshot
+);
+```
+
+**Use cases:**
+- Subscribing to browser APIs (window size, online status, media queries)
+- Integrating non-React state stores with React's rendering model
+- Building custom state management libraries
+
+**Pros:**
+- Concurrent rendering safe — no tearing
+- Clean subscribe/unsubscribe pattern
+- Official API for external store integration
+
+**Cons:**
+- Verbose API for simple use cases
+- Requires both client and server snapshot functions for SSR
+- Overkill for most application code — primarily for library authors
+
+---
+
+### 15. `useDebugValue`
+
+Adds a custom label to a custom hook in React DevTools. Only used inside custom hooks.
+
+```jsx
+function useOnlineStatus() {
+  const isOnline = useSyncExternalStore(subscribe, getSnapshot);
+  useDebugValue(isOnline ? 'Online' : 'Offline');
+  return isOnline;
+}
+```
+
+**Use cases:**
+- Labeling custom hooks in React DevTools for easier debugging
+- Displaying computed values or statuses in the DevTools hook inspector
+
+**Pros:**
+- Zero runtime cost in production
+- Makes custom hooks far easier to inspect during development
+
+**Cons:**
+- Only visible in React DevTools — no user-facing effect
+- Purely a developer experience tool
+
+---
+
+## Form Hooks (React 19+)
+
+### 16. `useFormStatus`
+
+Reads the status of a parent `<form>` element — specifically whether a form submission is pending. Must be used in a component rendered *inside* the form.
+
+```jsx
+function SubmitButton() {
+  const { pending } = useFormStatus();
+  return <button disabled={pending}>{pending ? 'Submitting...' : 'Submit'}</button>;
+}
+
+<form action={submitAction}>
+  <input name="email" />
+  <SubmitButton />
+</form>
+```
+
+**Use cases:**
+- Disabling submit buttons during submission
+- Showing loading states tied to form submission
+
+**Pros:**
+- No need to manually track submission state
+- Works with React Server Actions out of the box
+
+**Cons:**
+- Must be inside the form — can't be used in the same component as the `<form>`
+- React 19+ only
+
+---
+
+### 17. `useActionState`
+
+Manages state returned from a form action, including pending state and the action result.
+
+```jsx
+async function submitForm(prevState, formData) {
+  const result = await api.post('/register', Object.fromEntries(formData));
+  return result.error ? { error: result.error } : { success: true };
+}
+
+const [state, formAction, isPending] = useActionState(submitForm, null);
+
+<form action={formAction}>
+  <input name="email" />
+  {state?.error && <p>{state.error}</p>}
+  <button disabled={isPending}>Register</button>
+</form>
+```
+
+**Use cases:**
+- Form submissions with server-side validation feedback
+- Multi-step forms driven by server actions
+
+**Pros:**
+- Integrates seamlessly with React Server Actions
+- Handles pending state, result, and errors in one hook
+
+**Cons:**
+- React 19+ only
+- Requires understanding of Server Actions pattern
+
+---
+
+## UX Hook
+
+### 18. `useOptimistic`
+
+Immediately shows an optimistic UI update while an async operation (like a server request) completes in the background. Rolls back automatically if the operation fails.
+
+```jsx
+const [optimisticLikes, addOptimisticLike] = useOptimistic(
+  likes,
+  (currentLikes, newLike) => [...currentLikes, newLike]
+);
+
+async function handleLike() {
+  addOptimisticLike({ id: Date.now(), userId: currentUser.id });
+  await api.post('/likes'); // if this fails, optimisticLikes reverts
+}
+```
+
+**Use cases:**
+- Like / upvote / reaction buttons
+- Adding items to a list before server confirmation
+- Any mutation where instant feedback improves UX
+
+**Pros:**
+- Makes apps feel significantly faster
+- Automatic rollback on failure
+- Clean API with no manual state juggling
+
+**Cons:**
+- React 19+ only
+- Requires careful handling of rollback edge cases
+- Can confuse users if failures are common
+
+---
+
+## React Router Hooks
+
+### 19. `useFetcher`
+
+Triggers data loading or mutations without causing a navigation. Useful for background data operations.
+
+```jsx
+const fetcher = useFetcher();
+
+<fetcher.Form method="post" action="/api/like">
+  <button>{fetcher.state === 'submitting' ? 'Liking...' : 'Like'}</button>
+</fetcher.Form>
+```
+
+**Use cases:**
+- Inline form submissions (like buttons, quick edits) without page navigation
+- Loading data in the background
+- Progressive enhancement patterns
+
+**Pros:**
+- Decouples data mutation from navigation
+- Built-in loading and submission state
+
+**Cons:**
+- React Router v6.4+ only (data APIs)
+- Adds complexity compared to a simple `fetch` call
+
+---
+
+### 20. `useNavigate`
+
+Returns a function that programmatically navigates to a different route.
+
+```jsx
+const navigate = useNavigate();
+
+function handleLogin() {
+  await login();
+  navigate('/dashboard', { replace: true });
+}
+```
+
+**Use cases:**
+- Redirecting after login/logout
+- Navigating after form submission
+- Going back programmatically (`navigate(-1)`)
+
+**Pros:**
+- Clean imperative navigation API
+- Supports `replace` to avoid polluting browser history
+
+**Cons:**
+- Doesn't work outside of a Router context
+- Overuse of imperative navigation bypasses React Router's data loading
+
+---
+
+### 21. `useParams`
+
+Reads dynamic URL parameters from the current route.
+
+```jsx
+// Route: /products/:productId
+const { productId } = useParams();
+// For URL /products/42 → productId = "42"
+```
+
+**Use cases:**
+- Fetching data based on URL segments
+- Rendering the right content for a given entity (user profile, product page)
+
+**Pros:**
+- Simple, one-liner access to route params
+- Automatically updates when the URL changes
+
+**Cons:**
+- All values are strings — requires manual type coercion
+- Returns `undefined` if the param doesn't exist — no type safety by default
+
+---
+
+### 22. `useSearchParams`
+
+Reads and updates URL query string parameters, similar to `useState` but synced with the URL.
+
+```jsx
+const [searchParams, setSearchParams] = useSearchParams();
+const query = searchParams.get('q');
+
+setSearchParams({ q: 'shoes', page: '2' });
+// → URL becomes ?q=shoes&page=2
+```
+
+**Use cases:**
+- Search and filter UIs where state should be shareable via URL
+- Pagination controls
+- Any UI state that should survive a page refresh
+
+**Pros:**
+- State lives in the URL — shareable and bookmarkable
+- Updates the URL without a full navigation
+
+**Cons:**
+- All values are strings
+- Complex state (arrays, objects) requires serialization
+
+---
+
+### 23. `useLocation`
+
+Returns the current location object — pathname, search string, hash, and any passed state.
+
+```jsx
+const location = useLocation();
+
+console.log(location.pathname); // "/products"
+console.log(location.search);   // "?sort=price"
+console.log(location.state);    // { from: '/cart' }
+```
+
+**Use cases:**
+- Tracking previous route for "back" navigation
+- Conditionally rendering based on current path
+- Reading state passed via `navigate('/path', { state: { ... } })`
+
+**Pros:**
+- Full access to all URL information in one object
+- Reactive — updates when the URL changes
+
+**Cons:**
+- `location.state` is lost on page refresh
+- Reading pathname for conditional logic can get messy at scale
+
+---
+
+## React Query Hooks
+
+### 24. `useQuery`
+
+Fetches, caches, and synchronizes server data. The workhorse of React Query.
+
+```jsx
+const { data, isLoading, isError, error } = useQuery({
+  queryKey: ['product', productId],
+  queryFn: () => api.get(`/products/${productId}`),
+  staleTime: 5 * 60 * 1000, // 5 minutes
+});
+```
+
+**Use cases:**
+- Any GET request that needs caching, deduplication, or background refresh
+- Replacing `useEffect` + `useState` data fetching patterns
+- Paginated or dependent queries
+
+**Pros:**
+- Automatic caching, deduplication, and background refetching
+- Built-in loading, error, and success states
+- Refetches on window focus out of the box
+- Normalizes data across the app via query keys
+
+**Cons:**
+- Requires React Query setup and a `QueryClient` provider
+- Learning curve for cache invalidation and query key strategies
+- Can feel heavy for simple one-off fetches
+
+---
+
+### 25. `useMutation`
+
+Handles POST, PUT, PATCH, DELETE operations with built-in loading and error states.
+
+```jsx
+const mutation = useMutation({
+  mutationFn: (newProduct) => api.post('/products', newProduct),
+  onSuccess: () => {
+    queryClient.invalidateQueries({ queryKey: ['products'] });
+  },
+});
+
+mutation.mutate({ name: 'Sneakers', price: 99 });
+```
+
+**Use cases:**
+- Form submissions and data creation
+- Updating or deleting records
+- Any write operation that should invalidate cached queries
+
+**Pros:**
+- Automatic `isLoading`, `isError`, `isSuccess` states
+- `onSuccess` / `onError` callbacks for side effects
+- Pairs perfectly with `useQuery` for cache invalidation
+
+**Cons:**
+- `invalidateQueries` can trigger more refetches than expected
+- Optimistic updates require additional setup
+- Slightly verbose compared to a plain `fetch`
+
+---
+
+### 26. `useInfiniteQuery`
+
+Fetches paginated data with support for loading more pages incrementally — perfect for infinite scroll.
+
+```jsx
+const { data, fetchNextPage, hasNextPage, isFetchingNextPage } = useInfiniteQuery({
+  queryKey: ['posts'],
+  queryFn: ({ pageParam = 1 }) => api.get(`/posts?page=${pageParam}`),
+  getNextPageParam: (lastPage) => lastPage.nextPage ?? undefined,
+});
+
+// data.pages is an array of page results
+```
+
+**Use cases:**
+- Infinite scroll feeds (social media, news)
+- "Load more" buttons
+- Virtualized lists with server-side pagination
+
+**Pros:**
+- Handles all pagination state automatically
+- Supports both cursor and offset pagination
+- Integrates with windowing libraries
+
+**Cons:**
+- `data.pages` structure requires flattening for rendering
+- More complex setup than `useQuery`
+- Cursor-based pagination requires server support
+
+---
+
+## React Hook Form
+
+### 27. `useForm`
+
+The core hook of React Hook Form. Manages form state, validation, and submission with minimal re-renders.
+
+```jsx
+const {
+  register,
+  handleSubmit,
+  formState: { errors, isSubmitting }
+} = useForm({ defaultValues: { email: '', password: '' } });
+
+const onSubmit = (data) => api.post('/login', data);
+
+<form onSubmit={handleSubmit(onSubmit)}>
+  <input {...register('email', { required: 'Email is required' })} />
+  {errors.email && <p>{errors.email.message}</p>}
+  <button disabled={isSubmitting}>Login</button>
+</form>
+```
+
+**Use cases:**
+- Any form — login, registration, checkout, settings
+- Validation-heavy forms with complex rules
+- Performance-sensitive forms with many fields
+
+**Pros:**
+- Uncontrolled inputs by default — far fewer re-renders than controlled forms
+- Built-in validation with simple rule objects
+- Integrates with Zod, Yup, and other schema validators via `resolver`
+- Tiny bundle size
+
+**Cons:**
+- Uncontrolled approach is unfamiliar at first
+- Complex conditional fields can be tricky
+- Debugging can be harder than with controlled components
+
+---
+
+### 28. `useFieldArray`
+
+Manages dynamic arrays of fields inside a `useForm` context — for forms where users can add or remove rows.
+
+```jsx
+const { fields, append, remove } = useFieldArray({
+  control,
+  name: 'ingredients',
+});
+
+fields.map((field, index) => (
+  <div key={field.id}>
+    <input {...register(`ingredients.${index}.name`)} />
+    <button onClick={() => remove(index)}>Remove</button>
+  </div>
+));
+
+<button onClick={() => append({ name: '' })}>Add ingredient</button>
+```
+
+**Use cases:**
+- Recipe forms with variable ingredient lists
+- Invoice line items
+- Dynamic team member or address lists
+
+**Pros:**
+- Handles array field IDs and re-ordering automatically
+- `append`, `prepend`, `insert`, `remove`, `swap`, `move` — full array control
+- Plays nicely with validation rules per item
+
+**Cons:**
+- Must be used inside a `useForm` context
+- Complex nested arrays require careful naming
+- Re-renders on every `append`/`remove`
+
+---
+
+## State Management Hooks
+
+### 29. `useStore` (Zustand)
+
+Subscribes a component to a Zustand store, selecting only the slice of state it needs.
+
+```jsx
+// Define store
+const useCartStore = create((set) => ({
+  items: [],
+  addItem: (item) => set((state) => ({ items: [...state.items, item] })),
+  removeItem: (id) => set((state) => ({ items: state.items.filter(i => i.id !== id) })),
+}));
+
+// Use in component — only re-renders when `items` changes
+const items = useCartStore((state) => state.items);
+const addItem = useCartStore((state) => state.addItem);
+```
+
+**Use cases:**
+- Global client-side state (cart, user preferences, UI state)
+- Lightweight alternative to Redux for medium-complexity apps
+- State that multiple unrelated components need to share
+
+**Pros:**
+- No Provider wrapper required
+- Selector-based subscriptions — components only re-render for their slice
+- Simple, minimal API with no boilerplate
+- Supports middleware (devtools, immer, persist)
+
+**Cons:**
+- Less structure than Redux — can get messy in large teams
+- No enforced patterns for async logic
+- Selectors need memoization for computed values
+
+---
+
+### 30. `useSelector` (Redux Toolkit)
+
+Reads data from the Redux store. Re-renders the component only when the selected value changes.
+
+```jsx
+// Select a slice of state
+const cartItems = useSelector((state) => state.cart.items);
+const totalPrice = useSelector((state) =>
+  state.cart.items.reduce((sum, item) => sum + item.price, 0)
+);
+
+// Dispatch actions
+const dispatch = useDispatch();
+dispatch(addToCart({ id: 1, name: 'Shoes', price: 99 }));
+```
+
+**Use cases:**
+- Large-scale applications with complex, shared state
+- Apps that benefit from Redux DevTools time-travel debugging
+- Teams that need strict, predictable state management patterns
+
+**Pros:**
+- Excellent DevTools with time-travel debugging
+- Highly structured — predictable at scale
+- Mature ecosystem with middleware support (thunk, saga)
+- Strong TypeScript support with Redux Toolkit
+
+**Cons:**
+- Significant boilerplate even with Redux Toolkit
+- Steeper learning curve than Zustand or Context
+- Overkill for small or medium apps
+
+---
+
+## Quick Reference: When to Use What
+
+### State management
+```
+Simple local state          → useState
+Complex local state         → useReducer
+Shared app-wide state       → useContext (small) / Zustand / Redux (large)
+Server state                → React Query
+```
+
+### Performance
+```
+Expensive calculation       → useMemo
+Stable function reference   → useCallback
+Heavy state update          → useTransition
+Fast-changing input value   → useDeferredValue
+```
+
+### DOM & refs
+```
+Reference a DOM element     → useRef
+Expose imperative API       → useImperativeHandle
+Measure DOM before paint    → useLayoutEffect
+```
+
+### Data fetching
+```
+GET request with caching    → useQuery
+POST / PUT / DELETE         → useMutation
+Infinite scroll / load more → useInfiniteQuery
+```
+
+### Forms
+```
+Simple form                 → useState or useForm
+Complex validation          → useForm + Zod resolver
+Dynamic field arrays        → useFieldArray
+```
+
+### Routing
+```
+Navigate programmatically   → useNavigate
+Read URL params             → useParams
+Read/write query string     → useSearchParams
+Background data mutation    → useFetcher
+```
+
+---
+
+> Hooks are building blocks, not solutions in isolation. The most powerful patterns come from composing multiple hooks together inside well-designed custom hooks — abstracting complexity away from your components and keeping your UI layer clean.

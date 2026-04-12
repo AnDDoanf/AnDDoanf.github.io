@@ -1,7 +1,7 @@
 ---
 title: Xếp bậc cấp bậc
 date: 2023-11-14
-tags: [testimony, faith]
+tags: [forfun]
 ---
 
 ## Giới thiệu

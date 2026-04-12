@@ -3,7 +3,7 @@
 import { useState } from "react";
 import BlogPostCard from "./BlogPostCard";
 
-export default function BlogClient({ posts }) {
+export default function BlogClient({ posts, hrefBase = "/blog" }) {
   const [query, setQuery] = useState("");
 
   const q = query.toLowerCase();
@@ -30,7 +30,7 @@ export default function BlogClient({ posts }) {
             onChange={(e) => setQuery(e.target.value)}
         />
         {filteredPosts.map((post) => (
-          <BlogPostCard key={post.slug} post={post} />
+          <BlogPostCard key={post.slug} post={post} hrefBase={hrefBase} />
         ))}
       </div>
   );
