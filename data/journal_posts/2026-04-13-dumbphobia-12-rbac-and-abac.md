@@ -1,5 +1,5 @@
 ---
-title: DumbPhobia#2 RBAC and ABAC methods
+title: DumbPhobia#12 RBAC and ABAC
 date: 2026-03-23
 tags: [frontend, system]
 ---

@@ -1,5 +1,5 @@
 ---
-title: REST APIs
+title: DumbPhobia#1 REST APIs
 date: 2026-03-09
 tags: [programming, fullstack]
 ---

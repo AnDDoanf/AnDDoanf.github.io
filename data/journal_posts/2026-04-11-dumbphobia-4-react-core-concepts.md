@@ -1,5 +1,5 @@
 ---
-title: "React Core Concepts"
+title: "DumbPhobia#4 React Core Concepts"
 date: 2026-04-11
 tags: [react, frontend]
 ---

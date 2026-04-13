@@ -1,5 +1,5 @@
 ---
-title: "15 Mental Models Every Senior Frontend Engineer Has Mastered"
+title: "DumbPhobia#3 15 Mental Models Every Senior Frontend Engineer Has Mastered"
 date: 2026-04-10
 tags: [frontend, engineering]
 ---

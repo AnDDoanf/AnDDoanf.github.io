@@ -41,8 +41,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
+  const post = getPostContent(slug);
+
   return {
-    title: slug.replaceAll("-", " "),
+    title: post.data.title || slug.replaceAll("-", " "),
   };
 }
 
