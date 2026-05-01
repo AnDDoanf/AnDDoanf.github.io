@@ -1,0 +1,38 @@
+{
+  "lang": {
+    "toggleLabel": "Chuyển ngôn ngữ",
+    "en": "Tiếng Anh",
+    "vi": "Tiếng Việt"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "blogs": "Blog",
+    "journal": "Nhật ký",
+    "poems": "Thơ",
+    "culinary": "Ẩm thực",
+    "showrooms": "Showroom"
+  },
+  "home": {
+    "portfolio": "Hồ sơ của tôi",
+    "blog": "Đọc blog mới nhất",
+    "journal": "Khám phá thế giới công nghệ",
+    "poetry": "Khám phá đam mê thơ",
+    "culinary": "Khám phá sở thích ẩm thực",
+    "showroom": "Showroom"
+  },
+  "showroom": {
+    "title": "Showroom",
+    "subtitle": "Các sản phẩm web (app đã deploy, demo và thử nghiệm).",
+    "viewProduction": "Xem sản phẩm",
+    "viewDescription": "Xem mô tả",
+    "viewRepo": "Xem repo",
+    "onThisPage": "Mục lục"
+  },
+  "updating": {
+    "title": "Đang cập nhật",
+    "textLine1": "Trang web hiện đang được cập nhật.",
+    "textLine2": "Vui lòng quay lại sau.",
+    "goBack": "Quay lại"
+  }
+}

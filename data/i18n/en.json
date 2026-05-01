@@ -1,0 +1,38 @@
+{
+  "lang": {
+    "toggleLabel": "Switch language",
+    "en": "English",
+    "vi": "Vietnamese"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "blogs": "Blogs",
+    "journal": "Journal",
+    "poems": "Poems",
+    "culinary": "Culinary",
+    "showrooms": "Showroom"
+  },
+  "home": {
+    "portfolio": "My Portfolio",
+    "blog": "Read a recent blog",
+    "journal": "Dive into tech world",
+    "poetry": "Explore my poetry passion",
+    "culinary": "Explore my culinary hobby",
+    "showroom": "Showroom"
+  },
+  "showroom": {
+    "title": "Showroom",
+    "subtitle": "My web productions (deployed apps, demos, and experiments).",
+    "viewProduction": "View production",
+    "viewDescription": "View description",
+    "viewRepo": "View repo",
+    "onThisPage": "On this page"
+  },
+  "updating": {
+    "title": "Updating",
+    "textLine1": "This site is currently being updated.",
+    "textLine2": "Please check back soon.",
+    "goBack": "Go back"
+  }
+}

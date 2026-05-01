@@ -1,7 +1,16 @@
 "use client";
 
 import Link from "next/link";
-export default function LeftNavbar() {
+export default function LeftNavbar({ labels }) {
+  const text = {
+    home: labels?.home ?? "Home",
+    about: labels?.about ?? "About",
+    blogs: labels?.blogs ?? "Blogs",
+    journal: labels?.journal ?? "Journal",
+    poems: labels?.poems ?? "Poems",
+    culinary: labels?.culinary ?? "Culinary",
+    showrooms: labels?.showrooms ?? "Showrooms",
+  };
   return (
     <aside className="left-nav">
         <Link href="/">
@@ -14,49 +23,49 @@ export default function LeftNavbar() {
             <li>
                 <Link href="/">
                 <i className="bi bi-house"></i>
-                <span>Home</span>
+                <span>{text.home}</span>
                 </Link>
             </li>
 
             <li>
                 <Link href="/portfolio">
                 <i className="bi bi-person"></i>
-                <span>About</span>
+                <span>{text.about}</span>
                 </Link>
             </li>
 
             <li>
                 <Link href="/blog">
                 <i className="bi bi-pencil-square"></i>
-                <span>Blogs</span>
+                <span>{text.blogs}</span>
                 </Link>
             </li>
 
             <li>
                 <Link href="/journal">
                 <i className="bi bi-journal-text"></i>
-                <span>Journal</span>
+                <span>{text.journal}</span>
                 </Link>
             </li>
 
             <li>
                 <Link href="/poetry">
                 <i className="bi bi-feather"></i>
-                <span>Poems</span>
+                <span>{text.poems}</span>
                 </Link>
             </li>
 
             <li>
                 <Link href="/updating">
                 <i className="bi bi-egg-fried"></i>
-                <span>Culinary</span>
+                <span>{text.culinary}</span>
                 </Link>
             </li>
 
             <li>
-                <Link href="/updating">
+                <Link href="/showroom">
                 <i className="bi bi-shop"></i>
-                <span>Showrooms</span>
+                <span>{text.showrooms}</span>
                 </Link>
             </li>
             </ul>
