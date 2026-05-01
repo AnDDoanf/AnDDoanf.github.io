@@ -1,8 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import GoBack from "@/components/ui/GoBack";
 import productions from "@/data/showroom/productions";
 import Image from "next/image";
-import { getLang, getMessages, t } from "@/app/utils/i18n";
+import { useI18n } from "@/components/i18n/I18nProvider";
 
 function getHrefLabel(href) {
   if (!href) return "";
@@ -14,7 +16,8 @@ function getHrefLabel(href) {
   }
 }
 
-function ProductionCard({ production, messages }) {
+function ProductionCard({ production }) {
+  const { t } = useI18n();
   const slug = production.slug ?? "";
   const detailsHref = slug ? `/showroom/${slug}` : "";
   const liveHref = production.liveHref ?? production.href ?? "";
@@ -72,13 +75,13 @@ function ProductionCard({ production, messages }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {t(messages, "showroom.viewProduction")}
+            {t("showroom.viewProduction")}
           </a>
         )}
 
         {detailsHref && (
           <Link className="showroom-action" href={detailsHref}>
-            {t(messages, "showroom.viewDescription")}
+            {t("showroom.viewDescription")}
           </Link>
         )}
       </div>
@@ -87,20 +90,17 @@ function ProductionCard({ production, messages }) {
 }
 
 export default function ShowroomPage() {
-  const lang = getLang();
-  const messages = getMessages(lang);
-
+  const { t } = useI18n();
   return (
     <section className="blog-post-container">
-      <h1>{t(messages, "showroom.title")}</h1>
-      <p>{t(messages, "showroom.subtitle")}</p>
+      <h1>{t("showroom.title")}</h1>
+      <p>{t("showroom.subtitle")}</p>
 
       <div className="post-grid showroom-grid">
         {productions.map((production) => (
           <ProductionCard
             key={production.slug ?? `${production.title ?? "production"}:${production.liveHref ?? ""}`}
             production={production}
-            messages={messages}
           />
         ))}
       </div>

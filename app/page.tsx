@@ -1,15 +1,15 @@
+﻿"use client";
+
 import ThemeToggle from "@/components/ui/ThemeToggle";
 import LanguageToggle from "@/components/ui/LanguageToggle";
 import Link from "next/link";
 import TypingText from "@/components/ui/TypingText";
 import MyImgSVG from "@/data/assets/an-doan.svg";
 import Image from "next/image";
-import { getLang, getMessages, t } from "@/app/utils/i18n";
+import { useI18n } from "@/components/i18n/I18nProvider";
 
 export default function HomePage() {
-  const lang = getLang();
-  const messages = getMessages(lang);
-
+  const { t } = useI18n();
   return (
     <section className="home-hero home-animate-container">
       <div className="home-left home-animate-left">
@@ -32,10 +32,7 @@ export default function HomePage() {
           <div className="theme-toggle-homepage">
             <div className="toggle-row">
               <ThemeToggle />
-              <LanguageToggle
-                initialLang={lang}
-                labels={{ toggleLabel: t(messages, "lang.toggleLabel") }}
-              />
+              <LanguageToggle />
             </div>
           </div>
         </div>
@@ -46,42 +43,42 @@ export default function HomePage() {
           <li className="home-animate-link delay-1">
             <i className="bi bi-person" />
             <Link href="/portfolio">
-              <div className="home-nav">{t(messages, "home.portfolio")}</div>
+              <div className="home-nav">{t("home.portfolio")}</div>
             </Link>
           </li>
 
           <li className="home-animate-link delay-2">
             <i className="bi bi-pencil-square" />
             <Link href="/blog">
-              <div className="home-nav">{t(messages, "home.blog")}</div>
+              <div className="home-nav">{t("home.blog")}</div>
             </Link>
           </li>
 
           <li className="home-animate-link delay-2">
             <i className="bi bi-pencil-square" />
             <Link href="/journal">
-              <div className="home-nav">{t(messages, "home.journal")}</div>
+              <div className="home-nav">{t("home.journal")}</div>
             </Link>
           </li>
 
           <li className="home-animate-link delay-3">
             <i className="bi bi-feather" />
             <Link href="/poetry">
-              <div className="home-nav">{t(messages, "home.poetry")}</div>
+              <div className="home-nav">{t("home.poetry")}</div>
             </Link>
           </li>
 
           <li className="home-animate-link delay-4">
             <i className="bi bi-egg-fried" />
             <Link href="/updating">
-              <div className="home-nav">{t(messages, "home.culinary")}</div>
+              <div className="home-nav">{t("home.culinary")}</div>
             </Link>
           </li>
 
           <li className="home-animate-link delay-5">
             <i className="bi bi-shop" />
             <Link href="/showroom">
-              <div className="home-nav">{t(messages, "home.showroom")}</div>
+              <div className="home-nav">{t("home.showroom")}</div>
             </Link>
           </li>
 

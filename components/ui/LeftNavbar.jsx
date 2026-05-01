@@ -1,16 +1,10 @@
 "use client";
 
 import Link from "next/link";
-export default function LeftNavbar({ labels }) {
-  const text = {
-    home: labels?.home ?? "Home",
-    about: labels?.about ?? "About",
-    blogs: labels?.blogs ?? "Blogs",
-    journal: labels?.journal ?? "Journal",
-    poems: labels?.poems ?? "Poems",
-    culinary: labels?.culinary ?? "Culinary",
-    showrooms: labels?.showrooms ?? "Showrooms",
-  };
+import { useI18n } from "@/components/i18n/I18nProvider";
+
+export default function LeftNavbar() {
+  const { t } = useI18n();
   return (
     <aside className="left-nav">
         <Link href="/">
@@ -23,49 +17,49 @@ export default function LeftNavbar({ labels }) {
             <li>
                 <Link href="/">
                 <i className="bi bi-house"></i>
-                <span>{text.home}</span>
+                <span>{t("nav.home")}</span>
                 </Link>
             </li>
 
             <li>
                 <Link href="/portfolio">
                 <i className="bi bi-person"></i>
-                <span>{text.about}</span>
+                <span>{t("nav.about")}</span>
                 </Link>
             </li>
 
             <li>
                 <Link href="/blog">
                 <i className="bi bi-pencil-square"></i>
-                <span>{text.blogs}</span>
+                <span>{t("nav.blogs")}</span>
                 </Link>
             </li>
 
             <li>
                 <Link href="/journal">
                 <i className="bi bi-journal-text"></i>
-                <span>{text.journal}</span>
+                <span>{t("nav.journal")}</span>
                 </Link>
             </li>
 
             <li>
                 <Link href="/poetry">
                 <i className="bi bi-feather"></i>
-                <span>{text.poems}</span>
+                <span>{t("nav.poems")}</span>
                 </Link>
             </li>
 
             <li>
                 <Link href="/updating">
                 <i className="bi bi-egg-fried"></i>
-                <span>{text.culinary}</span>
+                <span>{t("nav.culinary")}</span>
                 </Link>
             </li>
 
             <li>
                 <Link href="/showroom">
                 <i className="bi bi-shop"></i>
-                <span>{text.showrooms}</span>
+                <span>{t("nav.showrooms")}</span>
                 </Link>
             </li>
             </ul>

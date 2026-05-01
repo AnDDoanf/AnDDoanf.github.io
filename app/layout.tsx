@@ -6,7 +6,7 @@ import "@/styles/portfolio.css";
 import "@/styles/poetry.css";
 import "@/styles/updating.css";
 // import "@/styles/culinary.css";
-import { getLang } from "@/app/utils/i18n";
+import { I18nProvider } from "@/components/i18n/I18nProvider";
 
 export const metadata: Metadata = {
   title: "AnDDoanf",
@@ -27,11 +27,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const lang = getLang();
   return (
-    <html lang={lang}>
+    <html lang="en">
       <body className="container">
-        {children}
+        <I18nProvider>{children}</I18nProvider>
         <ScrollToTop />
       </body>
     </html>
