@@ -11,6 +11,7 @@
     "journal": "Journal",
     "poems": "Poems",
     "culinary": "Culinary",
+    "gallery": "Gallery",
     "showrooms": "Showroom"
   },
   "home": {
@@ -19,7 +20,27 @@
     "journal": "Dive into tech world",
     "poetry": "Explore my poetry passion",
     "culinary": "Explore my culinary hobby",
+    "gallery": "Browse my galleries",
     "showroom": "Showroom"
+  },
+  "gallery": {
+    "label": "Gallery",
+    "title": "Gallery",
+    "subtitle": "A folder-based collection of visual stories and image sets.",
+    "empty": "No galleries yet. Add a folder in data/gallery to publish one.",
+    "photobook": "Photobook",
+    "previous": "Previous",
+    "next": "Next",
+    "openImage": "Open image",
+    "viewportLabel": "Gallery image viewer",
+    "photobookViewportLabel": "Photobook viewer",
+    "photobookLoading": "Loading photobook...",
+    "photobookHint": "Use arrow keys, mouse wheel, or the side arrows to flip through the book.",
+    "photobookLoadError": "This photobook could not be loaded in the browser.",
+    "viewPdf": "Open PDF",
+    "page": "Page",
+    "imageSingular": "image",
+    "imagePlural": "images"
   },
   "showroom": {
     "title": "Showroom",

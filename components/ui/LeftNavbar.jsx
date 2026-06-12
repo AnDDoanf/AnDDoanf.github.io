@@ -57,6 +57,13 @@ export default function LeftNavbar() {
             </li>
 
             <li>
+                <Link href="/gallery">
+                <i className="bi bi-images"></i>
+                <span>{t("nav.gallery")}</span>
+                </Link>
+            </li>
+
+            <li>
                 <Link href="/showroom">
                 <i className="bi bi-shop"></i>
                 <span>{t("nav.showrooms")}</span>

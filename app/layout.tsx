@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "@/styles/globals.css";
+import "@/styles/gallery.css";
 import "@/styles/portfolio.css";
 import "@/styles/poetry.css";
 import "@/styles/updating.css";
