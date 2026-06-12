@@ -1,59 +1,59 @@
 {
   "lang": {
-    "toggleLabel": "Chuyen ngon ngu",
-    "en": "Tieng Anh",
-    "vi": "Tieng Viet"
+    "toggleLabel": "Chuyển ngôn ngữ",
+    "en": "Tiếng Anh",
+    "vi": "Tiếng Việt"
   },
   "nav": {
-    "home": "Trang chu",
-    "about": "Gioi thieu",
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
     "blogs": "Blog",
-    "journal": "Nhat ky",
-    "poems": "Tho",
-    "culinary": "Am thuc",
-    "gallery": "Bo suu tap",
+    "journal": "Nhật ký",
+    "poems": "Thơ",
+    "culinary": "Ẩm thực",
+    "gallery": "Bộ sưu tập",
     "showrooms": "Showroom"
   },
   "home": {
-    "portfolio": "Ho so cua toi",
-    "blog": "Doc blog moi nhat",
-    "journal": "Kham pha the gioi cong nghe",
-    "poetry": "Kham pha dam me tho",
-    "culinary": "Kham pha so thich am thuc",
-    "gallery": "Xem bo suu tap anh",
+    "portfolio": "Hồ sơ của tôi",
+    "blog": "Đọc blog mới nhất",
+    "journal": "Khám phá thế giới công nghệ",
+    "poetry": "Khám phá đam mê thơ",
+    "culinary": "Khám phá sở thích ẩm thực",
+    "gallery": "Xem bộ sưu tập ảnh",
     "showroom": "Showroom"
   },
   "gallery": {
-    "label": "Bo suu tap",
-    "title": "Bo suu tap",
-    "subtitle": "Nhung gallery anh va cau chuyen duoc load tu tung folder trong data/gallery.",
-    "empty": "Chua co gallery nao. Hay them mot folder trong data/gallery de xuat ban.",
+    "label": "Bộ sưu tập",
+    "title": "Bộ sưu tập",
+    "subtitle": "Những bộ sưu tập ảnh và câu chuyện được tải từ từng thư mục trong data/gallery.",
+    "empty": "Chưa có bộ sưu tập nào. Hãy thêm một thư mục trong data/gallery để xuất bản.",
     "photobook": "Photobook",
-    "previous": "Truoc",
-    "next": "Tiep",
-    "openImage": "Mo anh",
-    "viewportLabel": "Trinh xem gallery",
-    "photobookViewportLabel": "Trinh xem photobook",
-    "photobookLoading": "Dang tai photobook...",
-    "photobookHint": "Dung phim mui ten, con lan, hoac nut hai ben de lat sach.",
-    "photobookLoadError": "Khong the tai photobook nay trong trinh duyet.",
-    "viewPdf": "Mo PDF",
+    "previous": "Trước",
+    "next": "Tiếp",
+    "openImage": "Mở ảnh",
+    "viewportLabel": "Trình xem bộ sưu tập",
+    "photobookViewportLabel": "Trình xem photobook",
+    "photobookLoading": "Đang tải photobook...",
+    "photobookHint": "Dùng phím mũi tên, con lăn chuột, hoặc nút hai bên để lật sách.",
+    "photobookLoadError": "Không thể tải photobook này trong trình duyệt.",
+    "viewPdf": "Mở PDF",
     "page": "Trang",
-    "imageSingular": "anh",
-    "imagePlural": "anh"
+    "imageSingular": "ảnh",
+    "imagePlural": "ảnh"
   },
   "showroom": {
     "title": "Showroom",
-    "subtitle": "Cac san pham web (app da deploy, demo va thu nghiem).",
-    "viewProduction": "Xem san pham",
-    "viewDescription": "Xem mo ta",
+    "subtitle": "Các sản phẩm web (app đã deploy, demo và thử nghiệm).",
+    "viewProduction": "Xem sản phẩm",
+    "viewDescription": "Xem mô tả",
     "viewRepo": "Xem repo",
-    "onThisPage": "Muc luc"
+    "onThisPage": "Mục lục"
   },
   "updating": {
-    "title": "Dang cap nhat",
-    "textLine1": "Trang web hien dang duoc cap nhat.",
-    "textLine2": "Vui long quay lai sau.",
-    "goBack": "Quay lai"
+    "title": "Đang cập nhật",
+    "textLine1": "Trang web hiện đang được cập nhật.",
+    "textLine2": "Vui lòng quay lại sau.",
+    "goBack": "Quay lại"
   }
 }
