@@ -1,6 +1,6 @@
 ---
 title: "DumbPhobia#8 SOLID Principles"
-date: 2026-04-13
+date: 2026-04-06
 tags: [frontend]
 ---
 

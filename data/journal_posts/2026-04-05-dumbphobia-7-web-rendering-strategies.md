@@ -1,6 +1,6 @@
 ---
 title: "DumbPhobia#7 Web Rendering Strategies"
-date: 2026-04-11
+date: 2026-04-05
 tags: [frontend, rendering]
 ---
 

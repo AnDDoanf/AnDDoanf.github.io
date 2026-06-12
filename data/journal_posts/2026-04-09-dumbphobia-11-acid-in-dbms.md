@@ -1,6 +1,6 @@
 ---
 title: "DumbPhobia#11 ACID Principles in DBMS"
-date: 2026-04-13
+date: 2026-04-09
 tags: [system-design]
 ---
 

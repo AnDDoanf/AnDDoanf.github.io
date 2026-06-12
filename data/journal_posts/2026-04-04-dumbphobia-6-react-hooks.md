@@ -1,6 +1,6 @@
 ---
 title: "DumbPhobia#6 30 React Hooks"
-date: 2026-04-11
+date: 2026-04-04
 tags: [react, frontend]
 ---
 

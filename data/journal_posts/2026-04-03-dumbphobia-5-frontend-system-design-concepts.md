@@ -1,6 +1,6 @@
 ---
 title: "DumbPhobia#5 14 Essential Frontend System Design Concepts"
-date: 2026-04-11
+date: 2026-04-03
 tags: [frontend, system]
 ---
 

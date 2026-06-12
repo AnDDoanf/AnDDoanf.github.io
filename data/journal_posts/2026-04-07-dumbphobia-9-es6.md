@@ -1,6 +1,6 @@
 ---
 title: "DumbPhobia#9 ECMAScript 6"
-date: 2026-04-13
+date: 2026-04-07
 tags: [frontend]
 ---
 
