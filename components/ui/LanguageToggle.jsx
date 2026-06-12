@@ -9,7 +9,7 @@ export default function LanguageToggle() {
   return (
     <button
       type="button"
-      className="theme-icon"
+      className="theme-icon theme-icon-language"
       onClick={toggleLang}
       aria-label={ariaLabel}
       title={ariaLabel}

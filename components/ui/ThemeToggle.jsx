@@ -5,6 +5,7 @@ import { Moon, Sun } from "lucide-react";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState("light");
+  const nextTheme = theme === "light" ? "dark" : "light";
 
   useEffect(() => {
     const saved = localStorage.getItem("theme") || "light";
@@ -24,7 +25,8 @@ export default function ThemeToggle() {
       type="button"
       className="theme-icon"
       onClick={toggleTheme}
-      aria-label={`Switch to ${theme === "light" ? "dark" : "light"} theme`}
+      aria-label={`Switch to ${nextTheme} theme`}
+      title={`Switch to ${nextTheme} theme`}
     >
       {theme === "light" ? (
         <Sun size={22} strokeWidth={2.2} aria-hidden="true" />

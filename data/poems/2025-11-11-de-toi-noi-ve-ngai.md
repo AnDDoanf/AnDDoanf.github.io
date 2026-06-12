@@ -1,5 +1,5 @@
 ---
-title: Để tôi nói về NGài
+title: Để tôi nói về Ngài
 date: 2025-11-11
 ---
 
@@ -11,12 +11,12 @@ Cho máu mủ ruột thịt tôi biết Ngài.
 Chúa tôi ơi, xin tha tôi tội tôi lớn  
 Vì đã biết nhưng không ham giảng Tin Lành,  
 Nay tôi ăn năn, tôi xoay đời quanh Chúa  
-Truyền giảng Phúc Âm với tất cả lòng thàng.  
+Truyền giảng Phúc Âm với tất cả lòng thành.  
 
 Tôi rao về Chiên Con, Chúa Giê-xu Christ  
 Đã sinh trong máng chiên nhỏ nghèo nàn,  
 Vâng phục Đức Thánh Cha, vâng cho đến chết,  
-Thập tự xưa, thân Ngài vỡ, huyếtn tuôn tràn.  
+Thập tự xưa, thân Ngài vỡ, huyết tuôn tràn.  
 
 Vì ai? Vì tôi, vì mọi người trên đất,  
 Một lần đủ cả, gánh hết mọi lỗi lầm.  
