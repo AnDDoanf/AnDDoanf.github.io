@@ -379,6 +379,12 @@ transform: scale(1.1);
 
 @media (max-width: 1000px) {
 
+    .portfolio-page {
+        max-width: 90%;
+        gap: 3.5rem;
+        padding: 3rem 1.5rem;
+    }
+
     .portfolio-toc {
         display: none;
     }
@@ -393,8 +399,13 @@ transform: scale(1.1);
 }
 
 @media (max-width: 640px) {
+    .portfolio-page {
+        max-width: 96%;
+        gap: 2.2rem;
+        padding: 1.5rem 0.5rem;
+    }
+
     .portfolio-timeline-node {
         margin-bottom: 2.5rem;
     }
-
 }

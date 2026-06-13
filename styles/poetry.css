@@ -397,9 +397,13 @@
 }
 
 @media (max-width: 640px) {
+  .poem-layout {
+    padding: 1rem 0.5rem 2rem;
+  }
+
   .poem-page {
-    border-radius: 1.1rem;
-    padding: 1rem;
+    border-radius: 1rem;
+    padding: 0.75rem;
   }
 
   .poem-controls {
@@ -419,7 +423,8 @@
 
   .poem-content {
     font-size: 1rem;
-    line-height: 1.85;
+    line-height: 1.7;
+    padding: 0 0.25rem 1.25rem 0;
   }
 
   .poem-toc ul {
