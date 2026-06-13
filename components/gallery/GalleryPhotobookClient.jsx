@@ -15,7 +15,7 @@ function clampPage(pageNumber, pageCount) {
 
 function normalizeRenderWidth(width) {
   if (!width) return 0;
-  return Math.max(420, Math.round(width / RENDER_WIDTH_STEP) * RENDER_WIDTH_STEP);
+  return Math.max(280, Math.round(width / RENDER_WIDTH_STEP) * RENDER_WIDTH_STEP);
 }
 
 function revokePageEntry(entry) {
@@ -78,6 +78,7 @@ export default function GalleryPhotobookClient({ gallery }) {
   const stageRef = useRef(null);
   const bookShellRef = useRef(null);
   const flipbookRef = useRef(null);
+  const viewerRef = useRef(null);
   const wheelLockRef = useRef(0);
   const turnReadyRef = useRef(false);
   const pendingRendersRef = useRef(new Set());
@@ -97,6 +98,30 @@ export default function GalleryPhotobookClient({ gallery }) {
   const [loadingState, setLoadingState] = useState("loading");
   const [pageCache, setPageCache] = useState({});
   const [renderWidth, setRenderWidth] = useState(0);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  useEffect(() => {
+    function handleFullscreenChange() {
+      setIsFullscreen(document.fullscreenElement === viewerRef.current);
+    }
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    };
+  }, []);
+
+  const toggleFullscreen = async () => {
+    if (!viewerRef.current) return;
+    try {
+      if (document.fullscreenElement) {
+        await document.exitFullscreen();
+      } else {
+        await viewerRef.current.requestFullscreen();
+      }
+    } catch (err) {
+      console.error("Error attempting to toggle fullscreen:", err);
+    }
+  };
 
   function syncPageCache(nextCache) {
     pageCacheRef.current = nextCache;
@@ -396,7 +421,7 @@ export default function GalleryPhotobookClient({ gallery }) {
         width: renderWidth,
         height: nextHeight,
         display: "single",
-        autoCenter: true,
+        autoCenter: false,
         elevation: 0,
         duration: 820,
         gradients: false,
@@ -615,10 +640,20 @@ export default function GalleryPhotobookClient({ gallery }) {
   return (
     <section className="gallery-viewer photobook-viewer-shell">
       <section
-        className="photobook-viewer"
+        ref={viewerRef}
+        className={`photobook-viewer ${isFullscreen ? "is-fullscreen" : ""}`}
         aria-label={t("gallery.photobookViewportLabel")}
       >
         <div className="photobook-stage" ref={stageRef}>
+          <button
+            type="button"
+            className="gallery-carousel-action-fullscreen photobook-fullscreen-btn"
+            onClick={toggleFullscreen}
+            aria-label={isFullscreen ? t("gallery.exitFullscreen") : t("gallery.enterFullscreen")}
+            title={isFullscreen ? t("gallery.exitFullscreen") : t("gallery.enterFullscreen")}
+          >
+            <i className={`bi bi-${isFullscreen ? "fullscreen-exit" : "fullscreen"}`} aria-hidden="true" />
+          </button>
           <div className="photobook-stage-rail">
             <button
               type="button"

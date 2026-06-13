@@ -71,8 +71,10 @@
     "photobookLoadError": "Kh\u00f4ng th\u1ec3 t\u1ea3i photobook n\u00e0y trong tr\u00ecnh duy\u1ec7t.",
     "viewPdf": "M\u1edf PDF",
     "page": "Trang",
-    "imageSingular": "\u1ea3nh",
-    "imagePlural": "\u1ea3nh"
+    "imageSingular": "ảnh",
+    "imagePlural": "ảnh",
+    "enterFullscreen": "Toàn màn hình",
+    "exitFullscreen": "Thoát toàn màn hình"
   },
   "showroom": {
     "title": "Showroom",

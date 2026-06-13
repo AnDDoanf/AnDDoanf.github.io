@@ -12,12 +12,37 @@ const DEFAULT_IMAGE_METRICS = {
 export default function GalleryImageCarousel({ gallery }) {
   const { t } = useI18n();
   const stageRef = useRef(null);
+  const carouselRef = useRef(null);
   const wheelLockRef = useRef(0);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const [imageMetrics, setImageMetrics] = useState(() => (
     gallery.images.map(() => DEFAULT_IMAGE_METRICS)
   ));
   const maxIndex = Math.max(0, gallery.images.length - 1);
+
+  useEffect(() => {
+    function handleFullscreenChange() {
+      setIsFullscreen(document.fullscreenElement === carouselRef.current);
+    }
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    };
+  }, []);
+
+  const toggleFullscreen = async () => {
+    if (!carouselRef.current) return;
+    try {
+      if (document.fullscreenElement) {
+        await document.exitFullscreen();
+      } else {
+        await carouselRef.current.requestFullscreen();
+      }
+    } catch (err) {
+      console.error("Error attempting to toggle fullscreen:", err);
+    }
+  };
 
   function goToIndex(index) {
     const safeIndex = Math.max(0, Math.min(index, maxIndex));
@@ -124,12 +149,22 @@ export default function GalleryImageCarousel({ gallery }) {
   return (
     <section className="gallery-viewer">
       <section
-        className="gallery-carousel"
+        ref={carouselRef}
+        className={`gallery-carousel ${isFullscreen ? "is-fullscreen" : ""}`}
         aria-label={t("gallery.viewportLabel")}
         onKeyDown={handleKeyDown}
         tabIndex={0}
       >
         <div className="gallery-carousel-stage" ref={stageRef}>
+          <button
+            type="button"
+            className="gallery-carousel-action-fullscreen"
+            onClick={toggleFullscreen}
+            aria-label={isFullscreen ? t("gallery.exitFullscreen") : t("gallery.enterFullscreen")}
+            title={isFullscreen ? t("gallery.exitFullscreen") : t("gallery.enterFullscreen")}
+          >
+            <i className={`bi bi-${isFullscreen ? "fullscreen-exit" : "fullscreen"}`} aria-hidden="true" />
+          </button>
           <button
             type="button"
             className="gallery-carousel-action gallery-carousel-action-prev"

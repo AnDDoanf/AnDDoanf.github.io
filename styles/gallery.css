@@ -396,7 +396,7 @@
 
 .photobook-turnbook {
   visibility: hidden;
-  margin: 0 auto;
+  margin: 0 auto !important;
   pointer-events: none;
 }
 
@@ -556,9 +556,7 @@
   padding: 0.55rem;
   border-radius: 28px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.22);
-  background: var(--bg-alt);
+  background: transparent;
 }
 
 .gallery-slide[data-position="active"] {
@@ -608,7 +606,7 @@
   width: 100%;
   height: 100%;
   display: block;
-  background: var(--bg);
+  background: transparent;
   object-fit: contain;
   object-position: center;
 }
@@ -733,7 +731,7 @@
 }
 
 .gallery-style-polaroid .gallery-slide-frame {
-  border-radius: 18px;
+  /* border-radius: 18px; */
   padding: 0.65rem 0.65rem 2rem;
   background: var(--bg);
 }
@@ -793,24 +791,63 @@
   }
 
   .photobook-stage-rail {
-    grid-template-columns: minmax(2.8rem, 3.3rem) minmax(0, 1fr) minmax(2.8rem, 3.3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     min-height: clamp(260px, 56vh, 500px);
-    gap: 0.15rem;
+    height: 100%;
+    width: 100%;
   }
 
-  .gallery-carousel-action-prev,
-  .photobook-action-prev {
+  .gallery-carousel-action-prev {
     padding-right: 0.5rem;
   }
 
-  .gallery-carousel-action-next,
-  .photobook-action-next {
+  .gallery-carousel-action-next {
     padding-left: 0.5rem;
   }
 
-  .gallery-carousel-action i,
-  .photobook-action i {
+  .photobook-action {
+    position: absolute;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 8;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .photobook-action-prev {
+    left: 0.5rem;
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  .photobook-action-next {
+    right: 0.5rem;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .gallery-carousel-action i {
     font-size: 1.2rem;
+  }
+
+  .photobook-action i {
+    color: #fff !important;
+    font-size: 1.3rem !important;
+  }
+
+  .photobook-action:hover:not(:disabled) {
+    background: rgba(0, 0, 0, 0.55);
   }
 
   .photobook-book-shell {
@@ -861,4 +898,125 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Fullscreen Styles */
+.gallery-carousel-action-fullscreen {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s, color 0.2s, transform 0.2s, border-color 0.2s;
+  backdrop-filter: blur(8px);
+}
+
+.gallery-carousel-action-fullscreen:hover {
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: scale(1.05);
+}
+
+.gallery-carousel-action-fullscreen i {
+  font-size: 1.25rem;
+}
+
+.gallery-carousel:fullscreen {
+  background-color: #0b151a !important;
+}
+
+.gallery-carousel.is-fullscreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0b151a;
+  padding: 2.5rem 1rem 1.5rem;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.gallery-carousel.is-fullscreen .gallery-carousel-stage {
+  --carousel-slide-landscape-width: clamp(320px, 85vw, 1400px);
+  --carousel-slide-portrait-height: clamp(340px, 80vh, 900px);
+  --carousel-slide-square-size: clamp(280px, 75vh, 900px);
+  --carousel-slide-unknown-width: clamp(260px, 70vh, 900px);
+  --carousel-shift: clamp(210px, 32vw, 600px);
+  --carousel-far-shift: clamp(345px, 50vw, 1000px);
+  height: calc(100vh - 8rem);
+  border-radius: 0;
+  margin-bottom: 1rem;
+}
+
+.gallery-carousel.is-fullscreen .gallery-slide-caption {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  z-index: 6;
+}
+
+.gallery-carousel.is-fullscreen .gallery-slide-title {
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+.gallery-carousel.is-fullscreen .gallery-dot {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.gallery-carousel.is-fullscreen .gallery-dot.is-active {
+  background: var(--link);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-carousel-action-fullscreen {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .gallery-carousel-action-fullscreen i {
+    font-size: 1.1rem;
+  }
+}
+
+/* Photobook Fullscreen Styles */
+.photobook-viewer:fullscreen {
+  background-color: #0b151a !important;
+}
+
+.photobook-viewer.is-fullscreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0b151a;
+  padding: 2.5rem 1rem 1.5rem;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.photobook-viewer.is-fullscreen .photobook-stage {
+  height: calc(100vh - 8rem);
+  min-height: unset;
+  border-radius: 0;
+  margin-bottom: 1rem;
+}
+
+.photobook-viewer.is-fullscreen .photobook-footer {
+  margin-top: 0.5rem;
+  z-index: 6;
+  color: #fff;
 }

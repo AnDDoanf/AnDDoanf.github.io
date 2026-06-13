@@ -72,7 +72,9 @@
     "viewPdf": "Open PDF",
     "page": "Page",
     "imageSingular": "image",
-    "imagePlural": "images"
+    "imagePlural": "images",
+    "enterFullscreen": "Enter fullscreen",
+    "exitFullscreen": "Exit fullscreen"
   },
   "showroom": {
     "title": "Showroom",

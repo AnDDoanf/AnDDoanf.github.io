@@ -116,8 +116,21 @@
 }
 
 .poem-progress {
+  display: block;
+  background: transparent;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+  font: inherit;
+  color: inherit;
   text-align: center;
   min-width: 7rem;
+  cursor: default;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.poem-progress-chevron {
+  display: none;
 }
 
 .poem-progress-label {
@@ -398,6 +411,7 @@
 
 @media (max-width: 640px) {
   .poem-layout {
+    position: relative;
     padding: 1rem 0.5rem 2rem;
   }
 
@@ -407,18 +421,51 @@
   }
 
   .poem-controls {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 0.5rem;
   }
 
   .poem-progress {
+    grid-column: auto;
     order: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  .poem-progress:hover:not(:disabled) {
+    background-color: var(--bg-alt);
+  }
+
+  .poem-progress-chevron {
+    display: inline-block;
+    margin-left: 0.35rem;
+    font-size: 0.75rem;
+    color: var(--poem-reader-muted);
+    vertical-align: middle;
+    transition: transform 0.2s ease;
+  }
+
+  .poem-nav-button span {
+    display: none;
   }
 
   .poem-nav-button,
   .poem-nav-button-next {
-    width: 100%;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    justify-self: stretch;
+  }
+
+  .poem-nav-button {
+    justify-self: start;
+  }
+
+  .poem-nav-button-next {
+    justify-self: end;
   }
 
   .poem-content {
@@ -427,7 +474,61 @@
     padding: 0 0.25rem 1.25rem 0;
   }
 
+  /* Dropdown TOC styling on mobile */
+  .poem-toc {
+    position: absolute;
+    top: 4.8rem;
+    left: 0.75rem;
+    right: 0.75rem;
+    z-index: 20;
+    height: auto;
+    max-height: min(24rem, 60vh);
+    display: none;
+    box-shadow: 0 20px 48px var(--shadow);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+  }
+
+  .poem-toc.is-open {
+    display: flex;
+    animation: fadeInDown 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
   .poem-toc ul {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: calc(min(24rem, 60vh) - 5rem);
+    grid-template-columns: none;
+  }
+
+  .poem-toc-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 15;
+    animation: fadeIn 0.2s ease-out;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
