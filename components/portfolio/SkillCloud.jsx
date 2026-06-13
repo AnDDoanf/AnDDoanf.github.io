@@ -14,12 +14,27 @@ export default function SkillsCloud() {
   const containerRef = useRef(null)
   const [positions, setPositions] = useState([])
 
+  const [containerWidth, setContainerWidth] = useState(0)
+
   useEffect(() => {
+    const handleResize = () => {
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.offsetWidth)
+      }
+    }
+
+    handleResize()
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
+  useEffect(() => {
+    if (containerWidth === 0) return
+
     const container = containerRef.current
     if (!container) return
 
     const placed = []
-    const containerRect = container.getBoundingClientRect()
 
     // viewport-based scale (relative to 1920)
     const screenScale = clamp(window.innerWidth / DESIGN_WIDTH, 0.6, 1)
@@ -59,9 +74,13 @@ export default function SkillsCloud() {
 
       let placedSuccessfully = false
 
+      const maxRangeX = containerWidth - rect.width
+      const containerHeight = 320
+      const maxRangeY = containerHeight - rect.height
+
       for (let i = 0; i < MAX_TRIES; i++) {
-        const x = Math.random() * (containerRect.width - rect.width)
-        const y = Math.random() * (containerRect.height - rect.height)
+        const x = maxRangeX > 0 ? Math.random() * maxRangeX : 0
+        const y = maxRangeY > 0 ? Math.random() * maxRangeY : 0
 
         const overlaps = placed.some(p =>
           x < p.x + p.width + PADDING &&
@@ -101,7 +120,7 @@ export default function SkillsCloud() {
     })
 
     setPositions(placed)
-  }, [])
+  }, [containerWidth])
 
 
   return (
