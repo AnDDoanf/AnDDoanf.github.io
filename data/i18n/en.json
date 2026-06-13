@@ -14,6 +14,32 @@
     "gallery": "Gallery",
     "showrooms": "Showroom"
   },
+  "ui": {
+    "primaryNavigation": "Primary",
+    "closeNavigation": "Close navigation",
+    "collapseNavigation": "Collapse navigation",
+    "expandNavigation": "Expand navigation"
+  },
+  "posts": {
+    "searchBlog": "Search blog by title, tag, or idea...",
+    "searchJournal": "Search journal by topic or tag...",
+    "noResults": "No posts match that search yet.",
+    "onThisPage": "On this page",
+    "navigation": "Post navigation",
+    "previousPost": "Previous post",
+    "nextPost": "Next post",
+    "previousJournal": "Previous journal",
+    "nextJournal": "Next journal"
+  },
+  "poetry": {
+    "readerLabel": "Poem reader",
+    "listLabel": "Poem list",
+    "listTitle": "Poems",
+    "progressLabel": "Poem",
+    "collectionSummary": "{count} pieces in this collection",
+    "previous": "Previous",
+    "next": "Next"
+  },
   "home": {
     "portfolio": "My Portfolio",
     "blog": "Read a recent blog",

@@ -1,6 +1,7 @@
 import LeftNavbar from "@/components/ui/LeftNavbar";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 import LanguageToggle from "@/components/ui/LanguageToggle";
+import PageBreadcrumbs from "@/components/ui/PageBreadcrumbs";
 
 export default function WithNavLayout({
   children,
@@ -17,6 +18,7 @@ export default function WithNavLayout({
         </div>
       </div>
       <main className="main-content">
+        <PageBreadcrumbs />
         {children}
       </main>
     </div>

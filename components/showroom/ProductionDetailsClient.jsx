@@ -3,26 +3,13 @@
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import {
+  createHeadingIdResolver,
+  extractHeadings,
+} from "@/app/utils/extractHeadings";
 
 import ScrollToTop from "@/components/ui/ScrollToTop";
-import GoBack from "@/components/ui/GoBack";
 import { useI18n } from "@/components/i18n/I18nProvider";
-
-function extractHeadings(markdown) {
-  return (markdown ?? "")
-    .split("\n")
-    .filter((line) => line.startsWith("## ") || line.startsWith("### "))
-    .map((line) => {
-      const level = line.startsWith("### ") ? 3 : 2;
-      const text = line.replace(/^#{2,3}\s+/, "").replaceAll("*", "").trim();
-      const id = text
-        .toLowerCase()
-        .replace(/[^\w]+/g, "-")
-        .replace(/(^-|-$)/g, "");
-
-      return { text, id, level };
-    });
-}
 
 export default function ProductionDetailsClient({
   title,
@@ -35,6 +22,7 @@ export default function ProductionDetailsClient({
 }) {
   const { t } = useI18n();
   const headings = extractHeadings(content);
+  const resolveHeadingId = createHeadingIdResolver(headings);
 
   return (
     <main className="post-layout">
@@ -87,19 +75,11 @@ export default function ProductionDetailsClient({
             remarkPlugins={[remarkGfm]}
             components={{
               h2: ({ children }) => {
-                const text = String(children);
-                const id = text
-                  .toLowerCase()
-                  .replace(/[^\w]+/g, "-")
-                  .replace(/(^-|-$)/g, "");
+                const id = resolveHeadingId(children, 2);
                 return <h2 id={id}>{children}</h2>;
               },
               h3: ({ children }) => {
-                const text = String(children);
-                const id = text
-                  .toLowerCase()
-                  .replace(/[^\w]+/g, "-")
-                  .replace(/(^-|-$)/g, "");
+                const id = resolveHeadingId(children, 3);
                 return <h3 id={id}>{children}</h3>;
               },
             }}
@@ -109,7 +89,6 @@ export default function ProductionDetailsClient({
         )}
 
         <ScrollToTop />
-        <GoBack href="/showroom" />
       </article>
 
       {headings.length > 0 && (
@@ -127,4 +106,3 @@ export default function ProductionDetailsClient({
     </main>
   );
 }
-

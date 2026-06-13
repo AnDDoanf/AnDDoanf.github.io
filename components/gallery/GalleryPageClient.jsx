@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import GoBack from "@/components/ui/GoBack";
 import { useI18n } from "@/components/i18n/I18nProvider";
 
 function GalleryCardCover({ gallery, t }) {
@@ -81,8 +80,6 @@ export default function GalleryPageClient({ galleries }) {
       ) : (
         <p className="gallery-empty">{t("gallery.empty")}</p>
       )}
-
-      <GoBack href="/" />
     </section>
   );
 }

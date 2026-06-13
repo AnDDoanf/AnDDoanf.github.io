@@ -19,6 +19,16 @@ function getMessages(lang) {
   return lang === "vi" ? vi : en;
 }
 
+function formatMessage(message, params) {
+  if (typeof message !== "string" || !params) {
+    return message;
+  }
+
+  return Object.entries(params).reduce((nextMessage, [key, value]) => {
+    return nextMessage.replaceAll(`{${key}}`, String(value));
+  }, message);
+}
+
 function resolve(messages, key) {
   const parts = (key ?? "").split(".").filter(Boolean);
   let current = messages;
@@ -48,7 +58,7 @@ export function I18nProvider({ children }) {
       lang,
       setLang,
       toggleLang: () => setLang(lang === "en" ? "vi" : "en"),
-      t: (key) => resolve(messages, key),
+      t: (key, params) => formatMessage(resolve(messages, key), params),
     };
   }, [lang]);
 

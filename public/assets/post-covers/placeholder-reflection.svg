@@ -1,0 +1,13 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#DDE7E0"/>
+  <rect x="34" y="38" width="1132" height="824" rx="34" fill="#F7EFD9" stroke="#92A7B3" stroke-width="6"/>
+  <text x="108" y="210" fill="#546C78" font-family="Georgia, serif" font-size="70" font-weight="700">Reflection Notes</text>
+  <text x="108" y="286" fill="#6D8088" font-family="Georgia, serif" font-size="34">Cover image placeholder</text>
+  <circle cx="290" cy="544" r="86" stroke="#7A85C8" stroke-width="10"/>
+  <path d="M228 602C248 564 290 540 338 540C388 540 432 568 452 610" stroke="#7A85C8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M166 602C196 552 238 522 290 522" stroke="#7A85C8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M526 470C574 494 596 556 576 612C554 674 488 712 428 692C368 672 334 604 350 550" stroke="#7A85C8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M738 492H970" stroke="#D6C9A8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M770 552H938" stroke="#D6C9A8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M806 612H900" stroke="#D6C9A8" stroke-width="8" stroke-linecap="round"/>
+</svg>

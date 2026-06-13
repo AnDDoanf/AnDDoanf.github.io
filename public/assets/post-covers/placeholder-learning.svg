@@ -1,0 +1,15 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#DDE7E0"/>
+  <rect x="34" y="38" width="1132" height="824" rx="34" fill="#F7EFD9" stroke="#92A7B3" stroke-width="6"/>
+  <text x="108" y="210" fill="#546C78" font-family="Georgia, serif" font-size="70" font-weight="700">Learning Notes</text>
+  <text x="108" y="286" fill="#6D8088" font-family="Georgia, serif" font-size="34">Cover image placeholder</text>
+  <path d="M328 468C386 468 434 512 434 574C434 616 412 650 380 670V712H276V670C244 650 222 616 222 574C222 512 270 468 328 468Z" stroke="#C89C3D" stroke-width="10"/>
+  <path d="M286 760H370" stroke="#C89C3D" stroke-width="10" stroke-linecap="round"/>
+  <path d="M254 726H402" stroke="#C89C3D" stroke-width="10" stroke-linecap="round"/>
+  <path d="M328 414V454" stroke="#C89C3D" stroke-width="10" stroke-linecap="round"/>
+  <path d="M250 438L278 464" stroke="#C89C3D" stroke-width="10" stroke-linecap="round"/>
+  <path d="M406 438L378 464" stroke="#C89C3D" stroke-width="10" stroke-linecap="round"/>
+  <rect x="560" y="486" width="334" height="180" rx="18" stroke="#C89C3D" stroke-width="10"/>
+  <path d="M610 544H846" stroke="#E0CCA0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M610 602H790" stroke="#E0CCA0" stroke-width="8" stroke-linecap="round"/>
+</svg>

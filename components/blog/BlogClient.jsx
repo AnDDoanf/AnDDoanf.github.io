@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useI18n } from "@/components/i18n/I18nProvider";
 import BlogPostCard from "./BlogPostCard";
 
 export default function BlogClient({ posts, hrefBase = "/blog" }) {
+  const { t } = useI18n();
   const [query, setQuery] = useState("");
 
   const q = query.toLowerCase();
@@ -11,27 +13,44 @@ export default function BlogClient({ posts, hrefBase = "/blog" }) {
   const filteredPosts = posts.filter((post) => {
     const title = post.title?.toLowerCase() || "";
     const excerpt = post.excerpt?.toLowerCase() || "";
+    const primaryTag = post.primaryTag?.toLowerCase() || "";
     const tags = post.tags || [];
 
     return (
       title.includes(q) ||
       excerpt.includes(q) ||
+      primaryTag.includes(q) ||
       tags.some((tag) => tag?.toLowerCase().includes(q))
     );
   });
 
+  const searchPlaceholder = hrefBase === "/journal"
+    ? t("posts.searchJournal")
+    : t("posts.searchBlog");
+
   return (
-      <div className="post-grid">
-        <input
-            type="text"
-            className="blog-search"
-            placeholder="Search by title, tag, or content..."
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-        />
-        {filteredPosts.map((post) => (
-          <BlogPostCard key={post.slug} post={post} hrefBase={hrefBase} />
-        ))}
-      </div>
+      <section className="post-index">
+        <div className="post-search-shell">
+          <i className="bi bi-search post-search-icon" aria-hidden="true" />
+          <input
+              type="text"
+              className="blog-search"
+              placeholder={searchPlaceholder}
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              aria-label={searchPlaceholder}
+          />
+        </div>
+
+        {filteredPosts.length > 0 ? (
+          <div className="post-grid post-card-grid">
+            {filteredPosts.map((post) => (
+              <BlogPostCard key={post.slug} post={post} hrefBase={hrefBase} />
+            ))}
+          </div>
+        ) : (
+          <p className="post-grid-empty">{t("posts.noResults")}</p>
+        )}
+      </section>
   );
 }

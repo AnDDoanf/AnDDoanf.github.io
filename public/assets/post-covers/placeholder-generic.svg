@@ -1,0 +1,15 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#DDE7E0"/>
+  <rect x="34" y="38" width="1132" height="824" rx="34" fill="#F7EFD9" stroke="#92A7B3" stroke-width="6"/>
+  <text x="108" y="210" fill="#546C78" font-family="Georgia, serif" font-size="70" font-weight="700">Writing Notes</text>
+  <text x="108" y="286" fill="#6D8088" font-family="Georgia, serif" font-size="34">Cover image placeholder</text>
+  <rect x="132" y="468" width="256" height="306" rx="18" fill="#FFF8EA" stroke="#6B8B96" stroke-width="10"/>
+  <path d="M208 546H314" stroke="#6B8B96" stroke-width="10" stroke-linecap="round"/>
+  <path d="M208 606H314" stroke="#6B8B96" stroke-width="10" stroke-linecap="round"/>
+  <path d="M208 666H282" stroke="#6B8B96" stroke-width="10" stroke-linecap="round"/>
+  <path d="M448 704L582 570L626 614L492 748L428 768L448 704Z" stroke="#6B8B96" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M564 588L602 550" stroke="#6B8B96" stroke-width="10" stroke-linecap="round"/>
+  <path d="M744 520H968" stroke="#D6C9A8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M744 580H920" stroke="#D6C9A8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M744 640H874" stroke="#D6C9A8" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import GoBack from "@/components/ui/GoBack";
 import productions from "@/data/showroom/productions";
 import Image from "next/image";
 import { useI18n } from "@/components/i18n/I18nProvider";
@@ -104,8 +103,6 @@ export default function ShowroomPage() {
           />
         ))}
       </div>
-
-      <GoBack href="/" />
     </section>
   );
 }

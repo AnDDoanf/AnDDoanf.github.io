@@ -1,0 +1,14 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#DDE7E0"/>
+  <rect x="34" y="38" width="1132" height="824" rx="34" fill="#F7EFD9" stroke="#92A7B3" stroke-width="6"/>
+  <text x="108" y="210" fill="#546C78" font-family="Georgia, serif" font-size="70" font-weight="700">Faith Reflection</text>
+  <text x="108" y="286" fill="#6D8088" font-family="Georgia, serif" font-size="34">Cover image placeholder</text>
+  <path d="M120 576C120 504 182 448 258 448C320 448 366 482 392 532C418 482 464 448 526 448C602 448 664 504 664 576V626C664 638 654 648 642 648H142C130 648 120 638 120 626V576Z" stroke="#4D9B98" stroke-width="10"/>
+  <path d="M222 474V638" stroke="#4D9B98" stroke-width="10"/>
+  <path d="M562 474V638" stroke="#4D9B98" stroke-width="10"/>
+  <path d="M328 516H456" stroke="#4D9B98" stroke-width="10" stroke-linecap="round"/>
+  <path d="M392 468V564" stroke="#4D9B98" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="846" cy="486" r="22" fill="#4D9B98"/>
+  <path d="M770 548H968" stroke="#D6C9A8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M770 600H930" stroke="#D6C9A8" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,6 +1,5 @@
 "use client";
 
-import GoBack from "@/components/ui/GoBack";
 import GalleryImageCarousel from "@/components/gallery/GalleryImageCarousel";
 import GalleryPhotobookClient from "@/components/gallery/GalleryPhotobookClient";
 import { useI18n } from "@/components/i18n/I18nProvider";
@@ -41,8 +40,6 @@ export default function GalleryDetailsClient({ gallery }) {
       ) : (
         <GalleryImageCarousel gallery={gallery} />
       )}
-
-      <GoBack href="/gallery" />
     </main>
   );
 }

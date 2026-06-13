@@ -1,5 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
+import { resolvePostCoverImage } from "@/app/utils/postCovers";
 
 function getExcerpt(markdown, maxLines = 2, maxWords = 20) { 
     let excerpt = markdown
@@ -24,6 +25,25 @@ function getExcerpt(markdown, maxLines = 2, maxWords = 20) {
     return excerpt
 }
 
+function normalizeList(value) {
+    if (Array.isArray(value)) {
+        return value.map((item) => String(item).trim()).filter(Boolean);
+    }
+
+    if (value == null || value === "") {
+        return [];
+    }
+
+    return [String(value).trim()].filter(Boolean);
+}
+
+function formatDateLabel(date) {
+    return new Intl.DateTimeFormat("en-US", {
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+    }).format(date);
+}
 
 export default function getPostMetadata(basePath) {
     const folder = basePath + "/";
@@ -39,13 +59,20 @@ export default function getPostMetadata(basePath) {
 
             const rawDate = data.date;
             const postDate = rawDate ? new Date(rawDate) : null;
+            const title = data.title || "Untitled Post";
+            const categories = normalizeList(data.categories);
+            const tags = normalizeList(data.tags);
+
             return {
-                title: data.title || "Untitled Post",
+                title,
                 date: postDate,
-                categories: data.categories || [],
-                tags: data.tags || [],
+                categories,
+                tags,
                 slug: filename.replace(".md", ""),
                 excerpt: getExcerpt(content, 1) || "No excerpt available",
+                image: resolvePostCoverImage(data.image, tags),
+                imageAlt: String(data.imageAlt || `${title} cover image`).trim(),
+                primaryTag: tags[0] || categories[0] || "",
             };
         })
 
@@ -62,8 +89,11 @@ export default function getPostMetadata(basePath) {
         .map((post) => ({
             ...post,
             date: post.date
-                ? post.date.toISOString().split("T")[0]
+                ? formatDateLabel(post.date)
                 : "No Date Added",
+            dateIso: post.date
+                ? post.date.toISOString().split("T")[0]
+                : "",
         }));
 
     return posts;

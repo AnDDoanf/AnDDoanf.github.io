@@ -68,12 +68,12 @@ export default function HomePage() {
             </Link>
           </li>
 
-          <li className="home-animate-link delay-4">
+          {/* <li className="home-animate-link delay-4">
             <i className="bi bi-egg-fried" />
             <Link href="/updating">
               <div className="home-nav">{t("home.culinary")}</div>
             </Link>
-          </li>
+          </li> */}
 
           <li className="home-animate-link delay-5">
             <i className="bi bi-images" />

@@ -12,6 +12,12 @@ export const tagIcons = {
   fullstack: "bi bi-layers", //Bridging systems, architecture, end-to-end thinking.
   languages: "bi bi-braces", //JavaScript, Python, etc.
   projects: "bi bi-hammer", //Showcasing personal or collaborative work.
+  frontend: "bi bi-window-stack",
+  react: "bi bi-bounding-box-circles",
+  system: "bi bi-diagram-3",
+  "system-design": "bi bi-bezier2",
+  engineering: "bi bi-cpu",
+  rendering: "bi bi-display",
 
   // Life
   life: "bi bi-sun", //General life topics.
@@ -20,6 +26,9 @@ export const tagIcons = {
   journey: "bi bi-map", //Life path, transitions, milestones.
   growth: "bi bi-graph-up", //Self-improvement, habits, mindset.
   forfun: "bi bi-emoji-smile-upside-down", //For fun
+  how: "bi bi-signpost-split",
+  skill: "bi bi-tools",
+  evangelism: "bi bi-megaphone",
 
   // Fallback
   default: "bi bi-tag",

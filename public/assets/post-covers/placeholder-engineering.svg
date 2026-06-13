@@ -1,0 +1,17 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#DDE7E0"/>
+  <rect x="34" y="38" width="1132" height="824" rx="34" fill="#F7EFD9" stroke="#92A7B3" stroke-width="6"/>
+  <text x="108" y="210" fill="#546C78" font-family="Georgia, serif" font-size="70" font-weight="700">Engineering Journal</text>
+  <text x="108" y="286" fill="#6D8088" font-family="Georgia, serif" font-size="34">Cover image placeholder</text>
+  <rect x="120" y="448" width="370" height="244" rx="20" stroke="#4F9BDB" stroke-width="10"/>
+  <path d="M120 500H490" stroke="#4F9BDB" stroke-width="10"/>
+  <circle cx="170" cy="474" r="10" fill="#4F9BDB"/>
+  <circle cx="214" cy="474" r="10" fill="#4F9BDB"/>
+  <circle cx="258" cy="474" r="10" fill="#4F9BDB"/>
+  <rect x="174" y="546" width="86" height="64" rx="12" stroke="#4F9BDB" stroke-width="10"/>
+  <rect x="302" y="546" width="136" height="26" rx="13" fill="#4F9BDB"/>
+  <rect x="302" y="590" width="96" height="20" rx="10" fill="#B6D7F2"/>
+  <path d="M616 534H960" stroke="#D6C9A8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M616 592H900" stroke="#D6C9A8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M616 650H844" stroke="#D6C9A8" stroke-width="8" stroke-linecap="round"/>
+</svg>
