@@ -2,8 +2,15 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useSyncExternalStore } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 import { useI18n } from "@/components/i18n/I18nProvider";
+import {
+  getIsMobileNavOpen,
+  getIsMobileViewport,
+  setIsMobileNavOpen,
+  subscribeToMobileNav,
+  subscribeToMobileViewport,
+} from "@/components/ui/navState";
 
 const NAV_ITEMS = [
   { href: "/", icon: "bi-house", labelKey: "nav.home" },
@@ -18,8 +25,6 @@ const NAV_ITEMS = [
 
 const NAV_COLLAPSE_STORAGE_KEY = "left-nav-collapsed";
 const NAV_COLLAPSE_EVENT = "left-nav-collapse-change";
-const MOBILE_MEDIA_QUERY = "(max-width: 768px)";
-
 function getStoredCollapsedState() {
   if (typeof window === "undefined") {
     return false;
@@ -59,37 +64,6 @@ function setStoredCollapsedState(nextValue) {
   window.dispatchEvent(new Event(NAV_COLLAPSE_EVENT));
 }
 
-function getIsMobileViewport() {
-  if (typeof window === "undefined") {
-    return false;
-  }
-
-  return window.matchMedia(MOBILE_MEDIA_QUERY).matches;
-}
-
-function subscribeToMobileViewport(callback) {
-  if (typeof window === "undefined") {
-    return () => {};
-  }
-
-  const mediaQueryList = window.matchMedia(MOBILE_MEDIA_QUERY);
-  const handleViewportChange = () => callback();
-
-  if (typeof mediaQueryList.addEventListener === "function") {
-    mediaQueryList.addEventListener("change", handleViewportChange);
-
-    return () => {
-      mediaQueryList.removeEventListener("change", handleViewportChange);
-    };
-  }
-
-  mediaQueryList.addListener(handleViewportChange);
-
-  return () => {
-    mediaQueryList.removeListener(handleViewportChange);
-  };
-}
-
 function isNavItemActive(pathname, href) {
   if (href === "/") {
     return pathname === "/";
@@ -101,7 +75,6 @@ function isNavItemActive(pathname, href) {
 export default function LeftNavbar() {
   const { t } = useI18n();
   const pathname = usePathname() ?? "/";
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
   const isCollapsed = useSyncExternalStore(
     subscribeToCollapsedState,
     getStoredCollapsedState,
@@ -112,6 +85,12 @@ export default function LeftNavbar() {
     getIsMobileViewport,
     () => false
   );
+  const isMobileOpen = useSyncExternalStore(
+    subscribeToMobileNav,
+    getIsMobileNavOpen,
+    () => false
+  );
+
   const isExpanded = isMobileViewport ? isMobileOpen : !isCollapsed;
   const isVisuallyCollapsed = !isExpanded;
 
@@ -136,12 +115,17 @@ export default function LeftNavbar() {
     .filter(Boolean)
     .join(" ");
 
-  function handleToggle() {
-    if (isMobileViewport) {
-      setIsMobileOpen((currentValue) => !currentValue);
-      return;
+  useEffect(() => {
+    if (!isMobileViewport && isMobileOpen) {
+      setIsMobileNavOpen(false);
     }
+  }, [isMobileOpen, isMobileViewport]);
 
+  useEffect(() => {
+    setIsMobileNavOpen(false);
+  }, [pathname]);
+
+  function handleToggle() {
     setStoredCollapsedState(!isCollapsed);
   }
 
@@ -152,35 +136,35 @@ export default function LeftNavbar() {
           type="button"
           className="nav-backdrop"
           aria-label={closeLabel}
-          onClick={() => setIsMobileOpen(false)}
+          onClick={() => setIsMobileNavOpen(false)}
         />
       )}
 
       <aside className={navClassName}>
-          <nav id="primary-navigation" aria-label={t("ui.primaryNavigation")}>
-              <ul className="nav-list">
-              {NAV_ITEMS.map(({ href, icon, labelKey }) => {
-                const label = t(labelKey);
-                const isActive = isNavItemActive(pathname, href);
+        <nav id="primary-navigation" aria-label={t("ui.primaryNavigation")}>
+          <ul className="nav-list">
+            {NAV_ITEMS.map(({ href, icon, labelKey }) => {
+              const label = t(labelKey);
+              const isActive = isNavItemActive(pathname, href);
 
-                return (
-                  <li key={href} className={isActive ? "is-active" : undefined}>
-                    <Link
-                      href={href}
-                      title={isVisuallyCollapsed ? label : undefined}
-                      aria-label={isVisuallyCollapsed ? label : undefined}
-                      aria-current={isActive ? "page" : undefined}
-                      onClick={isMobileViewport ? () => setIsMobileOpen(false) : undefined}
-                    >
-                      <i className={`bi ${icon}`} aria-hidden="true"></i>
-                      <span className="nav-label">{label}</span>
-                    </Link>
-                  </li>
-                );
-              })}
-              </ul>
-              
-          </nav>
+              return (
+                <li key={href} className={isActive ? "is-active" : undefined}>
+                  <Link
+                    href={href}
+                    title={isVisuallyCollapsed ? label : undefined}
+                    aria-label={isVisuallyCollapsed ? label : undefined}
+                    aria-current={isActive ? "page" : undefined}
+                    onClick={isMobileViewport ? () => setIsMobileNavOpen(false) : undefined}
+                  >
+                    <i className={`bi ${icon}`} aria-hidden="true"></i>
+                    <span className="nav-label">{label}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+        {!isMobileViewport && (
           <button
             type="button"
             className="nav-collapse-toggle"
@@ -196,7 +180,9 @@ export default function LeftNavbar() {
             ></i>
             <span className="sr-only">{toggleLabel}</span>
           </button>
+        )}
       </aside>
     </>
   );
 }
+

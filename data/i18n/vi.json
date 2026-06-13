@@ -17,8 +17,14 @@
   "ui": {
     "primaryNavigation": "\u0110i\u1ec1u h\u01b0\u1edbng ch\u00ednh",
     "closeNavigation": "\u0110\u00f3ng \u0111i\u1ec1u h\u01b0\u1edbng",
+    "openNavigation": "M\u1edf \u0111i\u1ec1u h\u01b0\u1edbng",
     "collapseNavigation": "Thu g\u1ecdn \u0111i\u1ec1u h\u01b0\u1edbng",
     "expandNavigation": "M\u1edf r\u1ed9ng \u0111i\u1ec1u h\u01b0\u1edbng"
+  },
+  "theme": {
+    "light": "s\u00e1ng",
+    "dark": "t\u1ed1i",
+    "switchTo": "Chuy\u1ec3n sang giao di\u1ec7n {theme}"
   },
   "posts": {
     "searchBlog": "T\u00ecm blog theo ti\u00eau \u0111\u1ec1, th\u1ebb, ho\u1eb7c \u00fd t\u01b0\u1edfng...",

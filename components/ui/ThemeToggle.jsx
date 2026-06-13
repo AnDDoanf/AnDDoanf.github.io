@@ -2,10 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
+import { useI18n } from "@/components/i18n/I18nProvider";
 
 export default function ThemeToggle() {
+  const { t } = useI18n();
   const [theme, setTheme] = useState("light");
   const nextTheme = theme === "light" ? "dark" : "light";
+  const nextThemeLabel = t(`theme.${nextTheme}`);
+  const toggleLabel = t("theme.switchTo", { theme: nextThemeLabel });
 
   useEffect(() => {
     const saved = localStorage.getItem("theme") || "light";
@@ -25,8 +29,8 @@ export default function ThemeToggle() {
       type="button"
       className="theme-icon"
       onClick={toggleTheme}
-      aria-label={`Switch to ${nextTheme} theme`}
-      title={`Switch to ${nextTheme} theme`}
+      aria-label={toggleLabel}
+      title={toggleLabel}
     >
       {theme === "light" ? (
         <Sun size={22} strokeWidth={2.2} aria-hidden="true" />

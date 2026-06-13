@@ -17,8 +17,14 @@
   "ui": {
     "primaryNavigation": "Primary",
     "closeNavigation": "Close navigation",
+    "openNavigation": "Open navigation",
     "collapseNavigation": "Collapse navigation",
     "expandNavigation": "Expand navigation"
+  },
+  "theme": {
+    "light": "light",
+    "dark": "dark",
+    "switchTo": "Switch to {theme} theme"
   },
   "posts": {
     "searchBlog": "Search blog by title, tag, or idea...",
