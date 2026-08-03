@@ -1,7 +1,8 @@
----
-title: "DumbPhobia#5 14 Essential Frontend System Design Concepts"
+﻿---
+title: "DumbPhobia#005 14 Essential Frontend System Design Concepts"
 date: 2026-04-03
 tags: [frontend, system]
+image: /assets/post-covers/dumbphobia-system-design.jpg
 ---
 
 > Whether you're prepping for a system design interview or just want to build faster, more scalable apps — these are the concepts that matter.

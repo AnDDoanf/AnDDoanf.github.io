@@ -2,6 +2,10 @@
 title: Hun đúc, nuôi dưỡng chí khí độc lập ra sao?
 date: 2024-11-26
 tags: [learning]
+image: /assets/post-covers/khuyen-hoc.jpg
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 Phần Ba trong chuỗi bài học rút ra từ sách "Khuyến học" của tác giả Fukuzawa Yukichi.
 

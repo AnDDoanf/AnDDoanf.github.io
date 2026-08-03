@@ -2,6 +2,10 @@
 title: Điều răn thứ NĂM
 date: 2026-02-21
 tags: [growth, disipleship]
+image: /assets/post-covers/commandments.webp
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 

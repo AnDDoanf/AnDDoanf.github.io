@@ -2,6 +2,10 @@
 title: Tình yêu là gì?
 date: 2024-08-15
 tags: [learning, devotional]
+image: /assets/post-covers/love2.webp
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 Tình yêu, từ ngàn đời nay, đã trở thành nguồn cảm hứng vô tận cho văn chương, nghệ thuật và âm nhạc. Trong tâm hồn con người, tình yêu không chỉ là cảm xúc mà còn là năng lượng, là niềm tin và động lực cho con người trong cuộc sống.
 

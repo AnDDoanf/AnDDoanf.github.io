@@ -2,6 +2,10 @@
 title: Kỷ Luật Thuộc Linh (phần 2)
 date: 2024-11-07
 tags: [christianity, discipleship]
+image: /assets/post-covers/spritual-disipline.png
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 ## 9. Thói quen thánh cầu nguyện (Ma-thi-ơ 6:5-15)
 

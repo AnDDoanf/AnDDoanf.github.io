@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "katex/dist/katex.min.css";
 import "@/styles/globals.css";
 import "@/styles/gallery.css";
 import "@/styles/portfolio.css";
@@ -15,12 +16,13 @@ export const metadata: Metadata = {
   icons: {
     icon: 'app/favicon.ico',
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({

@@ -1,6 +1,6 @@
 ---
 title: Xung quanh là những kẻ khờ
-date: 2080-05-31
+date: 12024-05-31
 tags: [learning]
 ---
 ## Giao tiếp theo cách của người nghe

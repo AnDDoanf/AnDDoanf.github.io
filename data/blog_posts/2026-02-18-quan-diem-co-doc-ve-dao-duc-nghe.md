@@ -2,6 +2,10 @@
 title: Quan điểm Cơ Đốc về ĐẠO ĐỨC NGHỀ 
 date: 2026-02-18
 tags: [growth, disipleship]
+image: /assets/post-covers/biblical-working.jpg
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 Dựa theo Goodheart-Willcox Workplace Expectations, các nhà tuyển dụng hiện đại mong muốn nhân viên đi làm đúng giờ mỗi ngày, làm việc chăm chỉ, tuân thủ các quy tắc và chính sách của công ty, hòa đồng với đồng nghiệp, giúp đỡ khi được yêu cầu, trân trọng các đặc quyền mà không lạm dụng chúng, có thái độ tích cực, trung thực, thể hiện lòng trung thành, hoàn thành công việc chính xác, đầy đủ và đúng hạn, tự hào về công việc của mình, nỗ lực để cải thiện, chịu trách nhiệm về công việc của mình và thể hiện sự chủ động. 

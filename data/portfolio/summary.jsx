@@ -1,7 +1,3 @@
 export const summary = `
-I am a final-year Informatics student at the University of Science and
-Technology of Hanoi, with strong analytical and creative skills and a
-solid foundation in AI agents, large language models (LLMs), and
-software engineering. Guided by Christian values of integrity and
-responsibility, I aspire to build my career as a Software Engineer.
+I am a full-stack developer passionate about using AI to build practical, real-world products that reduce workloads, improve efficiency, and create meaningful value. As I continue developing my technical skills, I also aim to grow into a leadership and management role in the IT field, where I can guide teams and contribute to impactful products. As a Christian, I seek to approach both life and work with faith, hope, and love, allowing these values to shape how I build, lead, and serve others.
 `

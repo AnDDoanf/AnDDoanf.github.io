@@ -2,6 +2,10 @@
 title: Xếp bậc cấp bậc
 date: 2023-11-14
 tags: [forfun]
+image: /assets/post-covers/ranking.png
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 ## Giới thiệu

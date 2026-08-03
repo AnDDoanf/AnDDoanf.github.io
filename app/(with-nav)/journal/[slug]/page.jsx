@@ -1,11 +1,10 @@
 import fs from "fs";
 import matter from "gray-matter";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import {
   createHeadingIdResolver,
   extractHeadings,
 } from "@/app/utils/extractHeadings";
+import MarkdownContent from "@/components/blog/MarkdownContent";
 import getPostMetadata from "@/app/utils/getPostMetadata";
 import PostNavigator from "@/components/blog/PostNavigator";
 import TableOfContents from "@/components/blog/TableOfContent";
@@ -55,23 +54,10 @@ export default async function JournalPostPage({ params }) {
       {/* Article */}
       <article className="post-content">
         <h1>{post.data.title}</h1>
-        <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
-          components={{
-            h2: ({ children }) => {
-              const id = resolveHeadingId(children, 2);
-
-              return <h2 id={id}>{children}</h2>;
-            },
-            h3: ({ children }) => {
-              const id = resolveHeadingId(children, 3);
-
-              return <h3 id={id}>{children}</h3>;
-            },
-          }}
-        >
-          {post.content}
-        </ReactMarkdown>
+        <MarkdownContent
+          content={post.content}
+          resolveHeadingId={resolveHeadingId}
+        />
 
         <PostNavigator
           previousPost={previousPost}

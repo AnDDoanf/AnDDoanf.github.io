@@ -2,6 +2,10 @@
 title: Câu Chuyện Người Cha Và Hai Con Trai - Người Em
 date: 2024-11-10
 tags: [christianity, devotional]
+image: /assets/post-covers/parable1.jpg
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 Bài học rút ra từ dụ ngôn "Đứa con hoang đàng" mà Chúa Giê-xu đã dạy cho các môn đệ, được ghi chép lại trong [*Lu-ca 15:11-32*](https://www.bible.com/bible/449/LUK.15.NVB).
 

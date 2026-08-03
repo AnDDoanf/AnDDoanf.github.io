@@ -2,6 +2,10 @@
 title: Người chịu thiệt thòi nhất là những kẻ vô học
 date: 2024-09-30
 tags: [learning]
+image: /assets/post-covers/khuyen-hoc.jpg
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 Phần Hai trong chuỗi bài học rút ra từ sách "Khuyến học" của tác giả Fukuzawa Yukichi.
 

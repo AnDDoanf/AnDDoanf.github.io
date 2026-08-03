@@ -2,6 +2,10 @@
 title: Sự sống, Cái chết và Khôn ngoan
 date: 2024-08-10
 tags: [christianity, devotional]
+image: /assets/post-covers/life-death.jpg
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 > "Danh thơm tiếng tốt hơn dầu quí giá, ngày chết hơn ngày sanh. Đến nhà tang chế hơn đến nhà yến tiệc, vì ai rồi cũng phải chết; Vậy người sống hãy để tâm suy ngẫm thân phận mình. Buồn rầu tốt hơn đùa giỡn, vì kinh nghiệm đau buồn mở mang tâm trí. Người khôn ngoan để tâm nghĩ đến sự chết, kẻ ngu dại chỉ nghĩ đến vui chơi. Nghe người khôn ngoan khuyên dạy tốt hơn là nghe tiếng ca hát của kẻ dại khờ"
 > ~ *Giáo huấn 7:1-5* ~

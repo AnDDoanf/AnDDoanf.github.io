@@ -1,7 +1,8 @@
----
-title: "DumbPhobia#6 30 React Hooks"
+﻿---
+title: "DumbPhobia#006 30 React Hooks"
 date: 2026-04-04
 tags: [react, frontend]
+image: /assets/post-covers/dumbphobia-react.jpg
 ---
 
 > A comprehensive reference for every major React hook — from the ones you use every day to the ones that unlock serious performance and architectural power.

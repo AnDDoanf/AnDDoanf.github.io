@@ -2,6 +2,10 @@
 title: Xứng đáng bên em
 date: 2025-05-01
 tags: [life, reflection]
+image: /assets/post-covers/love1.jpg
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 "Nếu số phận đã định tình yêu chúng ta không sẽ có kết quả, vậy tất cả những điều đang làm bây giờ có còn xứng đáng không?" - "Đáng"
 

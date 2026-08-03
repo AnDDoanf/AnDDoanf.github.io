@@ -19,7 +19,9 @@ export default function SkillsCloud() {
   useEffect(() => {
     const handleResize = () => {
       if (containerRef.current) {
-        setContainerWidth(containerRef.current.offsetWidth)
+        const measuredWidth = containerRef.current.offsetWidth
+        const viewportMaxWidth = Math.max(280, window.innerWidth - 60)
+        setContainerWidth(Math.min(measuredWidth, viewportMaxWidth))
       }
     }
 

@@ -1,7 +1,8 @@
----
-title: "DumbPhobia#9 ECMAScript 6"
+﻿---
+title: "DumbPhobia#009 ECMAScript 6"
 date: 2026-04-07
 tags: [frontend]
+image: /assets/post-covers/dumbphobia-es6.jpg
 ---
 
 > ES6 (ECMAScript 2015) and its successors transformed JavaScript from a scripting language into a serious engineering platform. These aren't just syntax shortcuts — each feature solves a specific class of problem that plagued JavaScript developers for years.

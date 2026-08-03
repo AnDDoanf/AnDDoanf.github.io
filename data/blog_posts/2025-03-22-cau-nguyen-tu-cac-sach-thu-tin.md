@@ -2,6 +2,10 @@
 title: Cầu nguyện từ các sách thư tín của Phao-lô
 date: 2025-03-22
 tags: [christianity, discipleship]
+image: /assets/post-covers/bible1.webp
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 # Rô-ma
 

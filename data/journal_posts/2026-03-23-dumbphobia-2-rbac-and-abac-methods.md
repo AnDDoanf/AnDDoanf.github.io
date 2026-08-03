@@ -1,7 +1,8 @@
----
-title: DumbPhobia#2 RBAC and ABAC methods
+﻿---
+title: DumbPhobia#002 RBAC and ABAC methods
 date: 2026-03-23
 tags: [frontend, system]
+image: /assets/post-covers/dumbphobia-rbac.jpg
 ---
 
 > Authorization is one of the most under-designed parts of frontend architecture. Understanding RBAC and ABAC — and when to use each — is the difference between a secure, scalable app and one that leaks permissions under edge cases.

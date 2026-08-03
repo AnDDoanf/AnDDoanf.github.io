@@ -2,6 +2,10 @@
 title: Người Cha Theo Kinh Thánh
 date: 2026-05-24
 tags: [christianity]
+image: /assets/post-covers/biblical-fatherhood.jpg
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 Ghi chép từ bài giảng [Be A Man - Biblical Manhood Explained](https://www.youtube.com/watch?v=eZZsWVxDeHA&utm_source=chatgpt.com) trong lúc tìm kiếm về Biblical Manhood.

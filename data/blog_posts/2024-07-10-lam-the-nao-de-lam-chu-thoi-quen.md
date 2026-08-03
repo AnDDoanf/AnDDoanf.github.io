@@ -2,6 +2,10 @@
 title: Làm thế nào để làm chủ THÓI QUEN?
 date: 2024-07-10
 tags: [learning, growth]
+image: /assets/post-covers/power-of-habits.webp
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 Bài học rút ra từ sách "Sức mạnh của thói quen" của tác giả Charles Duhigg.
 

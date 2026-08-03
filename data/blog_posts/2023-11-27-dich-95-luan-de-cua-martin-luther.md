@@ -2,6 +2,10 @@
 title: Dịch 95 luận đề của Martin Luther (1517)
 date: 2023-11-27
 tags: [chritianity]
+image: /assets/post-covers/95-theses.jpg
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 1. Đức Chúa và Thầy Giê-xu Christ của chúng ta, khi Ngài nói Poenitentiam agite ["Ăn năn"], ý muốn rằng toàn bộ cuộc đời của các tín hữu phải là sự ăn năn.

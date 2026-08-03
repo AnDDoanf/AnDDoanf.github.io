@@ -2,6 +2,10 @@
 title: Nhà Là Nơi Con Tim Hướng Về
 date: 2025-08-31
 tags: [life, reflection]
+image: /assets/post-covers/home.webp
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 > "If home is where the heart is, then as the traveler, my home is nomadic.
 > Diasporic static, shock me with these memories.

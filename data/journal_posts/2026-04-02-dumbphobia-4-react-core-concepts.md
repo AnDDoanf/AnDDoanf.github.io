@@ -1,7 +1,8 @@
----
-title: "DumbPhobia#4 React Core Concepts"
+﻿---
+title: "DumbPhobia#004 React Core Concepts"
 date: 2026-04-02
 tags: [react, frontend]
+image: /assets/post-covers/dumbphobia-react.jpg
 ---
 
 > React is full of fancy terms — reconciliation, composition, error boundaries. Here's what they all actually mean, from first principles.

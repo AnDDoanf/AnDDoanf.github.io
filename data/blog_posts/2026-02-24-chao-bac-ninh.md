@@ -2,6 +2,10 @@
 title: Chào Bắc Ninh
 date: 2026-02-24
 tags: [reflection, journey]
+image: /assets/post-covers/chao-bac-ninh.jpg
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 24-02-2026 ngồi trên chuyến xe cuối cùng, nhìn những món đồ cuối cùng chuyển đi khỏi ngôi nhà thân thương mà tôi từng gắn bó, tôi man mác buồn. Tôi tin rằng nỗi buồn đó không hề ích kỷ, bởi nó chứa đựng kí ức của những người tôi yêu thương, những người yêu thương tôi:

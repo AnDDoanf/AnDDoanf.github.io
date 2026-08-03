@@ -2,6 +2,10 @@
 title: Vì sao tin Chúa?
 date: 2023-10-30
 tags: [testimony, faith]
+image: /assets/post-covers/god-is-real.jpg
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 Làm thế nào tôi biết được Chúa tồn tại? Tôi không thể nhìn, nghe, đụng, ngửi và nếm Chúa; tôi không thể cân đo đong đếm Chúa như một bao gạo; tôi không thể đặt Chúa vào một cái kính hiển vi để chứng minh Chúa trông như thế nào dưới dạng phân tử. 

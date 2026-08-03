@@ -2,6 +2,10 @@
 title: Con người và thẩm mỹ
 date: 2024-08-18
 tags: [learning]
+image: /assets/post-covers/aesthetic.jpg
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 ## Dẫn nguồn
 

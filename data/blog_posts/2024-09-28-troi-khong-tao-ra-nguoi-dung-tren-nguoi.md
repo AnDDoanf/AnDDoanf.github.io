@@ -2,6 +2,10 @@
 title: Trời không tạo ra người đứng trên người
 date: 2024-09-28
 tags: [learning]
+image: /assets/post-covers/khuyen-hoc.jpg
+author: 
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 Phần Một trong chuỗi bài học rút ra từ sách "Khuyến học" của tác giả Fukuzawa Yukichi.
 

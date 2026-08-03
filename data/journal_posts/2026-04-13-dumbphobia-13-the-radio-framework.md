@@ -1,7 +1,8 @@
----
-title: DumbPhobia#13 The RADIO Framework
+﻿---
+title: DumbPhobia#013 The RADIO Framework
 date: 2026-04-13
 tags: [frontend, system]
+image: /assets/post-covers/dumbphobia-radio.jpg
 ---
 
 > Frontend system design interviews are notoriously open-ended. RADIO is a battle-tested framework that gives you a repeatable structure to tackle any frontend design problem with clarity and confidence.
