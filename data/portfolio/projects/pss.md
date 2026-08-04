@@ -2,7 +2,7 @@
 title: "Aurora PSS Analytics"
 category: "Gaming"
 description: "A React analytics and ship-building exploration platform for the MMO game Pixel Starships."
-image: "/assets/pss.png"
+image: "/showroom/pss.png"
 tags: ["React", "Vite", "Tailwind CSS", "Local Storage", "API integration"]
 links:
   live: ""

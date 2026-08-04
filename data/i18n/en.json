@@ -27,6 +27,10 @@
     "switchTo": "Switch to {theme} theme"
   },
   "posts": {
+    "blogTitle": "Blogs",
+    "blogSubtitle": "My thought on things caught my interest",
+    "journalTitle": "Journal",
+    "journalSubtitle": "The list of random IT related posts for helping me not being dumb.",
     "searchBlog": "Search blog by title, tag, or idea...",
     "searchJournal": "Search journal by topic or tag...",
     "noResults": "No posts match that search yet.",

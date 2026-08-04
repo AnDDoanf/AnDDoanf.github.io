@@ -89,12 +89,8 @@ function ProductionCard({ production }) {
 }
 
 export default function ShowroomPage() {
-  const { t } = useI18n();
   return (
     <section className="blog-post-container">
-      <h1>{t("showroom.title")}</h1>
-      <p>{t("showroom.subtitle")}</p>
-
       <div className="post-grid showroom-grid">
         {productions.map((production) => (
           <ProductionCard

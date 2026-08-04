@@ -68,9 +68,6 @@ export default function GalleryPageClient({ galleries }) {
 
   return (
     <section className="blog-post-container gallery-index-page">
-      <h1>{t("gallery.title")}</h1>
-      <p>{t("gallery.subtitle")}</p>
-
       {galleries.length > 0 ? (
         <div className="post-grid gallery-grid">
           {galleries.map((gallery) => (

@@ -157,7 +157,7 @@
 
 .portfolio-timeline-dot {
     position: absolute;
-    top: 2.25rem;
+    top: 0.35rem;
     left: 11px;
     width: 12px;
     height: 12px;
@@ -172,23 +172,28 @@
 
 .portfolio-timeline-card {
     color: var(--text);
-    padding: 1rem 1.2rem;
-    border-radius: 6px 6px 0 0;
-    border-bottom: 1px solid var(--border);
-    background: var(--card);
+    padding: 0 0 0.4rem 0;
+    border: none;
+    background: transparent;
     position: relative;
     z-index: 1; 
     transform: none;
 }
 
+.portfolio-timeline-card strong {
+    color: var(--heading);
+    font-size: 1.1rem;
+}
+
 .portfolio-timeline-date {
-    font-size: 0.8rem;
-    opacity: 0.6;
+    font-size: 0.85rem;
+    color: var(--text-muted);
 }
 
 .portfolio-timeline-role {
     font-style: italic;
     margin-top: 0.2rem;
+    color: var(--text-muted);
 }
 
 /* ===============================
@@ -196,6 +201,7 @@
 ================================ */
 
 .portfolio-timeline-bubble {
+    color: var(--text);
     position: relative;
     top: auto;
     left: auto;
@@ -207,18 +213,20 @@
     pointer-events: auto;
     transform: none;
     box-shadow: none;
-    border-radius: 0 0 6px 6px;
-    background: var(--card);
-    padding: 0.8rem 1.2rem 1rem 1.2rem;
+    border: none;
+    background: transparent;
+    padding: 0.4rem 0 1rem 0;
     z-index: 1;
 }
 
 .portfolio-timeline-bubble ul {
     padding-left: 1.2rem;
     margin: 0;
+    color: var(--text);
 }
 
 .portfolio-timeline-bubble li {
+    color: var(--text);
     margin-bottom: 0.4rem;
 }
 

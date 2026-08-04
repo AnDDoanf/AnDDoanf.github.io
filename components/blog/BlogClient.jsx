@@ -4,11 +4,14 @@ import { useState } from "react";
 import { useI18n } from "@/components/i18n/I18nProvider";
 import BlogPostCard from "./BlogPostCard";
 
-export default function BlogClient({ posts, hrefBase = "/blog" }) {
+export default function BlogClient({ posts, hrefBase = "/blog", subtitle }) {
   const { t } = useI18n();
   const [query, setQuery] = useState("");
 
   const q = query.toLowerCase();
+
+  const isJournal = hrefBase === "/journal";
+  const displaySubtitle = subtitle !== undefined ? subtitle : (isJournal ? t("posts.journalSubtitle") : t("posts.blogSubtitle"));
 
   const filteredPosts = posts.filter((post) => {
     const title = post.title?.toLowerCase() || "";
@@ -24,7 +27,7 @@ export default function BlogClient({ posts, hrefBase = "/blog" }) {
     );
   });
 
-  const searchPlaceholder = hrefBase === "/journal"
+  const searchPlaceholder = isJournal
     ? t("posts.searchJournal")
     : t("posts.searchBlog");
 
@@ -41,6 +44,8 @@ export default function BlogClient({ posts, hrefBase = "/blog" }) {
               aria-label={searchPlaceholder}
           />
         </div>
+
+        {displaySubtitle && <p className="index-page-subtitle">{displaySubtitle}</p>}
 
         {filteredPosts.length > 0 ? (
           <div className="post-grid post-card-grid">

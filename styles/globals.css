@@ -32,6 +32,7 @@
   --bg: var(--base3);
   --bg-alt: var(--base2);
   --surface: var(--base2);
+  --card: var(--base2);
   --text: var(--base00);
   --text-muted: var(--base01);
   --heading: var(--base01);
@@ -50,8 +51,9 @@
   --bg: var(--base03);
   --bg-alt: var(--base02);
   --surface: var(--base02);
+  --card: var(--base02);
   --text: var(--base0);
-  --text-muted: var(--base00);
+  --text-muted: var(--base1);
   --heading: var(--base1);
   --border: var(--base01);
   --code-bg: var(--base02);
@@ -66,6 +68,8 @@
 /* Smooth theme transition */
 html,
 body {
+  background-color: var(--bg);
+  color: var(--text);
   transition:
     background-color 0.35s ease,
     color 0.35s ease;
@@ -477,7 +481,7 @@ a:hover {
   gap: 0.7rem;
   width: min(100%, 29rem);
   min-height: 3.35rem;
-  margin: 0 auto 2.2rem;
+  margin: 0 auto 1.25rem;
   padding: 0rem 1rem;
   border: 1px solid var(--border);
   border-radius: 0.8rem;
@@ -487,6 +491,16 @@ a:hover {
     border-color 0.2s ease,
     box-shadow 0.2s ease,
     background-color 0.2s ease;
+}
+
+.index-page-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.025rem;
+  margin: 0 auto 2.2rem;
+  max-width: 38rem;
+  line-height: 1.5;
+  transition: color 0.35s ease;
 }
 
 .post-search-shell:focus-within {
