@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,6 +16,10 @@ export default function Projects({ initialProjects }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+
+  const touchStartRef = useRef(0);
+  const touchEndRef = useRef(0);
+  const isSwipingRef = useRef(false);
 
   const categories = ["All", "Work", "Church", "Individual", "Gaming"];
 
@@ -89,6 +93,36 @@ export default function Projects({ initialProjects }) {
     }
   };
 
+  const handleTouchStart = (e) => {
+    touchStartRef.current = e.targetTouches[0].clientX;
+    touchEndRef.current = e.targetTouches[0].clientX;
+    isSwipingRef.current = false;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndRef.current = e.targetTouches[0].clientX;
+    if (Math.abs(touchStartRef.current - touchEndRef.current) > 10) {
+      isSwipingRef.current = true;
+    }
+  };
+
+  const handleTouchEnd = () => {
+    const distance = touchStartRef.current - touchEndRef.current;
+    if (distance > 35) {
+      handleNext();
+    } else if (distance < -35) {
+      handlePrev();
+    }
+  };
+
+  const handleClickCapture = (e) => {
+    if (isSwipingRef.current) {
+      e.preventDefault();
+      e.stopPropagation();
+      isSwipingRef.current = false;
+    }
+  };
+
   const renderProjectCard = (project) => {
     const catLower = project.category.toLowerCase();
     const categoryIcon = categoryIcons[catLower] || "bi bi-laptop";
@@ -151,6 +185,10 @@ export default function Projects({ initialProjects }) {
     );
   };
 
+  const slideTransform = isMobile
+    ? `translateX(calc(-1 * ${currentIndex} * (100% + 1.25rem)))`
+    : `translateX(calc(-1 * ${currentIndex} * ((100% + 1.75rem) / 2)))`;
+
   const projectListContent = (!isMounted || !useSlider) ? (
     /* Render static grid during server rendering, hydration, or if < 3 projects */
     <div className="post-grid post-card-grid portfolio-projects-grid">
@@ -163,15 +201,20 @@ export default function Projects({ initialProjects }) {
   ) : (
     /* Render interactive slider on the client once mounted */
     <div className="portfolio-projects-slider-container">
-      <div className="portfolio-projects-slider-viewport">
-        <div
-          className="portfolio-projects-slider-track"
-          style={{
-            "--current-index": currentIndex,
-          }}
-        >
+      <div
+        className="portfolio-projects-slider-viewport"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        onClickCapture={handleClickCapture}
+      >
+        <div className="portfolio-projects-slider-track">
           {filteredProjects.map((project) => (
-            <div key={project.slug} className="portfolio-projects-slider-slide">
+            <div
+              key={project.slug}
+              className="portfolio-projects-slider-slide"
+              style={{ transform: slideTransform }}
+            >
               {renderProjectCard(project)}
             </div>
           ))}

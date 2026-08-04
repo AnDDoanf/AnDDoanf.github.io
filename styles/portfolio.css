@@ -688,7 +688,7 @@ transform: scale(1.1);
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  padding: 0 3.5rem; /* space for absolute navigation buttons */
+  padding: 0 3rem; /* space for symmetric navigation buttons */
   box-sizing: border-box;
 }
 
@@ -698,32 +698,38 @@ transform: scale(1.1);
   max-width: 100%;
   min-width: 0;
   overflow: hidden;
-  padding: 0.75rem 0.25rem; /* prevent card shadow clipping */
-  margin: 0 -0.25rem;
+  padding: 1.5rem 0.5rem 2.25rem 0.5rem; /* generous padding to prevent shadow clipping with exact symmetry */
+  margin: -1.5rem -0.5rem -2.25rem -0.5rem;
+  touch-action: pan-y;
+  user-select: none;
 }
 
 .portfolio-projects-slider-track {
   display: flex;
+  gap: 1.75rem;
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transform: translateX(calc(-1 * var(--current-index, 0) * (50% + 0.875rem)));
 }
 
 .portfolio-projects-slider-slide {
-  flex: 0 0 calc(50% - 0.875rem);
-  width: calc(50% - 0.875rem);
-  margin-right: 1.75rem;
+  flex: 0 0 calc((100% - 1.75rem) / 2);
+  width: calc((100% - 1.75rem) / 2);
+  margin-right: 0;
   box-sizing: border-box;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 @media screen and (max-width: 1024px) {
   .portfolio-projects-slider-container {
     padding: 0 0.25rem;
   }
+  .portfolio-projects-slider-viewport {
+    padding: 1.25rem 0.5rem 2rem 0.5rem;
+    margin: -1.25rem -0.5rem -2rem -0.5rem;
+  }
   .portfolio-projects-slider-track {
-    transform: translateX(calc(-1 * var(--current-index, 0) * 100%));
+    gap: 1.25rem;
   }
   .portfolio-projects-slider-slide {
     flex: 0 0 100%;
@@ -764,11 +770,11 @@ transform: scale(1.1);
 }
 
 .portfolio-projects-slider-btn.prev {
-  left: 0;
+  left: -0.25rem;
 }
 
 .portfolio-projects-slider-btn.next {
-  right: 0;
+  right: -0.25rem;
 }
 
 .portfolio-projects-slider-btn:disabled {
