@@ -2,6 +2,7 @@
 title: "HTNC Platform"
 category: "Church"
 description: "A monorepo platform designed for learning, event management, and fellowship within Christian church networks."
+descriptionVi: "Nền tảng monorepo phục vụ học tập, quản lý sự kiện và thông công trong mạng lưới các Hội Thánh Cơ Đốc."
 image: "/showroom/production-1.svg"
 tags: ["Next.js", "NestJS", "PostgreSQL", "Redis", "monorepo (pnpm)"]
 links:

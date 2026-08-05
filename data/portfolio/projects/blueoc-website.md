@@ -2,6 +2,7 @@
 title: "BlueOC Website"
 category: "Work"
 description: "The primary multilingual landing website for BlueOC Technology, featuring localized routing, solution grids, case studies, and Strapi CMS."
+descriptionVi: "Trang giới thiệu đa ngôn ngữ chính thức của BlueOC Technology, gồm định tuyến bản địa hóa, danh mục giải pháp, câu chuyện khách hàng và Strapi CMS."
 image: "/showroom/production-2.svg"
 tags: ["Next.js", "React", "Tailwind CSS", "Strapi CMS", "TypeScript", "EmailJS"]
 links:

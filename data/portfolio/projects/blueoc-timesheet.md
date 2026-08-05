@@ -2,6 +2,7 @@
 title: "BlueOC Timesheet"
 category: "Work"
 description: "An internal full-stack employee timesheet and HR portal solving automated check-ins and multi-level leave approval flows."
+descriptionVi: "Cổng chấm công và nhân sự full-stack nội bộ, tự động hóa quy trình điểm danh và phê duyệt đơn nghỉ nhiều cấp."
 image: "/showroom/cronix.png"
 tags: ["React 18", "Express 4", "PostgreSQL", "Azure AD SSO", "AWS S3", "Vite"]
 links:

@@ -43,6 +43,16 @@ export function I18nProvider({ children }) {
     const initial = pickInitialLang();
     setLangState(initial);
     document.documentElement.lang = initial;
+
+    const syncLanguage = (event) => {
+      if (event.key !== "lang") return;
+      const next = event.newValue === "vi" ? "vi" : "en";
+      setLangState(next);
+      document.documentElement.lang = next;
+    };
+
+    window.addEventListener("storage", syncLanguage);
+    return () => window.removeEventListener("storage", syncLanguage);
   }, []);
 
   function setLang(nextLang) {

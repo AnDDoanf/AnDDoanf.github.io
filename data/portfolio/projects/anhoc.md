@@ -2,6 +2,7 @@
 title: "Anhoc Gamify"
 category: "Individual"
 description: "An AI-augmented math learning application for students, featuring timed auto-graded tests, gamified XP shop, and Gemini AI Chatbot."
+descriptionVi: "Ứng dụng học toán tích hợp AI dành cho học sinh, gồm bài kiểm tra tính giờ chấm tự động, cửa hàng XP theo cơ chế trò chơi hóa và chatbot Gemini AI."
 image: "/showroom/anhoc.png"
 tags: ["Next.js", "Express", "FastAPI", "Google Gemini", "Redis", "BullMQ", "PostgreSQL"]
 links:

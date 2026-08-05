@@ -1,0 +1,531 @@
+.me-page,
+.portfolio-me-frame {
+  --hobby-swiper-bg: var(--base2);
+  --hobby-control-bg: var(--base3);
+  --hobby-copy-text: var(--base01);
+}
+
+[data-theme="dark"] .me-page,
+[data-theme="dark"] .portfolio-me-frame {
+  --hobby-swiper-bg: var(--base03);
+  --hobby-control-bg: var(--base02);
+  --hobby-copy-text: var(--base2);
+}
+
+.me-page {
+  width: 100%;
+  max-width: 900px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.is-embedded .me-page {
+  max-width: none;
+  padding: 0;
+}
+
+.is-embedded .me-standalone-only,
+.is-embedded .me-video-heading {
+  display: none;
+}
+
+.me-hero {
+  max-width: 720px;
+  padding-bottom: 6rem;
+}
+
+.me-language-toggle {
+  margin-bottom: 1.5rem;
+}
+
+.me-kicker {
+  margin: 0;
+  color: var(--link);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.me-hero h1 {
+  margin: 0.35rem 0 1rem;
+  font-size: clamp(2.6rem, 8vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.me-intro {
+  max-width: 650px;
+  color: var(--text);
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  line-height: 1.65;
+}
+
+.me-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  color: var(--link);
+  font-weight: 600;
+}
+
+.me-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.me-video-section {
+  margin-bottom: 6rem;
+}
+
+.me-section {
+  padding: 0;
+}
+
+.me-section-heading {
+  display: block;
+}
+
+.me-section-intro {
+  max-width: 720px;
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.me-section-intro > :first-child,
+.me-section-intro > :last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Hobbies */
+.me-hobbies-swiper {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 22px;
+  background: var(--hobby-swiper-bg);
+  outline: none;
+}
+
+.me-hobbies-swiper:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 5px;
+  border-radius: 14px;
+}
+
+.me-hobbies-viewport {
+  width: 100%;
+  overflow: hidden;
+  overflow: clip;
+  border: 0;
+  border-radius: 22px;
+  clip-path: inset(0 round 22px);
+  touch-action: pan-y;
+}
+
+.me-hobbies-track {
+  display: flex;
+  align-items: stretch;
+  transition: transform 0.4s ease;
+}
+
+.me-hobby-slide {
+  display: flex;
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.me-hobby-card {
+  position: relative;
+  display: block;
+  flex: 1;
+  width: 100%;
+  height: 500px;
+  min-height: 500px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 22px;
+  background: var(--hobby-swiper-bg);
+}
+
+.me-hobby-image-wrap {
+  position: absolute;
+  inset: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+
+.me-hobby-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.me-hobby-card:hover .me-hobby-image {
+  transform: scale(1.035);
+}
+
+.me-hobby-copy {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 60%;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 0;
+  border-radius: 0;
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--hobby-swiper-bg) 24%, transparent) 0%,
+    color-mix(in srgb, var(--hobby-swiper-bg) 76%, transparent) 42%,
+    var(--hobby-swiper-bg) 100%
+  );
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.me-hobby-copy .me-hobby-count {
+  margin-bottom: 0.65rem;
+  color: var(--link);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.me-hobby-copy h2,
+.me-faith-copy h2 {
+  margin: 0 0 0.55rem;
+  color: var(--heading);
+  font-size: 1.25rem;
+}
+
+.me-hobby-copy p,
+.me-faith-copy p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.me-hobby-copy h2,
+.me-hobby-copy p {
+  color: var(--hobby-copy-text);
+}
+
+.me-hobby-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: auto;
+  padding: 0.65rem 0.9rem;
+  border: 0;
+  border-radius: 999px;
+  color: var(--hobby-copy-text);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.me-hobby-link:hover {
+  color: var(--link);
+}
+
+.me-hobbies-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0;
+  padding: 1rem;
+}
+
+.me-hobbies-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 50%;
+  background: var(--hobby-control-bg);
+  color: var(--hobby-copy-text);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.me-hobbies-arrow:hover {
+  color: var(--link);
+}
+
+.me-hobbies-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.me-hobbies-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--border);
+  cursor: pointer;
+  transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+.me-hobbies-dot.is-active {
+  width: 1.6rem;
+  background: var(--link);
+}
+
+/* Faith timeline */
+.me-faith-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 0;
+}
+
+.me-faith-node {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-height: 190px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: 0 12px 28px var(--shadow);
+}
+
+.me-faith-dot {
+  display: none;
+}
+
+.me-faith-image-wrap {
+  min-height: 190px;
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+
+.me-faith-node:nth-child(even) .me-faith-image-wrap {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.me-faith-node:nth-child(even) .me-faith-copy {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.me-faith-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 190px;
+  object-fit: cover;
+}
+
+.me-faith-copy {
+  align-self: center;
+  padding: 1.5rem;
+}
+
+.me-faith-copy .me-faith-label {
+  margin-bottom: 0.35rem;
+  color: var(--link);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+/* Vision board canvas */
+.me-vision-shell {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--bg-alt);
+  box-shadow: 0 14px 32px var(--shadow);
+}
+
+.me-vision-canvas {
+  display: block;
+  width: 100%;
+}
+
+/* Q&A */
+.me-qa-layout {
+  width: 100%;
+}
+
+.me-qa-list {
+  min-width: 0;
+}
+
+.me-qa-item {
+  max-height: 6rem;
+  padding: 1.5rem 1rem;
+  overflow: hidden;
+  border-bottom: 2px solid var(--border);
+  transition: max-height 0.3s ease, color 0.3s ease;
+}
+
+.me-qa-item:first-child {
+  padding-top: 0;
+}
+
+.me-qa-item.is-open {
+  max-height: 24rem;
+}
+
+.me-qa-question {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--heading);
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.me-qa-question span {
+  color: inherit;
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  line-height: 1.2;
+}
+
+.me-qa-question:hover,
+.me-qa-item.is-open .me-qa-question {
+  color: var(--link);
+  opacity: 1;
+}
+
+.me-qa-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  margin-top: 1.25rem;
+  padding-left: 1.5rem;
+  border-left: 4px solid var(--link);
+  transition: grid-template-rows 0.3s ease, opacity 0.3s ease;
+}
+
+.me-qa-answer > div {
+  overflow: hidden;
+}
+
+.me-qa-answer p {
+  margin: 0;
+  padding: 0 0 0.5rem;
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.me-qa-item.is-open .me-qa-answer {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .me-page {
+    padding: 2rem 1.25rem 8rem;
+  }
+
+  .me-hero {
+    padding-bottom: 3rem;
+  }
+
+  .me-sections {
+    gap: 6rem;
+  }
+
+  .me-video-section {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .me-faith-node {
+    grid-template-columns: 1fr;
+  }
+
+  .me-hobby-card {
+    height: 480px;
+    min-height: 480px;
+  }
+
+  .me-hobby-image-wrap,
+  .me-hobby-image {
+    min-height: 0;
+    max-height: none;
+  }
+
+  .me-hobby-copy {
+    padding: 1.25rem;
+  }
+
+  .me-faith-image-wrap,
+  .me-faith-image {
+    min-height: 220px;
+    max-height: 280px;
+  }
+
+  .me-faith-node:nth-child(even) .me-faith-image-wrap,
+  .me-faith-node:nth-child(even) .me-faith-copy {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .me-qa-item {
+    max-height: 4.5rem;
+    padding: 1.1rem 0.75rem;
+  }
+
+  .me-qa-item.is-open {
+    max-height: 52rem;
+  }
+
+  .me-qa-question span {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .me-page {
+    padding: 1.5rem 1rem 8rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-me-frame,
+  .me-hobby-card,
+  .me-hobby-image,
+  .me-qa-answer {
+    animation: none;
+    transition: none;
+  }
+}

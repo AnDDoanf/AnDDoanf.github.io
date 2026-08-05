@@ -2,6 +2,7 @@
 title: "Anchi Tracker"
 category: "Individual"
 description: "A private personal finance web application featuring RBAC, audit timelines, budget templates, and dynamic financial health dashboards."
+descriptionVi: "Ứng dụng web quản lý tài chính cá nhân riêng tư, hỗ trợ RBAC, dòng thời gian kiểm toán, mẫu ngân sách và bảng điều khiển sức khỏe tài chính động."
 image: "/showroom/anchi.png"
 tags: ["Next.js", "NestJS", "PostgreSQL", "TypeORM", "Tailwind CSS", "Zod"]
 links:

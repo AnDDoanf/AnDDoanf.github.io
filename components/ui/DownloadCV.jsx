@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useI18n } from "@/components/i18n/I18nProvider";
 
 export default function DownloadCV() {
+  const { t } = useI18n();
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -20,9 +22,9 @@ export default function DownloadCV() {
       target="_blank"
       rel="noopener noreferrer"
       className={`download-cv ${show ? "show" : ""}`}
-      aria-label="Download CV"
+      aria-label={t("portfolio.downloadCv")}
     >
-      See My CV
+      {t("portfolio.seeCv")}
     </a>
   );
 }

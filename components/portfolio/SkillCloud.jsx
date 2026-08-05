@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { skills } from "@/data/portfolio/skills"
+import { useI18n } from "@/components/i18n/I18nProvider"
 
 const MAX_TRIES = 50
 const PADDING = 10
@@ -11,6 +12,7 @@ const clamp = (val, min, max) => Math.min(Math.max(val, min), max)
 
 
 export default function SkillsCloud() {
+  const { t } = useI18n()
   const containerRef = useRef(null)
   const [positions, setPositions] = useState([])
 
@@ -127,7 +129,7 @@ export default function SkillsCloud() {
 
   return (
     <section id="portfolio-skills" className="portfolio-section">
-      <h1 className="portfolio-section-title">Skills</h1>
+      <h1 className="portfolio-section-title">{t("portfolio.skills")}</h1>
 
       <div ref={containerRef} className="portfolio-skills">
         {positions.map((p, i) => (

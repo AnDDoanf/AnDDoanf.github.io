@@ -1,47 +1,76 @@
 export const experiences = [
   {
     date: 'Mar 2026 - Present',
+    dateVi: '03/2026 - Hiện tại',
     location: 'Hanoi',
     company: 'BlueOC',
     role: 'Fullstack Developer',
+    roleVi: 'Lập trình viên Full-stack',
     responsibilities: [
       'Developed and maintained the company\'s multilingual Next.js landing page using localized subroutes and headless Strapi CMS content fetching.',
       'Built an internal full-stack employee timesheet and HR portal featuring webcam photo registration, leave request forms, and multi-level manager approval flows (React 18, Express, PostgreSQL).',
       'Contributed to the Yahsaka workplace ecosystem, developing a Laravel 8 backend API, a React subscription portal, and a Flutter mobile client.',
       'Engaged in feature planning, system documenting, and collaborative sprints within an Agile Scrum workflow.',
     ],
+    responsibilitiesVi: [
+      'Phát triển và duy trì trang giới thiệu đa ngôn ngữ của công ty bằng Next.js, sử dụng định tuyến theo ngôn ngữ và lấy nội dung từ headless CMS Strapi.',
+      'Xây dựng cổng chấm công và nhân sự full-stack nội bộ, gồm đăng ký ảnh khuôn mặt qua webcam, đơn xin nghỉ và quy trình phê duyệt nhiều cấp (React 18, Express, PostgreSQL).',
+      'Tham gia phát triển hệ sinh thái quản trị nơi làm việc Yahsaka với API Laravel 8, cổng đăng ký gói dịch vụ bằng React và ứng dụng di động Flutter.',
+      'Tham gia lên kế hoạch tính năng, viết tài liệu hệ thống và phối hợp theo từng sprint trong quy trình Agile Scrum.',
+    ],
   },
   {
     date: 'Jun 2024 - Mar 2025',
+    dateVi: '06/2024 - 03/2025',
     location: 'Hanoi',
     company: 'SpringAI',
     role: 'Fresher Fullstack',
+    roleVi: 'Lập trình viên Full-stack',
     responsibilities: [
       'Contributed to the development and feature integration of an internal e-commerce portal utilizing React, Node.js, and RESTful APIs.',
       'Designed and implemented a multi-turn chat application driven by agentic workflows and dynamic prompts.',
       'Maintained test coverage and participated in structural code reviews to secure API routing and frontend state integrity.',
     ],
+    responsibilitiesVi: [
+      'Tham gia phát triển và tích hợp tính năng cho cổng thương mại điện tử nội bộ sử dụng React, Node.js và RESTful API.',
+      'Thiết kế, triển khai ứng dụng trò chuyện nhiều lượt dựa trên quy trình tác tử và prompt động.',
+      'Duy trì độ bao phủ kiểm thử và tham gia rà soát cấu trúc mã nguồn nhằm bảo đảm tính an toàn của định tuyến API và trạng thái phía giao diện.',
+    ],
   },
   {
     date: 'Mar 2023 - Sep 2023',
+    dateVi: '03/2023 - 09/2023',
     location: 'Hanoi',
     company: 'Aimelab - Aimesoft',
     role: 'Intern AI Engineer',
+    roleVi: 'Thực tập sinh Kỹ sư AI',
     responsibilities: [
       'Completed a 6-month research-oriented internship in NLP, focusing on text summarization, classification, and vector indexing.',
       'Benchmarked, optimized, and validated large language and multimodal models, including GPT-2, Pegasus, CLIP, and LLaMA.',
       'Engineered an interactive chatbot interface utilizing ReactJS, Node.js, and Vector Databases to deliver low-latency retrieval-augmented generation.',
     ],
+    responsibilitiesVi: [
+      'Hoàn thành kỳ thực tập nghiên cứu kéo dài 6 tháng về xử lý ngôn ngữ tự nhiên, tập trung vào tóm tắt văn bản, phân loại và lập chỉ mục véc-tơ.',
+      'Đánh giá, tối ưu và kiểm chứng các mô hình ngôn ngữ lớn cùng mô hình đa phương thức, gồm GPT-2, Pegasus, CLIP và LLaMA.',
+      'Xây dựng giao diện chatbot tương tác bằng ReactJS, Node.js và cơ sở dữ liệu véc-tơ, phục vụ quy trình sinh nội dung tăng cường truy xuất với độ trễ thấp.',
+    ],
   },
   {
     date: 'Jul 2021 - Sep 2021',
+    dateVi: '07/2021 - 09/2021',
     location: 'Hanoi',
     company: 'Zland',
     role: 'Front-End Internship',
+    roleVi: 'Thực tập sinh Front-end',
     responsibilities: [
       'Collaborated with design and development teams to build user-friendly real estate web application front-ends using ReactJS and Vanilla CSS.',
       'Developed and optimized responsive static web solutions tailored to client specifications and layout designs.',
       'Debugged and refactored HTML/CSS codebase templates to improve rendering performance and cross-browser consistency.',
+    ],
+    responsibilitiesVi: [
+      'Phối hợp với đội ngũ thiết kế và phát triển để xây dựng giao diện thân thiện cho ứng dụng web bất động sản bằng ReactJS và CSS thuần.',
+      'Phát triển, tối ưu các trang web tĩnh đáp ứng yêu cầu riêng của khách hàng và thiết kế được cung cấp.',
+      'Sửa lỗi và tái cấu trúc các mẫu HTML/CSS nhằm cải thiện hiệu năng hiển thị và tính nhất quán giữa các trình duyệt.',
     ],
   },
 ]

@@ -1,17 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useI18n } from "@/components/i18n/I18nProvider";
 
 const tocItems = [
-  { id: 'portfolio-hero', label: 'Intro' },
-  { id: 'portfolio-summary', label: 'Summary' },
-  { id: 'portfolio-experience', label: 'Experience' },
-  { id: 'portfolio-skills', label: 'Skills' },
-  { id: 'portfolio-projects', label: 'Projects' },
-  { id: 'portfolio-about', label: 'About me' },
+  { id: 'portfolio-hero', labelKey: 'portfolio.intro' },
+  { id: 'portfolio-summary', labelKey: 'portfolio.summary' },
+  { id: 'portfolio-experience', labelKey: 'portfolio.experience' },
+  { id: 'portfolio-skills', labelKey: 'portfolio.skills' },
+  { id: 'portfolio-projects', labelKey: 'portfolio.projects' },
+  // { id: 'portfolio-about', labelKey: 'portfolio.moreAboutMe' },
 ];
 
 export default function PortfolioTOC() {
+  const { t } = useI18n();
   const [activeId, setActiveId] = useState("");
 
   useEffect(() => {
@@ -46,7 +48,7 @@ export default function PortfolioTOC() {
 
   return (
     <aside className="portfolio-toc">
-      <p className="portfolio-toc-title">Contents</p>
+      <p className="portfolio-toc-title">{t("portfolio.contents")}</p>
 
       <ul className="portfolio-toc-list">
         {tocItems.map((item) => {
@@ -57,7 +59,7 @@ export default function PortfolioTOC() {
                 href={`#${item.id}`}
                 className={`portfolio-toc-link ${isActive ? "active" : ""}`}
               >
-                {item.label}
+                {t(item.labelKey)}
               </a>
             </li>
           );

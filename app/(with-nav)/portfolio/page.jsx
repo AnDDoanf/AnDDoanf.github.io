@@ -3,7 +3,7 @@ import Summary from '@/components/portfolio/Summary'
 import ExperienceTimeline from '@/components/portfolio/ExperienceTimeline'
 import SkillsCloud from '@/components/portfolio/SkillCloud'
 import Projects from '@/components/portfolio/Projects'
-import AboutVideo from '@/components/portfolio/AboutVideo'
+// import AboutVideo from '@/components/portfolio/AboutVideo'
 import DownloadCV from "@/components/ui/DownloadCV"
 import getProjectMetadata from '@/app/utils/getProjectMetadata'
 
@@ -18,7 +18,7 @@ export default function PortfolioPage() {
         <ExperienceTimeline />
         <Projects initialProjects={projects} />
         <SkillsCloud />
-        <AboutVideo />
+        {/* <AboutVideo /> */}
       </main>
       <DownloadCV />
     </div>

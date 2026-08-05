@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useI18n } from "@/components/i18n/I18nProvider";
 
 const categoryIcons = {
   work: "bi bi-briefcase",
@@ -12,6 +13,7 @@ const categoryIcons = {
 };
 
 export default function Projects({ initialProjects }) {
+  const { lang, t } = useI18n();
   const [activeCategory, setActiveCategory] = useState("All");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
@@ -23,13 +25,7 @@ export default function Projects({ initialProjects }) {
 
   const categories = ["All", "Work", "Church", "Individual", "Gaming"];
 
-  const categoryDescriptions = {
-    All: "A comprehensive showcase of my professional, personal, community, and gaming projects.",
-    Work: "Enterprise systems, full-stack portals, and landing sites developed during my professional internships and roles.",
-    Church: "Web systems and presentation platforms developed to support Christian fellowships and church communities.",
-    Individual: "Personal projects built to explore modern design patterns, new tools, and full-stack integration frameworks.",
-    Gaming: "Analytical tools, static databases, and automation frameworks developed for my favorite multiplayer video games."
-  };
+  const categoryKey = (category) => `portfolio.categories.${category.toLowerCase()}`;
 
   const filteredProjects = activeCategory === "All"
     ? initialProjects
@@ -145,7 +141,7 @@ export default function Projects({ initialProjects }) {
 
           {/* Card Body */}
           <div className="post-card-body">
-            <p className="post-card-eyebrow">{project.category}</p>
+            <p className="post-card-eyebrow">{t(categoryKey(project.category))}</p>
 
             <div className="post-card-heading">
               <h2 className="post-card-title">{project.title}</h2>
@@ -154,7 +150,7 @@ export default function Projects({ initialProjects }) {
               </span>
             </div>
 
-            <p className="post-card-excerpt">{project.description}</p>
+            <p className="post-card-excerpt">{lang === "vi" ? project.descriptionVi : project.description}</p>
 
             <div className="post-card-footer">
               {/* Meta Section */}
@@ -163,8 +159,8 @@ export default function Projects({ initialProjects }) {
                   <i className={categoryIcon} />
                 </span>
                 <div className="post-card-meta-copy">
-                  <p className="post-card-meta-label">{project.category}</p>
-                  <p className="post-card-date">{project.tags?.[0] || "Project"}</p>
+                  <p className="post-card-meta-label">{t(categoryKey(project.category))}</p>
+                  <p className="post-card-date">{project.tags?.[0] || t("portfolio.project")}</p>
                 </div>
               </div>
 
@@ -226,7 +222,7 @@ export default function Projects({ initialProjects }) {
         onClick={handlePrev}
         disabled={maxIndex === 0}
         className="portfolio-projects-slider-btn prev"
-        aria-label="Previous page"
+        aria-label={t("portfolio.previousProjects")}
       >
         <i className="bi bi-chevron-left" />
       </button>
@@ -234,7 +230,7 @@ export default function Projects({ initialProjects }) {
         onClick={handleNext}
         disabled={maxIndex === 0}
         className="portfolio-projects-slider-btn next"
-        aria-label="Next page"
+        aria-label={t("portfolio.nextProjects")}
       >
         <i className="bi bi-chevron-right" />
       </button>
@@ -246,7 +242,7 @@ export default function Projects({ initialProjects }) {
             key={idx}
             onClick={() => setCurrentIndex(slideIndex)}
             className={`portfolio-projects-slider-dot ${currentIndex === slideIndex ? "active" : ""}`}
-            aria-label={`Go to page ${idx + 1}`}
+            aria-label={t("portfolio.goToProjectPage", { page: idx + 1 })}
           />
         ))}
       </div>
@@ -255,7 +251,7 @@ export default function Projects({ initialProjects }) {
 
   return (
     <section id="portfolio-projects" className="portfolio-section">
-      <h1 className="portfolio-section-title">Projects</h1>
+      <h1 className="portfolio-section-title">{t("portfolio.projects")}</h1>
 
       {/* Tabs */}
       <div className="portfolio-projects-tabs">
@@ -265,14 +261,14 @@ export default function Projects({ initialProjects }) {
             onClick={() => handleTabChange(category)}
             className={`portfolio-projects-tab ${activeCategory === category ? "active" : ""}`}
           >
-            {category}
+            {t(categoryKey(category))}
           </button>
         ))}
       </div>
 
       {/* Category Description */}
       <p className="portfolio-projects-category-desc">
-        {categoryDescriptions[activeCategory]}
+        {t(`portfolio.categoryDescriptions.${activeCategory.toLowerCase()}`)}
       </p>
 
       {projectListContent}

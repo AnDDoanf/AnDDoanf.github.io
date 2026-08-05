@@ -2,6 +2,7 @@
 title: "Yahsaka Ecosystem"
 category: "Work"
 description: "A multi-platform employee time tracking and workplace management ecosystem supporting multi-organization configurations and GPS spatial-data check-ins."
+descriptionVi: "Hệ sinh thái đa nền tảng phục vụ chấm công và quản trị nơi làm việc, hỗ trợ nhiều tổ chức cùng tính năng điểm danh bằng dữ liệu không gian GPS."
 image: "/showroom/production-1.svg"
 tags: ["Laravel 8", "Flutter", "React 19", "Stripe", "PostgreSQL", "Riverpod"]
 links:

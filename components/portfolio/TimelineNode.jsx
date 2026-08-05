@@ -1,4 +1,4 @@
-export default function TimelineNode({ data, align }) {
+export default function TimelineNode({ data, align, lang }) {
   const alignClass =
     align === 'left'
       ? 'portfolio-timeline-node-left'
@@ -9,13 +9,13 @@ export default function TimelineNode({ data, align }) {
         <span className="portfolio-timeline-dot" />
 
         <div className="portfolio-timeline-card">
-            <p className="portfolio-timeline-date">{data.date}</p>
+            <p className="portfolio-timeline-date">{lang === "vi" ? data.dateVi : data.date}</p>
             <strong>{data.company}</strong>
-            <p className="portfolio-timeline-role">{data.role}</p>
+            <p className="portfolio-timeline-role">{lang === "vi" ? data.roleVi : data.role}</p>
         </div>
         <div className="portfolio-timeline-bubble">
             <ul>
-                {data.responsibilities.map((item, i) => (
+                {(lang === "vi" ? data.responsibilitiesVi : data.responsibilities).map((item, i) => (
                     <li key={i}>{item}</li>
                 ))}
             </ul>

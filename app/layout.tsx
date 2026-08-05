@@ -5,6 +5,7 @@ import "katex/dist/katex.min.css";
 import "@/styles/globals.css";
 import "@/styles/gallery.css";
 import "@/styles/portfolio.css";
+import "@/styles/me.css";
 import "@/styles/poetry.css";
 import "@/styles/updating.css";
 // import "@/styles/culinary.css";

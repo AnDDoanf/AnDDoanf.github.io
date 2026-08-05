@@ -17,6 +17,7 @@ export default function getProjectMetadata(basePath = "data/portfolio/projects")
       title: data.title || "Untitled Project",
       category: data.category || "Individual",
       description: data.description || "",
+      descriptionVi: data.descriptionVi || data.description || "",
       image: data.image || "/showroom/production-1.svg",
       tags: Array.isArray(data.tags) ? data.tags : [],
       links: data.links || {},

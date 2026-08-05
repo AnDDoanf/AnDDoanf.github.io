@@ -88,6 +88,26 @@
     "viewRepo": "Xem repo",
     "onThisPage": "M\u1ee5c l\u1ee5c"
   },
+  "portfolio": {
+    "intro": "Giới thiệu", "contents": "Mục lục", "summary": "Tóm tắt", "experience": "Kinh nghiệm", "projects": "Dự án", "skills": "Kỹ năng",
+    "moreAboutMe": "Hiểu thêm về tôi", "moreAboutMeButton": "Xem thêm", "showLess": "Thu gọn",
+    "project": "Dự án", "previousProjects": "Xem các dự án trước", "nextProjects": "Xem các dự án tiếp theo",
+    "goToProjectPage": "Chuyển đến trang dự án {page}", "downloadCv": "Tải CV", "seeCv": "Xem CV",
+    "categories": { "all": "Tất cả", "work": "Công việc", "church": "Hội Thánh", "individual": "Cá nhân", "gaming": "Trò chơi" },
+    "categoryDescriptions": {
+      "all": "Tổng hợp các dự án trong công việc, đời sống cá nhân, cộng đồng và trò chơi.",
+      "work": "Các hệ thống doanh nghiệp, cổng thông tin full-stack và landing page được phát triển trong quá trình thực tập và làm việc.",
+      "church": "Các hệ thống web và nền tảng trình chiếu được xây dựng để phục vụ các nhóm thông công Cơ Đốc và cộng đồng Hội Thánh.",
+      "individual": "Những dự án cá nhân giúp tôi khám phá các mẫu thiết kế hiện đại, công cụ mới và cách tích hợp full-stack.",
+      "gaming": "Các công cụ phân tích, cơ sở dữ liệu tĩnh và quy trình tự động hóa dành cho những trò chơi nhiều người mà tôi yêu thích."
+    }
+  },
+  "me": {
+    "personBehindPortfolio": "Con người phía sau bản hồ sơ", "hello": "Xin chào, tôi là Đoàn Thuận An.",
+    "intro": "Đây là phần gần gũi hơn trong câu chuyện của tôi: những điều mang lại niềm vui, điều tôi tin và tương lai tôi đang hướng tới.",
+    "backToPortfolio": "Quay lại hồ sơ", "hobbies": "Sở thích", "explore": "Khám phá",
+    "previousHobby": "Sở thích trước", "nextHobby": "Sở thích tiếp theo", "chooseHobby": "Chọn một sở thích", "showHobby": "Xem {title}"
+  },
   "updating": {
     "title": "\u0110ang c\u1eadp nh\u1eadt",
     "textLine1": "Trang web hi\u1ec7n \u0111ang \u0111\u01b0\u1ee3c c\u1eadp nh\u1eadt.",
