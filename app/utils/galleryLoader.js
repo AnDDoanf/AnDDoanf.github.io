@@ -34,7 +34,8 @@ function humanizeName(value) {
 
 function toPublicGallerySrc(slug, filename) {
   const encode = (segment) => encodeURIComponent(segment);
-  return `/gallery/${encode(slug)}/${encode(filename)}`;
+  const encodedPath = filename.split(/[\\/]/).map(encode).join("/");
+  return `/gallery/${encode(slug)}/${encodedPath}`;
 }
 
 function getGalleryDirectories() {
@@ -92,11 +93,23 @@ function readGalleryDoc(slug) {
 function readGalleryImages(slug) {
   const folderPath = getGalleryFolderPath(slug);
 
-  return fs.readdirSync(folderPath)
-    .filter((file) => IMAGE_EXTENSIONS.has(path.extname(file).toLowerCase()))
-    .sort(sortNaturally)
+  function collectImages(directory, relativeRoot = "") {
+    return fs.readdirSync(directory, { withFileTypes: true })
+      .sort((left, right) => sortNaturally(left.name, right.name))
+      .flatMap((entry) => {
+        const relativePath = path.join(relativeRoot, entry.name);
+        if (entry.isDirectory()) {
+          return collectImages(path.join(directory, entry.name), relativePath);
+        }
+        return IMAGE_EXTENSIONS.has(path.extname(entry.name).toLowerCase())
+          ? [relativePath]
+          : [];
+      });
+  }
+
+  return collectImages(folderPath)
     .map((filename, index) => {
-      const caption = humanizeName(filename) || `Image ${index + 1}`;
+      const caption = humanizeName(path.basename(filename)) || `Image ${index + 1}`;
       return {
         name: filename,
         src: toPublicGallerySrc(slug, filename),
@@ -128,7 +141,9 @@ function pickCover(images, preferredCoverName) {
   if (images.length === 0) return null;
   if (!preferredCoverName) return images[0];
 
-  return images.find((image) => image.name === preferredCoverName) ?? images[0];
+  return images.find((image) => (
+    image.name === preferredCoverName || path.basename(image.name) === preferredCoverName
+  )) ?? images[0];
 }
 
 export function loadGalleryCollection() {
@@ -138,11 +153,11 @@ export function loadGalleryCollection() {
       const images = readGalleryImages(slug);
       const pdf = readGalleryPdf(slug, doc.pdf);
       const cover = pickCover(images, doc.cover);
-      const type = doc.type === "photobook" || (!cover && pdf)
-        ? "photobook"
+      const type = doc.type === "pdf" || (!cover && pdf)
+        ? "pdf"
         : "images";
 
-      if (type === "photobook" && !pdf) return null;
+      if (type === "pdf" && !pdf) return null;
       if (type === "images" && !cover) return null;
 
       return {
@@ -155,6 +170,15 @@ export function loadGalleryCollection() {
         coverSrc: cover?.src ?? "",
         coverAlt: cover?.alt ?? doc.title,
         pdfName: pdf?.name ?? "",
+        location: doc.location,
+        latitude: doc.latitude,
+        longitude: doc.longitude,
+        mapX: doc.mapX,
+        mapY: doc.mapY,
+        mapOffsetX: doc.mapOffsetX,
+        mapOffsetY: doc.mapOffsetY,
+        labelX: doc.labelX,
+        labelY: doc.labelY,
       };
     })
     .filter(Boolean);
@@ -168,11 +192,11 @@ export function loadGallery(slug) {
   const images = readGalleryImages(slug);
   const pdf = readGalleryPdf(slug, doc.pdf);
   const cover = pickCover(images, doc.cover);
-  const type = doc.type === "photobook" || (!cover && pdf)
-    ? "photobook"
+  const type = doc.type === "pdf" || (!cover && pdf)
+    ? "pdf"
     : "images";
 
-  if (type === "photobook" && !pdf) return null;
+  if (type === "pdf" && !pdf) return null;
   if (type === "images" && !cover) return null;
 
   return {
@@ -187,5 +211,11 @@ export function loadGallery(slug) {
     coverAlt: cover?.alt ?? doc.title,
     images,
     pdf,
+    location: doc.location,
+    latitude: doc.latitude,
+    longitude: doc.longitude,
+    mapOffsetX: doc.mapOffsetX,
+    mapOffsetY: doc.mapOffsetY,
+    columns: doc.columns,
   };
 }

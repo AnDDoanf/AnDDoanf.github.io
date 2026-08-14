@@ -12,8 +12,8 @@ export async function generateMetadata({ params }) {
   const gallery = loadGallery(slug);
   if (!gallery) return {};
 
-  const fallbackDescription = gallery.type === "photobook"
-    ? "Interactive photobook loaded from PDF."
+  const fallbackDescription = gallery.type === "pdf"
+    ? "Interactive image canvas rendered from PDF."
     : `${gallery.imageCount} images`;
 
   return {

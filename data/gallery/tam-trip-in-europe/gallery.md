@@ -1,13 +1,16 @@
 ---
 title: Tam Trip in Europe
-description: A flip-through PDF photobook capturing Tam's Europe trip as a digital reading experience.
-type: photobook
+description: Tam's Europe trip arranged as an endless photographic canvas.
+type: pdf
 pdf: Photobook.pdf
 style: editorial
+location: Europe
+latitude: 50.1109
+longitude: 8.6821
+labelX: 14
+labelY: 55
 ---
 
-## Tam's Europe Photobook
+## Tam's Europe Canvas
 
-This gallery is powered by a PDF photobook instead of a folder of individual images.
-
-Drop a `Photobook.pdf` file into a gallery folder, set `type: photobook` in the markdown file, and the site will render it as a page-turning reader.
+Drag in any direction to explore the trip, and zoom to move between individual frames and the wider collection.

@@ -1,8 +1,16 @@
 ---
 title: Starter Gallery
 description: A small starter gallery showing the cleaner reading flow for images, captions, and story text.
+type: images
 style: framed
 cover: 01-portrait.jpg
+location: Vietnam
+latitude: 14.0583
+longitude: 108.2772
+mapOffsetX: -30
+mapOffsetY: -20
+labelX: 82
+labelY: 70
 ---
 
 ## A Simple Starter
