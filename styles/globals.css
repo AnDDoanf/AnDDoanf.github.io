@@ -493,6 +493,67 @@ a:hover {
     background-color 0.2s ease;
 }
 
+.post-category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  width: min(100%, 29rem);
+  margin: -0.15rem auto 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-category-tab {
+  position: relative;
+  flex: 1;
+  min-width: 6rem;
+  padding: 0.72rem 0.9rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: color 0.2s ease;
+}
+
+.post-category-tab::after {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  background: var(--link);
+  content: "";
+  opacity: 0;
+  transform: scaleX(0.35);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.post-category-tab:hover {
+  color: var(--link);
+}
+
+.post-category-tab.is-active {
+  color: var(--link);
+}
+
+.post-category-tab.is-active::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.post-category-tab:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: -3px;
+}
+
+@media (max-width: 480px) {
+  .post-category-tabs { width: 100%; }
+  .post-category-tab { flex: 1; min-width: 0; }
+}
+
 .index-page-subtitle {
   text-align: center;
   color: var(--text-muted);

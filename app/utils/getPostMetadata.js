@@ -45,6 +45,23 @@ function formatDateLabel(date) {
     }).format(date);
 }
 
+function parsePostDate(rawDate) {
+    if (!rawDate) return null;
+
+    const dateOnly = rawDate instanceof Date
+        ? rawDate.toISOString().slice(0, 10)
+        : String(rawDate).trim();
+    const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateOnly);
+
+    if (match) {
+        const [, year, month, day] = match;
+        return new Date(Number(year), Number(month) - 1, Number(day));
+    }
+
+    const date = new Date(rawDate);
+    return Number.isNaN(date.getTime()) ? null : date;
+}
+
 export default function getPostMetadata(basePath) {
     const folder = basePath + "/";
     const files = fs.readdirSync(folder);
@@ -58,7 +75,7 @@ export default function getPostMetadata(basePath) {
             const {data, content} = matter(fileContents);
 
             const rawDate = data.date;
-            const postDate = rawDate ? new Date(rawDate) : null;
+            const postDate = parsePostDate(rawDate);
             const title = data.title || "Untitled Post";
             const categories = normalizeList(data.categories);
             const tags = normalizeList(data.tags);

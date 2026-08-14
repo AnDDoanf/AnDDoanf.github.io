@@ -4,9 +4,26 @@ import { useState } from "react";
 import { useI18n } from "@/components/i18n/I18nProvider";
 import BlogPostCard from "./BlogPostCard";
 
+const FAITH_TAGS = new Set([
+  "christianity",
+  "chritianity",
+  "faith",
+  "devotional",
+  "discipleship",
+  "disipleship",
+  "theology",
+  "testimony",
+]);
+
+function getBlogTab(post) {
+  const tags = post.tags?.map((tag) => String(tag).trim().toLowerCase()) ?? [];
+  return tags.some((tag) => FAITH_TAGS.has(tag)) ? "faith" : "life";
+}
+
 export default function BlogClient({ posts, hrefBase = "/blog", subtitle }) {
   const { t } = useI18n();
   const [query, setQuery] = useState("");
+  const [activeTab, setActiveTab] = useState("faith");
 
   const q = query.toLowerCase();
 
@@ -19,12 +36,15 @@ export default function BlogClient({ posts, hrefBase = "/blog", subtitle }) {
     const primaryTag = post.primaryTag?.toLowerCase() || "";
     const tags = post.tags || [];
 
-    return (
+    const matchesTab = isJournal || getBlogTab(post) === activeTab;
+    const matchesQuery = (
       title.includes(q) ||
       excerpt.includes(q) ||
       primaryTag.includes(q) ||
       tags.some((tag) => tag?.toLowerCase().includes(q))
     );
+
+    return matchesTab && matchesQuery;
   });
 
   const searchPlaceholder = isJournal
@@ -44,6 +64,23 @@ export default function BlogClient({ posts, hrefBase = "/blog", subtitle }) {
               aria-label={searchPlaceholder}
           />
         </div>
+
+        {!isJournal && (
+          <div className="post-category-tabs" role="tablist" aria-label={t("posts.blogCategories")}>
+            {["faith", "life"].map((tab) => (
+              <button
+                key={tab}
+                type="button"
+                className={`post-category-tab ${activeTab === tab ? "is-active" : ""}`}
+                role="tab"
+                aria-selected={activeTab === tab}
+                onClick={() => setActiveTab(tab)}
+              >
+                {t(`posts.${tab}`)}
+              </button>
+            ))}
+          </div>
+        )}
 
         {displaySubtitle && <p className="index-page-subtitle">{displaySubtitle}</p>}
 

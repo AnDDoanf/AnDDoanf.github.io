@@ -1,7 +1,7 @@
 ---
-title: Cách Đọc Thông Số Kỹ Thuật Xe Hơi
-date: 2026-06-21
-tags: [learning]
+title: "DumbPhobia#017 Cách Đọc Thông Số Kỹ Thuật Xe Hơi"
+date: 2026-08-15
+tags: [automotive, learning]
 image: /assets/post-covers/thong-so-xe.webp
 author:
   name: An Doan
