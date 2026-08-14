@@ -1,5 +1,5 @@
 ---
-title: DumbPhobia#015 ADAS: From Driver Assistance to Fully Autonomous Driving
+title: DumbPhobia#016 ADAS: From Driver Assistance to Fully Autonomous Driving
 date: 2026-08-14
 tags: [system]
 image: /assets/post-covers/ADAS-Working.png
