@@ -14,7 +14,7 @@ Bài viết này bao gồm tóm tắt về các sự kiện chính có trong sá
 
 ## 1. Sự sáng tạo - Chúa tạo dựng thế giới
 
-> 'Ban đầu, Đức Chúa Trời sáng tạo trời đất.' - Sáng Thế Ký 1:1
+> 'Ban đầu, Đức Chúa Trời sáng tạo trời đất.' - Sáng Thế Ký 1:1[^4]
 
 Chỉ với một câu, Kinh Thánh đảm bảo rằng điều đầu tiên để hiểu và biết Kinh Thánh, chúng ta công nhận có một Chúa, là Đấng tạo nên trời và đất. Vì vậy
 - Ngài toàn năng, có quyền trên mọi sự và làm ra mọi sự
@@ -36,7 +36,7 @@ Con người đầu tiên đã được tạo dựng với nhiều quyền lợi
 - Chưa từng biết đến sợ hãi hay xấu hổ
 - Được sinh sôi nảy nở và thống trị mọi điều Chúa tạo dựng trên đất
 
-> 'CHÚA , Đức Chúa Trời trồng một khu vườn tại Ê-đen ở phía đông và đặt người Ngài đã dựng nên tại đó. CHÚA , Đức Chúa Trời khiến từ đất mọc lên mọi cây cối đẹp mắt và ăn ngon. Giữa vườn có Cây Sự Sống và Cây Biết Thiện Ác. CHÚA , Đức Chúa Trời đem người đặt vào vườn Ê-đen để canh tác và chăm sóc vườn. CHÚA , Đức Chúa Trời truyền lệnh cho người rằng: “Con có thể ăn bất cứ trái cây nào trong vườn, nhưng về ‘Cây Biết Thiện Ác’ thì không được ăn, vì ngày nào con ăn trái đó chắc chắn con sẽ chết.” ' - Sáng 2:8-9,15-17
+> 'CHÚA , Đức Chúa Trời trồng một khu vườn tại Ê-đen ở phía đông và đặt người Ngài đã dựng nên tại đó. CHÚA , Đức Chúa Trời khiến từ đất mọc lên mọi cây cối đẹp mắt và ăn ngon. Giữa vườn có Cây Sự Sống và Cây Biết Thiện Ác. CHÚA , Đức Chúa Trời đem người đặt vào vườn Ê-đen để canh tác và chăm sóc vườn. CHÚA , Đức Chúa Trời truyền lệnh cho người rằng: “Con có thể ăn bất cứ trái cây nào trong vườn, nhưng về ‘Cây Biết Thiện Ác’ thì không được ăn, vì ngày nào con ăn trái đó chắc chắn con sẽ chết.” ' - Sáng 2:8-9,15-17[^4]
 
 Chúa dựng nên vườn Ê-đen để đối đãi con người, Ngài cho phép con người đến cùng cây sự sống để được sự sống vĩnh hằng, nhưng cây biết thiện ác, Ngài ngăn cấm. 
 
@@ -66,7 +66,7 @@ Sau khi rời khỏi vườn Ê-đen, A-đam và Ê-va sinh ra Ca-in và A-bên.
 
 Ca-in giận dữ vì lễ vật mình không được chấp nhận. Trước khi ông hành động, Chúa đã cảnh báo:
 
-> 'Nếu con làm phải, lẽ nào không được chấp nhận? Còn nếu con làm không phải thì tội ác đang rình rập trước cửa, thèm con lắm, nhưng con phải quản trị nó.” ' - Sáng Thế Ký 4:7
+> 'Nếu con làm phải, lẽ nào không được chấp nhận? Còn nếu con làm không phải thì tội ác đang rình rập trước cửa, thèm con lắm, nhưng con phải quản trị nó.” ' - Sáng Thế Ký 4:7[^4]
 
 - Tội lỗi không còn chỉ là một lựa chọn sai lầm bên ngoài con người, nhưng như một con thú đang rình rập và muốn cai trị con người. 
 - Ca-in đã không chế ngự nó. Ông dụ em mình ra đồng rồi giết A-bên, biến lòng ganh ghét thành vụ giết người đầu tiên.
@@ -110,7 +110,7 @@ Một khởi đầu mới chưa đủ để tạo nên một con người mới.
 
 Sau đại hồng thủy, Chúa truyền cho loài người sinh sôi, làm đầy dẫy đất. Nhưng loài người tụ họp tại đồng bằng Si-nê-a, xây một thành phố và một ngọn tháp cao với mong muốn:
 
-> ' “Nào, chúng ta hãy xây một thành và một ngôi tháp ngọn cao tận trời Chúng ta hãy lưu danh mình kẻo bị tản lạc khắp mặt đất!” ' - Sáng Thế Ký 11:4
+> ' “Nào, chúng ta hãy xây một thành và một ngôi tháp ngọn cao tận trời Chúng ta hãy lưu danh mình kẻo bị tản lạc khắp mặt đất!” ' - Sáng Thế Ký 11:4[^4]
 
 Vấn đề không chỉ nằm ở chiều cao của ngọn tháp. 
 - Họ muốn làm rạng danh mình, tự tìm kiếm sự an toàn và chống lại mệnh lệnh phải tản ra khắp đất. 
@@ -118,7 +118,7 @@ Vấn đề không chỉ nằm ở chiều cao của ngọn tháp.
 
 Chúa ngự xuống xem thành và tháp của họ. Ngài làm xáo trộn ngôn ngữ, khiến họ không còn hiểu nhau và phải phân tán khắp mặt đất. 
 
-> 'CHÚA phán: “Kìa, toàn thể loài người chỉ có một dân tộc, một ngôn ngữ. Kìa chúng đang khởi công làm việc này, nay không còn gì ngăn cản chúng làm mọi điều chúng hoạch định nữa. ' - Sáng Thế Ký 11:6
+> 'CHÚA phán: “Kìa, toàn thể loài người chỉ có một dân tộc, một ngôn ngữ. Kìa chúng đang khởi công làm việc này, nay không còn gì ngăn cản chúng làm mọi điều chúng hoạch định nữa. ' - Sáng Thế Ký 11:6[^4]
 
 Thành ấy được gọi là Ba-bên, gắn với sự hỗn loạn. Điều con người cố tránh cuối cùng vẫn xảy ra; điều họ xây để lưu danh lại trở thành chứng tích của lòng kiêu ngạo.
 
@@ -133,7 +133,7 @@ Sau khi các dân tộc bị phân tán, câu chuyện tập trung vào một ng
 - Ban phước cho người chúc phước ông và rủa sả người rủa sả ông
 - Qua ông, mọi gia đình trên đất sẽ được phước
 
-Đối nghịch với những người xây tháp Ba-bên để tự làm lớn danh mình, Áp-ram nhận một danh lớn từ Chúa bằng đức tin và sự vâng lời. Ông ra đi dù chưa biết chính xác mình sẽ đến đâu. Khi Chúa hứa ban cho ông dòng dõi đông như sao trời, "Áp-ram tin CHÚA, nên Ngài kể cho người là công chính." (Sáng Thế Ký 15:6).
+Đối nghịch với những người xây tháp Ba-bên để tự làm lớn danh mình, Áp-ram nhận một danh lớn từ Chúa bằng đức tin và sự vâng lời. Ông ra đi dù chưa biết chính xác mình sẽ đến đâu. Khi Chúa hứa ban cho ông dòng dõi đông như sao trời, "Áp-ram tin CHÚA, nên Ngài kể cho người là công chính." (Sáng Thế Ký 15:6)[^4].
 
 Tuy nhiên, đức tin của Áp-ra-ham không phải lúc nào cũng mạnh mẽ. 
 - Vì sợ hãi, ông hai lần nói Sa-ra là em gái mình. 
@@ -198,7 +198,7 @@ Giô-sép là con trai Gia-cốp sinh ra trong tuổi già và được cha yêu
 
 Tại Ai Cập, Giô-sép bị bán vào nhà Phô-ti-pha. **Chúa ở cùng ông và khiến mọi việc ông làm được thịnh vượng**. Khi vợ Phô-ti-pha dụ dỗ, Giô-sép từ chối phạm tội với chủ mình và với Chúa. 
 
-> 'Trong nhà không có ai lớn hơn tôi, chủ không giữ lại bất luận điều gì ngoại trừ bà vì bà là vợ ông chủ. Lẽ nào tôi làm điều đại ác và phạm tội với Đức Chúa Trời sao?” ' - Sáng Thế Ký 39:9
+> 'Trong nhà không có ai lớn hơn tôi, chủ không giữ lại bất luận điều gì ngoại trừ bà vì bà là vợ ông chủ. Lẽ nào tôi làm điều đại ác và phạm tội với Đức Chúa Trời sao?” ' - Sáng Thế Ký 39:9[^4]
 
 
 Dù làm điều đúng, ông vẫn bị vu cáo và tống vào tù. Đức tin không khiến Giô-sép tránh khỏi bất công, nhưng sự hiện diện của Chúa không rời khỏi ông trong bất công.
@@ -211,7 +211,7 @@ Nạn đói đưa các anh của Giô-sép đến Ai Cập mua lương thực. H
 
 Giô-sép không báo thù. Ông nói:
 
-> 'Các anh có ý làm hại tôi, nhưng Đức Chúa Trời lại dụng ý làm điều ích lợi để hoàn thành mọi việc đã qua tức là cứu mạng sống của nhiều người. '- Sáng Thế Ký 50:20
+> 'Các anh có ý làm hại tôi, nhưng Đức Chúa Trời lại dụng ý làm điều ích lợi để hoàn thành mọi việc đã qua tức là cứu mạng sống của nhiều người. '- Sáng Thế Ký 50:20[^4]
 
 Sự tha thứ của Giô-sép không gọi điều ác là điều tốt. Ông nhìn nhận rõ ý định xấu của các anh, nhưng cũng nhìn thấy quyền tể trị của Chúa lớn hơn tội lỗi con người. Cùng một sự kiện có thể chứa ý định gian ác của con người và ý định cứu chuộc của Đức Chúa Trời, mà Chúa không phải là tác giả của điều ác.
 
