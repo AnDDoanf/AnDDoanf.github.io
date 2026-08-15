@@ -60,6 +60,8 @@ Vì đã phạm tội, con người chọn lìa khỏi Chúa và sự rủa sả
 - Người nữ sẽ đau đớn khi sinh nở, dục vọng hướng về chồng và sẽ cần một người chồng để quản trị
 - Con người bị đuổi khỏi vườn Ê-đen, sự cung ứng của Chúa
 
+Tuy vậy, Đức Chúa Trời vẫn bày tỏ lòng thương với con người: 'CHÚA , Đức Chúa Trời lấy da thú làm áo mặc cho A-đam và vợ người.' - Sáng Thế Ký 3:21[^4]
+
 ## 3. Ca-in và A-bên
 
 Sau khi rời khỏi vườn Ê-đen, A-đam và Ê-va sinh ra Ca-in và A-bên. Ca-in làm nghề nông, còn A-bên chăn chiên. Cả hai đều dâng lễ vật lên Chúa, nhưng Chúa đoái đến A-bên và lễ vật của ông, còn Ca-in và lễ vật của ông thì Ngài không đoái đến. Kinh Thánh cho biết A-bên dâng những con đầu lòng cùng với mỡ của chúng, nghĩa là ông dâng phần đầu tiên và tốt nhất mình có (Sáng Thế Ký 4:4).
