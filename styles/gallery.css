@@ -1100,6 +1100,10 @@
   will-change: transform;
 }
 
+.gallery-map-label-anchor.is-dragging {
+  animation: none;
+}
+
 .gallery-map-label {
   display: flex;
   flex-direction: column;
@@ -1111,8 +1115,18 @@
   background: color-mix(in srgb, var(--bg-alt) 94%, transparent);
   box-shadow: 0 10px 24px var(--shadow);
   color: var(--text);
+  cursor: grab;
+  touch-action: none;
   backdrop-filter: blur(8px);
   transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+}
+
+.gallery-map-label-anchor.is-dragging {
+  z-index: 5;
+}
+
+.gallery-map-label-anchor.is-dragging .gallery-map-label {
+  cursor: grabbing;
 }
 
 @keyframes gallery-map-label-float {

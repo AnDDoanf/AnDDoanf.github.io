@@ -17,6 +17,7 @@ const MAP_ART_MAX_WIDTH = 1120;
 const MAP_ART_ASPECT_RATIO = 1025 / 483;
 const MAP_ART_VERTICAL_OFFSET = 0.44;
 const MAP_ART_MAX_VIEWPORT_HEIGHT = 0.67;
+const LABEL_DRAG_GAP = 40;
 const MAP_GEO_BOUNDS = {
   west: -180,
   east: 180,
@@ -184,19 +185,71 @@ function getFloatingLabelPositions(locations, pan, viewport) {
   });
 }
 
+function clampLabelPosition(position, viewport, dimensions) {
+  const edgeGap = 12;
+  const halfWidth = dimensions.width / 2;
+  const halfHeight = dimensions.height / 2;
+
+  return {
+    x: Math.min(
+      Math.max(halfWidth + edgeGap, viewport.width - halfWidth - edgeGap),
+      Math.max(halfWidth + edgeGap, position.x),
+    ),
+    y: Math.min(
+      Math.max(halfHeight + edgeGap, viewport.height - halfHeight - edgeGap),
+      Math.max(halfHeight + edgeGap, position.y),
+    ),
+  };
+}
+
+function labelsOverlap(position, dimensions, other) {
+  return (
+    Math.abs(position.x - other.x)
+      < (dimensions.width + other.width) / 2 + LABEL_DRAG_GAP
+    && Math.abs(position.y - other.y)
+      < (dimensions.height + other.height) / 2 + LABEL_DRAG_GAP
+  );
+}
+
+function moveLabelWithoutOverlap(current, target, dimensions, others, viewport) {
+  const boundedTarget = clampLabelPosition(target, viewport, dimensions);
+  const deltaX = boundedTarget.x - current.x;
+  const deltaY = boundedTarget.y - current.y;
+  const steps = Math.max(1, Math.ceil(Math.hypot(deltaX, deltaY) / 4));
+  let lastValid = current;
+
+  for (let step = 1; step <= steps; step += 1) {
+    const candidate = clampLabelPosition({
+      x: current.x + (deltaX * step) / steps,
+      y: current.y + (deltaY * step) / steps,
+    }, viewport, dimensions);
+
+    if (others.some((other) => labelsOverlap(candidate, dimensions, other))) break;
+    lastValid = candidate;
+  }
+
+  return lastValid;
+}
+
 export default function GalleryPageClient({ galleries }) {
   const { t } = useI18n();
   const mapRef = useRef(null);
   const dragRef = useRef(null);
+  const labelDragRef = useRef(null);
   const movedRef = useRef(false);
   const [pan, setPan] = useState({ x: 0, y: 0 });
+  const [labelPositions, setLabelPositions] = useState({});
   const [mapSize, setMapSize] = useState({ width: 0, height: 0 });
   const [isDragging, setIsDragging] = useState(false);
+  const [draggedLabel, setDraggedLabel] = useState(null);
   const locations = galleries.map((gallery, index) => ({
     ...gallery,
     point: getPoint(gallery, index),
   }));
   const floatingLabels = getFloatingLabelPositions(locations, pan, mapSize);
+  const displayedLabels = locations.map(({ slug }, index) => (
+    labelPositions[slug] ?? floatingLabels[index]
+  ));
   const mapArtSize = getMapArtSize(mapSize.height);
 
   useEffect(() => {
@@ -254,6 +307,86 @@ export default function GalleryPageClient({ galleries }) {
     if (movedRef.current) event.preventDefault();
   }
 
+  function handleLabelPointerDown(event, slug) {
+    if (event.button !== 0) return;
+    const mapNode = mapRef.current;
+    if (!mapNode) return;
+
+    event.stopPropagation();
+    movedRef.current = false;
+
+    const mapRect = mapNode.getBoundingClientRect();
+    const labelRect = event.currentTarget.getBoundingClientRect();
+    const currentPosition = {
+      x: labelRect.left - mapRect.left + labelRect.width / 2,
+      y: labelRect.top - mapRect.top + labelRect.height / 2,
+    };
+    const others = Array.from(mapNode.querySelectorAll(".gallery-map-label"))
+      .filter((node) => node.dataset.gallerySlug !== slug)
+      .map((node) => {
+        const rect = node.getBoundingClientRect();
+        return {
+          x: rect.left - mapRect.left + rect.width / 2,
+          y: rect.top - mapRect.top + rect.height / 2,
+          width: rect.width,
+          height: rect.height,
+        };
+      });
+
+    labelDragRef.current = {
+      pointerId: event.pointerId,
+      slug,
+      startClientX: event.clientX,
+      startClientY: event.clientY,
+      clientX: event.clientX,
+      clientY: event.clientY,
+      currentPosition,
+      dimensions: { width: labelRect.width, height: labelRect.height },
+      others,
+    };
+    setLabelPositions((current) => ({ ...current, [slug]: currentPosition }));
+    event.currentTarget.setPointerCapture(event.pointerId);
+    setDraggedLabel(slug);
+  }
+
+  function handleLabelPointerMove(event) {
+    const drag = labelDragRef.current;
+    const mapNode = mapRef.current;
+    if (!drag || !mapNode || drag.pointerId !== event.pointerId) return;
+
+    event.stopPropagation();
+    event.preventDefault();
+    const deltaX = event.clientX - drag.clientX;
+    const deltaY = event.clientY - drag.clientY;
+    if (
+      Math.abs(event.clientX - drag.startClientX)
+        + Math.abs(event.clientY - drag.startClientY) > 5
+    ) movedRef.current = true;
+
+    const nextPosition = moveLabelWithoutOverlap(
+      drag.currentPosition,
+      {
+        x: drag.currentPosition.x + deltaX,
+        y: drag.currentPosition.y + deltaY,
+      },
+      drag.dimensions,
+      drag.others,
+      mapNode.getBoundingClientRect(),
+    );
+
+    drag.clientX = event.clientX;
+    drag.clientY = event.clientY;
+    drag.currentPosition = nextPosition;
+    setLabelPositions((current) => ({ ...current, [drag.slug]: nextPosition }));
+  }
+
+  function endLabelDrag(event) {
+    if (labelDragRef.current?.pointerId !== event.pointerId) return;
+    event.stopPropagation();
+    labelDragRef.current = null;
+    setDraggedLabel(null);
+  }
+
   if (locations.length === 0) {
     return <p className="gallery-empty">{t("gallery.empty")}</p>;
   }
@@ -309,7 +442,7 @@ export default function GalleryPageClient({ galleries }) {
 
         <svg className="gallery-map-connectors" aria-hidden="true">
           {locations.map(({ slug, point }, index) => {
-            const labelPosition = floatingLabels[index];
+            const labelPosition = displayedLabels[index];
             const pin = getPinWorldPosition(point, mapArtSize);
             return (
               <line
@@ -327,11 +460,11 @@ export default function GalleryPageClient({ galleries }) {
           const { point } = gallery;
           const pin = getPinWorldPosition(point, mapArtSize);
           const pinScreenX = (mapSize.width - MAP_WIDTH) / 2 + pan.x + pin.x;
-          const labelPosition = floatingLabels[index];
+          const labelPosition = displayedLabels[index];
           return (
             <div
               key={gallery.slug}
-              className="gallery-map-label-anchor"
+              className={`gallery-map-label-anchor ${draggedLabel === gallery.slug ? "is-dragging" : ""}`}
               style={{
                 left: `${labelPosition.x}px`,
                 top: `${labelPosition.y}px`,
@@ -344,7 +477,13 @@ export default function GalleryPageClient({ galleries }) {
               <Link
                 href={`/gallery/${gallery.slug}`}
                 className={`gallery-map-label ${labelPosition.x < pinScreenX ? "is-left" : "is-right"}`}
+                data-gallery-slug={gallery.slug}
                 onClick={handleLocationClick}
+                onDragStart={(event) => event.preventDefault()}
+                onPointerDown={(event) => handleLabelPointerDown(event, gallery.slug)}
+                onPointerMove={handleLabelPointerMove}
+                onPointerUp={endLabelDrag}
+                onPointerCancel={endLabelDrag}
               >
                 <span className="gallery-map-label-location">{gallery.location}</span>
                 <span className="gallery-map-label-title">{gallery.title}</span>

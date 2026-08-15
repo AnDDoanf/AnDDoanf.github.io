@@ -11,7 +11,7 @@
     "journal": "T\u1ea1p ch\u00ed",
     "poems": "Th\u01a1",
     "culinary": "\u1ea8m th\u1ef1c",
-    "gallery": "B\u1ed9 s\u01b0u t\u1eadp",
+    "gallery": "Ảnh",
     "showrooms": "Showroom"
   },
   "ui": {
@@ -59,12 +59,12 @@
     "journal": "Kh\u00e1m ph\u00e1 th\u1ebf gi\u1edbi c\u00f4ng ngh\u1ec7",
     "poetry": "Kh\u00e1m ph\u00e1 \u0111am m\u00ea th\u01a1",
     "culinary": "Kh\u00e1m ph\u00e1 s\u1edf th\u00edch \u1ea9m th\u1ef1c",
-    "gallery": "Xem b\u1ed9 s\u01b0u t\u1eadp \u1ea3nh",
+    "gallery": "Xem bộ sưu tập",
     "showroom": "Showroom"
   },
   "gallery": {
-    "label": "B\u1ed9 s\u01b0u t\u1eadp",
-    "title": "B\u1ed9 s\u01b0u t\u1eadp",
+    "label": "Ảnh",
+    "title": "Ảnh",
     "subtitle": "Nh\u1eefng b\u1ed9 s\u01b0u t\u1eadp \u1ea3nh v\u00e0 c\u00e2u chuy\u1ec7n \u0111\u01b0\u1ee3c t\u1ea3i t\u1eeb t\u1eebng th\u01b0 m\u1ee5c trong data/gallery.",
     "empty": "Ch\u01b0a c\u00f3 b\u1ed9 s\u01b0u t\u1eadp n\u00e0o. H\u00e3y th\u00eam m\u1ed9t th\u01b0 m\u1ee5c trong data/gallery \u0111\u1ec3 xu\u1ea5t b\u1ea3n.",
     "photobook": "Photobook",
