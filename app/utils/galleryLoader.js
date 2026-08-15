@@ -32,6 +32,19 @@ function humanizeName(value) {
     .trim();
 }
 
+function formatImageCaption(value, index) {
+  const filename = path.basename(String(value ?? ""), path.extname(String(value ?? "")));
+  const timestamp = filename.match(
+    /^(\d{4}-\d{2}-\d{2})_(\d{2})-(\d{2})-(\d{2})(?:$|[-_ ])/,
+  );
+
+  if (timestamp) {
+    return `${timestamp[1]} ${timestamp[2]}:${timestamp[3]}:${timestamp[4]}`;
+  }
+
+  return humanizeName(filename) || `Image ${index + 1}`;
+}
+
 function toPublicGallerySrc(slug, filename) {
   const encode = (segment) => encodeURIComponent(segment);
   const encodedPath = filename.split(/[\\/]/).map(encode).join("/");
@@ -109,7 +122,7 @@ function readGalleryImages(slug) {
 
   return collectImages(folderPath)
     .map((filename, index) => {
-      const caption = humanizeName(path.basename(filename)) || `Image ${index + 1}`;
+      const caption = formatImageCaption(filename, index);
       return {
         name: filename,
         src: toPublicGallerySrc(slug, filename),
