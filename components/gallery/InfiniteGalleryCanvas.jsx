@@ -489,6 +489,7 @@ export default function InfiniteGalleryCanvas({ gallery }) {
           className="infinite-gallery-lightbox"
           role="dialog"
           aria-modal="true"
+          onClick={() => setSelectedImage(null)}
           aria-label={selectedImage.pageNumber
             ? t("gallery.pageNumber", { page: selectedImage.pageNumber })
             : selectedImage.caption}
@@ -496,12 +497,19 @@ export default function InfiniteGalleryCanvas({ gallery }) {
           <button type="button" className="infinite-gallery-lightbox-close" onClick={() => setSelectedImage(null)} aria-label={t("gallery.closeImage")}>
             <i className="bi bi-x-lg" />
           </button>
-          <img
-            src={selectedImage.src}
-            alt={selectedImage.pageNumber
-              ? t("gallery.pdfPageAlt", { title: gallery.title, page: selectedImage.pageNumber })
-              : selectedImage.alt}
-          />
+          <button
+            type="button"
+            className="infinite-gallery-lightbox-image"
+            onClick={() => setSelectedImage(null)}
+            aria-label={t("gallery.closeImage")}
+          >
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.pageNumber
+                ? t("gallery.pdfPageAlt", { title: gallery.title, page: selectedImage.pageNumber })
+                : selectedImage.alt}
+            />
+          </button>
           <p>
             {selectedImage.pageNumber
               ? t("gallery.pageNumber", { page: selectedImage.pageNumber })

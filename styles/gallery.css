@@ -1510,6 +1510,17 @@
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.45);
 }
 
+.infinite-gallery-lightbox-image {
+  display: grid;
+  max-width: 100%;
+  max-height: calc(100vh - 7rem);
+  padding: 0;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  cursor: zoom-out;
+}
+
 .infinite-gallery-lightbox p {
   margin: 0;
   color: #eee8d5;
