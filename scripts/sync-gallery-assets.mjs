@@ -13,6 +13,13 @@ const imageExtensions = new Set([
   ".avif",
   ".svg",
 ]);
+const videoExtensions = new Set([
+  ".mp4",
+  ".mov",
+  ".webm",
+  ".m4v",
+  ".ogv",
+]);
 const pdfExtensions = new Set([".pdf"]);
 const pdfWorkerSource = path.join(
   workspaceRoot,
@@ -69,6 +76,7 @@ function copyGalleryAssets(sourceDir, targetDir) {
     const extension = path.extname(entry.name).toLowerCase();
     if (
       !imageExtensions.has(extension)
+      && !videoExtensions.has(extension)
       && !pdfExtensions.has(extension)
     ) {
       continue;

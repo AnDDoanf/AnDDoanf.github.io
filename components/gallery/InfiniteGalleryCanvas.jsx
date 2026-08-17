@@ -314,9 +314,11 @@ export default function InfiniteGalleryCanvas({ gallery }) {
   }
 
   function rememberAspectRatio(imageName, event) {
-    const { naturalWidth, naturalHeight } = event.currentTarget;
-    if (!naturalWidth || !naturalHeight) return;
-    const aspectRatio = naturalWidth / naturalHeight;
+    const target = event.currentTarget;
+    const width = target.naturalWidth || target.videoWidth;
+    const height = target.naturalHeight || target.videoHeight;
+    if (!width || !height) return;
+    const aspectRatio = width / height;
 
     setCanvasImages((current) => {
       let changed = false;
@@ -439,15 +441,30 @@ export default function InfiniteGalleryCanvas({ gallery }) {
               })}
             >
               {tile.image.src ? (
-                <img
-                  src={tile.image.src}
-                  alt={tile.image.pageNumber
-                    ? t("gallery.pdfPageAlt", { title: gallery.title, page: tile.image.pageNumber })
-                    : tile.image.alt}
-                  draggable="false"
-                  loading="lazy"
-                  onLoad={(event) => rememberAspectRatio(tile.image.name, event)}
-                />
+                tile.image.mediaType === "video" ? (
+                  <div className="infinite-gallery-media-wrapper">
+                    <video
+                      src={tile.image.src}
+                      muted
+                      playsInline
+                      preload="metadata"
+                      onLoadedMetadata={(event) => rememberAspectRatio(tile.image.name, event)}
+                    />
+                    <span className="infinite-gallery-video-badge" aria-hidden="true">
+                      <i className="bi bi-play-circle-fill" />
+                    </span>
+                  </div>
+                ) : (
+                  <img
+                    src={tile.image.src}
+                    alt={tile.image.pageNumber
+                      ? t("gallery.pdfPageAlt", { title: gallery.title, page: tile.image.pageNumber })
+                      : tile.image.alt}
+                    draggable="false"
+                    loading="lazy"
+                    onLoad={(event) => rememberAspectRatio(tile.image.name, event)}
+                  />
+                )
               ) : (
                 <span className="infinite-gallery-page-placeholder" aria-hidden="true">
                   {tile.image.pageNumber
@@ -497,19 +514,34 @@ export default function InfiniteGalleryCanvas({ gallery }) {
           <button type="button" className="infinite-gallery-lightbox-close" onClick={() => setSelectedImage(null)} aria-label={t("gallery.closeImage")}>
             <i className="bi bi-x-lg" />
           </button>
-          <button
-            type="button"
-            className="infinite-gallery-lightbox-image"
-            onClick={() => setSelectedImage(null)}
-            aria-label={t("gallery.closeImage")}
-          >
-            <img
-              src={selectedImage.src}
-              alt={selectedImage.pageNumber
-                ? t("gallery.pdfPageAlt", { title: gallery.title, page: selectedImage.pageNumber })
-                : selectedImage.alt}
-            />
-          </button>
+          {selectedImage.mediaType === "video" ? (
+            <div
+              className="infinite-gallery-lightbox-media"
+              onClick={(event) => event.stopPropagation()}
+            >
+              <video
+                src={selectedImage.src}
+                controls
+                autoPlay
+                playsInline
+                className="infinite-gallery-lightbox-video"
+              />
+            </div>
+          ) : (
+            <button
+              type="button"
+              className="infinite-gallery-lightbox-image"
+              onClick={() => setSelectedImage(null)}
+              aria-label={t("gallery.closeImage")}
+            >
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.pageNumber
+                  ? t("gallery.pdfPageAlt", { title: gallery.title, page: selectedImage.pageNumber })
+                  : selectedImage.alt}
+              />
+            </button>
+          )}
           <p>
             {selectedImage.pageNumber
               ? t("gallery.pageNumber", { page: selectedImage.pageNumber })

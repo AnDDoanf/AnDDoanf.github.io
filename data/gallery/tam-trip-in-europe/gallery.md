@@ -1,8 +1,8 @@
 ---
 title: Tam Trip in Europe
 description: Tam's Europe trip arranged as an endless photographic canvas.
-type: pdf
-pdf: Photobook.pdf
+type: images
+cover: 2025-08-01_11-50-20.jpg
 style: editorial
 location: Europe
 latitude: 50.1109

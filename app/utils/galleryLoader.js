@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-import { parseGalleryMarkdown } from "@/app/utils/galleryParser";
+import { parseGalleryMarkdown } from "./galleryParser.js";
 
 const GALLERY_ROOT = path.join(process.cwd(), "data", "gallery");
 const IMAGE_EXTENSIONS = new Set([
@@ -12,6 +12,13 @@ const IMAGE_EXTENSIONS = new Set([
   ".gif",
   ".avif",
   ".svg",
+]);
+const VIDEO_EXTENSIONS = new Set([
+  ".mp4",
+  ".mov",
+  ".webm",
+  ".m4v",
+  ".ogv",
 ]);
 const PDF_EXTENSIONS = new Set([".pdf"]);
 const MARKDOWN_PRIORITY = ["gallery.md", "index.md", "story.md", "readme.md"];
@@ -114,7 +121,8 @@ function readGalleryImages(slug) {
         if (entry.isDirectory()) {
           return collectImages(path.join(directory, entry.name), relativePath);
         }
-        return IMAGE_EXTENSIONS.has(path.extname(entry.name).toLowerCase())
+        const ext = path.extname(entry.name).toLowerCase();
+        return (IMAGE_EXTENSIONS.has(ext) || VIDEO_EXTENSIONS.has(ext))
           ? [relativePath]
           : [];
       });
@@ -123,11 +131,14 @@ function readGalleryImages(slug) {
   return collectImages(folderPath)
     .map((filename, index) => {
       const caption = formatImageCaption(filename, index);
+      const ext = path.extname(filename).toLowerCase();
+      const mediaType = VIDEO_EXTENSIONS.has(ext) ? "video" : "image";
       return {
         name: filename,
         src: toPublicGallerySrc(slug, filename),
         alt: caption,
         caption,
+        mediaType,
       };
     });
 }
@@ -152,11 +163,13 @@ function readGalleryPdf(slug, preferredPdfName = "") {
 
 function pickCover(images, preferredCoverName) {
   if (images.length === 0) return null;
-  if (!preferredCoverName) return images[0];
-
-  return images.find((image) => (
-    image.name === preferredCoverName || path.basename(image.name) === preferredCoverName
-  )) ?? images[0];
+  if (preferredCoverName) {
+    const match = images.find((image) => (
+      image.name === preferredCoverName || path.basename(image.name) === preferredCoverName
+    ));
+    if (match) return match;
+  }
+  return images.find((image) => image.mediaType !== "video") ?? images[0];
 }
 
 export function loadGalleryCollection() {
