@@ -204,8 +204,6 @@ Cuốn sách khép lại bằng lời an ủi cá nhân dành cho cụ già Đa-
 
 ---
 
-## Dẫn nguồn
-
 [^1]: John J. Collins (1993). *Daniel* (Hermeneia: A Critical and Historical Commentary on the Bible). Fortress Press.
 [^2]: Joyce G. Baldwin (1978). *Daniel: An Introduction and Commentary* (Tyndale Old Testament Commentaries - TOTC). InterVarsity Press.
 [^3]: Sinclair B. Ferguson (1988). *Daniel* (Mastering the Old Testament / The Preacher's Commentary). Thomas Nelson.

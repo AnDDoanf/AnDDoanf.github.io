@@ -128,8 +128,6 @@ Nhưng một lần nữa, họ bộc lộ bản chất cứng đầu bất phụ
 - **Tìm kiếm sự bình an cho nơi mình sinh sống (Giê-rê-mi 29:7)**: Là những người lữ hành trên đất hướng về quê hương trên trời, Cơ Đốc nhân được kêu gọi sống có trách nhiệm, chăm chỉ làm việc, đóng góp tích cực và cầu nguyện chúc phước cho sự an lạc của xã hội và đất nước nơi mình đang sống.
 - **Vui mừng trong Giao Ước Mới**: Hãy tạ ơn Chúa vì qua Đấng Christ, Đức Thánh Linh đang ngự trong lòng chúng ta, ghi tạc Lẽ Thật vào tâm trí và ban quyền năng để chúng ta yêu mến và bước đi theo Lời Ngài cách tự nguyện mỗi ngày.
 
-## Dẫn nguồn
-
 [^1]: J. A. Thompson (1980). *The Book of Jeremiah* (New International Commentary on the Old Testament). Eerdmans.
 [^2]: Derek Kidner (1987). *The Message of Jeremiah: Against Wind and Tide* (The Bible Speaks Today). InterVarsity Press.
 [^3]: BibleProject. *Jeremiah Overview: The Prophet of Tears and the Promise of a New Heart*. https://bibleproject.com/explore/video/jeremiah/

@@ -173,8 +173,6 @@ Chi tiết này là một dấu chỉ thần học thiêng liêng: Dù Đền Th
 - **Hạ mình để nhận lãnh ân điển**: Giống như Na-a-man phải từ bỏ lòng tự ái kiêu ngạo để dìm mình dưới dòng sông Giô-đanh đục ngầu mới nhận được sự chữa lành, con người chỉ có thể nhận được sự cứu rỗi khi hạ mình ăn năn, từ bỏ sự công chính riêng và tin cậy hoàn toàn nơi dòng huyết cứu chuộc của Đấng Christ.
 - **Mắt thuộc linh nhìn thấy Đạo quân Thiên đàng**: Khi đối diện với những áp lực bủa vây của cuộc đời, hãy cầu xin Chúa "mở mắt thuộc linh" để chúng ta nhìn thấy sự bảo vệ quyền năng của Đức Chúa Trời Vạn Quân — vì Đấng ở trong chúng ta vĩ đại hơn kẻ ở trong thế gian (1 Giăng 4:4).
 
-## Dẫn nguồn
-
 [^1]: T. R. Hobbs (1985). *2 Kings* (Word Biblical Commentary). Thomas Nelson.
 [^2]: Paul R. House (1995). *1, 2 Kings* (The New American Commentary). B&H Publishing Group.
 [^3]: BibleProject. *2 Kings Overview: The Fall of Israel and Judah into Exile*. https://bibleproject.com/explore/video/2-kings/

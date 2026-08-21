@@ -155,8 +155,6 @@ Sự phán xét công chính của Đức Chúa Trời trong ngày cuối cùng 
 - **Nhớ đến Đấng Tạo Hóa từ khi còn trẻ**: Đừng dâng cho Chúa những ngày tháng tàn tạ cuối đời khi sức lực đã kiệt quệ. Hãy dâng những năm tháng thanh xuân tươi đẹp nhất, nhiệt huyết nhất và tài năng tốt nhất để phục vụ Chúa và tha nhân.
 - **Sống tỉnh thức hướng về Ngày Phán Xét**: Nhận biết rằng mỗi suy nghĩ, lời nói và hành động kín giấu đều sẽ được phơi bày trước ngai phán xét của Chúa (12:14). Hãy sống đời sống thánh sạch, công chính và kính sợ Chúa trong từng quyết định mỗi ngày.
 
-## Dẫn nguồn
-
 [^1]: Michael V. Fox (1999). *A Time to Tear Down and a Time to Build Up: A Rereading of Ecclesiastes*. Eerdmans.
 [^2]: Derek Kidner (1976). *The Message of Ecclesiastes: A Time to Mourn, and a Time to Dance* (The Bible Speaks Today). InterVarsity Press.
 [^3]: BibleProject. *Ecclesiastes Overview: The Meaning of Life and the Vapor of Hevel*. https://bibleproject.com/explore/video/ecclesiastes/

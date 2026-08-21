@@ -147,8 +147,6 @@ Sách Gióp là một trong những dự ngôn sống động nhất về Phúc 
 - **Thành thật dốc đổ tấm lòng trước mặt Chúa**: Đừng ngần ngại đem những thắc mắc, băn khoăn và nước mắt đến giãi bày cùng Chúa trong sự cầu nguyện. Chúa đón nhận sự thành thật của một tấm lòng tan vỡ hơn là những lời cầu nguyện hoa mỹ giả tạo.
 - **Tin cậy Đấng Khôn Ngoan giữa đêm tối đức tin**: Khi bạn không hiểu lý do vì sao nghịch cảnh xảy ra, hãy hướng mắt nhìn lên sự vĩ đại của Đấng Tạo Hóa. Nếu Ngài chăm sóc trật tự vũ trụ và từng tạo vật nhỏ bé, Ngài chắc chắn đủ khôn ngoan và tình yêu để gìn giữ cuộc đời bạn vượt qua cơn bão giông.
 
-## Dẫn nguồn
-
 [^1]: David J. A. Clines (1989–2011). *Job 1–42* (Word Biblical Commentary, Vols. 17, 18A, 18B). Thomas Nelson.
 [^2]: Francis I. Andersen (1976). *Job: An Introduction and Commentary* (Tyndale Old Testament Commentaries). InterVarsity Press.
 [^3]: BibleProject. *Job Overview: The Problem of Suffering and God's Unsearchable Wisdom*. https://bibleproject.com/explore/video/job/

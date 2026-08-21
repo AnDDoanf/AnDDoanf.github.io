@@ -195,8 +195,6 @@ Nguyên lý **"Người công chính sống bởi đức tin" (Ha-ba-cúc 2:4)**
 
 ---
 
-## Dẫn nguồn
-
 [^1]: F. F. Bruce (1993). *Habakkuk* in Thomas Edward McComiskey (ed.), *The Minor Prophets: An Exegetical and Expository Commentary*. Baker Academic.
 [^2]: Kenneth L. Barker & Waylon Bailey (1999). *Micah, Nahum, Habakkuk, Zephaniah* (The New American Commentary - NAC, Vol. 20). Broadman & Holman Publishers.
 [^3]: David W. Baker (1988). *Nahum, Habakkuk and Zephaniah: An Introduction and Commentary* (Tyndale Old Testament Commentaries - TOTC). InterVarsity Press.

@@ -135,8 +135,6 @@ Cuốn sách khép lại bằng lời tôn vinh vị thế cao trọng của M�
 - **Sự kiên định không quỳ lạy trước ngẫu tượng**: Giống như Mạc-đô-chê kiên quyết không quỳ gối trước Ha-man, Cơ Đốc nhân được kêu gọi giữ vững lập trường đức tin, không cúi đầu trước những áp lực thỏa hiệp, tiền tài hay quyền lực bất chính của thế gian.
 - **Bình an trước sự im lặng của Chúa**: Trong những giai đoạn tăm tối nhất khi dường như Chúa "im lặng" và bạn không cảm nhận được phép lạ tỏ tường, hãy vững lòng tin cậy: Bàn tay vô hình của Đấng Tạo Hóa vẫn đang hành động từng giây từng phút để đảo ngược mọi nghịch cảnh thành phước hạnh cho những ai hết lòng kính sợ Ngài.
 
-## Dẫn nguồn
-
 [^1]: Frederic W. Bush (1996). *Ruth, Esther* (Word Biblical Commentary). Thomas Nelson.
 [^2]: Karen H. Jobes (1999). *Esther* (The NIV Application Commentary). Zondervan.
 [^3]: BibleProject. *Esther Overview: God's Silent Providence and the Reversal of Fate*. https://bibleproject.com/explore/video/esther/

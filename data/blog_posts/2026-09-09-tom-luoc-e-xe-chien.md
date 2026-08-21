@@ -195,8 +195,6 @@ Cuốn sách khép lại bằng sự phân chia đất đai công chính cho mư
 
 ---
 
-## Dẫn nguồn
-
 [^1]: Daniel I. Block (1997, 1998). *The Book of Ezekiel: Chapters 1–24 & 25–48* (New International Commentary on the Old Testament - NICOT). Eerdmans.
 [^2]: Leslie C. Allen (1990, 1994). *Ezekiel 1–19 & 20–48* (Word Biblical Commentary - WBC). Thomas Nelson.
 [^3]: BibleProject. *Ezekiel Overview: God's Glory in Exile and the Vision of the Dry Bones*. https://bibleproject.com/explore/video/ezekiel-1-32/ & https://bibleproject.com/explore/video/ezekiel-33-48/

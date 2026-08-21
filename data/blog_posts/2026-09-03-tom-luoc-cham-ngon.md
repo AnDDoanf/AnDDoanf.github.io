@@ -132,8 +132,6 @@ Hình tượng Người Nữ Tài Đức ở cuối sách chính là **hiện th
 - **Kỷ luật trong lời nói**: Hãy học cách "chậm nói, chậm giận", dùng lời nói để khích lệ, chữa lành và đem lại sự sống thay vì buông những lời cay độc, ngồi lê đôi mách hay khoe khoang tự phụ.
 - **Sống đời sống tri túc và trung tín lao động**: Hãy học lời cầu xin của A-gu-rơ để thỏa lòng với những gì Chúa ban, chăm chỉ làm việc bằng đôi tay liêm chính, rộng rãi chia sẻ với người khốn khó và không chạy theo những ảo ảnh làm giàu bất chính.
 
-## Dẫn nguồn
-
 [^1]: Roland E. Murphy (1998). *Proverbs* (Word Biblical Commentary, Vol. 22). Thomas Nelson.
 [^2]: Derek Kidner (1964). *Proverbs: An Introduction and Commentary* (Tyndale Old Testament Commentaries). InterVarsity Press.
 [^3]: BibleProject. *Proverbs Overview: The Art of Godly Wisdom in Daily Life*. https://bibleproject.com/explore/video/proverbs/

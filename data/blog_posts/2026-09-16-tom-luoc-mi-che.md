@@ -183,8 +183,6 @@ Chúa giữ trọn sự thành tín với Gia-cốp và lòng nhân từ với �
 
 ---
 
-## Dẫn nguồn
-
 [^1]: Leslie C. Allen (1976). *The Books of Joel, Obadiah, Jonah, and Micah* (New International Commentary on the Old Testament - NICOT). Eerdmans.
 [^2]: Kenneth L. Barker (1999). *Micah, Nahum, Habakkuk, Zephaniah* (The New American Commentary - NAC). Broadman & Holman.
 [^3]: David W. Baker (1988). *Micah, Nahum, Habakkuk, Zephaniah: An Introduction and Commentary* (Tyndale Old Testament Commentaries - TOTC). InterVarsity Press.

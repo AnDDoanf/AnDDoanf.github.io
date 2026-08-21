@@ -162,8 +162,6 @@ Sứ điệp cuối cùng được gửi riêng cho Tổng trấn Xô-rô-ba-bê
 
 ---
 
-## Dẫn nguồn
-
 [^1]: Joyce G. Baldwin (1972). *Haggai, Zechariah and Malachi: An Introduction and Commentary* (Tyndale Old Testament Commentaries - TOTC). InterVarsity Press.
 [^2]: Richard A. Taylor & E. Ray Clendenen (2004). *Haggai, Malachi* (The New American Commentary - NAC, Vol. 21A). Broadman & Holman Publishers.
 [^3]: Mark J. Boda (2004). *Haggai, Zechariah* (The NIV Application Commentary). Zondervan.

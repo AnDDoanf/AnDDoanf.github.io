@@ -164,8 +164,6 @@ Mùa màng dư dật đến mức công việc gặt hái và gieo trồng nối
 
 ---
 
-## Dẫn nguồn
-
 [^1]: Shalom M. Paul (1991). *Amos: A Commentary on the Book of Amos* (Hermeneia: A Critical and Historical Commentary on the Bible). Fortress Press.
 [^2]: J. Alec Motyer (1987). *The Message of Amos: The Day of the Lion* (The Bible Speaks Today - BST). InterVarsity Press.
 [^3]: David Allan Hubbard (1989). *Joel and Amos: An Introduction and Commentary* (Tyndale Old Testament Commentaries - TOTC). InterVarsity Press.

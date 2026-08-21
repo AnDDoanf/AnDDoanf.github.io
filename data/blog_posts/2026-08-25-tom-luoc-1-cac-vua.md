@@ -165,8 +165,6 @@ Sách 1 Các Vua đóng góp những mắt xích thần học không thể thi�
 - **Can đảm đứng vững giữa thời đại thỏa hiệp**: Giữa một thế hệ "khập khiễng giữa hai bên" và cúi mình trước các ngẫu tượng thời đại (tiền bạc, danh vọng, quyền lực), mỗi Cơ Đốc nhân được kêu gọi can đảm như Ê-li trên đỉnh Cạt-mên: trung thành tuyệt đối với Lời Chúa và sẵn sàng dấn thân bảo vệ chân lý.
 - **Lắng nghe tiếng phán êm dịu của Chúa**: Trong những lúc kiệt sức, thất vọng hay cô đơn trong chức vụ, hãy dừng lại nghỉ ngơi, tìm kiếm sự phục hồi từ Chúa và lắng nghe "tiếng thì thầm êm dịu" của Đức Thánh Linh trong nơi kín nhiệm thay vì chạy theo những ồn ào náo động bên ngoài.
 
-## Dẫn nguồn
-
 [^1]: Simon J. DeVries (2003). *1 Kings* (Word Biblical Commentary). Thomas Nelson.
 [^2]: Paul R. House (1995). *1, 2 Kings* (The New American Commentary). B&H Publishing Group.
 [^3]: BibleProject. *1 Kings Overview: The Wisdom and the Downfall of Solomon*. https://bibleproject.com/explore/video/1-kings/

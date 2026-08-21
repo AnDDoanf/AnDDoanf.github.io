@@ -202,8 +202,6 @@ Ca Thương không phải là một nhánh cụt của lịch sử Do Thái, nh�
 
 ---
 
-## Dẫn nguồn
-
 [^1]: Iain Provan (1991). *Lamentations* (The New Century Bible Commentary). Eerdmans.
 [^2]: Tremper Longman III (2008). *Jeremiah, Lamentations* (New International Biblical Commentary). Hendrickson Publishers.
 [^3]: BibleProject. *Lamentations Overview: The Sacred Space of Grief and the Faithful God*. https://bibleproject.com/explore/video/lamentations/

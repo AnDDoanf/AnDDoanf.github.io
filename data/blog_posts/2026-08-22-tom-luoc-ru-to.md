@@ -129,8 +129,6 @@ Sách Ru-tơ là một kiệt tác thần học thu nhỏ, dự phóng những c
 - **Sống công chính và rộng rãi giữa xã hội suy đồi**: Bô-ô là tấm gương mẫu mực cho mỗi Cơ Đốc nhân: sử dụng của cải Chúa ban để che chở người yếu thế, tôn trọng luật pháp, giữ gìn sự thánh sạch đạo đức và hành động vì danh Chúa giữa một thời đại bại hoại.
 - **Ân điển cứu chuộc không phân biệt nguồn gốc**: Quá khứ, gia cảnh hay xuất thân xã hội không thể ngăn trở ân sủng của Chúa. Bất cứ ai thật lòng đặt đức tin và nương náu dưới cánh của Đức Chúa Trời đều được Ngài đón nhận, biến đổi cay đắng (*Ma-ra*) thành ngọt ngào đầy trọn (*Na-ô-mi*), và đặt để vào những mục đích vĩ đại của vương quốc Ngài.
 
-## Dẫn nguồn
-
 [^1]: Daniel I. Block (1999). *Judges, Ruth* (The New American Commentary). B&H Publishing Group.
 [^2]: Robert L. Hubbard Jr. (1988). *The Book of Ruth* (New International Commentary on the Old Testament). Eerdmans.
 [^3]: BibleProject. *Ruth Overview: The Kinsman-Redeemer and God's Providential Faithfulness*. https://bibleproject.com/explore/video/ruth/

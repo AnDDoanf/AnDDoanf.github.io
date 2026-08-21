@@ -128,8 +128,6 @@ Cuốn sách khép lại bằng danh sách những người vi phạm đã can �
 - **Đức tin hành động không cậy sức loài người**: Hãy học bài học kiêng ăn cầu nguyện bên bờ sông A-ha-va: dám bước đi trong sự tin cậy tuyệt đối nơi "Bàn tay tốt lành của Đức Chúa Trời" thay vì tìm kiếm những chỗ dựa xác thịt trần gian.
 - **Giữ gìn sự thánh khiết không thỏa hiệp**: Đừng để các trào lưu và chuẩn mực suy đồi của thế gian làm hoen ố căn tính thánh sạch của đời sống Cơ Đốc nhân. Sự phục hưng đích thực chỉ đến khi chúng ta can đảm đối diện, xưng tội và cắt đứt triệt để với mọi điều làm buồn lòng Đức Thánh Linh.
 
-## Dẫn nguồn
-
 [^1]: H. G. M. Williamson (1985). *Ezra, Nehemiah* (Word Biblical Commentary). Thomas Nelson.
 [^2]: F. Charles Fensham (1982). *The Books of Ezra and Nehemiah* (New International Commentary on the Old Testament). Eerdmans.
 [^3]: BibleProject. *Ezra-Nehemiah Overview: The Rebuilding of the Temple and the Heart*. https://bibleproject.com/explore/video/ezra-nehemiah/

@@ -328,8 +328,6 @@ Thứ tự vẫn quan trọng: Chúa giải cứu Y-sơ-ra-ên khỏi Ai Cập t
 
 Lê-vi Ký bắt đầu với Môi-se đứng ngoài Lều Hội Kiến và nghe Chúa gọi. Sách mở ra con đường để ông cùng dân được đến gần. Nhưng các sinh tế phải lặp lại, thầy tế lễ vẫn có tội và dân vẫn sẽ phá giao ước. Vì thế, sách vừa ban một giải pháp thật cho thời điểm ấy vừa tạo lòng mong đợi sâu xa hơn. Tân Ước công bố sự mong đợi đó được đáp trong Đức Chúa Jêsus, Đấng đưa con người không chỉ đến gần nơi thánh trên đất nhưng vào sự thông công bền vững với Đức Chúa Trời.
 
-## Nguồn tham khảo
-
 [^nvb]: [Kinh Thánh Bản Dịch Mới (NVB), Vietnamese Bible, Inc.](https://www.bible.com/vi/versions/449). Bài viết dùng tên riêng và thuật ngữ theo NVB; các câu Kinh Thánh chủ yếu được tóm lược thay vì trích dài.
 [^overview]: BibleProject, [*Book of Leviticus: Guide with Key Information and Resources*](https://bibleproject.com/guides/book-of-leviticus/). Đối chiếu bố cục cân đối của sách, chủ đề sự thánh khiết và vị trí trung tâm của Ngày Đại Lễ Chuộc Tội.
 [^lee]: Peter Y. Lee, [*Leviticus: Commentary*](https://www.thegospelcoalition.org/commentary/leviticus/), The Gospel Coalition Bible Commentary, 2023. Tham khảo bối cảnh tại Si-na-i, bố cục, chức tế lễ và ý nghĩa các luật.

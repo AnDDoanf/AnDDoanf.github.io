@@ -177,8 +177,6 @@ Hai cuốn sách tạo nên một bức tranh thần học cân bằng hoàn h�
 
 ---
 
-## Dẫn nguồn
-
 [^1]: Kenneth L. Barker & Waylon Bailey (1999). *Micah, Nahum, Habakkuk, Zephaniah* (The New American Commentary - NAC, Vol. 20). Broadman & Holman Publishers.
 [^2]: David W. Baker (1988). *Nahum, Habakkuk and Zephaniah: An Introduction and Commentary* (Tyndale Old Testament Commentaries - TOTC). InterVarsity Press.
 [^3]: Walter A. Maier (1959). *The Book of Nahum: A Commentary*. Concordia Publishing House / Baker Academic.

@@ -169,8 +169,6 @@ Sách Xuất Hành khép lại với một sự căng thẳng. Chúa đã đến
 
 Toàn bộ sách cho thấy Chúa không chỉ giải thoát con người **khỏi** ách nô lệ, nhưng còn giải thoát họ **để** thuộc về Ngài, sống như dân thánh và mang sự hiện diện Ngài giữa thế gian.
 
-## Nguồn tham khảo
-
 [^nvb]: [Kinh Thánh Bản Dịch Mới (NVB), Vietnamese Bible, Inc.](https://www.bible.com/vi/versions/449). Bản Cựu Ước được dịch từ *Biblia Hebraica Stuttgartensia*; mọi câu Kinh Thánh trích trong bài đều dùng bản NVB.
 [^overview]: BibleProject, [*Book of Exodus: Guide with Key Information and Resources*](https://bibleproject.com/guides/book-of-exodus/) và [*Exodus 19–40*](https://bibleproject.com/videos/torah-exodus-2/).
 [^hard-heart]: Tim Mackie, [*If God Hardened Pharaoh’s Heart, Did God Cause the Evil?*](https://bibleproject.com/articles/pharaohs-heart-grew-harder/), BibleProject, 2017.

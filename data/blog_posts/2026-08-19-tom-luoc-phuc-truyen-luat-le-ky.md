@@ -144,8 +144,6 @@ Sách Phục Truyền Luật Lệ Ký không phải là bộ luật cổ xưa đ
 - **Cảnh giác trước sự thịnh vượng**: Thử thách lớn nhất của đức tin thường không nằm trong lúc gian nan thiếu thốn của sa mạc, mà nằm trong lúc no đủ và thành đạt của Đất Hứa. Hãy luôn giữ lòng khiêm nhường, ghi nhớ rằng mọi hơi thở, tài năng, cơ hội và thành tựu chúng ta có được đều là món quà từ ân điển của Đức Chúa Trời.
 - **Dứt khoát lựa chọn Sự Sống mỗi ngày**: Mỗi ngày mới mở ra, chúng ta đều đứng trước ngã rẽ lựa chọn giữa tiếng gọi của thế gian và Lời phán của Chúa. Hãy đưa ra quyết định khôn ngoan: kính mến Chúa, lắng nghe tiếng Ngài và gắn bó với Ngài trọn vẹn.
 
-## Dẫn nguồn
-
 [^1]: J. Gordon McConville (2002). *Deuteronomy* (Apollos Old Testament Commentary). InterVarsity Press.
 [^2]: Christopher J. H. Wright (1996). *Deuteronomy* (New International Biblical Commentary). Hendrickson Publishers.
 [^3]: BibleProject. *Deuteronomy Overview: The Law, the Heart, and the Covenant*. https://bibleproject.com/explore/video/deuteronomy/

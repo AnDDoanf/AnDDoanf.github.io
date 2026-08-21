@@ -166,8 +166,6 @@ Sách Giô-suê dự phóng những hình bóng thần học vô cùng phong ph�
 - **Cảnh giác trước tội lỗi kín giấu và sự tự mãn**: Đừng để một "A-can" nào lén lút chôn giấu lòng tham và sự bất khiết trong lều tâm hồn chúng ta, và đừng bao giờ hành động dựa trên cảm tính mắt thấy mà quên "cầu hỏi ý muốn của CHÚA" trong mọi quyết định đời sống.
 - **Lời tuyên xưng dứt khoát cho gia đình**: Giữa một xã hội đa nguyên đầy cám dỗ và các ngẫu tượng thời hiện đại (tiền tài, danh vọng, dục vọng), mỗi người chủ gia đình Cơ Đốc cần có lập trường kiên định như Giô-suê: *"Về phần ta và gia đình ta, chúng ta sẽ phục sự CHÚA!"*
 
-## Dẫn nguồn
-
 [^1]: David M. Howard Jr. (1998). *Joshua* (The New American Commentary). B&H Publishing Group.
 [^2]: Richard S. Hess (1996). *Joshua: An Introduction and Commentary* (Tyndale Old Testament Commentaries). InterVarsity Press.
 [^3]: BibleProject. *Joshua Overview: Entering the Promised Land and the Covenant Faithfulness*. https://bibleproject.com/explore/video/joshua/

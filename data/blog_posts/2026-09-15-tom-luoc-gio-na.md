@@ -154,8 +154,6 @@ Sách Giô-na kết thúc một cách đột ngột bằng một **câu hỏi l�
 
 ---
 
-## Dẫn nguồn
-
 [^1]: Leslie C. Allen (1976). *The Books of Joel, Obadiah, Jonah, and Micah* (New International Commentary on the Old Testament - NICOT). Eerdmans.
 [^2]: Douglas Stuart (1987). *Hosea–Jonah* (Word Biblical Commentary - WBC). Thomas Nelson.
 [^3]: Bryan D. Estelle (2005). *Salvation through Judgment and Mercy: The Gospel according to Jonah*. P&R Publishing.

@@ -133,8 +133,6 @@ Lời kêu gọi *"Người ấy hãy đi lên!"* là nốt nhạc khải hoàn 
 - **Sức mạnh của sự ngợi khen giữa trận chiến**: Giống như đội ca xướng của Giô-sa-phát bước đi trước quân đội ngợi khen Chúa tại thung lũng Bê-ra-ca, hãy dùng vũ khí ngợi khen và cảm tạ Chúa giữa những nghịch cảnh nan đề lớn nhất của cuộc sống để chứng kiến bàn tay Chúa chiến đấu cho chúng ta.
 - **Đừng thỏa hiệp đức tin**: Cải cách nửa vời (như Giê-hu giữ bò vàng hay Giô-ách có đức tin vay mượn) sẽ không thể đứng vững. Hãy xây dựng một đức tin cá nhân sâu sắc, độc lập và trung tín trọn đời với Lời Chúa.
 
-## Dẫn nguồn
-
 [^1]: Sara Japhet (1993). *I & II Chronicles: A Commentary* (Old Testament Library). Westminster John Knox Press.
 [^2]: Martin J. Selman (1994). *2 Chronicles: A Guiding Light to a Deeper Faith* (Tyndale Old Testament Commentaries). InterVarsity Press.
 [^3]: BibleProject. *2 Chronicles Overview: The Kings of Judah and the Hope of Restoration*. https://bibleproject.com/explore/video/chronicles/

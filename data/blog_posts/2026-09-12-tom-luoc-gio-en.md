@@ -178,8 +178,6 @@ Sách Giô-ên là một trong những chiếc cầu nối tiên tri quan trọn
 
 ---
 
-## Dẫn nguồn
-
 [^1]: David Allan Hubbard (1989). *Joel and Amos: An Introduction and Commentary* (Tyndale Old Testament Commentaries - TOTC). InterVarsity Press.
 [^2]: Leslie C. Allen (1976). *The Books of Joel, Obadiah, Jonah, and Micah* (New International Commentary on the Old Testament - NICOT). Eerdmans.
 [^3]: Duane A. Garrett (1997). *Hosea, Joel* (The New American Commentary - NAC). Broadman & Holman.

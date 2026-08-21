@@ -256,8 +256,6 @@ Sách Dân Số Ký để lại những lời cảnh tỉnh nghiêm khắc và b
 
 Đồng vắng của cuộc đời có thể cằn cỗi, khắc nghiệt và đầy thử thách, nhưng đó chính là môi trường tôi luyện đức tin để thanh tẩy chúng ta khỏi bản tính cũ, học biết hoàn toàn nương dựa vào sự chu cấp từng ngày của Chúa, và kiên trì bước đi cho đến khi hoàn tất hành trình tiến vào cơ nghiệp vĩnh cửu nơi Đất Hứa thiên đàng.
 
-## Dẫn nguồn
-
 [^1]: Gordon J. Wenham (1981). *Numbers: An Introduction and Commentary* (Tyndale Old Testament Commentaries). IVP Academic.
 [^2]: Timothy R. Ashley (1993). *The Book of Numbers* (New International Commentary on the Old Testament). Eerdmans.
 [^3]: BibleProject. *Numbers Overview: The Wilderness Journey and God's Faithfulness*. https://bibleproject.com/explore/video/numbers/

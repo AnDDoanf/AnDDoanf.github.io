@@ -130,8 +130,6 @@ Sách 1 Sử Ký khép lại với cái chết bình an của Vua Đa-vít:
 - **Chuẩn bị cho thế hệ mai sau**: Đa-vít vui lòng tích lũy tài nguyên và bản vẽ để Sa-lô-môn xây Đền Thờ mà không cần lưu danh cá nhân. Hãy sống trung tín gieo trồng, chuẩn bị nền tảng thuộc linh vững chắc để thế hệ con cháu tiếp nối và hoàn thành công việc Chúa.
 - **Tấm lòng dâng hiến tự nguyện và khiêm nhường**: Mọi hơi thở, tài năng, thời gian và tiền của chúng ta có được đều là của Chúa trao quyền quản lý. Hãy dâng hiến cho công việc Chúa với niềm vui hân hoan, không tiếc nuối và nhận biết rằng chúng ta chỉ đang hoàn trả lại những gì thuộc về tay Ngài.
 
-## Dẫn nguồn
-
 [^1]: Sara Japhet (1993). *I & II Chronicles: A Commentary* (Old Testament Library). Westminster John Knox Press.
 [^2]: Martin J. Selman (1994). *1 Chronicles: An Introduction and Commentary* (Tyndale Old Testament Commentaries). InterVarsity Press.
 [^3]: BibleProject. *1 Chronicles Overview: God's Promises to David and the True Heart of Worship*. https://bibleproject.com/explore/video/chronicles/

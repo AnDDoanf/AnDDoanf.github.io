@@ -219,8 +219,6 @@ Sự tha thứ của Giô-sép không gọi điều ác là điều tốt. Ông 
 
 Gia đình Gia-cốp xuống Ai Cập và được cứu khỏi nạn đói. Trước khi qua đời, Giô-sép vẫn tin rằng Chúa sẽ thăm viếng dân Ngài và đưa họ trở về vùng đất đã hứa. Sáng Thế Ký bắt đầu bằng sự sống được dựng nên trong một khu vườn, nhưng kết thúc với Giô-sép nằm trong quan tài tại Ai Cập. Lời hứa vẫn còn đó, nhưng dân Chúa phải chờ đợi sự giải cứu được tiếp nối trong sách Xuất Ê-díp-tô Ký.
 
-## Dẫn nguồn
-
 [^1]: https://www.betemunah.org/thetree.html
 [^2]: Nathan S. French (2021). *A Theocentric Interpretation of הדעת טוב ורע: The Knowledge of Good and Evil as the Knowledge for Administering Reward and Punishment*
 [^3]: https://www.gotquestions.org/different-races.html

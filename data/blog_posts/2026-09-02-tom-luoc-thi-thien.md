@@ -120,8 +120,6 @@ Cuốn sách Thi Thiên không khép lại trong sự u buồn của nước m�
 - **Kỷ luật ngợi khen vượt trên hoàn cảnh**: Ngợi khen Chúa không phải chỉ khi mọi sự thuận buồm xuôi gió, mà là một quyết định đức tin ngợi khen Chúa ngay giữa trũng bóng chết. Sự ngợi khen phá tan xiềng xích sợ hãi và mở toang cánh cửa cho quyền năng giải cứu của Chúa bước vào.
 - **An nghỉ dưới sự tể trị của Đấng Chăn Nhân Lành**: Khi đối diện với tương lai bất định, hãy đọc lại Thi Thiên 23 và 91 để nhắc nhở linh hồn mình rằng: Bạn không hề cô đơn; Đấng Tạo Hóa Vạn Quân đang bảo vệ, dẫn dắt và gìn giữ bạn dưới bóng cánh toàn năng của Ngài.
 
-## Dẫn nguồn
-
 [^1]: Peter C. Craigie & Marvin E. Tate (1983, 1990). *Psalms 1–50, 51–100* (Word Biblical Commentary, Vols. 19, 20). Thomas Nelson.
 [^2]: Derek Kidner (1973, 1975). *Psalms 1–72, 73–150* (Tyndale Old Testament Commentaries). InterVarsity Press.
 [^3]: BibleProject. *Psalms Overview: The Prayer Book of the Bible and the Messianic King*. https://bibleproject.com/explore/video/psalms/

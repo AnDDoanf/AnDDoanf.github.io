@@ -180,8 +180,6 @@ Cuốn sách kết thúc bằng một câu châm ngôn sâu sắc dành cho mọ
 
 ---
 
-## Dẫn nguồn
-
 [^1]: Douglas Stuart (1987). *Hosea–Jonah* (Word Biblical Commentary - WBC). Thomas Nelson.
 [^2]: David Allan Hubbard (1989). *Hosea: An Introduction and Commentary* (Tyndale Old Testament Commentaries - TOTC). InterVarsity Press.
 [^3]: BibleProject. *Hosea Overview: God's Relentless Love for Unfaithful Israel*. https://bibleproject.com/explore/video/hosea/

@@ -126,8 +126,6 @@ Cuốn sách khép lại bằng lời mời gọi rạo rực của đôi uyên 
 - **Kiên trì giải quyết xung đột và hâm nóng tình yêu**: Khi hôn nhân đối diện với sự nguội lạnh hay hiểu lầm (như bài học chương 5), đừng vội vàng buông tay; hãy kiên nhẫn tìm kiếm nhau, nhắc nhớ lại những phẩm chất tốt đẹp ban đầu và học cách tha thứ để cùng nhau vượt qua giông bão.
 - **Đừng đánh thức tình yêu trước kỳ**: Giới trẻ Cơ Đốc được nhắc nhở gìn giữ sự trong trắng và cảm xúc tình cảm cho đến ngày bước vào ngưỡng cửa hôn nhân thánh với sự chúc phước của Chúa và Hội Thánh.
 
-## Dẫn nguồn
-
 [^1]: Duane A. Garrett (1993). *Proverbs, Ecclesiastes, Song of Songs* (The New American Commentary, Vol. 14). B&H Publishing Group.
 [^2]: G. Lloyd Carr (1984). *The Song of Solomon: An Introduction and Commentary* (Tyndale Old Testament Commentaries). InterVarsity Press.
 [^3]: BibleProject. *Song of Songs Overview: The Beauty of Covenant Love and the Fire of the Lord*. https://bibleproject.com/explore/video/song-of-songs/

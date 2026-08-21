@@ -163,8 +163,6 @@ Sách 1 Sa-mu-ên dự phóng những chân lý sâu sắc về công cuộc c�
 - **Chiến đấu trong danh Chúa**: Khi đối diện với những "tên khổng lồ" nan đề, bệnh tật, sự sợ hãi hay cám dỗ trong cuộc đời, đừng nhìn vào sự nhỏ bé yếu đuối của mình hay sức mạnh của hoàn cảnh. Hãy đứng vững trong danh Đức Chúa Trời Vạn Quân và tuyên xưng: *"Trận chiến này thuộc về CHÚA!"*.
 - **Học bài học chờ đợi thời điểm của Chúa**: Đừng bao giờ dùng mưu mẹo xác thịt hay lối tắt trần gian để đạt được điều tốt đẹp (như Đa-vít từ chối giết Sau-lơ). Hãy kiên nhẫn để Chúa tự hành động và tôn cao bạn theo thời điểm hoàn hảo của Ngài.
 
-## Dẫn nguồn
-
 [^1]: David Toshio Tsumura (2007). *The First Book of Samuel* (New International Commentary on the Old Testament). Eerdmans.
 [^2]: Ralph W. Klein (2008). *1 Samuel* (Word Biblical Commentary). Thomas Nelson.
 [^3]: BibleProject. *1 Samuel Overview: The Rise and Fall of Kings*. https://bibleproject.com/explore/video/1-samuel/

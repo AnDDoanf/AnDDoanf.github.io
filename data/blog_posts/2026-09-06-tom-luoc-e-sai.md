@@ -126,8 +126,6 @@ Mọi tội lỗi, chết chóc và nước mắt bị xóa sạch hoàn toàn; 
 - **Tin cậy Đấng Em-ma-nu-ên giữa giông bão cuộc đời**: Dù đối diện với bệnh tật, khủng hoảng hay áp lực thế gian, hãy vững lòng vì Chúa ở cùng chúng ta. Hãy trông đợi Chúa để nhận được sức mới cất cánh bay cao như chim ưng (40:31).
 - **Sống sứ điệp Phúc Âm bằng hành động công chính (Ê-sai 58)**: Đức tin chân thật không dừng lại ở lời nói hay nghi lễ tôn giáo, mà phải bày tỏ qua tình yêu thương cụ thể: bênh vực kẻ yếu thế, chia sẻ cơm áo cho người nghèo và đem ánh sáng hy vọng đến những nơi tăm tối.
 
-## Dẫn nguồn
-
 [^1]: John N. Oswalt (1986, 1998). *The Book of Isaiah, Chapters 1–39 & 40–66* (New International Commentary on the Old Testament). Eerdmans.
 [^2]: J. Alec Motyer (1993). *The Prophecy of Isaiah: An Introduction & Commentary*. InterVarsity Press.
 [^3]: BibleProject. *Isaiah Overview: The Holy One of Israel and the Suffering Servant*. https://bibleproject.com/explore/video/isaiah/

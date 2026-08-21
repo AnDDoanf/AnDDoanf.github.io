@@ -170,8 +170,6 @@ Sách Các Quan Xét khép lại bằng một nốt trầm cay đắng và nhứ
 - **Ân tứ không thể thay thế cho tính cách thánh khiết**: Cuộc đời Sam-sôn là hồi chuông cảnh tỉnh cho những ai tự hào về tài năng, ân tứ hay sự xức dầu của Chúa mà coi thường kỷ luật thuộc linh và sự thánh sạch đạo đức. Ân tứ mà không có tính cách sẽ dẫn đến sự sụp đổ kinh hoàng.
 - **Cảnh giác trước chủ nghĩa tương đối đạo đức**: Trong một thế giới hiện đại nơi con người tôn sùng chủ nghĩa cá nhân, chối bỏ chân lý tuyệt đối và "tự làm theo điều mắt mình cho là phải", Cơ Đốc nhân phải kiên định neo chặt đức tin và chuẩn mực sống của mình nơi Lời Hằng Sống của Đức Chúa Trời.
 
-## Dẫn nguồn
-
 [^1]: Daniel I. Block (1999). *Judges, Ruth* (The New American Commentary). B&H Publishing Group.
 [^2]: Arthur H. Lewis (1979). *The Book of Judges* (Everyman's Bible Commentary). Moody Publishers.
 [^3]: BibleProject. *Judges Overview: The Downward Spiral of Israel's Rebellion*. https://bibleproject.com/explore/video/judges/

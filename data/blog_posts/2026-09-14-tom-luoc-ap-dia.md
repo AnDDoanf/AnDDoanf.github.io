@@ -131,8 +131,6 @@ Mọi xung đột lịch sử, bạo lực và kiêu ngạo của con người c
 
 ---
 
-## Dẫn nguồn
-
 [^1]: Leslie C. Allen (1976). *The Books of Joel, Obadiah, Jonah, and Micah* (New International Commentary on the Old Testament - NICOT). Eerdmans.
 [^2]: Jeffrey J. Niehaus (1993). *Obadiah* (The Minor Prophets: An Exegetical and Expository Commentary, Vol. 2). Baker Academic.
 [^3]: BibleProject. *Obadiah Overview: The Fall of Edom and the Kingdom of God*. https://bibleproject.com/explore/video/obadiah/

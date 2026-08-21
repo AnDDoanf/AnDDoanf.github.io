@@ -137,8 +137,6 @@ Cuốn sách khép lại bằng lời cầu nguyện trăn trở nhưng kiên đ
 - **Lãnh đạo bằng sự liêm chính và lòng hy sinh**: Người hầu việc Chúa được kêu gọi từ bỏ quyền lợi cá nhân, không vụ lợi bổng lộc, luôn đứng về phía những người nghèo khổ, bị áp bức và làm gương sáng trong sự dâng hiến.
 - **Không bao giờ buông lỏng sự cảnh giác thuộc linh**: Bài học chương 13 nhắc nhở chúng ta rằng sự suy thoái thuộc linh có thể len lỏi trở lại rất nhanh ngay sau những thời điểm phục hưng rực rỡ nhất nếu chúng ta lơ là việc gìn giữ kỷ luật tâm linh, sự thánh khiết trong hôn nhân và sự biệt riêng cho Chúa.
 
-## Dẫn nguồn
-
 [^1]: H. G. M. Williamson (1985). *Ezra, Nehemiah* (Word Biblical Commentary). Thomas Nelson.
 [^2]: Mark A. Throntveit (1992). *Ezra-Nehemiah* (Interpretation: A Bible Commentary for Teaching and Preaching). John Knox Press.
 [^3]: BibleProject. *Nehemiah Overview: The Rebuilding of Jerusalem's Walls and the Failure of Reform*. https://bibleproject.com/explore/video/ezra-nehemiah/

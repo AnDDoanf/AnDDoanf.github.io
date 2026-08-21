@@ -137,8 +137,6 @@ Sách 2 Sa-mu-ên là chiếc bản lề thần học khổng lồ mở ra cánh
 - **Tấm lòng nhân từ giao ước (*Hesed*)**: Hãy học theo gương Đa-vít đối với Mê-phi-bô-sết: tìm kiếm và chia sẻ tình yêu thương, lòng rộng rãi cho những người yếu thế, tổn thương và không có khả năng đền đáp.
 - **Tận hiến không tiếc chi phí**: Sự phục vụ và thờ phượng thật trước mặt Chúa đòi hỏi sự hy sinh cá nhân. Đừng bao giờ dâng lên Chúa những gì "không tốn phí gì" như lời tuyên bố kiên định của Đa-vít tại sân đập lúa A-rau-na.
 
-## Dẫn nguồn
-
 [^1]: A. A. Anderson (1989). *2 Samuel* (Word Biblical Commentary). Thomas Nelson.
 [^2]: David Toshio Tsumura (2019). *The Second Book of Samuel* (New International Commentary on the Old Testament). Eerdmans.
 [^3]: BibleProject. *2 Samuel Overview: The Covenant, the Fall, and the Hope*. https://bibleproject.com/explore/video/2-samuel/
