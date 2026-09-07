@@ -54,13 +54,9 @@ function assertInsideWorkspace(targetPath) {
   }
 }
 
-function resetTargetDirectory() {
-  assertInsideWorkspace(targetRoot);
-  fs.rmSync(targetRoot, { recursive: true, force: true });
-  fs.mkdirSync(targetRoot, { recursive: true });
-}
-
 function copyGalleryAssets(sourceDir, targetDir) {
+  // A mapped gallery must never restore its retired local copies.
+  if (fs.existsSync(path.join(sourceDir, "images.json"))) return;
   const entries = fs.readdirSync(sourceDir, { withFileTypes: true });
 
   for (const entry of entries) {
@@ -82,7 +78,8 @@ function copyGalleryAssets(sourceDir, targetDir) {
       continue;
     }
 
-    fs.copyFileSync(sourcePath, targetPath);
+    // public/gallery is authoritative; legacy data/gallery assets only fill gaps.
+    if (!fs.existsSync(targetPath)) fs.copyFileSync(sourcePath, targetPath);
   }
 }
 
@@ -128,14 +125,9 @@ function copyTurnJsAssets() {
   fs.copyFileSync(turnSource, path.join(turnJsTargetRoot, "turn.js"));
 }
 
-if (!fs.existsSync(sourceRoot)) {
-  fs.mkdirSync(targetRoot, { recursive: true });
-  console.log("No data/gallery directory found. Skipping gallery asset sync.");
-  process.exit(0);
-}
-
-resetTargetDirectory();
-copyGalleryAssets(sourceRoot, targetRoot);
+assertInsideWorkspace(targetRoot);
+fs.mkdirSync(targetRoot, { recursive: true });
+if (fs.existsSync(sourceRoot)) copyGalleryAssets(sourceRoot, targetRoot);
 copyPdfWorker();
 copyTurnJsAssets();
-console.log("Gallery assets synced from data/gallery to public/gallery.");
+console.log("Gallery assets ready; existing public/gallery files preserved.");

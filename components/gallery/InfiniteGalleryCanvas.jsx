@@ -86,6 +86,7 @@ export default function InfiniteGalleryCanvas({ gallery }) {
   const viewportRef = useRef(null);
   const dragRef = useRef(null);
   const movedRef = useRef(false);
+  const lastOpenedAtRef = useRef(0);
   const visiblePdfNamesRef = useRef(new Set());
   const pdfRuntimeRef = useRef({
     generation: 0,
@@ -313,6 +314,16 @@ export default function InfiniteGalleryCanvas({ gallery }) {
     setView({ x: 20, y: 20, scale: DEFAULT_SCALE });
   }
 
+  function openLightbox(image) {
+    lastOpenedAtRef.current = Date.now();
+    setSelectedImage(image);
+  }
+
+  function handleLightboxClose() {
+    if (Date.now() - lastOpenedAtRef.current < 350) return;
+    setSelectedImage(null);
+  }
+
   function rememberAspectRatio(imageName, event) {
     const target = event.currentTarget;
     const width = target.naturalWidth || target.videoWidth;
@@ -372,30 +383,49 @@ export default function InfiniteGalleryCanvas({ gallery }) {
     movedRef.current = false;
     dragRef.current = {
       pointerId: event.pointerId,
-      clientX: event.clientX,
-      clientY: event.clientY,
+      startX: event.clientX,
+      startY: event.clientY,
       originX: view.x,
       originY: view.y,
+      captured: false,
     };
-    event.currentTarget.setPointerCapture(event.pointerId);
-    setIsDragging(true);
   }
 
   function handlePointerMove(event) {
     const drag = dragRef.current;
     if (!drag || drag.pointerId !== event.pointerId) return;
-    const deltaX = event.clientX - drag.clientX;
-    const deltaY = event.clientY - drag.clientY;
-    if (Math.abs(deltaX) + Math.abs(deltaY) > 5) movedRef.current = true;
-    setView((current) => ({
-      ...current,
-      x: drag.originX + deltaX,
-      y: drag.originY + deltaY,
-    }));
+    const deltaX = event.clientX - drag.startX;
+    const deltaY = event.clientY - drag.startY;
+    const distance = Math.hypot(deltaX, deltaY);
+
+    if (distance > 6) {
+      movedRef.current = true;
+      if (!drag.captured) {
+        try {
+          event.currentTarget.setPointerCapture(event.pointerId);
+          drag.captured = true;
+        } catch {
+          // pointer capture can fail if pointer already left
+        }
+        setIsDragging(true);
+      }
+      setView((current) => ({
+        ...current,
+        x: drag.originX + deltaX,
+        y: drag.originY + deltaY,
+      }));
+    }
   }
 
   function endDrag(event) {
     if (dragRef.current?.pointerId !== event.pointerId) return;
+    if (dragRef.current.captured) {
+      try {
+        event.currentTarget.releasePointerCapture(event.pointerId);
+      } catch {
+        // ignore if already released
+      }
+    }
     dragRef.current = null;
     setIsDragging(false);
   }
@@ -431,8 +461,11 @@ export default function InfiniteGalleryCanvas({ gallery }) {
                 height: `${tile.height}px`,
                 transform: "none",
               }}
-              onClick={() => {
-                if (!movedRef.current && tile.image.src) setSelectedImage(tile.image);
+              onClick={(event) => {
+                event.stopPropagation();
+                if (!movedRef.current && tile.image.src) {
+                  openLightbox(tile.image);
+                }
               }}
               aria-label={t("gallery.openMedia", {
                 name: tile.image.pageNumber
@@ -443,25 +476,35 @@ export default function InfiniteGalleryCanvas({ gallery }) {
               {tile.image.src ? (
                 tile.image.mediaType === "video" ? (
                   <div className="infinite-gallery-media-wrapper">
-                    <video
+                    {tile.image.embedSrc ? (
+                      <img
+                        src={tile.image.thumbnailSrc || tile.image.src}
+                        alt={tile.image.alt}
+                        loading="lazy"
+                        draggable="false"
+                        referrerPolicy="no-referrer"
+                        onLoad={(event) => rememberAspectRatio(tile.image.name, event)}
+                      />
+                    ) : <video
                       src={tile.image.src}
                       muted
                       playsInline
                       preload="metadata"
                       onLoadedMetadata={(event) => rememberAspectRatio(tile.image.name, event)}
-                    />
+                    />}
                     <span className="infinite-gallery-video-badge" aria-hidden="true">
                       <i className="bi bi-play-circle-fill" />
                     </span>
                   </div>
                 ) : (
                   <img
-                    src={tile.image.src}
+                    src={tile.image.thumbnailSrc || tile.image.src}
                     alt={tile.image.pageNumber
                       ? t("gallery.pdfPageAlt", { title: gallery.title, page: tile.image.pageNumber })
                       : tile.image.alt}
                     draggable="false"
                     loading="lazy"
+                    referrerPolicy="no-referrer"
                     onLoad={(event) => rememberAspectRatio(tile.image.name, event)}
                   />
                 )
@@ -506,7 +549,7 @@ export default function InfiniteGalleryCanvas({ gallery }) {
           className="infinite-gallery-lightbox"
           role="dialog"
           aria-modal="true"
-          onClick={() => setSelectedImage(null)}
+          onClick={handleLightboxClose}
           aria-label={selectedImage.pageNumber
             ? t("gallery.pageNumber", { page: selectedImage.pageNumber })
             : selectedImage.caption}
@@ -519,13 +562,35 @@ export default function InfiniteGalleryCanvas({ gallery }) {
               className="infinite-gallery-lightbox-media"
               onClick={(event) => event.stopPropagation()}
             >
-              <video
-                src={selectedImage.src}
-                controls
-                autoPlay
-                playsInline
-                className="infinite-gallery-lightbox-video"
-              />
+              {selectedImage.embedSrc ? (
+                <iframe
+                  src={selectedImage.embedSrc}
+                  title={selectedImage.caption}
+                  className="infinite-gallery-lightbox-embed"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+                  allowFullScreen
+                />
+              ) : (
+                <video
+                  src={selectedImage.src}
+                  controls
+                  autoPlay
+                  playsInline
+                  className="infinite-gallery-lightbox-video"
+                />
+              )}
+              {selectedImage.originalUrl && (
+                <a
+                  href={selectedImage.originalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="infinite-gallery-video-link-btn"
+                >
+                  <i className="bi bi-play-circle-fill" />
+                  <span>{t("gallery.openInDrive")}</span>
+                  <i className="bi bi-box-arrow-up-right" />
+                </a>
+              )}
             </div>
           ) : (
             <button
@@ -536,6 +601,7 @@ export default function InfiniteGalleryCanvas({ gallery }) {
             >
               <img
                 src={selectedImage.src}
+                referrerPolicy="no-referrer"
                 alt={selectedImage.pageNumber
                   ? t("gallery.pdfPageAlt", { title: gallery.title, page: selectedImage.pageNumber })
                   : selectedImage.alt}

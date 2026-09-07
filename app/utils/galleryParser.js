@@ -62,6 +62,7 @@ export function parseGalleryMarkdown(fileContents, fallbackTitle = "Gallery") {
     description:
       String(data.description ?? "").trim() || buildExcerpt(content),
     type: normalizeGalleryType(data.type),
+    source: String(data.source ?? "local").trim().toLowerCase(),
     style: normalizeGalleryStyle(data.style),
     cover: String(data.cover ?? "").trim(),
     pdf: String(data.pdf ?? "").trim(),

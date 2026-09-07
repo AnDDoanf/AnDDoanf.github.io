@@ -4,6 +4,7 @@ import path from "path";
 import { parseGalleryMarkdown } from "./galleryParser.js";
 
 const GALLERY_ROOT = path.join(process.cwd(), "data", "gallery");
+const PUBLIC_GALLERY_ROOT = path.join(process.cwd(), "public", "gallery");
 const IMAGE_EXTENSIONS = new Set([
   ".png",
   ".jpg",
@@ -59,12 +60,13 @@ function toPublicGallerySrc(slug, filename) {
 }
 
 function getGalleryDirectories() {
-  if (!fs.existsSync(GALLERY_ROOT)) return [];
-
-  return fs.readdirSync(GALLERY_ROOT, { withFileTypes: true })
-    .filter((entry) => entry.isDirectory())
-    .map((entry) => entry.name)
-    .sort(sortNaturally);
+  return [...new Set([GALLERY_ROOT, PUBLIC_GALLERY_ROOT].flatMap((root) => (
+    fs.existsSync(root)
+      ? fs.readdirSync(root, { withFileTypes: true })
+        .filter((entry) => entry.isDirectory())
+        .map((entry) => entry.name)
+      : []
+  )))].sort(sortNaturally);
 }
 
 function getGalleryFolderPath(slug) {
@@ -72,6 +74,7 @@ function getGalleryFolderPath(slug) {
 }
 
 function findGalleryMarkdown(folderPath) {
+  if (!fs.existsSync(folderPath)) return "";
   const markdownFiles = fs.readdirSync(folderPath)
     .filter((file) => file.toLowerCase().endsWith(".md"))
     .sort(sortNaturally);
@@ -93,16 +96,7 @@ function readGalleryDoc(slug) {
   const markdownFile = findGalleryMarkdown(folderPath);
 
   if (!markdownFile) {
-    return {
-      title: humanizeName(slug) || "Gallery",
-      description: "",
-      type: "images",
-      style: "editorial",
-      cover: "",
-      pdf: "",
-      content: "",
-      meta: {},
-    };
+    return parseGalleryMarkdown("", slug);
   }
 
   const filePath = path.join(folderPath, markdownFile);
@@ -110,8 +104,55 @@ function readGalleryDoc(slug) {
   return parseGalleryMarkdown(fileContents, slug);
 }
 
-function readGalleryImages(slug) {
-  const folderPath = getGalleryFolderPath(slug);
+function readMappedImages(slug) {
+  const mappingPath = path.join(getGalleryFolderPath(slug), "images.json");
+  const mapping = JSON.parse(fs.readFileSync(mappingPath, "utf8"));
+  if (!Array.isArray(mapping.images)) {
+    throw new Error(`${mappingPath}: expected an images array`);
+  }
+
+  const names = new Set();
+  const httpsUrl = (value, field) => {
+    if (typeof value !== "string" || new URL(value).protocol !== "https:") {
+      throw new Error(`${mappingPath}: ${field} must be an HTTPS URL`);
+    }
+    return value;
+  };
+
+  return mapping.images.map((image, index) => {
+    if (!image || typeof image.name !== "string" || !image.name.trim() || names.has(image.name)) {
+      throw new Error(`${mappingPath}: missing or duplicate name at entry ${index + 1}`);
+    }
+    names.add(image.name);
+    const caption = typeof image.displayName === "string" && image.displayName.trim()
+      ? image.displayName.trim()
+      : formatImageCaption(image.name, index);
+    const mediaType = image.mediaType ?? "image";
+    if (!["image", "video"].includes(mediaType)) {
+      throw new Error(`${mappingPath}: unsupported mediaType at entry ${index + 1}`);
+    }
+    const embedSrc = image.embedSrc ? httpsUrl(image.embedSrc, "embedSrc") : undefined;
+    if (embedSrc && (mediaType !== "video" || !/^https:\/\/drive\.google\.com\/file\/d\/[\w-]+\/preview$/.test(embedSrc))) {
+      throw new Error(`${mappingPath}: embedSrc must be a Google Drive video preview`);
+    }
+    return {
+      name: image.name,
+      src: httpsUrl(image.src, "src"),
+      thumbnailSrc: image.thumbnailSrc ? httpsUrl(image.thumbnailSrc, "thumbnailSrc") : undefined,
+      originalUrl: image.originalUrl ? httpsUrl(image.originalUrl, "originalUrl") : undefined,
+      embedSrc,
+      alt: caption,
+      caption,
+      mediaType,
+    };
+  });
+}
+
+function readGalleryImages(slug, source) {
+  if (source === "mapping") return readMappedImages(slug);
+  if (source !== "local") throw new Error(`${slug}: source must be local or mapping`);
+  const folderPath = path.join(PUBLIC_GALLERY_ROOT, slug);
+  if (!fs.existsSync(folderPath)) return [];
 
   function collectImages(directory, relativeRoot = "") {
     return fs.readdirSync(directory, { withFileTypes: true })
@@ -122,7 +163,7 @@ function readGalleryImages(slug) {
           return collectImages(path.join(directory, entry.name), relativePath);
         }
         const ext = path.extname(entry.name).toLowerCase();
-        return (IMAGE_EXTENSIONS.has(ext) || VIDEO_EXTENSIONS.has(ext))
+        return entry.isFile() && (IMAGE_EXTENSIONS.has(ext) || VIDEO_EXTENSIONS.has(ext))
           ? [relativePath]
           : [];
       });
@@ -144,7 +185,8 @@ function readGalleryImages(slug) {
 }
 
 function readGalleryPdf(slug, preferredPdfName = "") {
-  const folderPath = getGalleryFolderPath(slug);
+  const folderPath = path.join(PUBLIC_GALLERY_ROOT, slug);
+  if (!fs.existsSync(folderPath)) return null;
   const pdfFiles = fs.readdirSync(folderPath)
     .filter((file) => PDF_EXTENSIONS.has(path.extname(file).toLowerCase()))
     .sort(sortNaturally);
@@ -176,7 +218,7 @@ export function loadGalleryCollection() {
   return getGalleryDirectories()
     .map((slug) => {
       const doc = readGalleryDoc(slug);
-      const images = readGalleryImages(slug);
+      const images = readGalleryImages(slug, doc.source);
       const pdf = readGalleryPdf(slug, doc.pdf);
       const cover = pickCover(images, doc.cover);
       const type = doc.type === "pdf" || (!cover && pdf)
@@ -211,11 +253,12 @@ export function loadGalleryCollection() {
 }
 
 export function loadGallery(slug) {
+  if (typeof slug !== "string" || !slug || slug === "." || slug === ".." || /[\\/]/.test(slug)) return null;
   const folderPath = getGalleryFolderPath(slug);
-  if (!slug || !fs.existsSync(folderPath)) return null;
+  if (!fs.existsSync(folderPath) && !fs.existsSync(path.join(PUBLIC_GALLERY_ROOT, slug))) return null;
 
   const doc = readGalleryDoc(slug);
-  const images = readGalleryImages(slug);
+  const images = readGalleryImages(slug, doc.source);
   const pdf = readGalleryPdf(slug, doc.pdf);
   const cover = pickCover(images, doc.cover);
   const type = doc.type === "pdf" || (!cover && pdf)

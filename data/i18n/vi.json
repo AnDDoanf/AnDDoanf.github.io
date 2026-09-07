@@ -98,7 +98,8 @@
     "zoomOut": "Thu nhỏ",
     "resetCanvas": "Đặt lại khung ảnh",
     "openMedia": "Mở {name}",
-    "closeImage": "Đóng ảnh"
+    "closeImage": "Đóng ảnh",
+    "openInDrive": "Xem video trên Google Drive"
   },
   "showroom": {
     "title": "Showroom",
