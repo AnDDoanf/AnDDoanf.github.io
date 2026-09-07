@@ -1270,6 +1270,34 @@ h2 .nav-title {
   color: #268bd2;
 }
 
+.post-toc a {
+  color: var(--text-muted);
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 2px;
+}
+
+.post-toc a:hover,
+.post-toc a:focus-visible {
+  color: var(--link);
+}
+
+.post-toc a[aria-current="location"] {
+  color: var(--heading);
+  text-decoration-line: underline;
+}
+
+@media screen and (min-width: 1025px) {
+  .post-layout:has(.post-toc) {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    max-width: 1260px;
+  }
+
+  .post-toc {
+    /* Match the article heading's top spacing. */
+    padding-top: 2.5rem;
+  }
+}
+
 /* Layout */
 .app-layout {
   display: grid;
