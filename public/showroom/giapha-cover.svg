@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002b36"/>
+      <stop offset="50%" stop-color="#073642"/>
+      <stop offset="100%" stop-color="#001e26"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf6e3"/>
+      <stop offset="50%" stop-color="#b58900"/>
+      <stop offset="100%" stop-color="#cb4b16"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2aa198"/>
+      <stop offset="100%" stop-color="#268bd2"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+
+  <!-- Background decorative tree branches -->
+  <g stroke="#586e75" stroke-width="2" opacity="0.25" fill="none">
+    <path d="M600,100 C600,200 400,220 400,300" />
+    <path d="M600,100 C600,200 800,220 800,300" />
+    <path d="M400,300 C400,380 250,400 250,480" />
+    <path d="M400,300 C400,380 550,400 550,480" />
+    <path d="M800,300 C800,380 680,400 680,480" />
+    <path d="M800,300 C800,380 950,400 950,480" />
+  </g>
+
+  <!-- Glowing Nodes representing ancestors -->
+  <circle cx="600" cy="110" r="32" fill="#073642" stroke="#b58900" stroke-width="4" filter="url(#glow)" />
+  <circle cx="400" cy="300" r="26" fill="#073642" stroke="#2aa198" stroke-width="3" />
+  <circle cx="800" cy="300" r="26" fill="#073642" stroke="#2aa198" stroke-width="3" />
+  <circle cx="250" cy="480" r="22" fill="#073642" stroke="#6c71c4" stroke-width="3" />
+  <circle cx="550" cy="480" r="22" fill="#073642" stroke="#6c71c4" stroke-width="3" />
+  <circle cx="680" cy="480" r="22" fill="#073642" stroke="#6c71c4" stroke-width="3" />
+  <circle cx="950" cy="480" r="22" fill="#073642" stroke="#6c71c4" stroke-width="3" />
+
+  <!-- Icons / Glyphs inside circles -->
+  <text x="600" y="118" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#fdf6e3" text-anchor="middle" font-weight="bold">I</text>
+  <text x="400" y="307" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#fdf6e3" text-anchor="middle">II</text>
+  <text x="800" y="307" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#fdf6e3" text-anchor="middle">II</text>
+  <text x="250" y="486" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#fdf6e3" text-anchor="middle">III</text>
+  <text x="550" y="486" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#fdf6e3" text-anchor="middle">III</text>
+  <text x="680" y="486" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#fdf6e3" text-anchor="middle">III</text>
+  <text x="950" y="486" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#fdf6e3" text-anchor="middle">III</text>
+
+  <!-- Title Badge -->
+  <rect x="360" y="210" width="480" height="90" rx="16" fill="rgba(7, 54, 66, 0.9)" stroke="#b58900" stroke-width="2" filter="url(#glow)"/>
+  <text x="600" y="252" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="800" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="2">GIA PHẢ DÒNG TỘC</text>
+  <text x="600" y="282" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="#93a1a1" text-anchor="middle" letter-spacing="4">DIGITAL FAMILY TREES &amp; GENEALOGY</text>
+
+  <!-- Badge items -->
+  <g transform="translate(420, 550)">
+    <rect x="0" y="0" width="110" height="34" rx="17" fill="rgba(42, 161, 152, 0.2)" stroke="#2aa198" stroke-width="1.5" />
+    <text x="55" y="22" font-family="sans-serif" font-size="13" fill="#2aa198" font-weight="600" text-anchor="middle">15 ĐỜI</text>
+
+    <rect x="125" y="0" width="110" height="34" rx="17" fill="rgba(181, 137, 0, 0.2)" stroke="#b58900" stroke-width="1.5" />
+    <text x="180" y="22" font-family="sans-serif" font-size="13" fill="#b58900" font-weight="600" text-anchor="middle">2 GIA TỘC</text>
+
+    <rect x="250" y="0" width="110" height="34" rx="17" fill="rgba(108, 113, 196, 0.2)" stroke="#6c71c4" stroke-width="1.5" />
+    <text x="305" y="22" font-family="sans-serif" font-size="13" fill="#6c71c4" font-weight="600" text-anchor="middle">TRỰC QUAN</text>
+  </g>
+</svg>

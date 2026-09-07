@@ -1,0 +1,1534 @@
+/* =========================================================
+   GIA PHẢ (FAMILY TREES) DESIGN SYSTEM & THEME STYLES
+   ========================================================= */
+
+.giapha-page-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Page Header */
+.giapha-top-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.giapha-title-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.giapha-page-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--heading);
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.giapha-page-subtitle {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Tree Switcher */
+.giapha-tree-switcher {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  background: var(--surface);
+  padding: 0.25rem 0.45rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.giapha-switcher-label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.giapha-switcher-pills {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.giapha-switcher-pill {
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 500;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.giapha-switcher-pill:hover {
+  color: var(--text);
+  background: var(--bg);
+}
+
+.giapha-switcher-pill.is-active {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+  box-shadow: 0 2px 6px rgba(38, 139, 210, 0.25);
+}
+
+/* Controls Bar (Tabs + Search) */
+.giapha-controls-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.4rem 0.6rem;
+}
+
+.giapha-view-tabs {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.giapha-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.25;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.giapha-tab-btn span {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.giapha-tab-btn i {
+  flex: 0 0 auto;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.giapha-tab-btn:hover {
+  color: var(--text);
+  background: var(--bg);
+}
+
+.giapha-tab-btn.active {
+  background: var(--bg);
+  color: var(--blue);
+  border-color: var(--border);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Search input */
+.giapha-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 220px;
+  flex: 1;
+  max-width: 320px;
+}
+
+.giapha-search-icon {
+  position: absolute;
+  left: 0.85rem;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  pointer-events: none;
+}
+
+.giapha-search-input {
+  width: 100%;
+  padding: 0.4rem 2rem 0.4rem 2.2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.78rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.25;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.giapha-search-input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(38, 139, 210, 0.15);
+}
+
+.giapha-search-clear {
+  position: absolute;
+  right: 0.6rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+}
+
+.giapha-search-clear:hover {
+  color: var(--text);
+}
+
+/* Viewport Area */
+.giapha-main-viewport {
+  width: 100%;
+  min-height: 540px;
+}
+
+.giapha-tree-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* =========================================================
+   TOP-DOWN CONNECTED TREE CANVAS (SVG BACKED)
+   ========================================================= */
+
+.cruz-tree-board {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  user-select: none;
+  touch-action: none;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.cruz-tree-board.is-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  border-radius: 0;
+}
+
+.gojs-family-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  outline: none;
+}
+
+/* Generation Quick Jump Ruler on Left */
+.giapha-gen-ruler {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 25;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.5rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  max-height: calc(100% - 2rem);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.giapha-gen-ruler::-webkit-scrollbar {
+  display: none;
+}
+
+.giapha-ruler-title {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  text-align: center;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.giapha-ruler-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.giapha-ruler-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  transition: all 0.15s ease;
+}
+
+.giapha-ruler-item:hover {
+  background: var(--bg);
+  color: var(--blue);
+  transform: translateX(2px);
+}
+
+.ruler-gen {
+  white-space: nowrap;
+}
+
+.ruler-count {
+  font-size: 0.65rem;
+  background: var(--bg-alt);
+  padding: 0.05rem 0.3rem;
+  border-radius: 99px;
+  color: var(--text);
+}
+
+/* Top Right Controls Toolbar */
+.cruz-zoom-panel {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.25rem 0.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.cruz-zoom-btn {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.15s ease;
+}
+
+.cruz-zoom-btn:hover {
+  background: var(--bg);
+  color: var(--blue);
+}
+
+.cruz-zoom-btn.is-root-active {
+  background: rgba(38, 139, 210, 0.14);
+  color: var(--blue);
+}
+
+.cruz-zoom-value {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  min-width: 44px;
+  text-align: center;
+}
+
+/* Top Left Root Lineage HUD Panel (Matches cruz-zoom-panel) */
+.cruz-root-hud {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem 0.25rem 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: var(--text);
+  line-height: 1;
+}
+
+.cruz-root-hud.inline-hud {
+  position: static;
+  margin-bottom: 0.75rem;
+  display: inline-flex;
+  box-shadow: none;
+}
+
+.cruz-root-hud-icon {
+  color: var(--blue);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+.cruz-root-hud-label {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+
+.cruz-root-hud-name {
+  color: var(--heading);
+  font-weight: 600;
+  font-size: 0.82rem;
+}
+
+.cruz-root-hud-gen {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.cruz-root-hud-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.2rem 0.55rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 1.2;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  margin-left: 0.2rem;
+}
+
+.cruz-root-hud-btn:hover {
+  background: var(--bg);
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.cruz-root-hud-btn i {
+  font-size: 0.74rem;
+}
+
+/* Canvas Area (No Scrollbars, Free Roam) */
+.cruz-canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cruz-canvas::-webkit-scrollbar {
+  display: none;
+}
+
+/* Spouse heart badge */
+.cruz-spouse-heart-badge {
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Person Node */
+.cruz-person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 110px;
+}
+
+.cruz-person-card:hover {
+  transform: translate(-50%, -54%);
+}
+
+.cruz-person-card.is-highlighted .cruz-avatar-frame {
+  animation: cruzPulse 1.5s infinite;
+}
+
+@keyframes cruzPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+/* Avatar Frame */
+.cruz-avatar-frame {
+  position: relative;
+  width: 66px;
+  height: 66px;
+  border-radius: 9999px;
+  border: 3.5px solid var(--blue);
+  background: var(--surface);
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.cruz-avatar-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.cruz-avatar-initials-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.05em;
+  border-radius: 9999px;
+}
+
+/* Gender Badge */
+.cruz-gender-badge {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  border: 2px solid var(--bg);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+}
+
+/* Person Labels */
+.cruz-person-label {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--heading);
+  margin-top: 0.45rem;
+  line-height: 1.25;
+  max-width: 110px;
+  word-break: break-word;
+}
+
+.cruz-person-years {
+  font-size: 0.72rem;
+  font-weight: 600;
+  margin-top: 0.15rem;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   DIRECTORY VIEW & CARDS
+   ========================================================= */
+
+.giapha-directory-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.giapha-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem 1.25rem;
+  align-items: center;
+}
+
+.giapha-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.giapha-filter-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.giapha-select {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.85rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.giapha-results-count {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.giapha-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1.25rem;
+}
+
+/* Person Card */
+.giapha-avatar {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  border-radius: 50%;
+  background: var(--violet);
+  color: #fff;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.giapha-avatar-male { background: var(--blue); }
+.giapha-avatar-female { background: var(--magenta); }
+.giapha-avatar.w-8 { width: 2rem; height: 2rem; font-size: 0.7rem; }
+.giapha-avatar.w-11 { width: 2.75rem; height: 2.75rem; font-size: 0.8rem; }
+.giapha-avatar.w-16 { width: 4rem; height: 4rem; font-size: 1rem; }
+.giapha-avatar.w-20 { width: 5rem; height: 5rem; font-size: 1.1rem; }
+
+.giapha-avatar-initials,
+.giapha-avatar-placeholder {
+  color: #fff;
+  font-size: inherit;
+  line-height: 1;
+}
+
+.giapha-status-dot {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0.65rem;
+  height: 0.65rem;
+  border: 2px solid var(--surface);
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+.giapha-status-dot.status-living { background: var(--green); }
+
+.giapha-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.giapha-badge.gen-badge { color: var(--blue); }
+.giapha-badge.cat-badge { color: var(--violet); }
+.giapha-badge.status-badge.living { color: var(--green); }
+
+.giapha-person-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.giapha-person-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--blue);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.giapha-card-top {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+}
+
+.giapha-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.giapha-card-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--heading);
+  line-height: 1.3;
+}
+
+.giapha-card-maiden {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.giapha-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+}
+
+.giapha-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--text);
+}
+
+.giapha-card-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text);
+}
+
+.giapha-card-row i {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.giapha-card-bio {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.giapha-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+}
+
+.giapha-status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.giapha-status-tag.living {
+  color: var(--green);
+}
+
+.giapha-status-tag.deceased {
+  color: var(--text-muted);
+}
+
+.giapha-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--blue);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: auto;
+}
+
+.giapha-view-btn:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   TIMELINE VIEW
+   ========================================================= */
+
+.giapha-timeline-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+.giapha-member-timeline .giapha-timeline-track {
+  gap: 2.5rem;
+  margin-left: 6rem;
+}
+
+.giapha-member-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.giapha-member-timeline-grid .giapha-person-card {
+  min-width: 0;
+}
+
+/* Collapsible member directory ordered as a family folder tree */
+.giapha-folder-tree {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 0.5rem 0 0.5rem 1.75rem;
+}
+
+.giapha-folder-roots,
+.giapha-folder-children {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.giapha-folder-children {
+  margin-left: 1.15rem;
+  padding-left: 1.65rem;
+}
+
+.giapha-folder-children::before {
+  position: absolute;
+  top: 0;
+  bottom: 1.4rem;
+  left: 0.55rem;
+  border-left: 1px solid var(--border);
+  content: "";
+}
+
+.giapha-folder-node {
+  position: relative;
+  margin: 0.55rem 0;
+}
+
+.giapha-folder-generation-index {
+  display: inline-flex;
+  flex: 0 0 1.5rem;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  height: 2.65rem;
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.giapha-folder-children > .giapha-folder-node::before {
+  position: absolute;
+  top: 1.65rem;
+  left: -1.1rem;
+  width: 1.1rem;
+  border-top: 1px solid var(--border);
+  content: "";
+}
+
+.giapha-folder-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.55rem;
+}
+
+.giapha-folder-toggle {
+  display: flex;
+  flex: 0 0 2.4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  padding: 0.4rem;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--yellow);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.15rem;
+}
+
+.giapha-folder-toggle:hover:not(:disabled) {
+  background: var(--surface);
+}
+
+.giapha-folder-toggle:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.giapha-folder-chevron {
+  color: var(--text-muted);
+  font-size: 0.62rem;
+}
+
+.giapha-folder-members {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+  padding: 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.giapha-folder-member-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+.giapha-folder-spouse {
+  color: var(--magenta);
+  font-size: 0.72rem;
+}
+
+.giapha-folder-person {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: min(100%, 255px);
+  padding: 0.45rem 0.6rem;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font-family: inherit;
+  text-align: left;
+}
+
+.giapha-folder-person:hover {
+  background: var(--bg);
+}
+
+.giapha-folder-avatar {
+  display: inline-flex;
+  flex: 0 0 2.25rem;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.giapha-folder-avatar.female {
+  background: var(--magenta);
+}
+
+.giapha-folder-person-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+.giapha-folder-person-name {
+  overflow: hidden;
+  color: var(--heading);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.giapha-folder-person-meta {
+  overflow: hidden;
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.giapha-folder-dates {
+  flex: 0 0 auto;
+  padding: 0.2rem 0.45rem;
+  border-radius: 99px;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: var(--bg);
+}
+
+.giapha-timeline-track {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2rem;
+  border-left: 2px dashed var(--border);
+}
+
+.giapha-timeline-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.giapha-timeline-marker {
+  position: absolute;
+  left: -2rem;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.giapha-timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: var(--blue);
+  border: 3px solid var(--surface);
+  box-shadow: 0 0 0 2px var(--blue);
+}
+
+.giapha-timeline-year {
+  position: absolute;
+  left: -5.5rem;
+  width: 4.5rem;
+  text-align: right;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--yellow);
+}
+
+.giapha-timeline-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.giapha-timeline-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.giapha-timeline-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--heading);
+  margin: 0;
+}
+
+.giapha-timeline-desc {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================================================
+   CHRONICLE (MARKDOWN) VIEW
+   ========================================================= */
+
+.giapha-chronicle-container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.giapha-chronicle-prose {
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.giapha-chronicle-prose h1 {
+  font-size: 2rem;
+  color: var(--heading);
+  margin-bottom: 1.25rem;
+}
+
+.giapha-chronicle-prose h2 {
+  font-size: 1.4rem;
+  color: var(--heading);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.giapha-chronicle-prose blockquote {
+  border-left: 4px solid var(--yellow);
+  padding-left: 1rem;
+  color: var(--yellow);
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+/* =========================================================
+   PERSON DETAIL MODAL
+   ========================================================= */
+
+.giapha-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.giapha-modal-dialog {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 680px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  animation: modalScale 0.25s ease-out;
+}
+
+@keyframes modalScale {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.giapha-modal-header {
+  padding: 1.5rem 1.75rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--bg);
+  gap: 1rem;
+}
+
+.giapha-modal-hero {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  min-width: 0;
+}
+
+.giapha-modal-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.giapha-modal-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--heading);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.giapha-modal-maiden {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.giapha-modal-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.giapha-modal-badges span,
+.giapha-info-grid span,
+.giapha-rel-chip span {
+  font-size: inherit;
+}
+
+.giapha-modal-close {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.giapha-modal-close:hover {
+  background: var(--surface);
+  color: var(--red);
+}
+
+.giapha-modal-content {
+  padding: 1.75rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.giapha-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.giapha-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.giapha-info-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.giapha-info-val {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.giapha-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.giapha-section-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--heading);
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.giapha-section-title i {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.giapha-bio-text {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.giapha-rel-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.giapha-rel-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.giapha-rel-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.giapha-rel-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.giapha-rel-chip .giapha-avatar {
+  flex-basis: 1.6rem;
+}
+
+.giapha-rel-chip:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+  transform: translateY(-1px);
+}
+
+.giapha-modal-footer {
+  padding: 0.85rem 1.25rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  background: var(--bg);
+}
+
+.giapha-modal-footer .ui-btn,
+.giapha-modal-footer .ui-btn span {
+  font-size: 0.85rem !important;
+  line-height: 1.25 !important;
+}
+
+.giapha-action-btn {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+  gap: 0.35rem;
+  font-family: inherit;
+  line-height: 1.25;
+}
+
+.giapha-action-btn i {
+  font-size: 0.85rem;
+}
+
+.giapha-action-btn:hover {
+  background: var(--bg-alt);
+  border-color: var(--link);
+  color: var(--link);
+}
+
+.giapha-action-btn.primary {
+  background: var(--blue);
+  color: #fff !important;
+  border-color: var(--blue);
+}
+
+.giapha-action-btn.primary span,
+.giapha-action-btn.primary i {
+  color: #fff !important;
+}
+
+.giapha-action-btn.primary:hover {
+  filter: brightness(1.1);
+}
+
+.giapha-action-btn.active-root {
+  background: rgba(38, 139, 210, 0.1);
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.giapha-action-btn.active-root:hover {
+  background: rgba(38, 139, 210, 0.18);
+}
+
+/* Empty State */
+.giapha-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .giapha-page-container {
+    padding: 1rem 0.5rem 2rem 0.5rem;
+  }
+
+  .giapha-modal-footer {
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .giapha-action-btn {
+    flex: 1 1 calc(50% - 0.5rem);
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.82rem;
+  }
+
+  .cruz-root-hud {
+    top: 0.75rem;
+    left: 0.75rem;
+    font-size: 0.75rem;
+    padding: 0.2rem 0.45rem;
+  }
+
+  .cruz-root-hud-btn {
+    font-size: 0.72rem;
+    padding: 0.18rem 0.45rem;
+  }
+
+  .cruz-zoom-panel {
+    top: auto;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .giapha-gen-ruler {
+    display: none;
+  }
+
+  .giapha-member-timeline .giapha-timeline-track {
+    margin-left: 0;
+  }
+
+  .giapha-member-timeline .giapha-timeline-year {
+    left: 1.5rem;
+    width: 7rem;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .giapha-folder-children {
+    margin-left: 0.55rem;
+    padding-left: 1rem;
+  }
+
+  .giapha-folder-members,
+  .giapha-folder-member-wrap,
+  .giapha-folder-person {
+    width: 100%;
+  }
+
+}

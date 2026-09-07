@@ -8,6 +8,7 @@ import "@/styles/portfolio.css";
 import "@/styles/me.css";
 import "@/styles/poetry.css";
 import "@/styles/updating.css";
+import "@/styles/giapha.css";
 // import "@/styles/culinary.css";
 import { I18nProvider } from "@/components/i18n/I18nProvider";
 

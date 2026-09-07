@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "bootstrap-icons": "^1.13.1",
+    "gojs": "^4.0.3",
     "gray-matter": "^4.0.3",
     "lucide-react": "^1.8.0",
     "markdown-to-jsx": "^9.6.1",
