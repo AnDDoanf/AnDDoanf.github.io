@@ -564,6 +564,17 @@ a:hover {
   transition: color 0.35s ease;
 }
 
+.post-search-shell {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-alt);
+  transition: all 0.2s ease;
+}
+
 .post-search-shell:focus-within {
   border-color: var(--link);
   box-shadow:
@@ -584,7 +595,6 @@ a:hover {
   align-items: center;
   gap: 0.75rem;
   flex-wrap: wrap;
-  /* allows tags to wrap under title on small screens */
   justify-content: space-between;
 }
 
@@ -658,6 +668,9 @@ a:hover {
 }
 
 .post-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
   justify-content: flex-end;
   margin: 0;
 }
@@ -678,13 +691,155 @@ a:hover {
   text-align: center;
 }
 
-
 button {
   background-color: var(--bg);
   color: var(--text);
   border-width: 0;
   cursor: pointer;
   font-weight: 500;
+}
+
+/* =========================================================
+   SHARED UI BUTTON COMPONENT (.ui-btn)
+   ========================================================= */
+
+.ui-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.25;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.ui-btn span {
+  font-size: inherit !important;
+  color: inherit !important;
+  line-height: inherit !important;
+  font-weight: inherit !important;
+}
+
+.ui-btn i {
+  font-size: inherit !important;
+  line-height: 1;
+}
+
+.ui-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Sizes */
+.ui-btn-xs {
+  font-size: 0.78rem !important;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  gap: 0.25rem;
+}
+.ui-btn-xs span {
+  font-size: 0.78rem !important;
+}
+
+.ui-btn-sm {
+  font-size: 0.85rem !important;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  gap: 0.35rem;
+}
+.ui-btn-sm span {
+  font-size: 0.85rem !important;
+}
+
+.ui-btn-md {
+  font-size: 0.92rem !important;
+  padding: 0.45rem 1.05rem;
+  border-radius: 999px;
+  gap: 0.4rem;
+}
+.ui-btn-md span {
+  font-size: 0.92rem !important;
+}
+
+.ui-btn-lg {
+  font-size: 1rem !important;
+  padding: 0.55rem 1.25rem;
+  border-radius: 999px;
+  gap: 0.5rem;
+}
+.ui-btn-lg span {
+  font-size: 1rem !important;
+}
+
+/* Variants */
+.ui-btn-primary {
+  background: var(--blue);
+  color: #ffffff !important;
+  border-color: var(--blue);
+}
+
+.ui-btn-primary span,
+.ui-btn-primary i {
+  color: #ffffff !important;
+}
+
+.ui-btn-primary:hover:not(:disabled) {
+  filter: brightness(1.08);
+  box-shadow: 0 2px 8px rgba(38, 139, 210, 0.3);
+}
+
+.ui-btn-secondary {
+  background: var(--bg);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.ui-btn-secondary:hover:not(:disabled) {
+  background: var(--bg-alt);
+  border-color: var(--link);
+  color: var(--link);
+}
+
+.ui-btn-outline {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.ui-btn-outline:hover:not(:disabled) {
+  background: var(--bg-alt);
+  color: var(--link);
+  border-color: var(--link);
+}
+
+.ui-btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: transparent;
+}
+
+.ui-btn-ghost:hover:not(:disabled) {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.ui-btn-active-root {
+  background: rgba(38, 139, 210, 0.1);
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.ui-btn-active-root:hover:not(:disabled) {
+  background: rgba(38, 139, 210, 0.18);
+  border-color: var(--blue);
 }
 
 pre,
