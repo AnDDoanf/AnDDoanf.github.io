@@ -1,7 +1,6 @@
-﻿"use client";
+"use client";
 
-import ThemeToggle from "@/components/ui/ThemeToggle";
-import LanguageToggle from "@/components/ui/LanguageToggle";
+import TopRightControls from "@/components/ui/TopRightControls";
 import Link from "next/link";
 import TypingText from "@/components/ui/TypingText";
 import MyImgSVG from "@/data/assets/an-doan.svg";
@@ -11,32 +10,28 @@ import { useI18n } from "@/components/i18n/I18nProvider";
 export default function HomePage() {
   const { t } = useI18n();
   return (
-    <section className="home-hero home-animate-container">
-      <div className="home-left home-animate-left">
-        <div className="signature home-title home-animate-item">
-          <Image src={MyImgSVG} alt="An Doan" width={300} height={150} />
-        </div>
-
-        <div className="home-description home-animate-item delay-1">
-          <TypingText
-            text="I am God's workmanship, created in Christ to do good works that He has prepared for me to do (Ephesians 2:10)."
-          />
-        </div>
-
-        <div className="home-role home-animate-item delay-2">
-          <div className="avatar" />
-          <div>
-            <strong>Full Stack Developer</strong>
-            <p>Doan Thuan An</p>
+    <>
+      <TopRightControls showNavToggle={false} />
+      <section className="home-hero home-animate-container">
+        <div className="home-left home-animate-left">
+          <div className="signature home-title home-animate-item">
+            <Image src={MyImgSVG} alt="An Doan" width={300} height={150} />
           </div>
-          <div className="theme-toggle-homepage">
-            <div className="toggle-row">
-              <ThemeToggle />
-              <LanguageToggle />
+
+          <div className="home-description home-animate-item delay-1">
+            <TypingText
+              text="I am God's workmanship, created in Christ to do good works that He has prepared for me to do (Ephesians 2:10)."
+            />
+          </div>
+
+          <div className="home-role home-animate-item delay-2">
+            <div className="avatar" />
+            <div>
+              <strong>Full Stack Developer</strong>
+              <p>Doan Thuan An</p>
             </div>
           </div>
         </div>
-      </div>
 
       <div className="home-right home-animate-right">
         <ul className="home-links">
@@ -108,6 +103,7 @@ export default function HomePage() {
           </div>
         </ul>
       </div>
-    </section>
+      </section>
+    </>
   );
 }

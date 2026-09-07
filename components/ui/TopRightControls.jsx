@@ -13,7 +13,7 @@ import {
   subscribeToMobileViewport,
 } from "@/components/ui/navState";
 
-export default function TopRightControls() {
+export default function TopRightControls({ showNavToggle = true }) {
   const { t } = useI18n();
   const [isVisible, setIsVisible] = useState(true);
   const isMobileViewport = useSyncExternalStore(
@@ -69,7 +69,7 @@ export default function TopRightControls() {
         <ThemeToggle />
         <LanguageToggle />
 
-        {isMobileViewport && (
+        {showNavToggle && isMobileViewport && (
           <button
             type="button"
             className="theme-icon theme-icon-menu"
