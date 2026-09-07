@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 18: Gióp"
 date: 2026-09-01
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/job.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

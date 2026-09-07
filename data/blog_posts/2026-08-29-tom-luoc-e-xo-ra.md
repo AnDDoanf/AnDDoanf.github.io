@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 15: Ê-xơ-ra"
 date: 2026-08-29
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/ezra.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

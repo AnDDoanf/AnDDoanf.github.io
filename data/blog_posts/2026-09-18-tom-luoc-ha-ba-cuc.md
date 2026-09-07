@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 35: Ha-ba-cúc"
 date: 2026-09-18
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/habakkuk.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

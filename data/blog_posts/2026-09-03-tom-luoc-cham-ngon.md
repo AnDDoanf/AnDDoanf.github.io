@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 20: Châm Ngôn"
 date: 2026-09-03
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/proverbs.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

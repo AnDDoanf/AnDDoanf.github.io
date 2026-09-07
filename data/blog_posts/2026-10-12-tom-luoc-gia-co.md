@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 59: Gia-cơ"
 date: 2026-10-12
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-gia-co.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

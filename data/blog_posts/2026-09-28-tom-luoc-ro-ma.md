@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 45: Rô-ma"
 date: 2026-09-28
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-ro-ma.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

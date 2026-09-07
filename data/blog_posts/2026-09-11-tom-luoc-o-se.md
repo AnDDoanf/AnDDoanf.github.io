@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 28: Ô-sê"
 date: 2026-09-11
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/hosea.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

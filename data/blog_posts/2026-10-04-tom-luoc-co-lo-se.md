@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 51: Cô-lô-se"
 date: 2026-10-04
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-co-lo-se.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

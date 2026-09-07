@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 43: Giăng"
 date: 2026-09-26
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-giang.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 41: Mác"
 date: 2026-09-24
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-mac.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

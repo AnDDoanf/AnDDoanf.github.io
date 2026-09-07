@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 52: 1 Tê-sa-lô-ni-ca"
 date: 2026-10-05
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-1-te-sa-lo-ni-ca.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

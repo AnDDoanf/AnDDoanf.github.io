@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 57: Phi-lê-môn"
 date: 2026-10-10
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-phi-le-mon.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 30: A-mốt"
 date: 2026-09-13
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/amos.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

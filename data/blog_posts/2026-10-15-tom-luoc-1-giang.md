@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 62: 1 Giăng"
 date: 2026-10-15
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-1-giang.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

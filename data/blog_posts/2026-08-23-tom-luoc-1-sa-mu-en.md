@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 9: 1 Sa-mu-ên"
 date: 2026-08-23
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/samuel.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

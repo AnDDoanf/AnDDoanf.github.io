@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 64: 3 Giăng"
 date: 2026-10-17
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-3-giang.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

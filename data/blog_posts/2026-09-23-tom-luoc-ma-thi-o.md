@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 40: Ma-thi-ơ"
 date: 2026-09-23
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-ma-thi-o.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

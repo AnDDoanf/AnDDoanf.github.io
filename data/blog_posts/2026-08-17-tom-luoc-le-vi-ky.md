@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 3: Lê-vi Ký"
 date: 2026-08-17
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/leviticus.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 44: Công Vụ"
 date: 2026-09-27
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-cong-vu.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

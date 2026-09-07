@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 14: 2 Sử Ký"
 date: 2026-08-28
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/2chronicles.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

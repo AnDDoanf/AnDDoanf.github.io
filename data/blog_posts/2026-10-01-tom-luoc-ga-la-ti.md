@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 48: Ga-la-ti"
 date: 2026-10-01
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-ga-la-ti.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

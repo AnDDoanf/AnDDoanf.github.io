@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 42: Lu-ca"
 date: 2026-09-25
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-lu-ca.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

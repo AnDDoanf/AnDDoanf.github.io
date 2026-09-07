@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 11: 1 Các Vua"
 date: 2026-08-25
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/1kings.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

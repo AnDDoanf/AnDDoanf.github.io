@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 39: Ma-la-chi"
 date: 2026-09-22
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/malachi.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

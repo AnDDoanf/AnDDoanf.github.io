@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 27: Đa-ni-ên"
 date: 2026-09-10
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/daniel.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

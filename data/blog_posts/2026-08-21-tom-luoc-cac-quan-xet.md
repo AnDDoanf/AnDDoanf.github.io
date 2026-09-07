@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 7: Các Quan Xét"
 date: 2026-08-21
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/judges.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

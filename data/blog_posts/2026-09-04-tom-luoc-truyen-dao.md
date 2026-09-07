@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 21: Truyền Đạo"
 date: 2026-09-04
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/ecclesiastes.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

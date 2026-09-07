@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 4: Dân Số Ký"
 date: 2026-08-18
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/numbers.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

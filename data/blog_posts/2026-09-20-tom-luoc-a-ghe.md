@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 37: A-ghê"
 date: 2026-09-20
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/haggai.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

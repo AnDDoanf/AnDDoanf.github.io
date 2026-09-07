@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 17: Ê-xơ-tê"
 date: 2026-08-31
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/esther.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

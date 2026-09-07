@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 32: Giô-na"
 date: 2026-09-15
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/jonah.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/

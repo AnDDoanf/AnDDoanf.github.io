@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 63: 2 Giăng"
 date: 2026-10-16
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-2-giang.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

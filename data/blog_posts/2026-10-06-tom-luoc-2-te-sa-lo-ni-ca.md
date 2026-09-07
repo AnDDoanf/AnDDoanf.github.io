@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 53: 2 Tê-sa-lô-ni-ca"
 date: 2026-10-06
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/tom-luoc-2-te-sa-lo-ni-ca.jpg
 author:
   name: An Doan
   link: https://anddoanf.github.io/

@@ -2,7 +2,7 @@
 title: "Tóm lược Kinh Thánh sách thứ 5: Phục Truyền Luật Lệ Ký"
 date: 2026-08-19
 tags: [christianity]
-image: /assets/post-covers/bible1.webp
+image: /assets/post-covers/deuteronomy.jpg
 author: 
   name: An Doan
   link: https://anddoanf.github.io/
