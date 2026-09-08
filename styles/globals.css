@@ -1790,6 +1790,42 @@ h2 .nav-title {
 
 @media screen and (max-width: 768px) {
 
+  body {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .post-content {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    text-align: left;
+    overflow-wrap: break-word;
+    padding-inline: 0.75rem;
+  }
+
+  .post-content :is(p, li, blockquote, th, td) span:not(.katex *) {
+    font-size: inherit;
+  }
+
+  .post-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .post-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .post-content h3,
+  .post-content h4 {
+    font-size: 1.3rem;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 1rem;
+  }
+
   .theme-toggle-navbar {
     padding-left: .25rem;
   }
@@ -2051,30 +2087,6 @@ h2 .nav-title {
 
   span {
     font-size: 1rem;
-  }
-
-  /* Typography */
-  body {
-    font-size: 0.95rem;
-    background-color: var(--bg);
-    color: var(--text);
-  }
-
-  .post-content {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  .post-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .post-content h2 {
-    font-size: 1.5rem;
-  }
-
-  .post-content h3 {
-    font-size: 1.3rem;
   }
 
   /* Home nav */
