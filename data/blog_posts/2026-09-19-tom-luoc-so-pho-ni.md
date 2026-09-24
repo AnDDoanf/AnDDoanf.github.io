@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 36: Sô-phô-ni"
 date: 2026-09-19
+category: faith
 tags: [christianity]
 image: /assets/post-covers/zephaniah.jpg
 author:

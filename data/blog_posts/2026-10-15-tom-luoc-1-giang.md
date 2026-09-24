@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 62: 1 Giăng"
 date: 2026-10-15
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-1-giang.jpg
 author:

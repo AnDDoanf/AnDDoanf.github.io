@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 8: Ru-tơ"
 date: 2026-08-22
+category: faith
 tags: [christianity]
 image: /assets/post-covers/ruth.jpg
 author: 

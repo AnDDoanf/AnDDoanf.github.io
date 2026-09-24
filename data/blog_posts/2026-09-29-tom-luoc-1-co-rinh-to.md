@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 46: 1 Cô-rinh-tô"
 date: 2026-09-29
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-1-co-rinh-to.jpg
 author:

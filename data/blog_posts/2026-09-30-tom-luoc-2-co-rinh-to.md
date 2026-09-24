@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 47: 2 Cô-rinh-tô"
 date: 2026-09-30
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-2-co-rinh-to.jpg
 author:

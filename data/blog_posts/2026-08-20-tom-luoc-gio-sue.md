@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 6: Giô-suê"
 date: 2026-08-20
+category: faith
 tags: [christianity]
 image: /assets/post-covers/joshua.jpg
 author: 

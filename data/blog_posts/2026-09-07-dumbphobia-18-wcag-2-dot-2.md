@@ -1,6 +1,7 @@
 ---
 title: "DumbPhobia#018: Web Content Accessibility Guidelines 2.2"
 date: 2026-09-07
+category: journal
 tags: [system-design]
 image: /assets/post-covers/wcag.png
 author:

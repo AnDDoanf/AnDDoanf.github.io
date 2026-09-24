@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 35: Ha-ba-cúc"
 date: 2026-09-18
+category: faith
 tags: [christianity]
 image: /assets/post-covers/habakkuk.jpg
 author:

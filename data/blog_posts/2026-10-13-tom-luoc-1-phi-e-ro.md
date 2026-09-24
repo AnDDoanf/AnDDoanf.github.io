@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 60: 1 Phi-e-rơ"
 date: 2026-10-13
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-1-phi-e-ro.jpg
 author:

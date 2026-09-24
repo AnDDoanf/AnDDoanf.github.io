@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 37: A-ghê"
 date: 2026-09-20
+category: faith
 tags: [christianity]
 image: /assets/post-covers/haggai.jpg
 author:

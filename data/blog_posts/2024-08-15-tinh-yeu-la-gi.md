@@ -1,6 +1,7 @@
 ---
 title: Tình yêu là gì?
 date: 2024-08-15
+category: faith
 tags: [learning, devotional]
 image: /assets/post-covers/love2.webp
 author: 

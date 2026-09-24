@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 31: Áp-đia"
 date: 2026-09-14
+category: faith
 tags: [christianity]
 image: /assets/post-covers/obadiah.jpg
 author: 

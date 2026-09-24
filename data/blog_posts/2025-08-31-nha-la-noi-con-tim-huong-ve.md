@@ -1,6 +1,7 @@
 ---
 title: Nhà Là Nơi Con Tim Hướng Về
 date: 2025-08-31
+category: life
 tags: [life, reflection]
 image: /assets/post-covers/home.webp
 author: 

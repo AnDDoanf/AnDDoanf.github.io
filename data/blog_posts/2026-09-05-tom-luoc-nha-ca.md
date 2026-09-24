@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 22: Nhã Ca"
 date: 2026-09-05
+category: faith
 tags: [christianity]
 image: /assets/post-covers/songsofsolomon.jpg
 author: 

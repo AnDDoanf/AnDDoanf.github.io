@@ -1,8 +1,12 @@
 ---
 title: "DumbPhobia#016 ADAS: From Driver Assistance to Fully Autonomous Driving"
 date: 2026-08-14
+category: journal
 tags: [system]
 image: /assets/post-covers/ADAS-Working.png
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 Modern vehicles are rapidly evolving from machines controlled entirely by humans into intelligent systems capable of perceiving their surroundings, predicting traffic behavior, planning trajectories, and controlling the vehicle.

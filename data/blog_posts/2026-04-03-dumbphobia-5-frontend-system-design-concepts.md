@@ -1,8 +1,12 @@
 ﻿---
 title: "DumbPhobia#005 14 Essential Frontend System Design Concepts"
 date: 2026-04-03
+category: journal
 tags: [frontend, system]
 image: /assets/post-covers/dumbphobia-system-design.jpg
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 > Whether you're prepping for a system design interview or just want to build faster, more scalable apps — these are the concepts that matter.

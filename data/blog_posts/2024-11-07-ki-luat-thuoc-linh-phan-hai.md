@@ -1,6 +1,7 @@
 ---
 title: Kỷ Luật Thuộc Linh (phần 2)
 date: 2024-11-07
+category: faith
 tags: [christianity, discipleship]
 image: /assets/post-covers/spritual-disipline.png
 author: 

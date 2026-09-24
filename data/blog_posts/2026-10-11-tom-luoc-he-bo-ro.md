@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 58: Hê-bơ-rơ"
 date: 2026-10-11
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-he-bo-ro.jpg
 author:

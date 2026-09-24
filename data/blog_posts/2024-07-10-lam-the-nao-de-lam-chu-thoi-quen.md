@@ -1,6 +1,7 @@
 ---
 title: Làm thế nào để làm chủ THÓI QUEN?
 date: 2024-07-10
+category: life
 tags: [learning, growth]
 image: /assets/post-covers/power-of-habits.webp
 author: 

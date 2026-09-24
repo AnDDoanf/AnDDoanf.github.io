@@ -1,6 +1,7 @@
 ---
 title: "DumbPhobia#020: The Evolution of Reinforcement Learning"
 date: 2026-09-15
+category: journal
 tags: [system-design]
 image: /assets/post-covers/rl.png
 author:

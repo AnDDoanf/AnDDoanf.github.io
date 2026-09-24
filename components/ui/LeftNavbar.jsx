@@ -16,7 +16,6 @@ const NAV_ITEMS = [
   { href: "/", icon: "bi-house", labelKey: "nav.home" },
   { href: "/portfolio", icon: "bi-person", labelKey: "nav.about" },
   { href: "/blog", icon: "bi-pencil-square", labelKey: "nav.blogs" },
-  { href: "/journal", icon: "bi-journal-text", labelKey: "nav.journal" },
   { href: "/poetry", icon: "bi-feather", labelKey: "nav.poems" },
   // { href: "/updating", icon: "bi-egg-fried", labelKey: "nav.culinary" },
   { href: "/gallery", icon: "bi-images", labelKey: "nav.gallery" },

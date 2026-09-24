@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 50: Phi-líp"
 date: 2026-10-03
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-phi-lip.jpg
 author:

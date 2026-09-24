@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 65: Giu-đe"
 date: 2026-10-18
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-giu-de.jpg
 author:

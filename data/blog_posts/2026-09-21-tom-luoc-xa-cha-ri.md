@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 38: Xa-cha-ri"
 date: 2026-09-21
+category: faith
 tags: [christianity]
 image: /assets/post-covers/zechariah.jpg
 author:

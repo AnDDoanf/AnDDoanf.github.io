@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 3: Lê-vi Ký"
 date: 2026-08-17
+category: faith
 tags: [christianity]
 image: /assets/post-covers/leviticus.jpg
 author:

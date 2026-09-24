@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 23: Ê-sai"
 date: 2026-09-06
+category: faith
 tags: [christianity]
 image: /assets/post-covers/isaiah.jpg
 author: 

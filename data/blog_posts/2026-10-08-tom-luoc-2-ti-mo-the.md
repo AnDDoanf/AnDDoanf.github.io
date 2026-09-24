@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 55: 2 Ti-mô-thê"
 date: 2026-10-08
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-2-ti-mo-the.jpg
 author:

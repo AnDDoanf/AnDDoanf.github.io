@@ -1,7 +1,11 @@
 ---
 title: 2 Ngày Trước là Sinh Nhật của Mẹ tôi
 date: 12024-05-11
+category: life
 tags: [reflection]
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 ## Hai ngày trước là sinh nhật của mẹ tôi
 

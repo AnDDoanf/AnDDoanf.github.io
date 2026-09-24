@@ -1,6 +1,7 @@
 ---
 title: Dịch 95 luận đề của Martin Luther (1517)
 date: 2023-11-27
+category: faith
 tags: [chritianity]
 image: /assets/post-covers/95-theses.jpg
 author: 

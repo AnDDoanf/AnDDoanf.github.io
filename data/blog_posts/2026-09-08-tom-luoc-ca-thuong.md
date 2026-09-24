@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 25: Ca Thương"
 date: 2026-09-08
+category: faith
 tags: [christianity]
 image: /assets/post-covers/lamentations.jpg
 author: 

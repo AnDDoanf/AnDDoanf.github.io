@@ -1,6 +1,7 @@
 ---
 title: Người chịu thiệt thòi nhất là những kẻ vô học
 date: 2024-09-30
+category: life
 tags: [learning]
 image: /assets/post-covers/khuyen-hoc.jpg
 author: 

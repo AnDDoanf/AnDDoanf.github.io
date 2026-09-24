@@ -1,6 +1,7 @@
 ---
 title: Chào Bắc Ninh
 date: 2026-02-24
+category: life
 tags: [reflection, journey]
 image: /assets/post-covers/chao-bac-ninh.jpg
 author:

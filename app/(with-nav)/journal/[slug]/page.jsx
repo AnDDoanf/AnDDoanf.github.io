@@ -1,76 +1,14 @@
-import fs from "fs";
-import matter from "gray-matter";
-import {
-  createHeadingIdResolver,
-  extractHeadings,
-} from "@/app/utils/extractHeadings";
-import MarkdownContent from "@/components/blog/MarkdownContent";
 import getPostMetadata from "@/app/utils/getPostMetadata";
-import PostNavigator from "@/components/blog/PostNavigator";
-import TableOfContents from "@/components/blog/TableOfContent";
-import ScrollToTop from "@/components/ui/ScrollToTop";
-import { notFound } from "next/navigation";
-
-function getPostContent(slug) {
-  const file = `data/journal_posts/${slug}.md`;
-
-  if (!slug || !fs.existsSync(file)) {
-    notFound();
-  }
-
-  return matter(fs.readFileSync(file, "utf-8"));
-}
+import { redirect } from "next/navigation";
 
 export async function generateStaticParams() {
-  const posts = getPostMetadata("data/journal_posts");
+  const posts = getPostMetadata("data/blog_posts").filter(
+    (post) => post.category === "journal"
+  );
   return posts.map((post) => ({ slug: post.slug }));
-}
-
-export async function generateMetadata({ params }) {
-  const { slug } = await params;
-  const post = getPostContent(slug);
-
-  return {
-    title: post.data.title || slug.replaceAll("-", " "),
-  };
 }
 
 export default async function JournalPostPage({ params }) {
   const { slug } = await params;
-  const post = getPostContent(slug);
-  const posts = getPostMetadata("data/journal_posts");
-  const currentIndex = posts.findIndex((entry) => entry.slug === slug);
-
-  const headings = extractHeadings(post.content);
-  const resolveHeadingId = createHeadingIdResolver(headings);
-  const previousPost = currentIndex > 0 ? posts[currentIndex - 1] : null;
-  const nextPost =
-    currentIndex >= 0 && currentIndex < posts.length - 1
-      ? posts[currentIndex + 1]
-      : null;
-
-  return (
-    <main className="post-layout">
-      {/* Article */}
-      <article className="post-content">
-        <h1>{post.data.title}</h1>
-        <MarkdownContent
-          content={post.content}
-          resolveHeadingId={resolveHeadingId}
-        />
-
-        <PostNavigator
-          previousPost={previousPost}
-          nextPost={nextPost}
-          hrefBase="/journal"
-        />
-
-        <ScrollToTop />
-      </article>
-
-      {/* Sidebar */}
-      <TableOfContents headings={headings} />
-    </main>
-  );
+  redirect(`/blog/${slug}`);
 }
-

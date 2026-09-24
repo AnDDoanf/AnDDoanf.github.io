@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 9: 1 Sa-mu-ên"
 date: 2026-08-23
+category: faith
 tags: [christianity]
 image: /assets/post-covers/samuel.jpg
 author: 

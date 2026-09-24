@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 24: Giê-rê-mi"
 date: 2026-09-07
+category: faith
 tags: [christianity]
 image: /assets/post-covers/jeremiah.jpg
 author: 

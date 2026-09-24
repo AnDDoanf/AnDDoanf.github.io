@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 19: Thi Thiên"
 date: 2026-09-02
+category: faith
 tags: [christianity]
 image: /assets/post-covers/psalms.jpg
 author: 

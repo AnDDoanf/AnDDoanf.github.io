@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 27: Đa-ni-ên"
 date: 2026-09-10
+category: faith
 tags: [christianity]
 image: /assets/post-covers/daniel.jpg
 author: 

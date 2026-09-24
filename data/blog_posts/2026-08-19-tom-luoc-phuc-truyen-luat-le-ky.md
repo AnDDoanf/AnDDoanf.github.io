@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 5: Phục Truyền Luật Lệ Ký"
 date: 2026-08-19
+category: faith
 tags: [christianity]
 image: /assets/post-covers/deuteronomy.jpg
 author: 

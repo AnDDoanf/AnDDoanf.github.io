@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 21: Truyền Đạo"
 date: 2026-09-04
+category: faith
 tags: [christianity]
 image: /assets/post-covers/ecclesiastes.jpg
 author: 

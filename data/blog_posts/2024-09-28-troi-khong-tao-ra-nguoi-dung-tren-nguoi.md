@@ -1,6 +1,7 @@
 ---
 title: Trời không tạo ra người đứng trên người
 date: 2024-09-28
+category: life
 tags: [learning]
 image: /assets/post-covers/khuyen-hoc.jpg
 author: 

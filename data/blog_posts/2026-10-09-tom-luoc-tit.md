@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 56: Tít"
 date: 2026-10-09
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-tit.jpg
 author:

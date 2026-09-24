@@ -1,6 +1,7 @@
 ---
 title: Người Cha Theo Kinh Thánh
 date: 2026-05-24
+category: faith
 tags: [christianity]
 image: /assets/post-covers/biblical-fatherhood.jpg
 author: 

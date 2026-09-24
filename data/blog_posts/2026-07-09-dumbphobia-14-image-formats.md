@@ -1,8 +1,12 @@
 ﻿---
 title: DumbPhobia#014 Image Formats
 date: 2026-07-09
+category: journal
 tags: [frontend, system]
 image: /assets/post-covers/dumbphobia-images.jpg
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 # PNG vs JPG vs SVG vs WebP: The Science Behind Image Formats

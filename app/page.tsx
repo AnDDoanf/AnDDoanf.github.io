@@ -49,13 +49,6 @@ export default function HomePage() {
             </Link>
           </li>
 
-          <li className="home-animate-link delay-2">
-            <i className="bi bi-pencil-square" />
-            <Link href="/journal">
-              <div className="home-nav">{t("home.journal")}</div>
-            </Link>
-          </li>
-
           <li className="home-animate-link delay-3">
             <i className="bi bi-feather" />
             <Link href="/poetry">

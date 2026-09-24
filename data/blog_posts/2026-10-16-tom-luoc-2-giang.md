@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 63: 2 Giăng"
 date: 2026-10-16
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-2-giang.jpg
 author:

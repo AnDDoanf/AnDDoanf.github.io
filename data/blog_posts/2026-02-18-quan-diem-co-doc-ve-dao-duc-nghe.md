@@ -1,6 +1,7 @@
 ---
 title: Quan điểm Cơ Đốc về ĐẠO ĐỨC NGHỀ 
 date: 2026-02-18
+category: faith
 tags: [growth, disipleship]
 image: /assets/post-covers/biblical-working.jpg
 author: 

@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 61: 2 Phi-e-rơ"
 date: 2026-10-14
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-2-phi-e-ro.jpg
 author:

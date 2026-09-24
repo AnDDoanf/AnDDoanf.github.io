@@ -1,8 +1,12 @@
 ﻿---
 title: DumbPhobia#001 REST APIs
 date: 2026-03-09
+category: journal
 tags: [programming, fullstack]
 image: /assets/post-covers/dumbphobia-rest-api.jpg
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 REST (Representational State Transfer) APIs are widely used for communication between systems such as web applications, mobile apps, and backend services. While many APIs successfully return JSON responses, professional REST API design focuses on **consistency, scalability, predictability, and clear communication between systems**.

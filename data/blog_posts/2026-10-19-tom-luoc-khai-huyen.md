@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 66: Khải Huyền"
 date: 2026-10-19
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-khai-huyen.jpg
 author:

@@ -1,7 +1,11 @@
 ---
 title: Xung quanh là những kẻ khờ
 date: 12024-05-31
+category: life
 tags: [learning]
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 ## Giao tiếp theo cách của người nghe
 

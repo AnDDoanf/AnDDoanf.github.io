@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 14: 2 Sử Ký"
 date: 2026-08-28
+category: faith
 tags: [christianity]
 image: /assets/post-covers/2chronicles.jpg
 author: 

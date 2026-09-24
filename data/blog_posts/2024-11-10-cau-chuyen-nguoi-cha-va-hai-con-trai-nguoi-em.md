@@ -1,6 +1,7 @@
 ---
 title: Câu Chuyện Người Cha Và Hai Con Trai - Người Em
 date: 2024-11-10
+category: faith
 tags: [christianity, devotional]
 image: /assets/post-covers/parable1.jpg
 author: 

@@ -1,8 +1,12 @@
 ---
 title: Cuộc đời tôi
 date: 12025-12-23
+category: life
 categories: [book]
 tags: [life, reflection]
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 Tôi, là kết quả của một tình yêu của hai người gần nhau nhưng xa lạ. Này là trai đất Kinh Bắc - với các liền anh liền chị hát dân ca Quan Họ, kia là gái Tháp Mười - nơi có những cánh đồng thẳng cánh cò bay. Khi ở trong nam, tôi hay bị gọi là bắc kỳ vì có cha là người bắc, nhưng khi ở bắc, tôi lại được cho là sống có phần "phóng túng như người nam".
 

@@ -7,6 +7,7 @@ import {
 import MarkdownContent from "@/components/blog/MarkdownContent";
 import getPostMetadata from "@/app/utils/getPostMetadata";
 import PostNavigator from "@/components/blog/PostNavigator";
+import BlogPostMetaHeader from "@/components/blog/BlogPostMetaHeader";
 import TableOfContents from "@/components/blog/TableOfContent";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import { notFound } from "next/navigation";
@@ -28,8 +29,22 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
+  const post = getPostContent(slug);
+  const title = post.data.title || slug.replaceAll("-", " ");
+  const description = post.data.description || post.data.excerpt || "";
+
   return {
-    title: slug.replaceAll("-", " "),
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      publishedTime: post.data.date ? new Date(post.data.date).toISOString() : undefined,
+      authors: post.data.author?.name ? [post.data.author.name] : ["An Doan"],
+      tags: post.data.tags || [],
+      images: post.data.image ? [{ url: post.data.image }] : [],
+    },
   };
 }
 
@@ -51,7 +66,12 @@ export default async function BlogPostPage({ params }) {
     <main className="post-layout">
       {/* Article */}
       <article className="post-content">
-        <h1>{post.data.title}</h1>
+        <BlogPostMetaHeader
+          title={post.data.title}
+          date={post.data.date}
+          author={post.data.author}
+        />
+
         <MarkdownContent
           content={post.content}
           resolveHeadingId={resolveHeadingId}
@@ -71,4 +91,3 @@ export default async function BlogPostPage({ params }) {
     </main>
   );
 }
-

@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 20: Châm Ngôn"
 date: 2026-09-03
+category: faith
 tags: [christianity]
 image: /assets/post-covers/proverbs.jpg
 author: 

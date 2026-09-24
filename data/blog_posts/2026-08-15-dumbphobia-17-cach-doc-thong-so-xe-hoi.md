@@ -1,6 +1,7 @@
 ---
 title: "DumbPhobia#017: Cách Đọc Thông Số Kỹ Thuật Xe Hơi"
 date: 2026-08-15
+category: journal
 tags: [automotive, learning]
 image: /assets/post-covers/thong-so-xe.webp
 author:

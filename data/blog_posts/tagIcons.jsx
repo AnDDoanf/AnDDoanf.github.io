@@ -18,6 +18,7 @@ export const tagIcons = {
   "system-design": "bi bi-bezier2",
   engineering: "bi bi-cpu",
   rendering: "bi bi-display",
+  automotive: "bi bi-car-front",
 
   // Life
   life: "bi bi-sun", //General life topics.

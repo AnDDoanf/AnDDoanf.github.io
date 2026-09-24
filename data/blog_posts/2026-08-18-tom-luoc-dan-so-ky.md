@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 4: Dân Số Ký"
 date: 2026-08-18
+category: faith
 tags: [christianity]
 image: /assets/post-covers/numbers.jpg
 author: 

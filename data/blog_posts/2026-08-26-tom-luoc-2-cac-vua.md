@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 12: 2 Các Vua"
 date: 2026-08-26
+category: faith
 tags: [christianity]
 image: /assets/post-covers/2kings.jpg
 author: 

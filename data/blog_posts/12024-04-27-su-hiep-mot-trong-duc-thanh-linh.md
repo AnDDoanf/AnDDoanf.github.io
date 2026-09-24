@@ -1,6 +1,7 @@
 ---
 title: Sự hiệp một trong Đức Thánh Linh
 date: 12024-04-27
+category: faith
 tags: [discipleship, christianity]
 image: /assets/post-covers/unity.png
 author: 

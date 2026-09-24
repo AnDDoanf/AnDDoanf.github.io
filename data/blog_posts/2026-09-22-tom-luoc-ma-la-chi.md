@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 39: Ma-la-chi"
 date: 2026-09-22
+category: faith
 tags: [christianity]
 image: /assets/post-covers/malachi.jpg
 author:

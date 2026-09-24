@@ -1,6 +1,7 @@
 ---
 title: Xứng đáng bên em
 date: 2025-05-01
+category: life
 tags: [life, reflection]
 image: /assets/post-covers/love1.jpg
 author: 

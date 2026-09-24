@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 28: Ô-sê"
 date: 2026-09-11
+category: faith
 tags: [christianity]
 image: /assets/post-covers/hosea.jpg
 author: 

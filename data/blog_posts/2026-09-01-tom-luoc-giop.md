@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 18: Gióp"
 date: 2026-09-01
+category: faith
 tags: [christianity]
 image: /assets/post-covers/job.jpg
 author: 

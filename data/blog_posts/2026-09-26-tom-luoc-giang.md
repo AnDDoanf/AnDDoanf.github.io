@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 43: Giăng"
 date: 2026-09-26
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-giang.jpg
 author:

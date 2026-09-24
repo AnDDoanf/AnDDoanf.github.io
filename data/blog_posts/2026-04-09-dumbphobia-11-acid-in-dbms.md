@@ -1,8 +1,12 @@
 ﻿---
 title: "DumbPhobia#011 ACID Principles in DBMS"
 date: 2026-04-09
+category: journal
 tags: [system-design]
 image: /assets/post-covers/dumbphobia-acid.jpg
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 > ACID is the set of properties that guarantee database transactions are processed reliably — even in the face of errors, power failures, and concurrent access. Every time you transfer money, place an order, or save a record, ACID is what keeps the data from becoming corrupted or inconsistent.

@@ -37,7 +37,48 @@ function normalizeList(value) {
     return [String(value).trim()].filter(Boolean);
 }
 
-function formatDateLabel(date) {
+const FAITH_TAGS = new Set([
+    "christianity",
+    "chritianity",
+    "faith",
+    "devotional",
+    "discipleship",
+    "disipleship",
+    "theology",
+    "testimony",
+    "christian",
+]);
+
+const JOURNAL_TAGS = new Set([
+    "programming",
+    "fullstack",
+    "frontend",
+    "system",
+    "engineering",
+    "react",
+    "rendering",
+    "system-design",
+    "automotive",
+    "webdev",
+    "languages",
+    "projects",
+]);
+
+export function resolvePostCategory(rawCategory, tags = [], categories = []) {
+    if (rawCategory) {
+        const c = String(rawCategory).trim().toLowerCase();
+        if (c === "life" || c === "faith" || c === "journal") {
+            return c;
+        }
+    }
+
+    const normalized = [...tags, ...categories].map((t) => String(t).trim().toLowerCase());
+    if (normalized.some((t) => FAITH_TAGS.has(t))) return "faith";
+    if (normalized.some((t) => JOURNAL_TAGS.has(t))) return "journal";
+    return "life";
+}
+
+export function formatDateLabel(date) {
     return new Intl.DateTimeFormat("en-US", {
         day: "numeric",
         month: "short",
@@ -79,14 +120,17 @@ export default function getPostMetadata(basePath) {
             const title = data.title || "Untitled Post";
             const categories = normalizeList(data.categories);
             const tags = normalizeList(data.tags);
+            const category = resolvePostCategory(data.category, tags, categories);
 
             return {
                 title,
                 date: postDate,
+                category,
                 categories,
                 tags,
+                author: data.author || null,
                 slug: filename.replace(".md", ""),
-                excerpt: getExcerpt(content, 1) || "No excerpt available",
+                excerpt: data.description || data.excerpt || getExcerpt(content, 1) || "No excerpt available",
                 image: resolvePostCoverImage(data.image, tags),
                 imageAlt: String(data.imageAlt || `${title} cover image`).trim(),
                 primaryTag: tags[0] || categories[0] || "",

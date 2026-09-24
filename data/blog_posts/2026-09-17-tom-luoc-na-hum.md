@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 34: Na-hum"
 date: 2026-09-17
+category: faith
 tags: [christianity]
 image: /assets/post-covers/nahum.jpg
 author:

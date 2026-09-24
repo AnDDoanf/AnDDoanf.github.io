@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 64: 3 Giăng"
 date: 2026-10-17
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-3-giang.jpg
 author:

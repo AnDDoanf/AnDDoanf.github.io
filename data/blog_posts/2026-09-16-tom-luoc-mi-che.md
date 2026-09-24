@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 33: Mi-chê"
 date: 2026-09-16
+category: faith
 tags: [christianity]
 image: /assets/post-covers/micah.jpg
 author: 

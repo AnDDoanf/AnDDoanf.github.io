@@ -1,6 +1,7 @@
 ---
 title: Hun đúc, nuôi dưỡng chí khí độc lập ra sao?
 date: 2024-11-26
+category: life
 tags: [learning]
 image: /assets/post-covers/khuyen-hoc.jpg
 author: 

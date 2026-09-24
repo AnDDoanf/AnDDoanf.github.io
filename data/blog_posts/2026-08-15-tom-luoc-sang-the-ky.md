@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 1: Sáng Thế Ký"
 date: 2026-08-15
+category: faith
 tags: [christianity]
 image: /assets/post-covers/genesis.jpg
 author: 

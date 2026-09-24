@@ -1,6 +1,7 @@
 ---
 title: Xếp bậc cấp bậc
 date: 2023-11-14
+category: life
 tags: [forfun]
 image: /assets/post-covers/ranking.png
 author: 

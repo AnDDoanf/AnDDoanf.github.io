@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 49: Ê-phê-sô"
 date: 2026-10-02
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-e-phe-so.jpg
 author:

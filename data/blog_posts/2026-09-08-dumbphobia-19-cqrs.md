@@ -1,6 +1,7 @@
 ---
 title: "DumbPhobia#019: Command Query Responsibility Segregation"
 date: 2026-09-08
+category: journal
 tags: [system-design]
 image: /assets/post-covers/cqrs.png
 author:

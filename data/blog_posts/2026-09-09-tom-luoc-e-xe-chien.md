@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 26: Ê-xê-chi-ên"
 date: 2026-09-09
+category: faith
 tags: [christianity]
 image: /assets/post-covers/ezekiel.jpg
 author: 

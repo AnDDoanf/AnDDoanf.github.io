@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 29: Giô-ên"
 date: 2026-09-12
+category: faith
 tags: [christianity]
 image: /assets/post-covers/joel.jpg
 author: 

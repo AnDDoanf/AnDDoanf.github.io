@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 7: Các Quan Xét"
 date: 2026-08-21
+category: faith
 tags: [christianity]
 image: /assets/post-covers/judges.jpg
 author: 

@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 30: A-mốt"
 date: 2026-09-13
+category: faith
 tags: [christianity]
 image: /assets/post-covers/amos.jpg
 author: 

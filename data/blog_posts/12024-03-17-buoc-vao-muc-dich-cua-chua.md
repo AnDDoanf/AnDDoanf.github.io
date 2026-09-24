@@ -1,7 +1,11 @@
 ---
 title: Bước vào mục đích của Chúa
 date: 12024-03-17
+category: faith
 tags: []
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 Cho bạn, là những người đang tìm kiếm câu trả lời cho câu hỏi "Tôi tồn tại trên đất để làm gì?"
 

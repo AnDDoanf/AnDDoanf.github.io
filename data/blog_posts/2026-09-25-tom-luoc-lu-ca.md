@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 42: Lu-ca"
 date: 2026-09-25
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-lu-ca.jpg
 author:

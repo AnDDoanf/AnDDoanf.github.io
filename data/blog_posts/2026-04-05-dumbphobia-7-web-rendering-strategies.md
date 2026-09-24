@@ -1,8 +1,12 @@
 ﻿---
 title: "DumbPhobia#007 Web Rendering Strategies"
 date: 2026-04-05
+category: journal
 tags: [frontend, rendering]
 image: /assets/post-covers/dumbphobia-rendering.jpg
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 > Choosing the wrong rendering strategy is one of the most expensive architectural mistakes you can make — it affects performance, SEO, infrastructure cost, and developer experience. Here's everything you need to know to choose the right one.

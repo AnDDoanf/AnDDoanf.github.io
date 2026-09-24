@@ -42,7 +42,8 @@
     "previousPost": "Previous post",
     "nextPost": "Next post",
     "previousJournal": "Previous journal",
-    "nextJournal": "Next journal"
+    "nextJournal": "Next journal",
+    "journal": "Journal"
   },
   "poetry": {
     "readerLabel": "Poem reader",
@@ -110,11 +111,28 @@
     "onThisPage": "On this page"
   },
   "portfolio": {
-    "intro": "Intro", "contents": "Contents", "summary": "Summary", "experience": "Experience", "projects": "Projects", "skills": "Skills",
-    "moreAboutMe": "More About Me", "moreAboutMeButton": "Show more", "showLess": "Show less",
-    "project": "Project", "previousProjects": "Previous projects", "nextProjects": "Next projects",
-    "goToProjectPage": "Go to project page {page}", "downloadCv": "Download CV", "seeCv": "See My CV",
-    "categories": { "all": "All", "work": "Work", "church": "Church", "individual": "Individual", "gaming": "Gaming" },
+    "intro": "Intro",
+    "contents": "Contents",
+    "summary": "Summary",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "moreAboutMe": "More About Me",
+    "moreAboutMeButton": "Show more",
+    "showLess": "Show less",
+    "project": "Project",
+    "previousProjects": "Previous projects",
+    "nextProjects": "Next projects",
+    "goToProjectPage": "Go to project page {page}",
+    "downloadCv": "Download CV",
+    "seeCv": "See My CV",
+    "categories": {
+      "all": "All",
+      "work": "Work",
+      "church": "Church",
+      "individual": "Individual",
+      "gaming": "Gaming"
+    },
     "categoryDescriptions": {
       "all": "A comprehensive showcase of my professional, personal, community, and gaming projects.",
       "work": "Enterprise systems, full-stack portals, and landing sites developed during my professional internships and roles.",
@@ -124,10 +142,16 @@
     }
   },
   "me": {
-    "personBehindPortfolio": "The person behind the portfolio", "hello": "Hello, I’m Thuan.",
+    "personBehindPortfolio": "The person behind the portfolio",
+    "hello": "Hello, I’m Thuan.",
     "intro": "This is the less formal part of my story: what brings me joy, what I believe, and the future I am working toward.",
-    "backToPortfolio": "Back to portfolio", "hobbies": "Hobbies", "explore": "Explore",
-    "previousHobby": "Previous hobby", "nextHobby": "Next hobby", "chooseHobby": "Choose a hobby", "showHobby": "Show {title}"
+    "backToPortfolio": "Back to portfolio",
+    "hobbies": "Hobbies",
+    "explore": "Explore",
+    "previousHobby": "Previous hobby",
+    "nextHobby": "Next hobby",
+    "chooseHobby": "Choose a hobby",
+    "showHobby": "Show {title}"
   },
   "updating": {
     "title": "Updating",

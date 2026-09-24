@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 48: Ga-la-ti"
 date: 2026-10-01
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-ga-la-ti.jpg
 author:

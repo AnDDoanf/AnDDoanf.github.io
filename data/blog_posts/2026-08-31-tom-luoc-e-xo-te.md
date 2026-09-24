@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 17: Ê-xơ-tê"
 date: 2026-08-31
+category: faith
 tags: [christianity]
 image: /assets/post-covers/esther.jpg
 author: 

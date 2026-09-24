@@ -1,8 +1,12 @@
 ﻿---
 title: "DumbPhobia#008 SOLID Principles"
 date: 2026-04-06
+category: journal
 tags: [frontend]
 image: /assets/post-covers/dumbphobia-solid.jpg
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 > SOLID is not just an OOP concept for backend Java developers. Every principle maps directly to how you design React components, custom hooks, and frontend architecture — and mastering them is what makes code maintainable at scale.

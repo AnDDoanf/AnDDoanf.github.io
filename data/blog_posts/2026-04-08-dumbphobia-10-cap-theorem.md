@@ -1,8 +1,12 @@
 ﻿---
 title: "DumbPhobia#010 CAP Theorem"
 date: 2026-04-08
+category: journal
 tags: [system-design]
 image: /assets/post-covers/dumbphobia-cap.jpg
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 > CAP theorem is one of the most referenced — and most misunderstood — concepts in distributed systems. Whether you're designing a database, building a microservice, or answering a design design interview, understanding CAP at a deep level separates engineers who make intentional tradeoffs from those who just pick technologies at random.

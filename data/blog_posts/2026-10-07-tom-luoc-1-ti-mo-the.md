@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 54: 1 Ti-mô-thê"
 date: 2026-10-07
+category: faith
 tags: [christianity]
 image: /assets/post-covers/tom-luoc-1-ti-mo-the.jpg
 author:

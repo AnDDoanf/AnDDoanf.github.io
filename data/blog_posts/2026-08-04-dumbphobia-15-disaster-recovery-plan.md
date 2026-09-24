@@ -1,8 +1,12 @@
 ---
 title: DumbPhobia#015 Disaster Recovery Plan
 date: 2026-08-04
+category: journal
 tags: [system]
 image: /assets/post-covers/disaster-recovery-plan.webp
+author:
+  name: An Doan
+  link: https://anddoanf.github.io/
 ---
 
 # 1. Disaster Recovery Planning: How a Business Survives IT Disasters

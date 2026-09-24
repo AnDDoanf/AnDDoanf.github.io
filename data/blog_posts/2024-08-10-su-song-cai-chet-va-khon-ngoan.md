@@ -1,6 +1,7 @@
 ---
 title: Sự sống, Cái chết và Khôn ngoan
 date: 2024-08-10
+category: faith
 tags: [christianity, devotional]
 image: /assets/post-covers/life-death.jpg
 author: 

@@ -1,6 +1,7 @@
 ---
 title: Con người và thẩm mỹ
 date: 2024-08-18
+category: life
 tags: [learning]
 image: /assets/post-covers/aesthetic.jpg
 author: 

@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 16: Nê-hê-mi"
 date: 2026-08-30
+category: faith
 tags: [christianity]
 image: /assets/post-covers/nehemiah.jpg
 author: 

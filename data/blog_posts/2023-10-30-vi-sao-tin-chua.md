@@ -1,6 +1,7 @@
 ---
 title: Vì sao tin Chúa?
 date: 2023-10-30
+category: faith
 tags: [testimony, faith]
 image: /assets/post-covers/god-is-real.jpg
 author: 

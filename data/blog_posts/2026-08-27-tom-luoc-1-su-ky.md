@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 13: 1 Sử Ký"
 date: 2026-08-27
+category: faith
 tags: [christianity]
 image: /assets/post-covers/1chronicles.jpg
 author: 

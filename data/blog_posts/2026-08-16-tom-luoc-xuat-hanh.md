@@ -1,6 +1,7 @@
 ---
 title: "Tóm lược Kinh Thánh sách thứ 2: Xuất Hành"
 date: 2026-08-16
+category: faith
 tags: [christianity]
 image: /assets/post-covers/exodus.jpg
 author: 
