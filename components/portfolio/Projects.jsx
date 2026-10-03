@@ -205,10 +205,11 @@ export default function Projects({ initialProjects }) {
         onClickCapture={handleClickCapture}
       >
         <div className="portfolio-projects-slider-track">
-          {filteredProjects.map((project) => (
+          {filteredProjects.map((project, index) => (
             <div
               key={project.slug}
               className="portfolio-projects-slider-slide"
+              aria-hidden={index < currentIndex || index >= currentIndex + itemsPerView}
               style={{ transform: slideTransform }}
             >
               {renderProjectCard(project)}

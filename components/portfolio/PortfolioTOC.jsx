@@ -9,7 +9,7 @@ const tocItems = [
   { id: 'portfolio-experience', labelKey: 'portfolio.experience' },
   { id: 'portfolio-skills', labelKey: 'portfolio.skills' },
   { id: 'portfolio-projects', labelKey: 'portfolio.projects' },
-  // { id: 'portfolio-about', labelKey: 'portfolio.moreAboutMe' },
+  { id: 'portfolio-about', labelKey: 'portfolio.moreAboutMe' },
 ];
 
 export default function PortfolioTOC() {

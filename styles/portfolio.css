@@ -10,6 +10,7 @@
 
     width: min(100%, 360px);
     aspect-ratio: 1 / 1;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 
     animation: image-animated 8s ease-in-out infinite 1s;
 }
@@ -319,23 +320,94 @@ transform: scale(1.1);
     transform: translateY(-1px);
 }
 
+.portfolio-about-section {
+    gap: 0;
+}
+
+.portfolio-about-toggle .bi {
+    transition: transform 0.45s ease;
+}
+
+.portfolio-about-toggle[aria-expanded="true"] .bi {
+    transform: rotate(180deg);
+}
+
+.portfolio-me-panel {
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 0;
+    transform: translateY(-0.5rem);
+    transition: height 0.45s ease, margin-top 0.45s ease,
+        opacity 0.3s ease, transform 0.45s ease;
+}
+
+.portfolio-me-panel.is-open {
+    margin-top: 2rem;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .portfolio-me-frame {
     display: block;
     width: 100%;
     min-height: 900px;
     border: 0;
     background: transparent;
-    animation: portfolio-about-reveal 0.3s ease both;
+    transition: opacity 0.3s ease;
 }
 
-@keyframes portfolio-about-reveal {
-    from {
-        opacity: 0;
-        transform: translateY(-0.5rem);
+.portfolio-me-skeleton {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.25rem;
+}
+
+.portfolio-me-skeleton > div {
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    background: var(--border);
+    animation: portfolio-me-skeleton-pulse 1.4s ease-in-out infinite alternate;
+}
+
+.portfolio-me-skeleton-video {
+    width: 100%;
+    height: 320px;
+    max-height: 50vw;
+}
+
+.portfolio-me-skeleton-title {
+    width: 40%;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.portfolio-me-skeleton-line {
+    width: 100%;
+    height: 1rem;
+}
+
+.portfolio-me-skeleton-line.short {
+    width: 65%;
+}
+
+@keyframes portfolio-me-skeleton-pulse {
+    from { opacity: 0.35; }
+    to { opacity: 0.7; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .portfolio-me-panel,
+    .portfolio-me-frame,
+    .portfolio-about-toggle .bi {
+        transition: none;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .portfolio-me-skeleton > div {
+        animation: none;
+        opacity: 0.5;
     }
 }
 
@@ -741,9 +813,9 @@ transform: scale(1.1);
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  overflow: hidden;
-  padding: 1.5rem 0.5rem 2.25rem 0.5rem; /* generous padding to prevent shadow clipping with exact symmetry */
-  margin: -1.5rem -0.5rem -2.25rem -0.5rem;
+  /* Let shadows paint beyond the track without widening the page. */
+  overflow: clip;
+  overflow-clip-margin: 4rem;
   touch-action: pan-y;
   user-select: none;
 }
@@ -764,13 +836,13 @@ transform: scale(1.1);
   transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+.portfolio-projects-slider-slide[aria-hidden="true"] {
+  visibility: hidden;
+}
+
 @media screen and (max-width: 1024px) {
   .portfolio-projects-slider-container {
     padding: 0 0.25rem;
-  }
-  .portfolio-projects-slider-viewport {
-    padding: 1.25rem 0.5rem 2rem 0.5rem;
-    margin: -1.25rem -0.5rem -2rem -0.5rem;
   }
   .portfolio-projects-slider-track {
     gap: 1.25rem;
