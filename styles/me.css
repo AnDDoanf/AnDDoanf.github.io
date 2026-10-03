@@ -382,9 +382,8 @@
 
 .me-qa-item {
   max-height: 6rem;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
   overflow: hidden;
-  border-bottom: 2px solid var(--border);
   transition: max-height 0.3s ease, color 0.3s ease;
 }
 
@@ -397,7 +396,9 @@
 }
 
 .me-qa-question {
-  display: block;
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
   width: 100%;
   padding: 0;
   border: 0;
@@ -407,8 +408,19 @@
   font-weight: 600;
   text-align: left;
   cursor: pointer;
-  opacity: 0.45;
+  opacity: 0.75;
   transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.me-qa-chevron {
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.me-qa-question[aria-expanded="true"] .me-qa-chevron {
+  transform: rotate(90deg);
 }
 
 .me-qa-question span {
@@ -524,6 +536,7 @@
   .portfolio-me-frame,
   .me-hobby-card,
   .me-hobby-image,
+  .me-qa-chevron,
   .me-qa-answer {
     animation: none;
     transition: none;

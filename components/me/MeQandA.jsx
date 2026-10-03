@@ -21,8 +21,9 @@ export default function MeQandA({ items }) {
                 className="me-qa-question"
                 aria-expanded={isOpen}
                 aria-controls={answerId}
-                onClick={() => setActiveIndex(index)}
+                onClick={() => setActiveIndex((current) => current === index ? null : index)}
               >
+                <i className="bi bi-chevron-right me-qa-chevron" aria-hidden="true" />
                 <span>{item.question}</span>
               </button>
 
