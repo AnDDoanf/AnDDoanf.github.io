@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+/* Keep interface text unselectable, with exceptions for reading content. */
+body * {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.blog-content,
+.blog-content *,
+.poem-content,
+.poem-content *,
+.post-content.poetry,
+.post-content.poetry * {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
 /* ================================
    SOLARIZED THEME VARIABLES
 ================================ */
@@ -198,7 +214,7 @@ a:hover {
 
 .post-index-page {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding-top: 2.4rem;
   background: transparent;
 }

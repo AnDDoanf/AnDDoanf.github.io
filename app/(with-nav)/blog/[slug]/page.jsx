@@ -5,7 +5,7 @@ import {
   extractHeadings,
 } from "@/app/utils/extractHeadings";
 import MarkdownContent from "@/components/blog/MarkdownContent";
-import getPostMetadata from "@/app/utils/getPostMetadata";
+import getPostMetadata, { resolvePostCategory } from "@/app/utils/getPostMetadata";
 import PostNavigator from "@/components/blog/PostNavigator";
 import BlogPostMetaHeader from "@/components/blog/BlogPostMetaHeader";
 import TableOfContents from "@/components/blog/TableOfContent";
@@ -19,7 +19,11 @@ function getPostContent(slug) {
     notFound();
   }
 
-  return matter(fs.readFileSync(file, "utf-8"));
+  const post = matter(fs.readFileSync(file, "utf-8"));
+  if (resolvePostCategory(post.data.category) === "draft") {
+    notFound();
+  }
+  return post;
 }
 
 export async function generateStaticParams() {
@@ -72,10 +76,12 @@ export default async function BlogPostPage({ params }) {
           author={post.data.author}
         />
 
-        <MarkdownContent
-          content={post.content}
-          resolveHeadingId={resolveHeadingId}
-        />
+        <div className="blog-content">
+          <MarkdownContent
+            content={post.content}
+            resolveHeadingId={resolveHeadingId}
+          />
+        </div>
 
         <PostNavigator
           previousPost={previousPost}

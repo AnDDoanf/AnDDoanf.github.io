@@ -67,7 +67,7 @@ const JOURNAL_TAGS = new Set([
 export function resolvePostCategory(rawCategory, tags = [], categories = []) {
     if (rawCategory) {
         const c = String(rawCategory).trim().toLowerCase();
-        if (c === "life" || c === "faith" || c === "journal") {
+        if (c === "life" || c === "faith" || c === "journal" || c === "draft") {
             return c;
         }
     }
@@ -138,6 +138,7 @@ export default function getPostMetadata(basePath) {
         })
 
         .filter((post) => {
+            if (post.category === "draft") return false;
             if (!post.date) return true; 
             return post.date <= now;
         })
