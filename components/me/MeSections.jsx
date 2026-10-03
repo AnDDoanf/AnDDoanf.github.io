@@ -26,7 +26,7 @@ function SectionBody({ section }) {
     case "faith-testimony":
       return <FaithTimeline milestones={section.milestones ?? []} />;
     case "vision-board":
-      return <VisionBoard items={section.items ?? []} />;
+      return <VisionBoard core={section.core} items={section.items ?? []} />;
     case "q-and-a":
       return <MeQandA items={section.items ?? []} />;
     default:

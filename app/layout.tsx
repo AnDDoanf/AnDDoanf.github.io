@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "katex/dist/katex.min.css";
+import "@xyflow/react/dist/style.css";
 import "@/styles/globals.css";
 import "@/styles/gallery.css";
 import "@/styles/portfolio.css";

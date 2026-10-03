@@ -369,6 +369,96 @@
 .me-vision-canvas {
   display: block;
   width: 100%;
+  height: clamp(480px, 75vh, 760px);
+}
+
+.me-vision-shell .react-flow {
+  --xy-background-color: var(--bg-alt);
+  --xy-controls-button-background-color-default: var(--card);
+  --xy-controls-button-background-color-hover-default: var(--bg);
+  --xy-controls-button-color-default: var(--text);
+  --xy-controls-button-border-color-default: var(--border);
+  --xy-attribution-background-color-default: var(--card);
+}
+
+.me-vision-hint {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.me-vision-node {
+  width: 280px;
+  border: 2px solid var(--vision-accent);
+  border-radius: 18px;
+  background: var(--bg);
+  box-shadow: 0 8px 24px var(--shadow);
+  color: var(--text);
+}
+
+.me-vision-node.is-core {
+  border-width: 4px;
+  box-shadow: 0 0 0 8px var(--card), 0 12px 32px var(--shadow);
+}
+
+.me-vision-node-content {
+  max-height: 408px;
+  overflow: auto;
+  padding: 20px;
+  border-radius: 16px;
+  overflow-wrap: anywhere;
+}
+
+.me-vision-node img {
+  display: block;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+.me-vision-node h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  color: var(--heading);
+}
+
+.me-vision-node p {
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 1.55;
+  white-space: pre-line;
+}
+
+.me-vision-node .me-vision-core-label {
+  font-size: 11px;
+  color: var(--vision-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.me-vision-node blockquote {
+  margin: 0 0 14px;
+  padding-left: 12px;
+  border-left: 3px solid var(--vision-accent);
+  font-style: italic;
+}
+
+.me-vision-node cite { font-size: 12px; }
+
+.me-vision-node .react-flow__handle {
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.me-vision-shell .react-flow__node:focus-visible .me-vision-node {
+  outline: 3px solid var(--link);
+  outline-offset: 6px;
 }
 
 /* Q&A */
