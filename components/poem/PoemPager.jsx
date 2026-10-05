@@ -9,6 +9,50 @@ export default function PoemPager({ poems }) {
   const activePoemRef = useRef(null);
   const [index, setIndex] = useState(0);
   const [isListOpen, setIsListOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (!poems?.length) return;
+
+    const syncPoemFromUrl = () => {
+      let slug;
+      try {
+        slug = decodeURIComponent(window.location.hash.slice(1));
+      } catch {
+        slug = "";
+      }
+      const poemIndex = poems.findIndex(poem => poem.slug === slug);
+      const nextIndex = poemIndex >= 0 ? poemIndex : 0;
+      setIndex(nextIndex);
+      setIsListOpen(false);
+
+      if (poemIndex < 0) {
+        const url = new URL(window.location.href);
+        url.hash = poems[nextIndex].slug;
+        window.history.replaceState(window.history.state, "", url);
+      }
+    };
+
+    syncPoemFromUrl();
+    window.addEventListener("hashchange", syncPoemFromUrl);
+    window.addEventListener("popstate", syncPoemFromUrl);
+    return () => {
+      window.removeEventListener("hashchange", syncPoemFromUrl);
+      window.removeEventListener("popstate", syncPoemFromUrl);
+    };
+  }, [poems]);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 640px)");
+    const updateViewport = () => {
+      setIsMobile(mediaQuery.matches);
+      if (!mediaQuery.matches) setIsListOpen(false);
+    };
+
+    updateViewport();
+    mediaQuery.addEventListener("change", updateViewport);
+    return () => mediaQuery.removeEventListener("change", updateViewport);
+  }, []);
 
   useEffect(() => {
     activePoemRef.current?.scrollIntoView({
@@ -21,16 +65,24 @@ export default function PoemPager({ poems }) {
     return null;
   }
 
+  const selectPoem = (poemIndex) => {
+    const url = new URL(window.location.href);
+    url.hash = poems[poemIndex].slug;
+    if (url.href !== window.location.href) {
+      window.history.pushState(window.history.state, "", url);
+    }
+    setIndex(poemIndex);
+    setIsListOpen(false);
+  };
+
   const prev = () => {
     if (index > 0) {
-      setIndex(index - 1);
-      setIsListOpen(false);
+      selectPoem(index - 1);
     }
   };
   const next = () => {
     if (index < poems.length - 1) {
-      setIndex(index + 1);
-      setIsListOpen(false);
+      selectPoem(index + 1);
     }
   };
   const currentPoem = poems[index];
@@ -59,9 +111,10 @@ export default function PoemPager({ poems }) {
             <button
               type="button"
               className="poem-progress"
+              disabled={!isMobile}
               onClick={() => setIsListOpen(!isListOpen)}
               aria-live="polite"
-              aria-expanded={isListOpen}
+              aria-expanded={isMobile ? isListOpen : undefined}
             >
               <p className="poem-progress-label">{t("poetry.progressLabel")}</p>
               <span className="poem-progress-value">
@@ -111,10 +164,7 @@ export default function PoemPager({ poems }) {
               >
                 <button
                   type="button"
-                  onClick={() => {
-                    setIndex(poemIndex);
-                    setIsListOpen(false);
-                  }}
+                  onClick={() => selectPoem(poemIndex)}
                   aria-current={isActive ? "true" : undefined}
                 >
                   <span className="poem-toc-index">

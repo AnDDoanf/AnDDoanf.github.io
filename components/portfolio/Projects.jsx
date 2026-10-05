@@ -64,10 +64,10 @@ export default function Projects({ initialProjects }) {
   }
   const uniquePageIndices = Array.from(new Set(pageIndices));
 
-  // Auto-cap current index if it goes out of bounds on viewport change
+  // Keep the selected index on a valid page when the viewport changes.
   useEffect(() => {
-    setCurrentIndex(prev => (prev > maxIndex ? maxIndex : prev));
-  }, [maxIndex]);
+    setCurrentIndex(prev => Math.min(Math.floor(prev / itemsPerView) * itemsPerView, maxIndex));
+  }, [itemsPerView, maxIndex]);
 
   const handlePrev = () => {
     if (maxIndex === 0) return;
@@ -204,13 +204,13 @@ export default function Projects({ initialProjects }) {
         onTouchEnd={handleTouchEnd}
         onClickCapture={handleClickCapture}
       >
-        <div className="portfolio-projects-slider-track">
+        <div className="portfolio-projects-slider-track" style={{ transform: slideTransform }}>
           {filteredProjects.map((project, index) => (
             <div
               key={project.slug}
               className="portfolio-projects-slider-slide"
               aria-hidden={index < currentIndex || index >= currentIndex + itemsPerView}
-              style={{ transform: slideTransform }}
+              inert={index < currentIndex || index >= currentIndex + itemsPerView}
             >
               {renderProjectCard(project)}
             </div>
@@ -244,6 +244,7 @@ export default function Projects({ initialProjects }) {
             onClick={() => setCurrentIndex(slideIndex)}
             className={`portfolio-projects-slider-dot ${currentIndex === slideIndex ? "active" : ""}`}
             aria-label={t("portfolio.goToProjectPage", { page: idx + 1 })}
+            aria-current={currentIndex === slideIndex ? "page" : undefined}
           />
         ))}
       </div>

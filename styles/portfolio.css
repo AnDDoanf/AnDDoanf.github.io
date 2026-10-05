@@ -826,6 +826,7 @@ transform: scale(1.1);
   width: 100%;
   max-width: 100%;
   min-width: 0;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .portfolio-projects-slider-slide {
@@ -833,7 +834,6 @@ transform: scale(1.1);
   width: calc((100% - 1.75rem) / 2);
   margin-right: 0;
   box-sizing: border-box;
-  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .portfolio-projects-slider-slide[aria-hidden="true"] {
@@ -921,8 +921,9 @@ transform: scale(1.1);
   background: var(--text-muted);
 }
 
-.portfolio-projects-slider-dot:focus {
-  outline: none;
+.portfolio-projects-slider-dot:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 4px;
 }
 
 .portfolio-projects-slider-dot.active {

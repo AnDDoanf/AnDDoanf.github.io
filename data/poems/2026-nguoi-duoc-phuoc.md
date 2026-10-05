@@ -8,7 +8,7 @@ Tay vung, chân bước, có ích gì?
 Vứt đi nguyên cả tuổi xuân thì,  
 Theo mê ảo, không gì có ích
 
-Chọn ất cả mọi điều mình thích  
+Chọn tất cả mọi điều mình thích  
 Lại bỏ qua số ít mình cần.  
 Thân nam nhi, vô dũng vô chí,  
 Vô ý, vô tứ, vô phúc, vô phần. 
