@@ -3,8 +3,6 @@
 import TopRightControls from "@/components/ui/TopRightControls";
 import Link from "next/link";
 import TypingText from "@/components/ui/TypingText";
-import MyImgSVG from "@/data/assets/an-doan.svg";
-import Image from "next/image";
 import { useI18n } from "@/components/i18n/I18nProvider";
 
 export default function HomePage() {
@@ -15,7 +13,7 @@ export default function HomePage() {
       <section className="home-hero home-animate-container">
         <div className="home-left home-animate-left">
           <div className="signature home-title home-animate-item">
-            <Image src={MyImgSVG} alt="An Doan" width={300} height={150} />
+            <span className="signature-mark" role="img" aria-label="An Doan" />
           </div>
 
           <div className="home-description home-animate-item delay-1">

@@ -22,6 +22,15 @@
     "expandNavigation": "Expand navigation"
   },
   "theme": {
+    "choose": "Choose theme",
+    "pairs": {
+      "solarized": "Solarized",
+      "ocean": "Ocean",
+      "forest": "Forest",
+      "rose": "Rose",
+      "lavender": "Lavender",
+      "slate": "Slate"
+    },
     "light": "light",
     "dark": "dark",
     "switchTo": "Switch to {theme} theme"
@@ -58,7 +67,7 @@
     "portfolio": "My Portfolio",
     "blog": "Read a recent blog",
     "journal": "Dive into tech world",
-    "poetry": "Explore my poetry passion",
+    "poetry": "Explore my poetry hub",
     "culinary": "Explore my culinary hobby",
     "gallery": "Browse my galleries",
     "showroom": "Showroom"

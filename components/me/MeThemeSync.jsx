@@ -1,21 +1,16 @@
 "use client";
 
 import { useEffect } from "react";
+import { subscribeToTheme } from "@/components/ui/themeState";
 
 export default function MeThemeSync() {
   useEffect(() => {
     document.documentElement.classList.toggle("is-embedded", window.self !== window.top);
 
-    const applySavedTheme = () => {
-      const theme = localStorage.getItem("theme") || "light";
-      document.documentElement.setAttribute("data-theme", theme);
-    };
-
-    applySavedTheme();
-    window.addEventListener("storage", applySavedTheme);
+    const unsubscribe = subscribeToTheme(() => {});
 
     return () => {
-      window.removeEventListener("storage", applySavedTheme);
+      unsubscribe();
       document.documentElement.classList.remove("is-embedded");
     };
   }, []);

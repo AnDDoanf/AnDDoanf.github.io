@@ -52,7 +52,8 @@ Tôi, phước hạnh hơn những người khác, nghe được những lời d
 > Đấng Thánh của Y-sơ-ra-ên  
 > Tôn vinh ngươi."
 
-
+Đúng vậy, Chúa đã lập tôi làm nhân chứng của Ngài cho mọi người xung quanh tôi. 
+Và Chúa sẽ không ngưng những công việc Ngài đã bắt đầu. 
 
 > Hãy tìm kiếm CHÚA đang khi mình có thể gặp được,  
 > Hãy kêu cầu đang khi Ngài ở gần.  

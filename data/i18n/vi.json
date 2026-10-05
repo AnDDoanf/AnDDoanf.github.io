@@ -22,6 +22,15 @@
     "expandNavigation": "Mở rộng điều hướng"
   },
   "theme": {
+    "choose": "Chọn giao diện",
+    "pairs": {
+      "solarized": "Solarized",
+      "ocean": "Đại dương",
+      "forest": "Rừng xanh",
+      "rose": "Hoa hồng",
+      "lavender": "Oải hương",
+      "slate": "Xám đá"
+    },
     "light": "sáng",
     "dark": "tối",
     "switchTo": "Chuyển sang giao diện {theme}"
