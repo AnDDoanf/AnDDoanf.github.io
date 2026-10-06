@@ -52,7 +52,7 @@ export default function ThemeToggle() {
       <button
         ref={triggerRef}
         type="button"
-        className="theme-icon"
+        className="theme-icon theme-icon-picker"
         onClick={(event) => {
           // Mouse hover already opens the panel; preserve tap/keyboard toggling.
           if (event.detail > 0 && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
