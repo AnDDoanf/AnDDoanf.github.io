@@ -69,9 +69,9 @@ export default function HomePage() {
           </li>
 
           <li className="home-animate-link delay-5">
-            <i className="bi bi-shop" />
-            <Link href="/showroom">
-              <div className="home-nav">{t("home.showroom")}</div>
+            <i className="bi bi-diagram-3" />
+            <Link href="/mindmap">
+              <div className="home-nav">{t("home.mindmaps")}</div>
             </Link>
           </li>
 

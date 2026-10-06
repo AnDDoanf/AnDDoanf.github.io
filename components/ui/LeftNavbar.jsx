@@ -19,7 +19,7 @@ const NAV_ITEMS = [
   { href: "/poetry", icon: "bi-feather", labelKey: "nav.poems" },
   // { href: "/updating", icon: "bi-egg-fried", labelKey: "nav.culinary" },
   { href: "/gallery", icon: "bi-images", labelKey: "nav.gallery" },
-  { href: "/showroom", icon: "bi-shop", labelKey: "nav.showrooms" },
+  { href: "/mindmap", icon: "bi-diagram-3", labelKey: "nav.mindmaps" },
 ];
 
 function isNavItemActive(pathname, href) {

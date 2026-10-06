@@ -6,7 +6,7 @@
   "branch": "Dòng họ Đoàn - 4 Đại Chi (Ất nhất chi, Ất nhị chi, Ất tam chi, Ất tứ chi)",
   "origin": "",
   "motto": "Cây Gia Phả 15 Đời Dòng Họ Đoàn",
-  "coverSrc": "/showroom/giapha-cover.svg",
+  "coverSrc": "/assets/mindmaps/giapha-cover.svg",
   "categories": [
     "Thủy Tổ",
     "Đời thứ 2",

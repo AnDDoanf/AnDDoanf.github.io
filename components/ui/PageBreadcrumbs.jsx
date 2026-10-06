@@ -10,8 +10,8 @@ const ROUTE_LABEL_KEYS = {
   blog: "nav.blogs",
   journal: "nav.journal",
   poetry: "nav.poems",
+  mindmap: "nav.mindmaps",
   gallery: "nav.gallery",
-  showroom: "nav.showrooms",
   culinary: "nav.culinary",
   updating: "updating.title",
 };

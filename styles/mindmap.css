@@ -1,0 +1,67 @@
+.mindmap-library { min-width: 0; }
+.mindmap-detail {
+  width: 100%; min-width: 0; max-width: 1240px; margin: 0 auto; padding: 1.5rem 0 3rem;
+}
+.mindmap-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem; }
+.mindmap-heading h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; margin: .4rem 0 .8rem; color: var(--heading); }
+.mindmap-heading p, .mindmap-toolbar p { color: var(--text-muted); }
+.mindmap-eyebrow { font-size: .75rem; text-transform: uppercase; letter-spacing: .12em; color: var(--link) !important; }
+.mindmap-library-tools { margin-bottom: 2rem; }
+.mindmap-filters-hidden { visibility: hidden; }
+.mindmap-action { display: inline-flex; gap: .6rem; align-items: center; justify-content: center; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: .7rem; padding: .65rem 1rem; font: inherit; font-size: .9rem; cursor: pointer; }
+.mindmap-action { flex-shrink: 0; }
+.mindmap-action:hover { border-color: var(--link); color: var(--link); }
+.mindmap-library-tools input { min-width: 0; }
+.mindmap-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.mindmap-card { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border); border-radius: 1.25rem; color: var(--text); background: var(--surface); text-decoration: none; transition: border-color .2s, transform .2s; }
+.mindmap-card:hover { border-color: var(--link); transform: translateY(-3px); }
+.mindmap-card-preview { aspect-ratio: 16 / 9; flex-shrink: 0; display: flex; align-items: center; justify-content: center; gap: 1.5rem; background: var(--bg-alt); color: var(--blue); position: relative; }
+.mindmap-card-preview.learning { color: var(--green); }
+.mindmap-card-preview > i { font-size: 3.2rem; z-index: 1; background: var(--surface); padding: .8rem 1.1rem; border-radius: 1rem; border: 1px solid var(--border); }
+.mindmap-card-preview > span { width: 3rem; height: 1.5rem; border: 1px solid currentColor; border-radius: .4rem; position: absolute; opacity: .45; left: 16%; top: 24%; }
+.mindmap-card-preview > span:nth-of-type(2) { left: auto; right: 16%; top: 30%; }
+.mindmap-card-preview > span:nth-of-type(3) { left: auto; right: 21%; top: 68%; }
+.mindmap-card-body { padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: .4rem; flex: 1; }
+.mindmap-card-body h2, .mindmap-card-body p { margin: 0; }
+.mindmap-card-body .mindmap-eyebrow { font-size: .65rem; line-height: 1.4; }
+.mindmap-card-body h2 { font-size: 1.15rem; line-height: 1.3; color: var(--heading); }
+.mindmap-card-body > p:not(.mindmap-eyebrow) { font-size: .875rem; color: var(--text-muted); line-height: 1.45; }
+.mindmap-card-footer { display: flex; align-items: center; justify-content: space-between; padding-top: .35rem; margin-top: auto; font-size: .8rem; line-height: 1.4; color: var(--link); }
+.mindmap-card-footer > span { font-size: inherit; }
+.mindmap-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; font-size: .9rem; }
+.mindmap-canvas { height: clamp(460px, 72vh, 850px); width: 100%; min-width: 0; position: relative; border: 1px solid var(--border); border-radius: 1rem; overflow: hidden; background: var(--bg); color: var(--text); }
+.mindmap-canvas:fullscreen { height: 100vh; width: 100vw; border-radius: 0; }
+.mindmap-canvas .react-flow { --xy-background-color: var(--bg); --xy-edge-stroke: var(--text-muted); --xy-controls-button-background-color: var(--surface); --xy-controls-button-background-color-hover: var(--bg-alt); --xy-controls-button-color: var(--text); --xy-controls-button-color-hover: var(--link); --xy-controls-button-border-color: var(--border); --xy-minimap-background-color: var(--surface); --xy-minimap-mask-background-color: var(--shadow); --xy-edge-label-background-color: var(--surface); --xy-edge-label-color: var(--text); }
+.mindmap-canvas .react-flow__handle { width: 7px; height: 7px; background: var(--link); border-color: var(--surface); }
+.mindmap-canvas .react-flow__controls-button { width: 32px; height: 32px; }
+.mindmap-canvas .react-flow__node.selected > article { outline: 2px solid var(--link); }
+.mindmap-topic { width: 240px; height: 280px; padding: 1rem; background: var(--surface); border: 1px solid var(--border); border-top: 3px solid var(--green); border-radius: .8rem; box-shadow: 0 4px 14px var(--shadow); display: flex; flex-direction: column; gap: .5rem; }
+.mindmap-topic h2 { font-size: 1rem; line-height: 1.3; color: var(--heading); overflow-wrap: anywhere; }
+.mindmap-topic p { font-size: .8rem; line-height: 1.5; color: var(--text-muted); overflow: auto; flex: 1; }
+.mindmap-topic a { font-size: .8rem; color: var(--link); }
+.mindmap-family { display: flex; padding: 12px; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); box-shadow: 0 4px 14px var(--shadow); }
+.mindmap-person { display: flex; flex: 0 0 150px; flex-direction: column; align-items: center; gap: .4rem; width: 150px; min-height: 145px; padding: .5rem; background: transparent; border: 0; border-radius: .6rem; color: var(--text); cursor: pointer; font: inherit; }
+.mindmap-person + .mindmap-person { border-left: 1px solid var(--border); }
+.mindmap-person strong { font-size: .85rem; line-height: 1.4; }
+.mindmap-person > span { font-size: .7rem; color: var(--text-muted); }
+.mindmap-person:hover, .mindmap-person.is-highlighted { background: var(--bg-alt); outline: 2px solid var(--link); }
+.mindmap-branch-panel { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; max-width: calc(100% - 30px); background: var(--surface); border: 1px solid var(--border); border-radius: .7rem; padding: .7rem; font-size: .85rem; }
+.mindmap-notes { max-width: 760px; margin: 2rem 0; line-height: 1.75; }
+.mindmap-notes h2 { font-size: 1.5rem; margin-bottom: .8rem; }
+.mindmap-notes p { margin-bottom: 1rem; }
+.mindmap-canvas-message { position: absolute; top: 1rem; right: 1rem; background: var(--surface); padding: .5rem; }
+.mindmap-action:focus-visible, .mindmap-card:focus-visible, .mindmap-person:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+@media (max-width: 700px) {
+  .mindmap-grid { grid-template-columns: 1fr; }
+  .mindmap-heading, .mindmap-toolbar { flex-direction: column; align-items: flex-start; }
+  .mindmap-library-tools input { width: 100%; }
+  .mindmap-canvas { height: 65vh; min-height: 420px; }
+  .mindmap-canvas .react-flow__minimap { display: none; }
+  .mindmap-detail { padding-top: .5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mindmap-card { transition: none; }
+}
+
+.mindmap-cover { object-fit: cover; }
+.mindmap-topic-cover { position: relative; height: 96px; flex-shrink: 0; margin: -1rem -1rem .2rem; overflow: hidden; border-radius: .6rem .6rem 0 0; }

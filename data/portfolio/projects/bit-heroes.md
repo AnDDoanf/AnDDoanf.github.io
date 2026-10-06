@@ -3,7 +3,7 @@ title: "Familiar Fusion Atlas"
 category: "Gaming"
 description: "A static fusion tracking and loadout database for the game Bit Heroes, synced with Fandom snapshots."
 descriptionVi: "Cơ sở dữ liệu tĩnh theo dõi công thức dung hợp và bộ trang bị cho trò chơi Bit Heroes, đồng bộ từ các bản chụp dữ liệu Fandom."
-image: "/showroom/bit-heroes.png"
+image: "/assets/projects/bit-heroes.png"
 tags: ["Next.js", "React", "Static Site Export", "Node.js parser", "GitHub Pages"]
 links:
   live: "https://anddoanf.github.io/bit-heroes"

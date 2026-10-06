@@ -32,11 +32,8 @@ items:
     titleVi: Ô tô & thiết kế
     description: I am fascinated by the meeting point between engineering, performance, proportion, and the personality of a well-designed machine.
     descriptionVi: Tôi bị cuốn hút bởi điểm giao thoa giữa kỹ thuật, hiệu năng, tỷ lệ và cá tính của một cỗ máy được thiết kế chỉn chu.
-    image: /showroom/cronix.png
-    alt: Automotive design from the showroom
-    href: /showroom
-    buttonLabel: Enter the showroom
-    buttonLabelVi: Ghé thăm showroom
+    image: /assets/projects/cronix.png
+    alt: Cronix project preview
   - title: Building side projects
     titleVi: Làm dự án cá nhân
     description: Small projects give me room to test an idea, learn unfamiliar tools, make mistakes quickly, and turn curiosity into something useful.

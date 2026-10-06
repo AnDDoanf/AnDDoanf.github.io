@@ -3,7 +3,7 @@ title: "Song Collections"
 category: "Church"
 description: "A real-time search and projection web application for Christian hymns, optimized for desktop and mobile devices."
 descriptionVi: "Ứng dụng web tìm kiếm và trình chiếu thánh ca Cơ Đốc theo thời gian thực, được tối ưu cho cả máy tính và thiết bị di động."
-image: "/showroom/thanhcahttlnc.png"
+image: "/assets/projects/thanhcahttlnc.png"
 tags: ["React", "Create React App", "LocalStorage", "Excel integration"]
 links:
   live: "https://anddoanf.github.io/App-Worship-songs-collection/"

@@ -16,7 +16,7 @@ const EMPTY_TREE = {
   chronicle: "",
 };
 
-export default function GiaPhaClient({ initialTrees = [], initialTreeId }) {
+export default function GiaPhaClient({ initialTrees = [], initialTreeId, treeLinks = {} }) {
   const { lang, t } = useI18n();
 
   const activeTreeId = initialTreeId || initialTrees[0]?.id || "doan-toc";
@@ -64,7 +64,7 @@ export default function GiaPhaClient({ initialTrees = [], initialTreeId }) {
               {initialTrees.map((tr) => (
                 <Link
                   key={tr.id}
-                  href={`/tree/${tr.id}`}
+                  href={treeLinks[tr.id] || `/tree/${tr.id}`}
                   className={`giapha-switcher-pill ${
                     tr.id === activeTreeId ? "is-active" : ""
                   }`}

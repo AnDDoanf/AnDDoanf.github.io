@@ -5,14 +5,14 @@
     "vi": "Tiếng Việt"
   },
   "nav": {
+    "mindmaps": "Sơ đồ tư duy",
     "home": "Trang chủ",
     "about": "Giới thiệu",
     "blogs": "Blog",
     "journal": "Tạp chí",
     "poems": "Thơ",
     "culinary": "Ẩm thực",
-    "gallery": "Ảnh",
-    "showrooms": "Showroom"
+    "gallery": "Ảnh"
   },
   "ui": {
     "primaryNavigation": "Điều hướng chính",
@@ -64,13 +64,13 @@
     "next": "Tiếp"
   },
   "home": {
+    "mindmaps": "Khám phá sơ đồ tư duy",
     "portfolio": "Hồ sơ của tôi",
     "blog": "Đọc blog mới nhất",
     "journal": "Bài viết công nghệ",
     "poetry": "Khám phá đam mê thơ",
     "culinary": "Khám phá sở thích ẩm thực",
-    "gallery": "Xem bộ sưu tập",
-    "showroom": "Showroom"
+    "gallery": "Xem bộ sưu tập"
   },
   "gallery": {
     "label": "Ảnh",
@@ -110,14 +110,6 @@
     "openMedia": "Mở {name}",
     "closeImage": "Đóng ảnh",
     "openInDrive": "Xem video trên Google Drive"
-  },
-  "showroom": {
-    "title": "Showroom",
-    "subtitle": "Các sản phẩm web (app đã deploy, demo và thử nghiệm).",
-    "viewProduction": "Xem sản phẩm",
-    "viewDescription": "Xem mô tả",
-    "viewRepo": "Xem repo",
-    "onThisPage": "Mục lục"
   },
   "portfolio": {
     "intro": "Giới thiệu",
@@ -215,7 +207,6 @@
     "closeModal": "Đóng",
     "viewProfile": "Xem hồ sơ",
     "noData": "Không tìm thấy thành viên hoặc sự kiện phù hợp.",
-    "backToShowroom": "Quay lại Showroom",
     "viewInTree": "Định vị trên Cây",
     "quickStats": "Tổng quan",
     "maidenName": "Tên thời con gái",
