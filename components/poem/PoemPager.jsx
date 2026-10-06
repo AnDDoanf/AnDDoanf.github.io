@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { useI18n } from "@/components/i18n/I18nProvider";
+import Button from "@/components/ui/Button";
 
 export default function PoemPager({ poems }) {
   const { t } = useI18n();
@@ -98,15 +99,16 @@ export default function PoemPager({ poems }) {
       <section className="poem-book" aria-label={t("poetry.readerLabel")}>
         <article className="poem-page" key={currentPoem.slug}>
           <div className="poem-controls">
-            <button
-              type="button"
+            <Button
+              variant="subtle"
+              size="sm"
+              icon="bi-arrow-left"
               className="poem-nav-button"
               onClick={prev}
               disabled={index === 0}
             >
-              <i className="bi bi-arrow-left" aria-hidden="true" />
-              <span>{t("poetry.previous")}</span>
-            </button>
+              {t("poetry.previous")}
+            </Button>
 
             <button
               type="button"
@@ -125,15 +127,17 @@ export default function PoemPager({ poems }) {
               </span>
             </button>
 
-            <button
-              type="button"
+            <Button
+              variant="subtle"
+              size="sm"
+              icon="bi-arrow-right"
+              iconPosition="right"
               className="poem-nav-button poem-nav-button-next"
               onClick={next}
               disabled={index === poems.length - 1}
             >
-              <span>{t("poetry.next")}</span>
-              <i className="bi bi-arrow-right" aria-hidden="true" />
-            </button>
+              {t("poetry.next")}
+            </Button>
           </div>
 
           <div className="poem-page-body">

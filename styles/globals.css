@@ -911,6 +911,26 @@ button {
   border-color: var(--blue);
 }
 
+.ui-btn-subtle {
+  background: var(--bg);
+  color: var(--text);
+  border-color: transparent;
+  box-shadow: 0 4px 14px var(--shadow);
+}
+
+.ui-btn-subtle:hover:not(:disabled) {
+  background: var(--bg-alt);
+  border-color: transparent;
+  color: var(--link) !important;
+  box-shadow: 0 6px 18px var(--shadow);
+  transform: translateY(-1px);
+}
+
+.ui-btn-subtle:hover:not(:disabled) span,
+.ui-btn-subtle:hover:not(:disabled) i {
+  color: var(--link) !important;
+}
+
 pre,
 code {
   font-family: "JetBrains Mono", "Fira Code", monospace;

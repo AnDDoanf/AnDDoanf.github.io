@@ -6,7 +6,7 @@ import Link from "next/link";
  * Shared Button Component
  *
  * @param {Object} props
- * @param {"primary" | "secondary" | "outline" | "ghost" | "active-root"} [props.variant="secondary"]
+ * @param {"primary" | "secondary" | "outline" | "ghost" | "active-root" | "subtle"} [props.variant="secondary"]
  * @param {"xs" | "sm" | "md" | "lg"} [props.size="md"]
  * @param {string | React.ReactNode} [props.icon] - Bootstrap icon class (e.g. "bi-arrow-counterclockwise") or React element
  * @param {"left" | "right"} [props.iconPosition="left"]

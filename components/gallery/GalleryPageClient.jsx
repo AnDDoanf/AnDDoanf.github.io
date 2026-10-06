@@ -234,6 +234,7 @@ function moveLabelWithoutOverlap(current, target, dimensions, others, viewport) 
 export default function GalleryPageClient({ galleries }) {
   const { t } = useI18n();
   const mapRef = useRef(null);
+  const connectorsRef = useRef(null);
   const dragRef = useRef(null);
   const labelDragRef = useRef(null);
   const movedRef = useRef(false);
@@ -251,6 +252,46 @@ export default function GalleryPageClient({ galleries }) {
     labelPositions[slug] ?? floatingLabels[index]
   ));
   const mapArtSize = getMapArtSize(mapSize.height);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    const svg = connectorsRef.current;
+    if (!map || !svg) return undefined;
+    const labels = new Map(Array.from(map.querySelectorAll(".gallery-map-label"))
+      .map(node => [node.dataset.gallerySlug, node]));
+    const pins = new Map(Array.from(map.querySelectorAll(".gallery-map-pin"))
+      .map(node => [node.dataset.gallerySlug, node]));
+    const connections = Array.from(svg.querySelectorAll("line")).map(line => ({
+      line, label: labels.get(line.dataset.gallerySlug), pin: pins.get(line.dataset.gallerySlug),
+    })).filter(({ label, pin }) => label && pin);
+    let frame;
+
+    function updateConnectors() {
+      // CSS floating/hover transforms do not update React state. Measure the
+      // rendered cards each frame, reading all bounds before writing SVG attrs.
+      const origin = svg.getBoundingClientRect();
+      const positions = connections.map(({ line, label, pin }) => {
+        const card = label.getBoundingClientRect();
+        const dot = pin.getBoundingClientRect();
+        return {
+          line,
+          x1: dot.left + dot.width / 2 - origin.left,
+          y1: dot.top + dot.height / 2 - origin.top,
+          x2: (label.classList.contains("is-left") ? card.right : card.left) - origin.left,
+          y2: card.top + card.height / 2 - origin.top,
+        };
+      });
+      for (const { line, ...coordinates } of positions) {
+        for (const [attribute, value] of Object.entries(coordinates)) {
+          line.setAttribute(attribute, String(value));
+        }
+      }
+      frame = requestAnimationFrame(updateConnectors);
+    }
+
+    frame = requestAnimationFrame(updateConnectors);
+    return () => cancelAnimationFrame(frame);
+  }, [galleries]);
 
   useEffect(() => {
     const node = mapRef.current;
@@ -428,6 +469,7 @@ export default function GalleryPageClient({ galleries }) {
                   key={gallery.slug}
                   href={`/gallery/${gallery.slug}`}
                   className="gallery-map-pin"
+                  data-gallery-slug={gallery.slug}
                   style={{
                     left: `calc(${point.mapX}% + ${point.mapOffsetX}px)`,
                     top: `calc(${point.mapY}% + ${point.mapOffsetY}px)`,
@@ -440,13 +482,14 @@ export default function GalleryPageClient({ galleries }) {
           </div>
         </div>
 
-        <svg className="gallery-map-connectors" aria-hidden="true">
+        <svg ref={connectorsRef} className="gallery-map-connectors" aria-hidden="true">
           {locations.map(({ slug, point }, index) => {
             const labelPosition = displayedLabels[index];
             const pin = getPinWorldPosition(point, mapArtSize);
             return (
               <line
                 key={slug}
+                data-gallery-slug={slug}
                 x1={(mapSize.width - MAP_WIDTH) / 2 + pan.x + pin.x}
                 y1={(mapSize.height - MAP_HEIGHT) / 2 + pan.y + pin.y}
                 x2={labelPosition.x}
