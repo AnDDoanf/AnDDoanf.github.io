@@ -168,7 +168,7 @@
   text-align: center;
   margin: 0 0 1.75rem;
   color: var(--poem-reader-heading);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 2.5rem);
 }
 
 /* Markdown poem */
@@ -284,11 +284,14 @@
 .poem-toc li button[aria-current="true"] {
   background-color: var(--bg-alt);
   color: var(--link);
-  box-shadow: inset 0 0 0 1px var(--border);
+  font-weight: 600;
+  box-shadow: none;
 }
 
 .poem-toc li.active .poem-toc-index,
-.poem-toc li button[aria-current="true"] .poem-toc-index {
+.poem-toc li button[aria-current="true"] .poem-toc-index,
+.poem-toc li.active .poem-toc-title,
+.poem-toc li button[aria-current="true"] .poem-toc-title {
   color: var(--link);
 }
 
@@ -358,7 +361,7 @@
 
   .main-content:has(.poem-layout) .poem-layout {
     --poem-panel-height: clamp(34rem, 80vh, 42rem);
-    padding: 0;
+    padding: 2.4rem 0 0;
     align-items: stretch;
   }
 
