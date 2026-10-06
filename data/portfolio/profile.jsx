@@ -2,7 +2,7 @@
 export const profile = {
   name: 'Thuan An Doan',
   nameVi: 'Đoàn Thuận An',
-  title: 'Fullstack Fresher',
+  title: 'Fullstack Developer',
   titleVi: 'Lập trình viên Full-stack',
   image: '/assets/myFace.jpg',
   email: 'anddoanf.work@gmail.com',

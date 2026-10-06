@@ -9,7 +9,7 @@ export default function PortfolioPage() {
       {/* HEADER */}
       <header className="portfolio-header">
         <h1>Thuan An Doan</h1>
-        <h2>Fullstack Fresher</h2>
+        <h2>Fullstack Developer</h2>
 
         <div className="portfolio-contact">
           <p>Email: anddoanf.work@gmail.com</p>
