@@ -800,6 +800,7 @@ transform: scale(1.1);
 ================================ */
 
 .portfolio-projects-slider-container {
+  --project-slide-gap: 4rem;
   position: relative;
   width: 100%;
   max-width: 100%;
@@ -813,7 +814,7 @@ transform: scale(1.1);
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  /* Let shadows paint beyond the track without widening the page. */
+  /* Allow the full hover shadow to paint beyond the visible cards. */
   overflow: clip;
   overflow-clip-margin: 4rem;
   touch-action: pan-y;
@@ -822,7 +823,8 @@ transform: scale(1.1);
 
 .portfolio-projects-slider-track {
   display: flex;
-  gap: 1.75rem;
+  /* Keep adjacent card faces outside the shadow allowance at rest. */
+  gap: var(--project-slide-gap);
   width: 100%;
   max-width: 100%;
   min-width: 0;
@@ -830,22 +832,30 @@ transform: scale(1.1);
 }
 
 .portfolio-projects-slider-slide {
-  flex: 0 0 calc((100% - 1.75rem) / 2);
-  width: calc((100% - 1.75rem) / 2);
+  flex: 0 0 calc((100% - var(--project-slide-gap)) / 2);
+  width: calc((100% - var(--project-slide-gap)) / 2);
   margin-right: 0;
   box-sizing: border-box;
 }
 
-.portfolio-projects-slider-slide[aria-hidden="true"] {
-  visibility: hidden;
+#portfolio-projects .post-card:not(:hover) {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Offscreen shadows must not bleed into the viewport's shadow allowance. */
+#portfolio-projects .portfolio-projects-slider-slide[aria-hidden="true"] .post-card {
+  box-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-projects-slider-track {
+    transition: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .portfolio-projects-slider-container {
     padding: 0 0.25rem;
-  }
-  .portfolio-projects-slider-track {
-    gap: 1.25rem;
   }
   .portfolio-projects-slider-slide {
     flex: 0 0 100%;

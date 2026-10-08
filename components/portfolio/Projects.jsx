@@ -182,8 +182,8 @@ export default function Projects({ initialProjects }) {
   };
 
   const slideTransform = isMobile
-    ? `translateX(calc(-1 * ${currentIndex} * (100% + 1.25rem)))`
-    : `translateX(calc(-1 * ${currentIndex} * ((100% + 1.75rem) / 2)))`;
+    ? `translateX(calc(-1 * ${currentIndex} * (100% + var(--project-slide-gap))))`
+    : `translateX(calc(-1 * ${currentIndex} * ((100% + var(--project-slide-gap)) / 2)))`;
 
   const projectListContent = (!isMounted || !useSlider) ? (
     /* Render static grid during server rendering, hydration, or if < 3 projects */

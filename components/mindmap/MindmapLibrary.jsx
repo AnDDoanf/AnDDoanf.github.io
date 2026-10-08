@@ -15,7 +15,7 @@ export default function MindmapLibrary({ maps }) {
   const filtered = maps.filter(map => (type === "all" || map.type === type) &&
     [map.title, map.titleVi, map.description, map.descriptionVi].join(" ").toLocaleLowerCase().includes(query.trim().toLocaleLowerCase()));
 
-  return <section className="mindmap-library blog-post-container post-index-page" aria-label={lang === "vi" ? "Sơ đồ tư duy" : "Mindmaps"}>
+  return <section className="mindmap-library blog-post-container post-index-page" aria-label={"Mindmaps"}>
     <div className="mindmap-library-tools">
       <div className="post-search-shell">
         <i className="bi bi-search post-search-icon" aria-hidden="true" />
