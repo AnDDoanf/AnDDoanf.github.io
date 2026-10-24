@@ -9,6 +9,7 @@ import getPostMetadata, { resolvePostCategory } from "@/app/utils/getPostMetadat
 import PostNavigator from "@/components/blog/PostNavigator";
 import BlogPostMetaHeader from "@/components/blog/BlogPostMetaHeader";
 import TableOfContents from "@/components/blog/TableOfContent";
+import ReadingProgressBar from "@/components/blog/ReadingProgressBar";
 import { notFound } from "next/navigation";
 
 function getPostContent(slug) {
@@ -67,12 +68,15 @@ export default async function BlogPostPage({ params }) {
 
   return (
     <main className="post-layout">
+      <ReadingProgressBar />
+
       {/* Article */}
       <article className="post-content">
         <BlogPostMetaHeader
           title={post.data.title}
           date={post.data.date}
           author={post.data.author}
+          content={post.content}
         />
 
         <div className="blog-content">

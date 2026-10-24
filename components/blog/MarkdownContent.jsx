@@ -2,6 +2,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeKatex from "rehype-katex";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
+import CodeBlock from "@/components/blog/CodeBlock";
 
 export default function MarkdownContent({
   content,
@@ -12,6 +13,8 @@ export default function MarkdownContent({
       remarkPlugins={[remarkGfm, remarkMath]}
       rehypePlugins={[rehypeKatex]}
       components={{
+        pre: ({ children }) => <>{children}</>,
+        code: CodeBlock,
         h2: ({ children }) => {
           if (!resolveHeadingId) {
             return <h2>{children}</h2>;
