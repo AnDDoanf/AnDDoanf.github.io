@@ -1,8 +1,7 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { useI18n } from "@/components/i18n/I18nProvider";
+import Card from "@/components/ui/Card";
 
 function formatTagLabel(tag) {
   return String(tag ?? "")
@@ -45,54 +44,22 @@ export default function BlogPostCard({ post, hrefBase = "/blog" }) {
     : post.date;
 
   return (
-    <article className="card post-card">
-      <Link href={href} className="post-card-link">
-        <div className="card-cover post-card-cover" aria-hidden="true">
-          <Image
-            src={post.image}
-            alt={post.imageAlt || `${post.title} cover image`}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            style={{ objectFit: "cover" }}
-            priority={false}
-          />
-        </div>
-
-        <div className="post-card-body">
-          <p className="post-card-eyebrow">{eyebrow}</p>
-
-          <div className="post-card-heading">
-            <h2 className="post-card-title">{post.title}</h2>
-            <span className="post-card-arrow" aria-hidden="true">
-              <i className="bi bi-arrow-up-right" />
-            </span>
-          </div>
-
-          <p className="post-card-excerpt">{post.excerpt}</p>
-
-          <div className="post-card-footer">
-            <div className="post-card-meta">
-              <span className="post-card-icon" aria-hidden="true">
-                <i className="bi bi-person" />
-              </span>
-              <div className="post-card-meta-copy">
-                <p className="post-card-meta-label">{authorName}</p>
-                <p className="post-card-date">{formattedDate}</p>
-              </div>
-            </div>
-
-            {post.tags?.length > 0 && (
-              <div className="card-tags post-card-tags" aria-hidden="true">
-                {post.tags.slice(0, 2).map((tag) => (
-                  <span key={tag} className="card-tag post-card-tag">
-                    {formatTagLabel(tag)}
-                  </span>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-      </Link>
-    </article>
+    <Card
+      as="article"
+      href={href}
+      className="card post-card"
+      image={post.image}
+      imageAlt={post.imageAlt || `${post.title} cover image`}
+      eyebrow={eyebrow}
+      title={post.title}
+      description={post.excerpt}
+      showArrow
+      meta={{
+        icon: "bi bi-person",
+        label: authorName,
+        date: formattedDate,
+      }}
+      tags={post.tags?.slice(0, 2).map(formatTagLabel)}
+    />
   );
 }

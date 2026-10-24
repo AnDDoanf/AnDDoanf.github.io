@@ -1,9 +1,8 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
 import { useI18n } from "@/components/i18n/I18nProvider";
+import Card from "@/components/ui/Card";
 
 const categoryIcons = {
   work: "bi bi-briefcase",
@@ -123,61 +122,28 @@ export default function Projects({ initialProjects }) {
     const catLower = project.category.toLowerCase();
     const categoryIcon = categoryIcons[catLower] || "bi bi-laptop";
     const href = `/portfolio/${project.slug}`;
+    const categoryLabel = t(categoryKey(project.category));
 
     return (
-      <article className="card post-card" style={{ height: "100%" }}>
-        <Link href={href} className="post-card-link">
-          {/* Cover Image */}
-          <div className="card-cover post-card-cover" aria-hidden="true">
-            <Image
-              src={project.image}
-              alt={`${project.title} cover image`}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              style={{ objectFit: "cover" }}
-              priority={false}
-            />
-          </div>
-
-          {/* Card Body */}
-          <div className="post-card-body">
-            <p className="post-card-eyebrow">{t(categoryKey(project.category))}</p>
-
-            <div className="post-card-heading">
-              <h2 className="post-card-title">{project.title}</h2>
-              <span className="post-card-arrow" aria-hidden="true">
-                <i className="bi bi-arrow-up-right" />
-              </span>
-            </div>
-
-            <p className="post-card-excerpt">{lang === "vi" ? project.descriptionVi : project.description}</p>
-
-            <div className="post-card-footer">
-              {/* Meta Section */}
-              <div className="post-card-meta">
-                <span className="post-card-icon" aria-hidden="true">
-                  <i className={categoryIcon} />
-                </span>
-                <div className="post-card-meta-copy">
-                  <p className="post-card-meta-label">{t(categoryKey(project.category))}</p>
-                  <p className="post-card-date">{project.tags?.[0] || t("portfolio.project")}</p>
-                </div>
-              </div>
-
-              {/* Secondary tags */}
-              {project.tags?.length > 1 && (
-                <div className="card-tags post-card-tags" aria-hidden="true">
-                  {project.tags.slice(1, 3).map((tag) => (
-                    <span key={tag} className="card-tag post-card-tag">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>
-        </Link>
-      </article>
+      <Card
+        as="article"
+        key={project.slug}
+        href={href}
+        className="card post-card"
+        style={{ height: "100%" }}
+        image={project.image}
+        imageAlt={`${project.title} cover image`}
+        eyebrow={categoryLabel}
+        title={project.title}
+        description={lang === "vi" ? project.descriptionVi : project.description}
+        showArrow
+        meta={{
+          icon: categoryIcon,
+          label: categoryLabel,
+          date: project.tags?.[0] || t("portfolio.project"),
+        }}
+        tags={project.tags?.length > 1 ? project.tags.slice(1, 3) : undefined}
+      />
     );
   };
 

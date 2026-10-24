@@ -1,3 +1,5 @@
+import Card from "@/components/ui/Card";
+
 export default function TimelineNode({ data, align, lang }) {
   const alignClass =
     align === 'left'
@@ -8,11 +10,11 @@ export default function TimelineNode({ data, align, lang }) {
     <div className={`portfolio-timeline-node ${alignClass}`}>
         <span className="portfolio-timeline-dot" />
 
-        <div className="portfolio-timeline-card">
+        <Card as="div" className="portfolio-timeline-card">
             <p className="portfolio-timeline-date">{lang === "vi" ? data.dateVi : data.date}</p>
             <strong>{data.company}</strong>
             <p className="portfolio-timeline-role">{lang === "vi" ? data.roleVi : data.role}</p>
-        </div>
+        </Card>
         <div className="portfolio-timeline-bubble">
             <ul>
                 {(lang === "vi" ? data.responsibilitiesVi : data.responsibilities).map((item, i) => (

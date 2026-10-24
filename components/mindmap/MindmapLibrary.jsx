@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { useI18n } from "@/components/i18n/I18nProvider";
+import Card from "@/components/ui/Card";
 
 export default function MindmapLibrary({ maps }) {
   const { lang } = useI18n();
@@ -26,15 +26,37 @@ export default function MindmapLibrary({ maps }) {
       </div>
     </div>
     <div className="mindmap-grid">
-      {filtered.map(map => <Link className="mindmap-card" href={`/mindmap/${map.slug}`} key={map.slug}>
-        <div className={`mindmap-card-preview ${map.type}`}>
-          {map.cover ? <Image src={map.cover} alt={lang === "vi" ? map.coverAltVi : map.coverAlt} fill sizes="(max-width: 700px) 100vw, 50vw" className="mindmap-cover" /> : <><i className={`bi bi-${map.type === "family-tree" ? "diagram-3" : "lightbulb"}`} aria-hidden="true" /><span /><span /><span /></>}
-        </div>
-        <div className="mindmap-card-body"><p className="mindmap-eyebrow">{labels[map.type]}</p>
-          <h2>{lang === "vi" ? map.titleVi || map.title : map.title}</h2><p>{lang === "vi" ? map.descriptionVi || map.description : map.description}</p>
-          <div className="mindmap-card-footer"><span>{map.count} {map.type === "family-tree" ? (lang === "vi" ? "thành viên" : "people") : (lang === "vi" ? "chủ đề" : "topics")}</span><i className="bi bi-arrow-up-right" aria-hidden="true" /></div>
-        </div>
-      </Link>)}
+      {filtered.map(map => (
+        <Card
+          key={map.slug}
+          as="div"
+          href={`/mindmap/${map.slug}`}
+          className="mindmap-card"
+          cover={
+            <div className={`mindmap-card-preview ${map.type}`}>
+              {map.cover ? (
+                <Image
+                  src={map.cover}
+                  alt={lang === "vi" ? map.coverAltVi : map.coverAlt}
+                  fill
+                  sizes="(max-width: 700px) 100vw, 50vw"
+                  className="mindmap-cover"
+                />
+              ) : (
+                <>
+                  <i className={`bi bi-${map.type === "family-tree" ? "diagram-3" : "lightbulb"}`} aria-hidden="true" />
+                  <span /><span /><span />
+                </>
+              )}
+            </div>
+          }
+          eyebrow={labels[map.type]}
+          title={lang === "vi" ? map.titleVi || map.title : map.title}
+          description={lang === "vi" ? map.descriptionVi || map.description : map.description}
+          footerLeft={`${map.count} ${map.type === "family-tree" ? (lang === "vi" ? "thành viên" : "people") : (lang === "vi" ? "chủ đề" : "topics")}`}
+          footerRight="bi-arrow-up-right"
+        />
+      ))}
     </div>
     {!filtered.length && <p role="status">{lang === "vi" ? "Không tìm thấy sơ đồ phù hợp." : "No mindmaps match your search."}</p>}
   </section>;

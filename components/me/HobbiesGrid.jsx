@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { useI18n } from "@/components/i18n/I18nProvider";
+import Card from "@/components/ui/Card";
 
 export default function HobbiesGrid({ items }) {
   const { t } = useI18n();
@@ -58,7 +59,7 @@ export default function HobbiesGrid({ items }) {
               key={item.title}
               aria-hidden={index !== activeIndex}
             >
-              <article className="me-hobby-card">
+              <Card as="article" className="me-hobby-card">
                 <div className="me-hobby-image-wrap">
                   <img
                     className="me-hobby-image"
@@ -84,7 +85,7 @@ export default function HobbiesGrid({ items }) {
                     </Link>
                   )}
                 </div>
-              </article>
+              </Card>
             </div>
           ))}
         </div>
