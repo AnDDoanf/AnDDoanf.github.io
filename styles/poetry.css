@@ -6,6 +6,16 @@
   --poem-reader-muted: var(--text-muted);
   --poem-reader-border: var(--border);
   --poem-reader-highlight: var(--bg);
+  --poem-page-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    0 16px 36px rgba(0, 0, 0, 0.12),
+    0 32px 64px rgba(0, 0, 0, 0.1);
+  --poem-toc-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.06),
+    0 14px 32px rgba(0, 0, 0, 0.1);
+  --poem-button-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.06);
   display: grid;
   grid-template-columns: minmax(0, 1fr) 17rem;
   align-items: stretch;
@@ -23,6 +33,16 @@
   --poem-reader-muted: var(--text-muted);
   --poem-reader-border: var(--base01);
   --poem-reader-highlight: var(--base01);
+  --poem-page-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.45),
+    0 20px 48px rgba(0, 0, 0, 0.65),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
+  --poem-toc-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.4),
+    0 16px 36px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  --poem-button-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.45);
 }
 
 /* Book */
@@ -42,7 +62,7 @@
   border: none;
   border-radius: 1.5rem;
   padding: clamp(1.25rem, 3vw, 2.2rem);
-  box-shadow: 0 20px 48px var(--shadow);
+  box-shadow: var(--poem-page-shadow);
   animation: pageTurn 0.45s ease;
   min-height: 0;
   height: 100%;
@@ -91,7 +111,7 @@
   font: inherit;
   font-size: 0.85rem;
   cursor: pointer;
-  box-shadow: 0 10px 22px var(--shadow);
+  box-shadow: var(--poem-button-shadow);
   transition:
     transform 0.2s ease,
     background-color 0.2s ease,
@@ -215,7 +235,7 @@
   background: var(--surface);
   border: none;
   border-radius: 1.25rem;
-  box-shadow: 0 18px 36px var(--shadow);
+  box-shadow: var(--poem-toc-shadow);
   overflow: hidden;
   min-height: 0;
 }
@@ -498,7 +518,7 @@
     height: auto;
     max-height: min(24rem, 60vh);
     display: none;
-    box-shadow: 0 20px 48px var(--shadow);
+    box-shadow: var(--poem-toc-shadow);
     background: var(--surface);
     border: none;
     border-radius: 1.25rem;

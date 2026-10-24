@@ -2,13 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useSyncExternalStore } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { useI18n } from "@/components/i18n/I18nProvider";
 import {
-  getIsMobileNavOpen,
   getIsMobileViewport,
-  setIsMobileNavOpen,
-  subscribeToMobileNav,
   subscribeToMobileViewport,
 } from "@/components/ui/navState";
 
@@ -33,74 +30,81 @@ function isNavItemActive(pathname, href) {
 export default function LeftNavbar() {
   const { t } = useI18n();
   const pathname = usePathname() ?? "/";
+  const [isVisible, setIsVisible] = useState(true);
+
   const isMobileViewport = useSyncExternalStore(
     subscribeToMobileViewport,
     getIsMobileViewport,
     () => false
   );
-  const isMobileOpen = useSyncExternalStore(
-    subscribeToMobileNav,
-    getIsMobileNavOpen,
-    () => false
-  );
 
-  const isVisuallyCollapsed = isMobileViewport && !isMobileOpen;
-  const closeLabel = t("ui.closeNavigation");
+  useEffect(() => {
+    if (!isMobileViewport) {
+      setIsVisible(true);
+      return;
+    }
+
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const scrollDelta = currentScrollY - lastScrollY;
+
+      // Show when scrolling up or near top; fade away when scrolling down
+      if (currentScrollY < 24 || scrollDelta < -6) {
+        setIsVisible(true);
+      } else if (scrollDelta > 6) {
+        setIsVisible(false);
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isMobileViewport]);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, [pathname]);
 
   const navClassName = [
     "left-nav",
     isMobileViewport ? "is-mobile" : "",
-    isMobileViewport && isMobileOpen ? "is-mobile-open" : "",
+    isMobileViewport && !isVisible ? "is-hidden-on-scroll" : "",
   ]
     .filter(Boolean)
     .join(" ");
 
-  useEffect(() => {
-    if (!isMobileViewport && isMobileOpen) {
-      setIsMobileNavOpen(false);
-    }
-  }, [isMobileOpen, isMobileViewport]);
-
-  useEffect(() => {
-    setIsMobileNavOpen(false);
-  }, [pathname]);
-
   return (
-    <>
-      {isMobileViewport && isMobileOpen && (
-        <button
-          type="button"
-          className="nav-backdrop"
-          aria-label={closeLabel}
-          onClick={() => setIsMobileNavOpen(false)}
-        />
-      )}
+    <aside className={navClassName}>
+      <nav id="primary-navigation" aria-label={t("ui.primaryNavigation")}>
+        <ul className="nav-list">
+          {NAV_ITEMS.map(({ href, icon, labelKey }) => {
+            const label = t(labelKey);
+            const isActive = isNavItemActive(pathname, href);
 
-      <aside className={navClassName}>
-        <nav id="primary-navigation" aria-label={t("ui.primaryNavigation")}>
-          <ul className="nav-list">
-            {NAV_ITEMS.map(({ href, icon, labelKey }) => {
-              const label = t(labelKey);
-              const isActive = isNavItemActive(pathname, href);
-
-              return (
-                <li key={href} className={isActive ? "is-active" : undefined}>
-                  <Link
-                    href={href}
-                    title={isVisuallyCollapsed ? label : undefined}
-                    aria-label={isVisuallyCollapsed ? label : undefined}
-                    aria-current={isActive ? "page" : undefined}
-                    onClick={isMobileViewport ? () => setIsMobileNavOpen(false) : undefined}
-                  >
-                    <i className={`bi ${icon}`} aria-hidden="true"></i>
-                    <span className="nav-label">{label}</span>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
-      </aside>
-    </>
+            return (
+              <li key={href} className={isActive ? "is-active" : undefined}>
+                <Link
+                  href={href}
+                  title={label}
+                  aria-label={label}
+                  aria-current={isActive ? "page" : undefined}
+                >
+                  <i className={`bi ${icon}`} aria-hidden="true" />
+                  <span className="nav-label">{label}</span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </aside>
   );
 }
+
