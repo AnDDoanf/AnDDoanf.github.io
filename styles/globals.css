@@ -248,6 +248,13 @@ a:hover {
   margin: auto;
 }
 
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+}
+
 .blog-post-container {
   max-width: 1320px;
   margin: 0 auto;
@@ -778,6 +785,7 @@ a:hover {
   background: transparent;
   box-shadow: none;
   color: var(--text);
+  font-family: inherit;
   font-size: 0.98rem;
   line-height: 1.4;
 }

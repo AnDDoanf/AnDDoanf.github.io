@@ -290,6 +290,7 @@
   border-radius: 0.95rem;
   background: transparent;
   color: var(--text-muted);
+  font-family: inherit;
   text-align: left;
   cursor: pointer;
   transition:
