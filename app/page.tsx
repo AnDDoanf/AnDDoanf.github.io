@@ -85,7 +85,7 @@ export default function HomePage() {
             <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/thuanan.doan/" aria-label="Facebook">
               <i className="bi bi-facebook"></i>
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://discord.com/users/416180260686790656" aria-label="Facebook">
+            <a target="_blank" rel="noopener noreferrer" href="https://discord.com/users/416180260686790656" aria-label="Discord">
               <i className="bi bi-discord"></i>
             </a>
             <a href="mailto:anddoanf.work@gmail.com" aria-label="Email" >

@@ -9,7 +9,6 @@ import getPostMetadata, { resolvePostCategory } from "@/app/utils/getPostMetadat
 import PostNavigator from "@/components/blog/PostNavigator";
 import BlogPostMetaHeader from "@/components/blog/BlogPostMetaHeader";
 import TableOfContents from "@/components/blog/TableOfContent";
-import ScrollToTop from "@/components/ui/ScrollToTop";
 import { notFound } from "next/navigation";
 
 function getPostContent(slug) {
@@ -88,8 +87,6 @@ export default async function BlogPostPage({ params }) {
           nextPost={nextPost}
           hrefBase="/blog"
         />
-
-        <ScrollToTop />
       </article>
 
       {/* Sidebar */}

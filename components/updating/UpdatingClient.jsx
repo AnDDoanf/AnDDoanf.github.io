@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import ThemeToggle from "@/components/ui/ThemeToggle";
-import LanguageToggle from "@/components/ui/LanguageToggle";
+import TopRightControls from "@/components/ui/TopRightControls";
+import Button from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
 import { useI18n } from "@/components/i18n/I18nProvider";
 
 export default function UpdatingClient() {
@@ -10,14 +10,9 @@ export default function UpdatingClient() {
 
   return (
     <main className="updating-page">
-      <div className="theme-toggle-main">
-        <div className="toggle-row">
-          <ThemeToggle />
-          <LanguageToggle />
-        </div>
-      </div>
+      <TopRightControls />
 
-      <div className="updating-card">
+      <Card as="div" className="updating-card">
         <h1 className="updating-title">{t("updating.title")}</h1>
 
         <p className="updating-text">
@@ -28,11 +23,17 @@ export default function UpdatingClient() {
 
         <div className="updating-divider" />
 
-        <Link href="/" className="updating-back">
+        <Button
+          href="/"
+          variant="outline"
+          size="md"
+          icon="bi-arrow-left"
+          className="updating-back-btn"
+          style={{ marginTop: "1rem" }}
+        >
           {t("updating.goBack")}
-        </Link>
-      </div>
+        </Button>
+      </Card>
     </main>
   );
 }
-

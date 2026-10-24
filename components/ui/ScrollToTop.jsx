@@ -10,7 +10,7 @@ export default function ScrollToTop() {
       setVisible(window.scrollY > 300);
     };
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -23,11 +23,13 @@ export default function ScrollToTop() {
 
   return (
     <button
+      type="button"
       className={`scroll-to-top ${visible ? "show" : ""}`}
       onClick={scrollToTop}
       aria-label="Scroll to top"
+      title="Scroll to top"
     >
-      ↑
+      <i className="bi bi-arrow-up" aria-hidden="true" />
     </button>
   );
 }

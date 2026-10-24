@@ -6,24 +6,15 @@ import { useI18n } from "@/components/i18n/I18nProvider";
 import LanguageToggle from "@/components/ui/LanguageToggle";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 import {
-  getIsMobileNavOpen,
   getIsMobileViewport,
-  setIsMobileNavOpen,
-  subscribeToMobileNav,
   subscribeToMobileViewport,
 } from "@/components/ui/navState";
 
-export default function TopRightControls({ showNavToggle = true }) {
-  const { t } = useI18n();
+export default function TopRightControls({ showNavToggle = false }) {
   const [isVisible, setIsVisible] = useState(true);
   const isMobileViewport = useSyncExternalStore(
     subscribeToMobileViewport,
     getIsMobileViewport,
-    () => false
-  );
-  const isMobileNavOpen = useSyncExternalStore(
-    subscribeToMobileNav,
-    getIsMobileNavOpen,
     () => false
   );
 
@@ -34,7 +25,7 @@ export default function TopRightControls({ showNavToggle = true }) {
       const currentScrollY = window.scrollY;
       const scrollDelta = currentScrollY - lastScrollY;
 
-      if (isMobileNavOpen || currentScrollY < 24 || scrollDelta < -6) {
+      if (currentScrollY < 24 || scrollDelta < -6) {
         setIsVisible(true);
       } else if (scrollDelta > 6) {
         setIsVisible(false);
@@ -49,11 +40,7 @@ export default function TopRightControls({ showNavToggle = true }) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isMobileNavOpen]);
-
-  const menuLabel = isMobileNavOpen
-    ? t("ui.closeNavigation")
-    : t("ui.openNavigation");
+  }, []);
 
   const rowClassName = [
     "toggle-row",
@@ -68,27 +55,9 @@ export default function TopRightControls({ showNavToggle = true }) {
       <div className={rowClassName}>
         <ThemeToggle />
         <LanguageToggle />
-
-        {showNavToggle && isMobileViewport && (
-          <button
-            type="button"
-            className="theme-icon theme-icon-menu"
-            onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
-            aria-label={menuLabel}
-            aria-expanded={isMobileNavOpen}
-            aria-controls="primary-navigation"
-            title={menuLabel}
-          >
-            <i
-              className={`bi ${
-                isMobileNavOpen ? "bi-x-lg" : "bi-list"
-              }`}
-              aria-hidden="true"
-            />
-          </button>
-        )}
       </div>
     </div>
   );
 }
+
 

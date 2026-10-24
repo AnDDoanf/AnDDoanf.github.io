@@ -14,6 +14,8 @@ const ROUTE_LABEL_KEYS = {
   gallery: "nav.gallery",
   culinary: "nav.culinary",
   updating: "updating.title",
+  giapha: "giapha.title",
+  tree: "giapha.treeView",
 };
 
 function humanizeSegment(segment) {

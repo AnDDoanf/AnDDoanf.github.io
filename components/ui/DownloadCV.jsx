@@ -9,10 +9,10 @@ export default function DownloadCV() {
 
   useEffect(() => {
     const onScroll = () => {
-      setShow(window.scrollY > 0); // show after scroll
+      setShow(window.scrollY > 0);
     };
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -23,8 +23,14 @@ export default function DownloadCV() {
       rel="noopener noreferrer"
       className={`download-cv ${show ? "show" : ""}`}
       aria-label={t("portfolio.downloadCv")}
+      title={t("portfolio.downloadCv")}
     >
-      {t("portfolio.seeCv")}
+      <i
+        className="bi bi-file-earmark-arrow-down"
+        aria-hidden="true"
+        style={{ marginRight: "0.45rem", fontSize: "1.05rem" }}
+      />
+      <span>{t("portfolio.seeCv")}</span>
     </a>
   );
 }

@@ -30,9 +30,18 @@ export default function Button({
   onClick,
   ...rest
 }) {
+  const isActuallyDisabled = Boolean(disabled);
   const variantClass = `ui-btn-${variant}`;
   const sizeClass = `ui-btn-${size}`;
-  const combinedClassName = `ui-btn ${variantClass} ${sizeClass} ${className}`.trim();
+  const combinedClassName = [
+    "ui-btn",
+    variantClass,
+    sizeClass,
+    isActuallyDisabled ? "disabled is-disabled" : "",
+    className,
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   const iconElement =
     typeof icon === "string" ? (
@@ -51,14 +60,24 @@ export default function Button({
 
   if (href) {
     const isExternal = href.startsWith("http") || href.startsWith("//");
+    const handleLinkClick = (event) => {
+      if (isActuallyDisabled) {
+        event.preventDefault();
+        return;
+      }
+      onClick?.(event);
+    };
+
     if (isExternal) {
       return (
         <a
-          href={href}
+          href={isActuallyDisabled ? undefined : href}
           className={combinedClassName}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={onClick}
+          aria-disabled={isActuallyDisabled}
+          tabIndex={isActuallyDisabled ? -1 : undefined}
+          onClick={handleLinkClick}
           {...rest}
         >
           {content}
@@ -66,7 +85,14 @@ export default function Button({
       );
     }
     return (
-      <Link href={href} className={combinedClassName} onClick={onClick} {...rest}>
+      <Link
+        href={isActuallyDisabled ? "#" : href}
+        className={combinedClassName}
+        aria-disabled={isActuallyDisabled}
+        tabIndex={isActuallyDisabled ? -1 : undefined}
+        onClick={handleLinkClick}
+        {...rest}
+      >
         {content}
       </Link>
     );
@@ -76,7 +102,8 @@ export default function Button({
     <button
       type={type}
       className={combinedClassName}
-      disabled={disabled}
+      disabled={isActuallyDisabled}
+      aria-disabled={isActuallyDisabled}
       onClick={onClick}
       {...rest}
     >

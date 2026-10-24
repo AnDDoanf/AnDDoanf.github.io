@@ -66,6 +66,7 @@ export function I18nProvider({ children }) {
     const messages = getMessages(lang);
     return {
       lang,
+      locale: lang,
       setLang,
       toggleLang: () => setLang(lang === "en" ? "vi" : "en"),
       t: (key, params) => formatMessage(resolve(messages, key), params),

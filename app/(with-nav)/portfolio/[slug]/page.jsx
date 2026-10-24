@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import MarkdownContent from "@/components/blog/MarkdownContent";
 import getProjectMetadata from "@/app/utils/getProjectMetadata";
-import ScrollToTop from "@/components/ui/ScrollToTop";
 
 function getProjectContent(slug) {
   const file = `data/portfolio/projects/${slug}.md`;
@@ -112,7 +111,6 @@ export default async function ProjectDetailPage({ params }) {
           <MarkdownContent content={project.content} />
         </div>
       </div>
-      <ScrollToTop />
     </main>
   );
 }

@@ -7,14 +7,15 @@ export default function BlogPostMetaHeader({
   date,
   author,
 }) {
-  const { locale } = useI18n();
+  const { lang, locale } = useI18n();
+  const currentLang = lang || locale || "en";
 
   let dateStr = "";
   if (date) {
     try {
       const d = new Date(date);
       if (!Number.isNaN(d.getTime())) {
-        dateStr = new Intl.DateTimeFormat(locale === "vi" ? "vi-VN" : "en-US", {
+        dateStr = new Intl.DateTimeFormat(currentLang === "vi" ? "vi-VN" : "en-US", {
           day: "numeric",
           month: "short",
           year: "numeric",
