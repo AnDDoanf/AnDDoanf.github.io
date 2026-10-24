@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useId, useRef, useState, useSyncExternalStore } from "react";
-import { Check, Moon, Sun } from "lucide-react";
 import { useI18n } from "@/components/i18n/I18nProvider";
 import { THEME_PAIRS, getThemeSnapshot, selectTheme, subscribeToTheme } from "./themeState";
 
@@ -65,7 +64,11 @@ export default function ThemeToggle() {
         aria-expanded={open}
         aria-controls={panelId}
       >
-        {mode === "light" ? <Sun size={22} strokeWidth={2.2} aria-hidden="true" /> : <Moon size={22} strokeWidth={2.2} aria-hidden="true" />}
+        {mode === "light" ? (
+          <i className="bi bi-sun" aria-hidden="true" style={{ fontSize: "1.25rem" }} />
+        ) : (
+          <i className="bi bi-moon-stars" aria-hidden="true" style={{ fontSize: "1.25rem" }} />
+        )}
       </button>
       {open && (
         <div className="theme-picker-panel" id={panelId}>
@@ -85,7 +88,9 @@ export default function ThemeToggle() {
                         closeAndFocus();
                       }}
                     >
-                      {palette === pair && mode === half && <Check size={14} aria-hidden="true" />}
+                      {palette === pair && mode === half && (
+                        <i className="bi bi-check2" aria-hidden="true" style={{ fontSize: "0.85rem", lineHeight: 1 }} />
+                      )}
                     </button>
                   ))}
                 </div>

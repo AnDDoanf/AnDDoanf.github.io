@@ -28,7 +28,7 @@ This repository powers **AnDDoanf's personal website & digital garden** hosted o
 | **Styling** | Vanilla CSS (Modular) | Custom CSS token design system in `styles/*.css`. Avoid adding Tailwind utility classes to existing components unless explicitly requested. |
 | **Visualization** | `@xyflow/react` & `gojs` | Node/edge graphs for mindmaps and family genealogy trees |
 | **Markdown / Math** | `gray-matter`, `react-markdown`, `remark-gfm`, `remark-math`, `rehype-katex` | Parsing markdown frontmatter and LaTeX math rendering |
-| **Icons** | `bootstrap-icons` & `lucide-react` | Standard Bootstrap Icons (`bi bi-*`) and select Lucide icons (`Moon`, `Sun`, `Check`) |
+| **Icons** | `bootstrap-icons` | Standard Bootstrap Icons (`bi bi-*`) exclusively for all navigation, controls, data tags, and UI elements |
 | **Testing** | Node.js Test Runner (`node --test`) | Fast native unit tests in `scripts/*.test.mjs` |
 
 ---
@@ -349,7 +349,7 @@ Maintain consistency across files, components, functions, and styles:
   import Image from "next/image";
 
   // 2. Third-party packages
-  import { LucideIcon } from "lucide-react";
+  import Prism from "prismjs";
   import matter from "gray-matter";
 
   // 3. Shared UI kit & providers
