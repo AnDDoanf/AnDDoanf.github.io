@@ -160,6 +160,14 @@
     "textLine2": "Please check back soon.",
     "goBack": "Go back"
   },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Page Not Found",
+    "description": "You might have wandered off the beaten path. Why not explore other corners of my site?",
+    "returnHome": "Back to Home",
+    "viewBlog": "Read Blog",
+    "viewPortfolio": "View Portfolio"
+  },
   "giapha": {
     "title": "Family Trees",
     "subtitle": "Interactive digital genealogy system: explore generational lineage trees, member records, milestones timeline, and clan chronicles.",

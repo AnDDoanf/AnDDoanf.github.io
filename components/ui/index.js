@@ -8,5 +8,6 @@ export { default as ScrollToTop } from "./ScrollToTop";
 export { default as ThemeToggle } from "./ThemeToggle";
 export { default as TopRightControls } from "./TopRightControls";
 export { default as TypingText } from "./TypingText";
+export { default as CommandPalette } from "./CommandPalette";
 export * from "./navState";
 export * from "./themeState";

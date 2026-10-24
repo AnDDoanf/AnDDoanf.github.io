@@ -160,6 +160,14 @@
     "textLine2": "Vui lòng quay lại sau.",
     "goBack": "Quay lại"
   },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Không tìm thấy trang",
+    "description": "Có lẽ bạn đã đi lạc vào đâu đó? Thử ghé qua những mục khác nhé!",
+    "returnHome": "Về trang chủ",
+    "viewBlog": "Xem bài viết",
+    "viewPortfolio": "Xem hồ sơ"
+  },
   "giapha": {
     "title": "Gia Phả Tộc",
     "subtitle": "Hệ thống phả hệ số hóa trực quan: tra cứu sơ đồ phả hệ, thế hệ, hồ sơ thành viên, dòng thời gian và biên niên sử dòng họ.",

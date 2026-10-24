@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navState";
 
 export default function TopRightControls({ showNavToggle = false }) {
+  const { lang, t } = useI18n();
   const [isVisible, setIsVisible] = useState(true);
   const isMobileViewport = useSyncExternalStore(
     subscribeToMobileViewport,
@@ -42,6 +43,10 @@ export default function TopRightControls({ showNavToggle = false }) {
     };
   }, []);
 
+  const openSearch = () => {
+    window.dispatchEvent(new Event("open-command-palette"));
+  };
+
   const rowClassName = [
     "toggle-row",
     isMobileViewport ? "toggle-row-mobile" : "",
@@ -50,9 +55,20 @@ export default function TopRightControls({ showNavToggle = false }) {
     .filter(Boolean)
     .join(" ");
 
+  const searchTitle = lang === "vi" ? "Tìm kiếm (Ctrl+K)" : "Search (Cmd+K)";
+
   return (
     <div className="theme-toggle-main">
       <div className={rowClassName}>
+        <button
+          type="button"
+          className="theme-icon theme-icon-search"
+          onClick={openSearch}
+          aria-label={searchTitle}
+          title={searchTitle}
+        >
+          <i className="bi bi-search" aria-hidden="true" style={{ fontSize: "0.95rem" }} />
+        </button>
         <ThemeToggle />
         <LanguageToggle />
       </div>
