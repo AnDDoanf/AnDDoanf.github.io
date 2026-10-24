@@ -18,6 +18,7 @@ import getPostMetadata, { resolvePostCategory } from "@/app/utils/getPostMetadat
 import getProjectMetadata from "@/app/utils/getProjectMetadata";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://anddoanf.github.io"),
   title: "AnDDoanf",
   description: "A personal website of AnDDoanf",
   icons: {

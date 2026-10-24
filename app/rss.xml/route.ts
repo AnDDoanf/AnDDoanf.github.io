@@ -1,5 +1,7 @@
 import getPostMetadata, { resolvePostCategory } from "@/app/utils/getPostMetadata";
 
+export const dynamic = "force-static";
+
 function escapeXml(unsafe: string) {
   return (unsafe || "")
     .replace(/&/g, "&amp;")

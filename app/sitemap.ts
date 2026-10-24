@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import getPostMetadata, { resolvePostCategory } from "@/app/utils/getPostMetadata";
 import getProjectMetadata from "@/app/utils/getProjectMetadata";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = "https://anddoanf.github.io";
 
