@@ -3,7 +3,7 @@ import Summary from '@/components/portfolio/Summary'
 import ExperienceTimeline from '@/components/portfolio/ExperienceTimeline'
 import SkillsCloud from '@/components/portfolio/SkillCloud'
 import Projects from '@/components/portfolio/Projects'
-// import AboutMe from '@/components/portfolio/AboutMe'
+import AboutMe from '@/components/portfolio/AboutMe'
 import DownloadCV from "@/components/ui/DownloadCV"
 import getProjectMetadata from '@/app/utils/getProjectMetadata'
 

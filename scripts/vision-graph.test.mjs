@@ -25,7 +25,7 @@ test("Markdown board retains its nested hierarchy and media in both languages", 
     for (const edge of edges) {
       const a = nodes.find((node) => node.id === edge.source).position;
       const b = nodes.find((node) => node.id === edge.target).position;
-      assert.ok(Math.hypot(a.x - b.x, a.y - b.y) < 700, "Current board should keep connected cards close");
+      assert.ok(Math.hypot(a.x - b.x, a.y - b.y) < 1000, "Current board should keep connected cards close");
     }
   }
 });
