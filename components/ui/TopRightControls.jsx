@@ -59,6 +59,7 @@ export default function TopRightControls({ showNavToggle = false }) {
 
   return (
     <div className="theme-toggle-main">
+      <div className="top-right-controls-leading" />
       <div className={rowClassName}>
         <button
           type="button"

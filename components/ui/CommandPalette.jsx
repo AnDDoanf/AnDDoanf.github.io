@@ -59,7 +59,6 @@ export default function CommandPalette({ items = [] }) {
     { id: "nav-poetry", title: t("nav.poems") || "Poetry", href: "/poetry", icon: "bi-feather", group: "Pages" },
     { id: "nav-gallery", title: t("nav.gallery") || "Gallery", href: "/gallery", icon: "bi-images", group: "Pages" },
     { id: "nav-mindmap", title: t("nav.mindmaps") || "Mindmaps", href: "/mindmap", icon: "bi-diagram-3", group: "Pages" },
-    { id: "nav-giapha", title: t("giapha.title") || "Family Trees", href: "/giapha", icon: "bi-diagram-3", group: "Pages" },
   ];
 
   // Quick actions
@@ -102,7 +101,7 @@ export default function CommandPalette({ items = [] }) {
   const q = query.trim().toLowerCase();
   const allSearchable = [...navigationItems, ...actionItems, ...items];
   const filteredResults = !q
-    ? [...navigationItems, ...actionItems, ...items.slice(0, 8)]
+    ? navigationItems
     : allSearchable
         .filter((item) => {
           const titleMatch = item.title?.toLowerCase().includes(q);
@@ -173,7 +172,7 @@ export default function CommandPalette({ items = [] }) {
         id={modalId}
         role="dialog"
         aria-modal="true"
-        aria-label="Command Palette"
+        aria-label="Global search"
         onClick={(e) => e.stopPropagation()}
         onKeyDown={handleKeyDown}
       >
@@ -183,27 +182,21 @@ export default function CommandPalette({ items = [] }) {
             ref={inputRef}
             type="text"
             className="cmd-palette-input"
-            placeholder={lang === "vi" ? "Tìm kiếm bài viết, dự án, hành động... (ESC để đóng)" : "Search posts, projects, actions... (ESC to close)"}
+            placeholder="Global search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             aria-autocomplete="list"
             aria-controls="cmd-palette-results"
           />
-          {query ? (
-            <button
-              type="button"
-              className="cmd-palette-clear-btn"
-              onClick={() => {
-                setQuery("");
-                inputRef.current?.focus();
-              }}
-              aria-label="Clear query"
-            >
-              <i className="bi bi-x" aria-hidden="true" />
-            </button>
-          ) : (
-            <kbd className="cmd-palette-kbd">ESC</kbd>
-          )}
+          <button
+            type="button"
+            className="cmd-palette-close-btn"
+            onClick={() => setOpen(false)}
+            aria-label={lang === "vi" ? "Đóng tìm kiếm" : "Close search"}
+            title={lang === "vi" ? "Đóng" : "Close"}
+          >
+            <i className="bi bi-x-lg" aria-hidden="true" />
+          </button>
         </div>
 
         <div className="cmd-palette-results" id="cmd-palette-results" ref={listRef} role="listbox">

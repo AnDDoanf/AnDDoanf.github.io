@@ -1458,6 +1458,13 @@ h2 .nav-title {
   right: 2rem;
   width: 44px;
   height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 44px;
+  max-height: 44px;
+  aspect-ratio: 1;
+  box-sizing: border-box;
+  padding: 0;
   border-radius: 50%;
   border: none;
   display: inline-flex;
@@ -1491,17 +1498,19 @@ h2 .nav-title {
 }
 
 .download-cv {
-  opacity: 80%;
-  position: fixed;
-  bottom: 2rem;
-  right: 6rem;
-  padding: 0 1.5rem;
-  width: fit-content;
-  height: 44px;
-  border-radius: 15px;
-  border: none;
+  position: static;
+  inset: auto;
+  flex: 0 0 auto;
+  width: auto;
+  min-width: max-content;
+  height: 3.06rem;
+  padding: 0 0.85rem;
+  gap: 0.4rem;
+  box-sizing: border-box;
+  border-radius: 999px;
+  border: 1px solid transparent;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
@@ -1513,23 +1522,42 @@ h2 .nav-title {
   text-decoration: none;
 
   cursor: pointer;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 24px var(--shadow);
+  transition:
+    opacity 0.24s ease,
+    transform 0.24s ease,
+    color 0.2s ease,
+    background-color 0.24s ease,
+    box-shadow 0.24s ease;
+}
 
+.theme-toggle-main:has(.toggle-row.is-hidden-on-scroll) .download-cv {
   opacity: 0;
   pointer-events: none;
-  transform: translateY(10px);
-  transition: opacity 0.25s ease, transform 0.25s ease;
+  transform: translateY(-0.75rem);
 }
 
-.download-cv.show {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
+.download-cv i {
+  font-size: 1rem;
+  line-height: 1;
 }
 
-.download-cv:hover {
-  background-color: var(--cyan);
-  color: var(--base3);
+.download-cv span {
+  color: inherit;
+  font-size: 0.9rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.download-cv:hover,
+.download-cv:focus-visible {
+  background-color: var(--bg);
+  color: var(--link);
+}
+
+.download-cv:focus-visible {
+  outline: none;
+  border-color: var(--link);
 }
 
 
@@ -1634,11 +1662,28 @@ h2 .nav-title {
   top: 1.25rem;
   right: 1.25rem;
   z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.top-right-controls-leading:empty {
+  display: none;
+}
+
+.top-right-controls-leading {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+  height: 3.06rem;
 }
 
 .toggle-row {
   position: relative;
   display: inline-flex;
+  box-sizing: border-box;
+  height: 3.06rem;
   gap: 0.3rem;
   align-items: center;
   padding: 0.28rem;
@@ -1681,8 +1726,8 @@ h2 .nav-title {
 
 [data-theme="dark"] .left-nav {
   box-shadow:
-    10px 0 36px rgba(0, 0, 0, 0.75),
-    4px 0 14px rgba(0, 0, 0, 0.5);
+    8px 0 24px rgba(0, 0, 0, 0.28),
+    2px 0 8px rgba(0, 0, 0, 0.16);
 }
 
 .left-nav nav {
@@ -2313,8 +2358,8 @@ h2 .nav-title {
 
   [data-theme="dark"] .left-nav {
     box-shadow:
-      0 -10px 36px rgba(0, 0, 0, 0.75),
-      0 -4px 14px rgba(0, 0, 0, 0.5);
+      0 -8px 24px rgba(0, 0, 0, 0.28),
+      0 -2px 8px rgba(0, 0, 0, 0.16);
   }
 
   .left-nav.is-hidden-on-scroll {
@@ -2432,6 +2477,11 @@ h2 .nav-title {
   .toggle-row {
     gap: 0.2rem;
     padding: 0.22rem;
+    height: 2.74rem;
+  }
+
+  .top-right-controls-leading {
+    height: 2.74rem;
   }
 
   .toggle-row {
@@ -2472,15 +2522,15 @@ h2 .nav-title {
     grid-template-columns: 1fr;
   }
 
-  /* Scroll button & Download CV floating controls positioned above bottom dock on mobile */
+  /* Scroll button positioned above bottom dock on mobile */
   .scroll-to-top {
     right: 1.25rem;
     bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
   }
 
   .download-cv {
-    right: 1.25rem;
-    bottom: calc(8.25rem + env(safe-area-inset-bottom, 0px));
+    height: 2.74rem;
+    padding: 0 0.7rem;
   }
 }
 
@@ -2944,27 +2994,30 @@ h2 .nav-title {
   padding: 0 !important;
 }
 
-.cmd-palette-clear-btn {
+.cmd-palette-close-btn {
   background: transparent;
   border: none;
   color: var(--text-muted);
   cursor: pointer;
-  font-size: 1.25rem;
+  width: 2rem;
+  height: 2rem;
   padding: 0;
+  border-radius: 999px;
+  font-size: 1rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-.cmd-palette-kbd {
-  font-size: 0.72rem;
-  font-family: inherit;
-  font-weight: 600;
-  padding: 0.2rem 0.45rem;
-  border-radius: 0.35rem;
+.cmd-palette-close-btn:hover,
+.cmd-palette-close-btn:focus-visible {
   background-color: var(--bg-alt);
-  color: var(--text-muted);
-  border: 1px solid rgba(147, 161, 161, 0.25);
+  color: var(--link);
+}
+
+.cmd-palette-close-btn:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 1px;
 }
 
 .cmd-palette-results {
@@ -3067,8 +3120,14 @@ h2 .nav-title {
   padding: 0.65rem 1.25rem;
   border-top: 1px solid rgba(147, 161, 161, 0.15);
   background-color: var(--bg-alt);
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
+}
+
+.cmd-palette-footer span {
+  color: inherit;
+  font-size: 0.7rem;
+  line-height: 1;
 }
 
 .cmd-palette-footer kbd {
@@ -3077,5 +3136,5 @@ h2 .nav-title {
   background-color: var(--bg);
   border: 1px solid rgba(147, 161, 161, 0.2);
   font-family: inherit;
-  font-size: 0.72rem;
+  font-size: 0.65rem;
 }
