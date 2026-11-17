@@ -1,0 +1,756 @@
+{
+  "grooves": [
+    {
+      "slug": "basic-rock",
+      "title": "Basic Rock",
+      "file": "grooves/basic-rock.md"
+    },
+    {
+      "slug": "four-on-the-floor",
+      "title": "Four on the Floor",
+      "file": "grooves/four-on-the-floor.md"
+    },
+    {
+      "slug": "half-time-rock",
+      "title": "Half-Time Rock",
+      "file": "grooves/half-time-rock.md"
+    },
+    {
+      "slug": "classic-rock",
+      "title": "Classic Rock",
+      "file": "grooves/classic-rock.md"
+    },
+    {
+      "slug": "pop-rock",
+      "title": "Pop Rock",
+      "file": "grooves/pop-rock.md"
+    },
+    {
+      "slug": "disco",
+      "title": "Disco",
+      "file": "grooves/disco.md"
+    },
+    {
+      "slug": "funk",
+      "title": "Funk",
+      "file": "grooves/funk.md"
+    },
+    {
+      "slug": "shuffle",
+      "title": "Blues Shuffle (12/8)",
+      "file": "grooves/shuffle.md"
+    },
+    {
+      "slug": "punk-rock",
+      "title": "Punk Rock",
+      "file": "grooves/punk-rock.md"
+    },
+    {
+      "slug": "blues-rock",
+      "title": "Straight Blues Rock",
+      "file": "grooves/blues-rock.md"
+    },
+    {
+      "slug": "quarter-note-rock",
+      "title": "Quarter-Note Rock",
+      "file": "grooves/quarter-note-rock.md"
+    },
+    {
+      "slug": "double-kick-pickup",
+      "title": "Double Kick Pickup",
+      "file": "grooves/double-kick-pickup.md"
+    },
+    {
+      "slug": "late-kick-rock",
+      "title": "Late Kick Rock",
+      "file": "grooves/late-kick-rock.md"
+    },
+    {
+      "slug": "ride-rock",
+      "title": "Ride Rock",
+      "file": "grooves/ride-rock.md"
+    },
+    {
+      "slug": "open-hat-rock",
+      "title": "Open-Hat Rock",
+      "file": "grooves/open-hat-rock.md"
+    },
+    {
+      "slug": "flam-backbeat-rock",
+      "title": "Flam Backbeat Rock",
+      "file": "grooves/flam-backbeat-rock.md"
+    },
+    {
+      "slug": "no-downbeat-kick",
+      "title": "No Downbeat Kick",
+      "file": "grooves/no-downbeat-kick.md"
+    },
+    {
+      "slug": "two-bar-pop",
+      "title": "Two-Bar Pop Phrase",
+      "file": "grooves/two-bar-pop.md"
+    },
+    {
+      "slug": "ghost-note-funk",
+      "title": "Ghost-Note Funk",
+      "file": "grooves/ghost-note-funk.md"
+    },
+    {
+      "slug": "sixteenth-funk",
+      "title": "Sixteenth Funk",
+      "file": "grooves/sixteenth-funk.md"
+    },
+    {
+      "slug": "offbeat-hat-funk",
+      "title": "Offbeat Hat Funk",
+      "file": "grooves/offbeat-hat-funk.md"
+    },
+    {
+      "slug": "displaced-snare-funk",
+      "title": "Displaced Snare Funk",
+      "file": "grooves/displaced-snare-funk.md"
+    },
+    {
+      "slug": "cross-stick-soul",
+      "title": "Cross-Stick Soul",
+      "file": "grooves/cross-stick-soul.md"
+    },
+    {
+      "slug": "half-time-funk",
+      "title": "Half-Time Funk",
+      "file": "grooves/half-time-funk.md"
+    },
+    {
+      "slug": "linear-funk",
+      "title": "Linear Funk Study",
+      "file": "grooves/linear-funk.md"
+    },
+    {
+      "slug": "ride-bell-funk",
+      "title": "Ride Bell Funk",
+      "file": "grooves/ride-bell-funk.md"
+    },
+    {
+      "slug": "offbeat-dance",
+      "title": "Offbeat Dance",
+      "file": "grooves/offbeat-dance.md"
+    },
+    {
+      "slug": "sixteenth-dance",
+      "title": "Sixteenth Dance",
+      "file": "grooves/sixteenth-dance.md"
+    },
+    {
+      "slug": "half-time-electronic",
+      "title": "Half-Time Electronic",
+      "file": "grooves/half-time-electronic.md"
+    },
+    {
+      "slug": "broken-dance",
+      "title": "Broken Dance Beat",
+      "file": "grooves/broken-dance.md"
+    },
+    {
+      "slug": "floor-tom-dance",
+      "title": "Floor-Tom Dance",
+      "file": "grooves/floor-tom-dance.md"
+    },
+    {
+      "slug": "dance-kick-pickup",
+      "title": "Dance Kick Pickup",
+      "file": "grooves/dance-kick-pickup.md"
+    },
+    {
+      "slug": "slow-blues",
+      "title": "Slow Blues (12/8)",
+      "file": "grooves/slow-blues.md"
+    },
+    {
+      "slug": "ride-shuffle",
+      "title": "Ride Shuffle (12/8)",
+      "file": "grooves/ride-shuffle.md"
+    },
+    {
+      "slug": "half-time-shuffle",
+      "title": "Half-Time Shuffle Study (12/8)",
+      "file": "grooves/half-time-shuffle.md"
+    },
+    {
+      "slug": "four-kick-shuffle",
+      "title": "Four-Kick Shuffle (12/8)",
+      "file": "grooves/four-kick-shuffle.md"
+    },
+    {
+      "slug": "flat-tire-shuffle",
+      "title": "Flat-Tire Shuffle Study (12/8)",
+      "file": "grooves/flat-tire-shuffle.md"
+    },
+    {
+      "slug": "shuffle-kick-pickups",
+      "title": "Shuffle Kick Pickups (12/8)",
+      "file": "grooves/shuffle-kick-pickups.md"
+    },
+    {
+      "slug": "jazz-swing",
+      "title": "Jazz Swing (12/8)",
+      "file": "grooves/jazz-swing.md"
+    },
+    {
+      "slug": "jazz-feathering",
+      "title": "Jazz Feathering Study (12/8)",
+      "file": "grooves/jazz-feathering.md"
+    },
+    {
+      "slug": "jazz-snare-comping",
+      "title": "Jazz Snare Comping (12/8)",
+      "file": "grooves/jazz-snare-comping.md"
+    },
+    {
+      "slug": "jazz-waltz",
+      "title": "Jazz Waltz Study (9/8)",
+      "file": "grooves/jazz-waltz.md"
+    },
+    {
+      "slug": "bossa-nova-basic",
+      "title": "Bossa Nova Basic",
+      "file": "grooves/bossa-nova-basic.md"
+    },
+    {
+      "slug": "bossa-nova-two-bar",
+      "title": "Bossa Nova Two-Bar Study",
+      "file": "grooves/bossa-nova-two-bar.md"
+    },
+    {
+      "slug": "bossa-ride-bell",
+      "title": "Bossa Bell Coordination",
+      "file": "grooves/bossa-ride-bell.md"
+    },
+    {
+      "slug": "country-two-beat",
+      "title": "Country Two-Beat",
+      "file": "grooves/country-two-beat.md"
+    },
+    {
+      "slug": "country-train",
+      "title": "Country Train Beat",
+      "file": "grooves/country-train.md"
+    },
+    {
+      "slug": "rock-waltz",
+      "title": "Rock Waltz (3/4)",
+      "file": "grooves/rock-waltz.md"
+    },
+    {
+      "slug": "five-four-rock",
+      "title": "Five-Four Rock (3+2)",
+      "file": "grooves/five-four-rock.md"
+    },
+    {
+      "slug": "seven-eight-rock",
+      "title": "Seven-Eight Rock (2+2+3)",
+      "file": "grooves/seven-eight-rock.md"
+    },
+    {
+      "slug": "ballad-quarter-cross-stick",
+      "title": "Ballad: Quarter-Note Cross-Stick",
+      "file": "grooves/ballad-quarter-cross-stick.md"
+    },
+    {
+      "slug": "ballad-eighth-cross-stick",
+      "title": "Ballad: Eighth-Note Cross-Stick",
+      "file": "grooves/ballad-eighth-cross-stick.md"
+    },
+    {
+      "slug": "ballad-soft-pop",
+      "title": "Ballad: Soft Pop Backbeat",
+      "file": "grooves/ballad-soft-pop.md"
+    },
+    {
+      "slug": "ballad-ride-quarters",
+      "title": "Ballad: Ride Quarter Notes",
+      "file": "grooves/ballad-ride-quarters.md"
+    },
+    {
+      "slug": "ballad-ride-eighths",
+      "title": "Ballad: Ride Eighth Notes",
+      "file": "grooves/ballad-ride-eighths.md"
+    },
+    {
+      "slug": "ballad-hushed-verse",
+      "title": "Ballad: Hushed Verse",
+      "file": "grooves/ballad-hushed-verse.md"
+    },
+    {
+      "slug": "ballad-open-hat-lift",
+      "title": "Ballad: Open-Hat Lift",
+      "file": "grooves/ballad-open-hat-lift.md"
+    },
+    {
+      "slug": "ballad-whisper-sixteenths",
+      "title": "Ballad: Whispered Sixteenths",
+      "file": "grooves/ballad-whisper-sixteenths.md"
+    },
+    {
+      "slug": "ballad-half-time-pocket",
+      "title": "Ballad: Half-Time Pocket",
+      "file": "grooves/ballad-half-time-pocket.md"
+    },
+    {
+      "slug": "ballad-sparse-half-time",
+      "title": "Ballad: Sparse Half-Time",
+      "file": "grooves/ballad-sparse-half-time.md"
+    },
+    {
+      "slug": "ballad-half-time-ride",
+      "title": "Ballad: Half-Time Ride",
+      "file": "grooves/ballad-half-time-ride.md"
+    },
+    {
+      "slug": "ballad-floor-tom-heartbeat",
+      "title": "Ballad: Floor-Tom Heartbeat",
+      "file": "grooves/ballad-floor-tom-heartbeat.md"
+    },
+    {
+      "slug": "ballad-half-time-ghost",
+      "title": "Ballad: Half-Time Ghost Pickup",
+      "file": "grooves/ballad-half-time-ghost.md"
+    },
+    {
+      "slug": "ballad-soft-snare-response",
+      "title": "Ballad: Soft Snare Response",
+      "file": "grooves/ballad-soft-snare-response.md"
+    },
+    {
+      "slug": "ballad-broken-hat-verse",
+      "title": "Ballad: Broken-Hat Verse",
+      "file": "grooves/ballad-broken-hat-verse.md"
+    },
+    {
+      "slug": "ballad-six-eight-cross-stick",
+      "title": "Ballad: Six-Eight Cross-Stick",
+      "file": "grooves/ballad-six-eight-cross-stick.md"
+    },
+    {
+      "slug": "ballad-six-eight-ride",
+      "title": "Ballad: Six-Eight Ride",
+      "file": "grooves/ballad-six-eight-ride.md"
+    },
+    {
+      "slug": "ballad-twelve-eight-pop",
+      "title": "Ballad: Twelve-Eight Pop",
+      "file": "grooves/ballad-twelve-eight-pop.md"
+    },
+    {
+      "slug": "ballad-gentle-shuffle",
+      "title": "Ballad: Gentle Shuffle",
+      "file": "grooves/ballad-gentle-shuffle.md"
+    },
+    {
+      "slug": "ballad-compound-half-time",
+      "title": "Ballad: Compound Half-Time",
+      "file": "grooves/ballad-compound-half-time.md"
+    },
+    {
+      "slug": "ballad-waltz-verse",
+      "title": "Ballad: Waltz Verse",
+      "file": "grooves/ballad-waltz-verse.md"
+    },
+    {
+      "slug": "ballad-two-bar-verse",
+      "title": "Ballad: Two-Bar Verse",
+      "file": "grooves/ballad-two-bar-verse.md"
+    },
+    {
+      "slug": "ballad-chorus-entry",
+      "title": "Ballad: Chorus Entry",
+      "file": "grooves/ballad-chorus-entry.md"
+    },
+    {
+      "slug": "ballad-two-bar-rise",
+      "title": "Ballad: Two-Bar Dynamic Rise",
+      "file": "grooves/ballad-two-bar-rise.md"
+    },
+    {
+      "slug": "ballad-ride-and-foot",
+      "title": "Ballad: Ride and Foot-Hat",
+      "file": "grooves/ballad-ride-and-foot.md"
+    }
+  ],
+  "fills": [
+    {
+      "slug": "tom-walkdown",
+      "title": "Tom Walkdown",
+      "file": "fills/tom-walkdown.md"
+    },
+    {
+      "slug": "snare-build",
+      "title": "Snare Build",
+      "file": "fills/snare-build.md"
+    },
+    {
+      "slug": "classic-sixteenth",
+      "title": "Classic Sixteenth",
+      "file": "fills/classic-sixteenth.md"
+    },
+    {
+      "slug": "kick-and-toms",
+      "title": "Kick and Toms",
+      "file": "fills/kick-and-toms.md"
+    },
+    {
+      "slug": "tom-triplets",
+      "title": "Tom Triplets (12/8)",
+      "file": "fills/tom-triplets.md"
+    },
+    {
+      "slug": "snare-to-floor-tom",
+      "title": "Snare to Floor Tom",
+      "file": "fills/snare-to-floor-tom.md"
+    },
+    {
+      "slug": "kick-snare-unison",
+      "title": "Kick Snare Unison",
+      "file": "fills/kick-snare-unison.md"
+    },
+    {
+      "slug": "rolling-toms",
+      "title": "Rolling Toms",
+      "file": "fills/rolling-toms.md"
+    },
+    {
+      "slug": "snare-flam-finish",
+      "title": "Snare Flam Finish",
+      "file": "fills/snare-flam-finish.md"
+    },
+    {
+      "slug": "four-on-the-floor-fill",
+      "title": "Four on the Floor Fill",
+      "file": "fills/four-on-the-floor-fill.md"
+    },
+    {
+      "slug": "quarter-snare-fill",
+      "title": "Quarter-Note Snare Fill",
+      "file": "fills/quarter-snare-fill.md"
+    },
+    {
+      "slug": "eighth-snare-fill",
+      "title": "Eighth-Note Snare Fill",
+      "file": "fills/eighth-snare-fill.md"
+    },
+    {
+      "slug": "sixteenth-snare-fill",
+      "title": "Sixteenth-Note Snare Fill",
+      "file": "fills/sixteenth-snare-fill.md"
+    },
+    {
+      "slug": "last-beat-snare",
+      "title": "Last-Beat Snare Roll",
+      "file": "fills/last-beat-snare.md"
+    },
+    {
+      "slug": "half-bar-snare",
+      "title": "Half-Bar Snare Roll",
+      "file": "fills/half-bar-snare.md"
+    },
+    {
+      "slug": "pat-boone",
+      "title": "Pat Boone Debby Boone",
+      "file": "fills/pat-boone.md"
+    },
+    {
+      "slug": "splat-boom",
+      "title": "Splat-Boom",
+      "file": "fills/splat-boom.md"
+    },
+    {
+      "slug": "snare-floor-build",
+      "title": "Snare and Floor Build",
+      "file": "fills/snare-floor-build.md"
+    },
+    {
+      "slug": "snare-stop-fill",
+      "title": "Snare Stop Fill",
+      "file": "fills/snare-stop-fill.md"
+    },
+    {
+      "slug": "syncopated-snare-fill",
+      "title": "Syncopated Snare Fill",
+      "file": "fills/syncopated-snare-fill.md"
+    },
+    {
+      "slug": "eighth-tom-descent",
+      "title": "Eighth-Note Tom Descent",
+      "file": "fills/eighth-tom-descent.md"
+    },
+    {
+      "slug": "sixteenth-tom-descent",
+      "title": "Sixteenth Tom Descent",
+      "file": "fills/sixteenth-tom-descent.md"
+    },
+    {
+      "slug": "tom-ascent",
+      "title": "Tom Ascent",
+      "file": "fills/tom-ascent.md"
+    },
+    {
+      "slug": "snare-tom-answers",
+      "title": "Snare and Tom Answers",
+      "file": "fills/snare-tom-answers.md"
+    },
+    {
+      "slug": "tom-pairs",
+      "title": "Tom Pair Circuit",
+      "file": "fills/tom-pairs.md"
+    },
+    {
+      "slug": "floor-tom-pulse",
+      "title": "Floor-Tom Pulse",
+      "file": "fills/floor-tom-pulse.md"
+    },
+    {
+      "slug": "last-beat-toms",
+      "title": "Last-Beat Tom Descent",
+      "file": "fills/last-beat-toms.md"
+    },
+    {
+      "slug": "half-bar-toms",
+      "title": "Half-Bar Tom Descent",
+      "file": "fills/half-bar-toms.md"
+    },
+    {
+      "slug": "tom-rest-phrase",
+      "title": "Tom Phrase With Rests",
+      "file": "fills/tom-rest-phrase.md"
+    },
+    {
+      "slug": "two-bar-tom-fill",
+      "title": "Two-Bar Tom Fill",
+      "file": "fills/two-bar-tom-fill.md"
+    },
+    {
+      "slug": "linear-hhk",
+      "title": "Two Hands One Kick",
+      "file": "fills/linear-hhk.md"
+    },
+    {
+      "slug": "linear-hkk",
+      "title": "One Hand Two Kicks",
+      "file": "fills/linear-hkk.md"
+    },
+    {
+      "slug": "linear-four-cell",
+      "title": "Four-Note Linear Cell",
+      "file": "fills/linear-four-cell.md"
+    },
+    {
+      "slug": "linear-double-kick",
+      "title": "Linear Double Kick",
+      "file": "fills/linear-double-kick.md"
+    },
+    {
+      "slug": "linear-five-cell",
+      "title": "Five-Note Linear Cell",
+      "file": "fills/linear-five-cell.md"
+    },
+    {
+      "slug": "linear-seven-cell",
+      "title": "Seven-Note Linear Cell",
+      "file": "fills/linear-seven-cell.md"
+    },
+    {
+      "slug": "linear-half-bar",
+      "title": "Half-Bar Linear Fill",
+      "file": "fills/linear-half-bar.md"
+    },
+    {
+      "slug": "linear-kick-lead",
+      "title": "Kick-Led Linear Fill",
+      "file": "fills/linear-kick-lead.md"
+    },
+    {
+      "slug": "paradiddle-snare",
+      "title": "Accented Paradiddle",
+      "file": "fills/paradiddle-snare.md"
+    },
+    {
+      "slug": "paradiddle-toms",
+      "title": "Paradiddle Tom Accents",
+      "file": "fills/paradiddle-toms.md"
+    },
+    {
+      "slug": "flam-quarter-fill",
+      "title": "Quarter-Note Flam Fill",
+      "file": "fills/flam-quarter-fill.md"
+    },
+    {
+      "slug": "flam-tom-response",
+      "title": "Flam and Tom Response",
+      "file": "fills/flam-tom-response.md"
+    },
+    {
+      "slug": "ghost-accent-fill",
+      "title": "Ghost and Accent Fill",
+      "file": "fills/ghost-accent-fill.md"
+    },
+    {
+      "slug": "buzz-release-fill",
+      "title": "Buzz Release Fill",
+      "file": "fills/buzz-release-fill.md"
+    },
+    {
+      "slug": "snare-triplets",
+      "title": "Snare Triplets (12/8)",
+      "file": "fills/snare-triplets.md"
+    },
+    {
+      "slug": "triplet-hand-foot",
+      "title": "Triplet Hand-Foot Fill (12/8)",
+      "file": "fills/triplet-hand-foot.md"
+    },
+    {
+      "slug": "triplet-half-bar",
+      "title": "Half-Bar Triplet Fill (12/8)",
+      "file": "fills/triplet-half-bar.md"
+    },
+    {
+      "slug": "six-eight-tom-fill",
+      "title": "Six-Eight Tom Fill",
+      "file": "fills/six-eight-tom-fill.md"
+    },
+    {
+      "slug": "three-four-fill",
+      "title": "Three-Four Snare to Toms",
+      "file": "fills/three-four-fill.md"
+    },
+    {
+      "slug": "seven-eight-fill",
+      "title": "Seven-Eight Tom Fill",
+      "file": "fills/seven-eight-fill.md"
+    },
+    {
+      "slug": "ballad-fill-last-beat-answer",
+      "title": "Ballad: Flam Motif with Diddle Pickup",
+      "file": "fills/ballad-fill-last-beat-answer.md"
+    },
+    {
+      "slug": "ballad-fill-rim-click-pickup",
+      "title": "Ballad: Delayed Tom Answer",
+      "file": "fills/ballad-fill-rim-click-pickup.md"
+    },
+    {
+      "slug": "ballad-fill-snare-tom-pair",
+      "title": "Ballad: Six-Stroke Burst and Tom Reply",
+      "file": "fills/ballad-fill-snare-tom-pair.md"
+    },
+    {
+      "slug": "ballad-fill-low-tom-answer",
+      "title": "Ballad: Paradiddle into a Low-Tom Cadence",
+      "file": "fills/ballad-fill-low-tom-answer.md"
+    },
+    {
+      "slug": "ballad-fill-three-note-descent",
+      "title": "Ballad: Dotted Tom Motif",
+      "file": "fills/ballad-fill-three-note-descent.md"
+    },
+    {
+      "slug": "ballad-fill-soft-four-stroke",
+      "title": "Ballad: Sextuplet Pickup, Broad Resolution",
+      "file": "fills/ballad-fill-soft-four-stroke.md"
+    },
+    {
+      "slug": "ballad-fill-cross-stick-floor",
+      "title": "Ballad: Cross-Stick to Open Tom Phrase",
+      "file": "fills/ballad-fill-cross-stick-floor.md"
+    },
+    {
+      "slug": "ballad-fill-dotted-answer",
+      "title": "Ballad: Herta Pickup into Held Toms",
+      "file": "fills/ballad-fill-dotted-answer.md"
+    },
+    {
+      "slug": "ballad-fill-gentle-flam",
+      "title": "Ballad: Flam and Backbeat Answer",
+      "file": "fills/ballad-fill-gentle-flam.md"
+    },
+    {
+      "slug": "ballad-fill-kick-between-hands",
+      "title": "Ballad: Hand-Foot Pickup to Tom Cadence",
+      "file": "fills/ballad-fill-kick-between-hands.md"
+    },
+    {
+      "slug": "ballad-fill-soft-eighth-descent",
+      "title": "Ballad: Rising Then Falling Tom Motif",
+      "file": "fills/ballad-fill-soft-eighth-descent.md"
+    },
+    {
+      "slug": "ballad-fill-snare-crescendo",
+      "title": "Ballad: Snare Crescendo with a Short Release",
+      "file": "fills/ballad-fill-snare-crescendo.md"
+    },
+    {
+      "slug": "ballad-fill-floor-tom-crescendo",
+      "title": "Ballad: Two-Hand Tom Punctuation",
+      "file": "fills/ballad-fill-floor-tom-crescendo.md"
+    },
+    {
+      "slug": "ballad-fill-two-beat-breath",
+      "title": "Ballad: Motif, Breath, and Triplet Answer",
+      "file": "fills/ballad-fill-two-beat-breath.md"
+    },
+    {
+      "slug": "ballad-fill-quiet-double-pickup",
+      "title": "Ballad: Doubles between Tom Landings",
+      "file": "fills/ballad-fill-quiet-double-pickup.md"
+    },
+    {
+      "slug": "ballad-fill-power-ballad-landing",
+      "title": "Ballad: Chorus Setup with a Final Flurry",
+      "file": "fills/ballad-fill-power-ballad-landing.md"
+    },
+    {
+      "slug": "ballad-fill-halftime-response",
+      "title": "Ballad: Half-Time Backbeat and Answer",
+      "file": "fills/ballad-fill-halftime-response.md"
+    },
+    {
+      "slug": "ballad-fill-soft-tom-pairs",
+      "title": "Ballad: Moving Doubles with a Long Finish",
+      "file": "fills/ballad-fill-soft-tom-pairs.md"
+    },
+    {
+      "slug": "ballad-fill-buzz-to-rim",
+      "title": "Ballad: Flam Pickup and Warm Low-Tom Finish",
+      "file": "fills/ballad-fill-buzz-to-rim.md"
+    },
+    {
+      "slug": "ballad-fill-six-eight-descent",
+      "title": "Ballad: Triplet Descent with a Diddle Answer",
+      "file": "fills/ballad-fill-six-eight-descent.md"
+    },
+    {
+      "slug": "ballad-fill-six-eight-breath",
+      "title": "Ballad: Triplet Motif with a Last-Beat Pickup",
+      "file": "fills/ballad-fill-six-eight-breath.md"
+    },
+    {
+      "slug": "ballad-fill-twelve-eight-reply",
+      "title": "Ballad: Six-Stroke Triplet Flourish",
+      "file": "fills/ballad-fill-twelve-eight-reply.md"
+    },
+    {
+      "slug": "ballad-fill-compound-soft-roll",
+      "title": "Ballad: Triplet Question and Answer",
+      "file": "fills/ballad-fill-compound-soft-roll.md"
+    },
+    {
+      "slug": "ballad-fill-waltz-answer",
+      "title": "Ballad: Melodic Snare-to-Tom Turnaround",
+      "file": "fills/ballad-fill-waltz-answer.md"
+    },
+    {
+      "slug": "ballad-fill-two-bar-goodbye",
+      "title": "Ballad: Tom Hook with a Brief Closing Roll",
+      "file": "fills/ballad-fill-two-bar-goodbye.md"
+    }
+  ]
+}
