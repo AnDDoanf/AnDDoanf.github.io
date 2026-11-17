@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import CommandPalette from "@/components/ui/CommandPalette";
+import { THEME_INIT_SCRIPT } from "@/components/ui/themeState";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "katex/dist/katex.min.css";
 import "@xyflow/react/dist/style.css";
@@ -12,6 +13,7 @@ import "@/styles/poetry.css";
 import "@/styles/updating.css";
 import "@/styles/giapha.css";
 import "@/styles/mindmap.css";
+import "@/styles/drum-notation.css";
 // import "@/styles/culinary.css";
 import { I18nProvider } from "@/components/i18n/I18nProvider";
 import getPostMetadata, { resolvePostCategory } from "@/app/utils/getPostMetadata";
@@ -93,7 +95,10 @@ export default function RootLayout({
   const searchItems = getGlobalSearchItems();
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script id="theme-init" dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body className="container">
         <I18nProvider>
           {children}

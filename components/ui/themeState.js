@@ -1,5 +1,20 @@
 export const THEME_PAIRS = ["solarized", "ocean", "forest", "rose", "lavender", "slate"];
 
+// Runs in the document head before content paints, independently of React hydration.
+export const THEME_INIT_SCRIPT = `
+  (() => {
+    let mode = "light";
+    let palette = "solarized";
+    try {
+      mode = localStorage.getItem("theme") === "dark" ? "dark" : "light";
+      const saved = localStorage.getItem("theme-palette");
+      if (${JSON.stringify(THEME_PAIRS)}.includes(saved)) palette = saved;
+    } catch {}
+    document.documentElement.dataset.theme = mode;
+    document.documentElement.dataset.palette = palette;
+  })();
+`;
+
 export function getThemeSnapshot() {
   const root = document.documentElement;
   return `${root.dataset.palette || "solarized"}:${root.dataset.theme || "light"}`;

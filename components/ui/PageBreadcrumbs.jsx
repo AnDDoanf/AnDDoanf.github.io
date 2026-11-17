@@ -16,6 +16,8 @@ const ROUTE_LABEL_KEYS = {
   updating: "updating.title",
   giapha: "giapha.title",
   tree: "giapha.treeView",
+  tool: "tools.title",
+  "drum-notation": "tools.drumNotation",
 };
 
 function humanizeSegment(segment) {

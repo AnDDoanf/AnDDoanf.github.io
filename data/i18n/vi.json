@@ -5,6 +5,7 @@
     "vi": "Tiếng Việt"
   },
   "nav": {
+    "tools": "Công cụ",
     "mindmaps": "Sơ đồ",
     "home": "Trang chủ",
     "about": "Giới thiệu",
@@ -13,6 +14,10 @@
     "poems": "Thơ",
     "culinary": "Ẩm thực",
     "gallery": "Ảnh"
+  },
+  "tools": {
+    "title": "Công cụ",
+    "drumNotation": "Ký âm trống"
   },
   "ui": {
     "primaryNavigation": "Điều hướng chính",

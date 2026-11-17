@@ -5,6 +5,7 @@
     "vi": "Vietnamese"
   },
   "nav": {
+    "tools": "Tools",
     "mindmaps": "Mindmaps",
     "home": "Home",
     "about": "About",
@@ -13,6 +14,10 @@
     "poems": "Poems",
     "culinary": "Culinary",
     "gallery": "Gallery"
+  },
+  "tools": {
+    "title": "Tools",
+    "drumNotation": "Drum Notation"
   },
   "ui": {
     "primaryNavigation": "Primary",
