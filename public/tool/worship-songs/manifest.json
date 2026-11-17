@@ -1,0 +1,26 @@
+{
+  "short_name": "Thánh Ca",
+  "name": "Thánh Ca Hội Thánh",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#f3ebd7",
+  "background_color": "#f3ebd7"
+}

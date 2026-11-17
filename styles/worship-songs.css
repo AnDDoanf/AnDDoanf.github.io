@@ -1,0 +1,160 @@
+@import "./worship-songs/header-and-palette.css";
+@import "./worship-songs/usage-guide.css";
+@import "./worship-songs/library-and-layout.css";
+@import "./worship-songs/popups-and-slideshow.css";
+@import "./worship-songs/responsive.css";
+@import "./worship-songs/workspace.css";
+
+:root {
+  --page-bg: var(--bg);
+  --panel-bg: var(--bg-alt);
+  --panel-strong: var(--bg);
+  --panel-muted: var(--surface);
+  --panel-hover: var(--card);
+  --border-color: var(--border);
+  --shadow-soft: 0 18px 44px var(--shadow);
+  --text-primary: var(--text);
+  --accent: var(--link);
+  --accent-strong: var(--cyan);
+  --accent-contrast: var(--bg);
+  --accent-tertiary: var(--violet);
+  --accent-quaternary: var(--green);
+  --control-active-bg: var(--link);
+  --control-active-fg: var(--bg);
+  --control-active-border: var(--link);
+  --overlay: rgba(0, 0, 0, 0.42);
+  --sheet-ink: #000;
+}
+
+[data-theme="dark"] {
+  --overlay: rgba(0, 0, 0, 0.78);
+  --sheet-ink: #fff;
+}
+
+.worship-songs-tool {
+  width: 100%;
+  background: transparent;
+}
+
+.worship-songs-app,
+.worship-songs-app * {
+  box-sizing: border-box;
+}
+
+.worship-songs-app {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--page-bg);
+  color: var(--text-primary);
+  font-family: inherit;
+}
+
+.worship-songs-app span {
+  color: inherit;
+  font-size: inherit;
+}
+
+.worship-songs-app :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--text-primary);
+}
+
+/* Host-site component geometry */
+.worship-songs-app :is(button, input, select, textarea) {
+  font-family: inherit;
+}
+
+.worship-songs-app :is(input, select, textarea) {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-alt);
+  color: var(--text);
+}
+
+.worship-songs-app :is(input, select, textarea):focus {
+  outline: none;
+  border-color: var(--link);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--link) 14%, transparent);
+}
+
+.worship-songs-app .search {
+  min-height: 3.35rem;
+  padding: 0.55rem 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-alt);
+  box-shadow: 0 8px 18px var(--shadow);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.worship-songs-app .search:focus-within {
+  border-color: var(--link);
+  background: var(--bg);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--link) 14%, transparent), 0 8px 18px var(--shadow);
+}
+
+.worship-songs-app .search-input,
+.worship-songs-app .discovery-search .search-input {
+  min-height: 2.15rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--text);
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+
+.worship-songs-app .search-input:focus {
+  border: 0;
+  box-shadow: none;
+}
+
+.worship-songs-app :is(
+  .button-mode,
+  .menu-item,
+  .pagination-button,
+  .slideshow-create-button,
+  .slideshow-list-action-button,
+  .slideshow-action-button,
+  .audio-button,
+  .action-icon-button,
+  .sheet-nav-button,
+  .popup-close-button,
+  .recommendation-actions button,
+  .theme-discovery button,
+  .set-backup-actions button,
+  .popup-list-editor-actions button,
+  .workspace-reader-bar button,
+  .workspace-musician-tools button
+) {
+  border-radius: 999px;
+  font-family: inherit;
+}
+
+.worship-songs-app :is(
+  .button-mode,
+  .menu-item,
+  .pagination-button,
+  .slideshow-create-button,
+  .slideshow-list-action-button,
+  .slideshow-action-button,
+  .audio-button
+):focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+.worship-songs-app :is(
+  .song,
+  .recommendation-card,
+  .slideshow-list-card,
+  .set-workspace,
+  .song-recommendations,
+  .popup-lyric,
+  .workspace-dialog,
+  .usage-guide-shell,
+  .lyrics-queue-card
+) {
+  border-radius: 1rem;
+}

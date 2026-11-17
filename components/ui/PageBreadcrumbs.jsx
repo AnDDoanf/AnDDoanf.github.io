@@ -18,6 +18,7 @@ const ROUTE_LABEL_KEYS = {
   tree: "giapha.treeView",
   tool: "tools.title",
   "drum-notation": "tools.drumNotation",
+  "worship-songs": "tools.worshipSongs",
 };
 
 function humanizeSegment(segment) {

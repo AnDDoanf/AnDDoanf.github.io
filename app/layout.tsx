@@ -14,6 +14,7 @@ import "@/styles/updating.css";
 import "@/styles/giapha.css";
 import "@/styles/mindmap.css";
 import "@/styles/drum-notation.css";
+import "@/styles/worship-songs.css";
 // import "@/styles/culinary.css";
 import { I18nProvider } from "@/components/i18n/I18nProvider";
 import getPostMetadata, { resolvePostCategory } from "@/app/utils/getPostMetadata";

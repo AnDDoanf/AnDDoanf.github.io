@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Không tìm thấy trang — Thánh Ca Hội Thánh</title>
+    <script>
+      (function () {
+        var pendingShareStorageKey = 'song-collections-pending-share';
+        var pathname = window.location.pathname || '/';
+
+        if (!/\/share\/?$/.test(pathname)) {
+          return;
+        }
+
+        var pathSegments = pathname.split('/');
+        pathSegments.pop();
+
+        var basePath = pathSegments.join('/') || '/';
+        var targetPath = /\/$/.test(basePath) ? basePath : basePath + '/';
+
+        try {
+          window.sessionStorage.setItem(
+            pendingShareStorageKey,
+            JSON.stringify({
+              pathname: pathname,
+              search: window.location.search || '',
+            })
+          );
+        } catch (_error) {
+          // Ignore sessionStorage failures and still try to redirect.
+        }
+
+        window.location.replace(window.location.origin + targetPath);
+      })();
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>Không tìm thấy trang</h1>
+      <p>Trang này không tồn tại hoặc đã đổi địa chỉ.</p>
+      <p><a href="/tool/worship-songs/">Về trang chủ</a> · <a href="/tool/worship-songs/songs/">Danh mục thánh ca</a></p>
+    </main>
+  </body>
+</html>
