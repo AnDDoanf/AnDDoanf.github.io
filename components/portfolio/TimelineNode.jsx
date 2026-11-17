@@ -14,14 +14,12 @@ export default function TimelineNode({ data, align, lang }) {
             <p className="portfolio-timeline-date">{lang === "vi" ? data.dateVi : data.date}</p>
             <strong>{data.company}</strong>
             <p className="portfolio-timeline-role">{lang === "vi" ? data.roleVi : data.role}</p>
-        </Card>
-        <div className="portfolio-timeline-bubble">
             <ul>
                 {(lang === "vi" ? data.responsibilitiesVi : data.responsibilities).map((item, i) => (
                     <li key={i}>{item}</li>
                 ))}
             </ul>
-        </div>
+        </Card>
     </div>
   )
 }

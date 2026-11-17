@@ -179,12 +179,17 @@
 
 .portfolio-timeline-card {
     color: var(--text);
-    padding: 0 0 0.4rem 0;
+    padding: 1rem 1.1rem;
     border: none;
     background: transparent;
     position: relative;
     z-index: 1; 
     transform: none;
+}
+
+.portfolio-page .portfolio-timeline-card.ui-card {
+    padding: 1rem 1.1rem;
+    overflow: visible;
 }
 
 .portfolio-timeline-card strong {
